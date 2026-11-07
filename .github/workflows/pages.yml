@@ -1,0 +1,39 @@
+# 把仓库里的静态站点直接发布到 GitHub Pages。
+# 不用 Jekyll：整份目录原样打包上传，避免 Markdown/图片被二次处理或构建超时。
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:        # 也可以在 Actions 页面手动点一次
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .          # actions/upload-pages-artifact 会自动排除 .git 和 .github
+
+      - name: Deploy
+        id: deploy
+        uses: actions/deploy-pages@v4
