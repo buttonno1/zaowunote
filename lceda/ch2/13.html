@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2.13 SMT 与手工焊接 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch2/13" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 2 章 · 前置知识补全</div>
+    <article>
+      <h1>2.13 SMT 与手工焊接</h1>
+      <p class="lead">光板拿到手只是一块“空地”，元件要焊上去才能用。两条路：交给工厂用机器贴片（SMT），或者自己拿电烙铁焊。这一节讲清楚两条路各怎么走，以及好焊点和坏焊点长什么样。</p>
+      <div class="meta-bar"><span>⏱ 约 20 分钟</span><span>🎯 零基础</span><span>🖼️ 含好焊点 / 坏焊点对比图</span></div>
+      
+
+<h2 id="路线-①工厂-SMT-贴片">路线 ①：工厂 SMT 贴片<a class="anchor" href="#路线-①工厂-SMT-贴片">#</a></h2>
+
+<p><b>SMT（Surface Mount Technology，表面贴装技术）</b>是工厂用机器焊贴片元件的流程，主要四步：</p>
+
+<ol class="steps blue">
+  <li><b>印锡膏</b>：用钢网往每个焊盘上刷一层锡膏（<a href="12.html#钢网给焊盘刷锡膏的镂空模板">2.12 钢网</a>）。</li>
+  <li><b>贴片</b>：贴片机按<b>坐标文件</b>用吸嘴吸起元件，转到规定角度，放到焊盘上（锡膏有黏性，能暂时粘住）。</li>
+  <li><b>回流焊</b>：板子过一个温度分段控制的长炉子，锡膏熔化再冷却，元件就焊牢了。</li>
+  <li><b>检查</b>：用 AOI（自动光学检测）等方式检查有没有偏位、漏件、连锡。有直插元件的还要再插件焊接。</li>
+</ol>
+
+<h3 id="在嘉立创下-SMT-订单的大致流程">在嘉立创下 SMT 订单的大致流程<a class="anchor" href="#在嘉立创下-SMT-订单的大致流程">#</a></h3>
+
+<ol class="steps">
+  <li>先下 PCB 订单（<a href="../ch1/a10.html">A-10</a>），下单页「SMT 贴片」一项选“需要”。</li>
+  <li>等 PCB 订单审核通过后，在 SMT 下单页面上传 <b>BOM + 坐标文件</b>（也可以从编辑器的「导出 → 嘉立创SMT备料下单…」进入）。</li>
+  <li>核对元件匹配结果：每个元件对应到了哪个立创编号、有没有缺货、哪些是扩展库。</li>
+  <li><b>核对贴片方向预览</b>：芯片 1 脚、LED 和二极管极性、模组方向，最重要。</li>
+  <li>确认费用并支付，等板子贴好寄过来。</li>
+</ol>
+
+<p class="small muted">以上流程按 2026-11 下单页面上的说明整理；本教程没有实际提交 SMT 订单，具体界面以嘉立创网站为准。</p>
+
+<aside class="theory">
+<p><b>基础库和扩展库：</b>嘉立创 SMT 把元件分成两类。<b>基础库</b>是贴片机上常备的常用料（普通电阻电容、常见 LED……），直接用；<b>扩展库</b>是需要临时装到机器上的料，通常要多收一笔换料费。所以选元件时<b>能用基础库就用基础库</b>——在嘉立创EDA 搜索元件时，立创商城来源的列表里可以看到每个元件属于哪一类（<a href="../ch1/a0.html#元件清单BOM">A-0 元件清单</a>）。案例 A 只有 NE555 和 Type-C 座是扩展库。</p>
+</aside>
+
+<h2 id="路线-②自己手工焊接">路线 ②：自己手工焊接<a class="anchor" href="#路线-②自己手工焊接">#</a></h2>
+
+<h3 id="工具清单">工具清单<a class="anchor" href="#工具清单">#</a></h3>
+
+<table>
+<thead><tr><th>工具</th><th>用途 / 选购建议</th></tr></thead>
+<tbody>
+<tr><td><b>恒温电烙铁</b></td><td>能调温度的那种。尖头适合小元件，刀头适合拖焊芯片</td></tr>
+<tr><td><b>焊锡丝</b></td><td>0.5～0.8 mm 粗，内含助焊剂。有铅焊锡（如 63/37，熔点约 183 °C）更好焊；无铅焊锡熔点更高、稍难焊</td></tr>
+<tr><td><b>助焊剂</b></td><td>帮焊锡流动、去氧化。焊贴片、修连锡时非常有用</td></tr>
+<tr><td><b>尖头镊子</b></td><td>夹贴片元件，必备</td></tr>
+<tr><td><b>吸锡带</b></td><td>吸掉多余的焊锡、修连锡</td></tr>
+<tr><td><b>放大镜 / 手机微距</b></td><td>检查 0603、芯片引脚的焊点</td></tr>
+<tr><td>万用表（选购）</td><td>测通断、测电压，排查短路</td></tr>
+<tr><td>热风枪 / 加热台（选购）</td><td>焊 QFN、拆芯片、配合锡膏焊</td></tr>
+</tbody>
+</table>
+
+<aside class="warn">
+<p><b>安全第一：</b></p>
+<ul>
+<li>烙铁头有好几百度，<b>不用时放回烙铁架</b>，别放桌上；电源线别从烙铁头旁边绕过。</li>
+<li>焊接产生的烟主要是助焊剂挥发，<b>保持通风</b>，别凑太近吸。</li>
+<li>用有铅焊锡后<b>洗手</b>再吃东西。</li>
+<li>剪引脚时线头会弹飞，注意眼睛。</li>
+<li>焊接时板子<b>不要通电</b>。</li>
+</ul>
+</aside>
+
+<h3 id="焊直插元件五步法">焊直插元件：五步法<a class="anchor" href="#焊直插元件五步法">#</a></h3>
+
+<ol class="steps blue">
+  <li><b>准备</b>：元件插好，板子固定住。烙铁温度一般 300～350 °C 左右（按焊锡说明调）。</li>
+  <li><b>加热</b>：烙铁头同时贴住<b>焊盘和引脚</b>，约 1～2 秒。</li>
+  <li><b>送锡</b>：把焊锡丝送到焊盘和引脚的交界处（不是送到烙铁头上），看到焊锡熔化、铺开。</li>
+  <li><b>移开焊锡丝</b>：锡量够了先拿开焊锡丝。</li>
+  <li><b>移开烙铁</b>：再顺着引脚方向拿开烙铁。焊点冷却前别晃动。整个过程 2～4 秒。</li>
+</ol>
+
+<h3 id="焊贴片电阻电容0603--0805--1206">焊贴片电阻电容（0603 / 0805 / 1206）<a class="anchor" href="#焊贴片电阻电容0603--0805--1206">#</a></h3>
+
+<ol class="steps blue">
+  <li>先给<b>一个</b>焊盘上一点锡。</li>
+  <li>镊子夹住元件，烙铁熔化这点锡，把元件推到位，移开烙铁——一端就固定住了。</li>
+  <li>焊另一端（正常送锡）。</li>
+  <li>回头给第一端补一点锡，让两端都形成小斜坡。</li>
+</ol>
+
+<h3 id="焊-SOIC-芯片比如-NE555">焊 SOIC 芯片（比如 NE555）<a class="anchor" href="#焊-SOIC-芯片比如-NE555">#</a></h3>
+
+<ol class="steps blue">
+  <li><b>确认 1 脚方向</b>：芯片上的圆点对准丝印上的 1 脚标记。</li>
+  <li>给一个角的焊盘上锡，镊子把芯片对准所有焊盘，焊住这一只脚固定。</li>
+  <li>检查另一侧也对齐了，再焊对角的脚。</li>
+  <li>逐个焊其余引脚；或者涂助焊剂后用刀头“拖焊”一排。</li>
+  <li>放大检查有没有<b>连锡</b>，有的话加助焊剂用烙铁拖开或用吸锡带吸掉。</li>
+</ol>
+
+<aside class="tip">
+<p><b>焊接顺序：先矮后高、先小后大、先难后易。</b>先焊芯片和小贴片，再焊连接器、排针这些高的元件，否则高元件会挡住烙铁。案例 A 的完整手焊顺序见 <a href="../ch1/a11.html#A11.2-路线-②自己手工焊接">A-11.2</a>。</p>
+</aside>
+
+<h2 id="好焊点与坏焊点">好焊点与坏焊点<a class="anchor" href="#好焊点与坏焊点">#</a></h2>
+
+<div class="widget"><div class="widget-title">好焊点 / 坏焊点对比图</div>
+<div class="joint-widget"></div>
+<div class="widget-hint">侧视示意图（灰色是焊锡，橙色是焊盘，深灰竖条是引脚）。实际焊点很小，记得用放大镜检查。</div>
+</div>
+
+<h2 id="焊完先别急着通电">焊完先别急着通电<a class="anchor" href="#焊完先别急着通电">#</a></h2>
+
+<ul class="checklist">
+  <li><span>放大检查每个焊点：没有连锡、没有虚焊、没有漏焊</span></li>
+  <li><span>有极性的元件（LED、二极管、电解电容、芯片 1 脚）方向都对</span></li>
+  <li><span>用万用表通断档测一下<b>电源和 GND 之间没有短路</b>（不响才对）</span></li>
+  <li><span>第一次上电时手放在电源旁边，闻到焦味、看到冒烟立刻拔掉</span></li>
+</ul>
+
+<div class="quiz">
+  <div class="q">手焊直插元件时，焊锡丝应该送到哪里？</div>
+  <button type="button" class="opt">直接送到烙铁头上，熔化后再抹到焊盘</button>
+  <button type="button" class="opt" data-right>送到已经加热的焊盘和引脚交界处</button>
+  <button type="button" class="opt">送到元件本体上</button>
+  <div class="explain">✅ 焊盘和引脚都被加热后，焊锡碰到它们自然熔化铺开，才能焊牢。把锡先熔在烙铁头上再抹，助焊剂早就烧没了，容易冷焊。</div>
+</div>
+
+<div class="quiz">
+  <div class="q">用嘉立创 SMT，为什么尽量选“基础库”的元件？</div>
+  <button type="button" class="opt">基础库的元件质量更好</button>
+  <button type="button" class="opt" data-right>基础库是常备料，不用额外的换料费，更便宜</button>
+  <button type="button" class="opt">扩展库的元件不能贴片</button>
+  <div class="explain">✅ 扩展库也能贴，只是需要临时上料，通常多收费。</div>
+</div>
+
+<h2 id="回到哪里继续">回到哪里继续<a class="anchor" href="#回到哪里继续">#</a></h2>
+
+<ul>
+<li>从案例 A 的制作路线来的：回到 <a href="../ch1/a0.html#两条制作路线">A-0 两条制作路线</a>。</li>
+<li>拿到板子准备焊接 / 测试：回到 <a href="../ch1/a11.html">A-11 拿到板子之后</a>。</li>
+<li>继续：<a href="14.html">2.14 读规格书</a>。</li>
+</ul>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch2/12.html"><small>← 上一页</small>2.12 制造文件</a><a class="next" href="../ch2/14.html"><small>下一页 →</small>2.14 读规格书</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/widgets/ch2.js"></script>
+</body>
+</html>

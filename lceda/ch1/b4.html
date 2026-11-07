@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B-4 导出与 SMT 下单 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch1/b4" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 1 章 · Quickstart 实战</div>
+    <article>
+      <h1>B-4 导出与 SMT 下单</h1>
+      <p class="lead">导出文件、跳转下单和案例 A 完全一样，这一页只简单回顾，重点讲 SMT 贴片：为什么这块板子推荐让工厂贴、SMT 订单要在什么时候下、上传 BOM 和坐标后要核对什么——尤其是贴片方向。</p>
+      <div class="meta-bar"><span>⏱ 约 30 分钟</span><span>📋 含下单页 SMT 区域说明表</span><span>⚠️ 本教程没有提交订单，费用一律以下单页为准</span></div>
+      
+
+<h2 id="B4.1-导出制造文件回顾-A-10">B4.1 导出制造文件（回顾 A-10）<a class="anchor" href="#B4.1-导出制造文件回顾-A-10">#</a></h2>
+
+<p>步骤和 <a href="a10.html">A-10</a> 一样：</p>
+
+<ol class="steps">
+  <li>「导出」→「PCB制板文件(Gerber)…」：导出 Gerber 压缩包（<a href="a10.html#A10.2-导出-Gerber">A10.2</a>）</li>
+  <li>「导出」→「BOM…」：导出元件清单（<a href="a10.html#A10.3-导出-BOM">A10.3</a>）</li>
+  <li>「导出」→「坐标文件…」：导出贴片坐标（<a href="a10.html#A10.4-导出坐标文件">A10.4</a>）</li>
+</ol>
+
+<p>导出 BOM 后打开检查一下，本案例应该是 <b>14 行</b>：</p>
+
+<ul>
+<li><b>J1 排针不在 BOM 里</b>：因为 B-2 把它设成了「加入BOM = 否」，工厂不会贴它，我们自己焊。</li>
+<li>每一行都有<b>供应商编号（C 编号）</b>。没有 C 编号的行，SMT 时工厂不知道该用什么料。</li>
+<li>BOM 里会显示 LED4 那颗红灯的 C 编号 C2286。器件标准化面板的那个“属性不匹配”警告（<a href="b2.html#B2.9-检查DRC-与器件标准化">B2.9</a>）不影响 BOM 和贴片。</li>
+</ul>
+
+<aside class="tip">
+<p>底部「器件标准化」面板右上角有三个按钮：「立创商城元件下单」「<b>嘉立创SMT备料下单</b>」「导出BOM」（<a href="b2.html#B2.9-检查DRC-与器件标准化">B2.9 的图</a>⑥）。以后做 SMT 时，可以从这里直接把元件清单带到嘉立创的备料页面。</p>
+</aside>
+
+<aside class="tip">
+<p>📦 本案例真实导出的文件，可以下载下来和你自己的结果对照（这是 LED4 换回 C2286 之后的最终版）：
+<a href="../files/ch1/caseB_Gerber_PCB1_2026-11-05.zip" download>Gerber 压缩包</a>、
+<a href="../files/ch1/caseB_BOM_Board1_PCB1_2026-11-05.xlsx" download>BOM 表</a>、
+<a href="../files/ch1/caseB_PickAndPlace_PCB1_2026_11_05.xlsx" download>坐标文件</a>。BOM 里没有排针 J1——因为我们把它设成了「加入BOM = 否」，留给你自己焊。</p>
+</aside>
+
+<h2 id="B4.2-PCB-下单回顾-A-10">B4.2 PCB 下单（回顾 A-10）<a class="anchor" href="#B4.2-PCB-下单回顾-A-10">#</a></h2>
+
+<p>「导出」→「PCB制板文件(Gerber)…」→「<b>PCB下单</b>」，提示“下单数据（Gerber、坐标文件、BOM）生成完毕”，点「确认」：</p>
+
+<figure class="shot"><img src="../img/ch1/b4-order-ready.png" alt="①点「确认」打开下单页；②右侧面板已经识别出 2 层、32.004 × 58 mm，参考价 ¥20.00" width="666" loading="lazy"><figcaption><span class="fig-no">图 -1</span>①点「确认」打开下单页；②右侧面板已经识别出 2 层、32.004 × 58 mm，参考价 ¥20.00</figcaption></figure>
+
+<p>浏览器打开嘉立创的 PCB 下单页，尺寸自动识别为 3.2 × 5.8 cm：</p>
+
+<figure class="shot"><img src="../img/ch1/b4-order-top.png" alt="下单页顶部：①板子尺寸自动识别为 3.2 × 5.8 cm；其余参数和案例 A 一样" width="528" loading="lazy"><figcaption><span class="fig-no">图 -2</span>下单页顶部：①板子尺寸自动识别为 3.2 × 5.8 cm；其余参数和案例 A 一样</figcaption></figure>
+
+<p>所有参数的含义见 <a href="a10.html#基本信息">A-10 的说明表</a>，本例全部和案例 A 一样：2 层、5 片、FR-4、1.6 mm、绿色阻焊……实测价格同样是 <b>¥20</b>，另加默认勾选的“品质赔付服务”¥10（可以改成“按标准合同常规处理”省掉）。</p>
+
+<aside class="note">
+<p>页面上会提示“<b>系统检测到您的文件有QFN封装，免费赠送纳米+电解 60 元现金券</b>”——模组的封装被系统识别成了 QFN 一类的封装。这只是钢网的优惠活动，跟你要不要开钢网没有关系。</p>
+</aside>
+
+<h2 id="B4.3-下单页的-SMT-贴片区域">B4.3 下单页的 SMT 贴片区域<a class="anchor" href="#B4.3-下单页的-SMT-贴片区域">#</a></h2>
+
+<p>往下滚到「SMT贴片 / 激光钢网」这一栏：</p>
+
+<figure class="shot"><img src="../img/ch1/b4-order-smt.png" alt="下单页 SMT 贴片 / 激光钢网区域（2026-11 实测）" width="572" loading="lazy"><figcaption><span class="fig-no">图 -3</span>下单页 SMT 贴片 / 激光钢网区域（2026-11 实测）</figcaption></figure>
+
+<div class="table-title">SMT 贴片 / 激光钢网 / 开票支付</div><table class="props"><thead><tr><th>编号</th><th>参数</th><th>含义（大白话）</th><th>本例</th><th>要不要改</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>是否SMT贴片</td><td>不需要 / 需要。选“需要”表示你打算让工厂把元件贴好</td><td>截图时为“不需要”</td><td>按旁边的说明，SMT 在 PCB 审核通过后另外下（B4.5）</td></tr><tr><td><span class="tagn">2</span></td><td>说明</td><td>① 因 SMT 生产工艺需要，工厂可能会帮你<b>添加或修改工艺边、MARK 点</b>，且不另行通知，外形四角圆角半径在 0.3~2 mm 范围；② <b>PCB 订单审核通过后，才能在「SMT在线下单 / 计价」菜单里下 SMT</b></td><td>本例圆角 2 mm，在范围内</td><td>—</td></tr><tr><td><span class="tagn">3</span></td><td>是否开钢网</td><td>钢网是刷锡膏用的钢片。让工厂贴片时一般不需要在这里单独开；自己用锡膏焊贴片元件时才需要</td><td>不需要</td><td>自己焊贴片元件时</td></tr><tr><td><span class="tagn">4</span></td><td>QFN 现金券提示</td><td>系统识别到 QFN 类封装送的钢网优惠券</td><td>—</td><td>不用管</td></tr><tr><td><span class="tagn">5</span></td><td>确认订单方式</td><td>系统自动扣款并确认 / 手动确认订单</td><td>默认是自动扣款</td><td>⚠️ 建议改成手动确认（A-10 讲过）</td></tr></tbody></table>
+
+<aside class="theory">
+<p><b>工艺边和 MARK 点是什么？</b> 贴片机要用夹具夹住电路板、用摄像头对准位置。<b>工艺边</b>是板子两侧额外加的几毫米“把手”，给夹具夹的，贴完可以掰掉；<b>MARK 点</b>是几个圆形的定位标记，给摄像头对位用。小板子通常需要工厂自己加，所以页面说“会帮您添加或修改”。</p>
+</aside>
+
+<h2 id="B4.4-为什么这块板子推荐-SMT">B4.4 为什么这块板子推荐 SMT<a class="anchor" href="#B4.4-为什么这块板子推荐-SMT">#</a></h2>
+
+<ul>
+<li><b>模组</b>的焊盘在模组底部和侧边，中间还有一块散热焊盘，手工焊难度很大；</li>
+<li><b>16P Type-C</b> 的引脚间距只有零点几毫米，非常容易连锡；</li>
+<li>电阻电容是 0603，比芝麻还小。</li>
+</ul>
+
+<p>所以零基础<b>强烈建议让工厂贴</b>，到手只焊一个排针（甚至不焊也能用）。本案例的扩展库元件有 3 种：<b>模组 U1、Type-C USB1、彩灯 LED1~3</b>，其余都是基础库。扩展库元件贴片时通常会多收一笔换料费，具体多少<b>以 SMT 下单页显示为准</b>。</p>
+
+<h2 id="B4.5-SMT-下单的完整流程">B4.5 SMT 下单的完整流程<a class="anchor" href="#B4.5-SMT-下单的完整流程">#</a></h2>
+
+<p>本教程只操作到 PCB 下单页、<b>没有提交订单</b>，所以下面的 SMT 页面没有截图，按流程说明。界面可能变化，以嘉立创网站实际显示为准：</p>
+
+<ol class="steps">
+  <li><b>先下 PCB 订单</b>：在 PCB 下单页确认参数，提交并付款。</li>
+  <li><b>等 PCB 审核通过</b>：嘉立创会检查你的 Gerber 文件，通过后订单状态会更新（有问题工程师会联系你）。</li>
+  <li><b>下 SMT 订单</b>：在嘉立创网站（或嘉立创下单助手）的「<b>SMT在线下单 / 计价</b>」里选择刚才那个 PCB 订单，选择贴片面（本例只有顶层有元件）和贴片数量（可以只贴其中几片）。</li>
+  <li><b>上传 BOM 和坐标文件</b>：用 B4.1 导出的 BOM 和坐标文件；也可以从编辑器器件标准化面板的「嘉立创SMT备料下单」把清单带过去。</li>
+  <li><b>核对元件匹配</b>：页面会把 BOM 每一行和嘉立创的库存一一对应。逐行确认 C 编号、型号、封装一致；看看有没有缺货的、被标成扩展库的，<b>以及扩展库费用</b>。</li>
+  <li><b>核对贴片方向（最重要！）</b>：页面会显示一张元件贴在板子上的预览图，逐个检查有方向的元件（见下表）。方向不对要在页面上调整或联系工程师。</li>
+  <li><b>确认费用并支付</b>：PCB 费 + SMT 工程费 + 元件费 + 可能的扩展库换料费，<b>一切以页面显示为准</b>。</li>
+</ol>
+
+<h3 id="哪些元件要特别核对方向">哪些元件要特别核对方向<a class="anchor" href="#哪些元件要特别核对方向">#</a></h3>
+
+<table>
+<thead><tr><th>元件</th><th>方向标记</th><th>贴反了会怎样</th></tr></thead>
+<tbody>
+<tr><td><b>U1 模组</b></td><td>天线一端朝上板边；1 脚标记</td><td>转了 180° 的话天线跑到板子里面，而且电源脚接错，可能直接烧</td></tr>
+<tr><td><b>LED1~3 彩灯</b></td><td>5050 灯的一个角有缺角或标记，要和封装丝印上的 1 脚标记对上</td><td>电源和数据脚错位，灯不亮甚至损坏</td></tr>
+<tr><td><b>LED4 指示灯</b></td><td>正负极（封装上的极性标记）</td><td>不亮（LED 反向不导通）</td></tr>
+<tr><td><b>D1 二极管</b></td><td>元件上有一条色环 = 负极，应在 VLED 一侧</td><td>彩灯没电</td></tr>
+<tr><td>U2 稳压芯片</td><td>SOT-223 的大散热片只有一个方向放得上</td><td>一般不会错，看一眼即可</td></tr>
+<tr><td>电阻、无极性电容、按键</td><td>无方向</td><td>—</td></tr>
+</tbody>
+</table>
+
+<aside class="theory">
+<p><b>为什么贴片方向会出错？</b> 贴片机按坐标文件里的“旋转角度”转元件，而这个角度是以<b>封装</b>的 0° 方向为基准的。如果你用的封装和工厂库里同一个元件的“0° 方向”定义不一样，贴出来就会差 90° 或 180°。所以工厂一定会让你确认预览图——<b>这一步宁可多看两眼</b>。（坐标文件是什么见 <a href="a10.html#A10.4-导出坐标文件">A10.4</a>。）</p>
+</aside>
+
+<aside class="warn">
+<p><b>提交前最后检查：</b></p>
+<ul>
+<li>PCB 下单页的「确认订单方式」改成了“手动确认订单”；</li>
+<li>BOM 里没有空白 C 编号，J1 不在里面；</li>
+<li>SMT 预览图里模组、彩灯、LED4、D1 的方向都和 3D 预览一致；</li>
+<li>价格、交期都看清楚了。本教程<b>没有替你提交订单</b>，费用、优惠经常变化，<b>以页面为准</b>。</li>
+</ul>
+</aside>
+
+<aside class="link">
+<p>SMT 的详细流程、基础库 / 扩展库、钢网、拼板和工艺边：<a href="../ch8/1.html">第 8 章：生产制造与下单</a>；贴片和手工焊接入门：<a href="../ch2/13.html">2.13 SMT 与手工焊接</a>。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch1/b3.html"><small>← 上一页</small>B-3 PCB 设计</a><a class="next" href="../ch1/b5.html"><small>下一页 →</small>B-5 写程序与烧录</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

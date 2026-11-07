@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B-3 PCB 设计 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch1/b3" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 1 章 · Quickstart 实战</div>
+    <article>
+      <h1>B-3 PCB 设计</h1>
+      <p class="lead">这一页把原理图变成一块真正的电路板。和案例 A 相同的步骤（转 PCB、拖元件、铺铜）只简单带过；新内容是：圆角矩形板框、天线下方的禁止区域、USB 差分对，以及一个很真实的情况——自动布线没布通，我们要找出原因、手动补上。</p>
+      <div class="meta-bar"><span>⏱ 约 90~150 分钟</span><span>🖱️ 含天线净空示意</span><span>📋 含板框、禁止区域、差分对、差分对规则说明表</span><span>⚠️ 差分对「自动生成」后要点「应用」</span></div>
+      
+
+<h2 id="B3.1-转到-PCB画圆角矩形板框">B3.1 转到 PCB，画圆角矩形板框<a class="anchor" href="#B3.1-转到-PCB画圆角矩形板框">#</a></h2>
+
+<p>和 <a href="a3.html">A-3</a> 一样：先 <span class="keys"><kbd>⌘</kbd><kbd>S</kbd></span> 保存，「设计」→「更新/转换原理图到PCB」（<span class="keys"><kbd>⌥</kbd><kbd>I</kbd></span>），在「确认导入信息」里点「<b>应用修改</b>」。本例导入了 <b>26 个元件、97 条飞线</b>。</p>
+
+<figure class="shot"><img src="../img/ch1/b3-import.png" alt="确认导入信息：26 个元件逐个“增加元件”，①点「应用修改」" width="560" loading="lazy"><figcaption><span class="fig-no">图 -1</span>确认导入信息：26 个元件逐个“增加元件”，①点「应用修改」</figcaption></figure>
+
+<p>这次的板框是<b>圆角矩形</b>：</p>
+
+<ol class="steps">
+  <li>「<b>放置</b>」→「<b>板框</b>」→「<b>矩形</b>」</li>
+  <li>在画布原点 (0, 0) 单击作为左上角，移动到右下角大约 (32, -58) 再单击（旁边会实时显示宽和高）</li>
+  <li>单击选中板框，在右侧属性面板把尺寸改精确</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/ch1/b3-outline-menu.png" alt="①板框 → ②矩形" width="304" loading="lazy"><figcaption><span class="fig-no">图 -2</span>①板框 → ②矩形</figcaption></figure>
+<figure class="shot"><img src="../img/ch1/b3-outline-drag.png" alt="拖出矩形，旁边实时显示宽度（32.004 mm）和高度" width="336" loading="lazy"><figcaption><span class="fig-no">图 -3</span>拖出矩形，旁边实时显示宽度（32.004 mm）和高度</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/ch1/b3-outline-props.png" alt="矩形板框的属性（红框：宽、高、圆角半径）" width="250" loading="lazy"><figcaption><span class="fig-no">图 -4</span>矩形板框的属性（红框：宽、高、圆角半径）</figcaption></figure>
+
+<div class="table-title">矩形板框属性</div><table class="props"><thead><tr><th>编号</th><th>属性</th><th>含义（大白话）</th><th>本例怎么填</th><th>什么时候需要改</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>类型</td><td>这是一个“板框”对象</td><td>板框</td><td>—</td></tr><tr><td><span class="tagn">2</span></td><td>图层</td><td>板框画在「板框层」上，工厂按它切板</td><td>板框层</td><td>不改</td></tr><tr><td><span class="tagn">3</span></td><td>线宽</td><td>板框线的粗细，只是显示用</td><td>0.254 mm</td><td>不改</td></tr><tr><td><span class="tagn">4</span></td><td>锁定</td><td>锁定后不能被误拖动</td><td>否</td><td>定稿后可以锁上</td></tr><tr><td><span class="tagn">5</span></td><td>ID</td><td>内部编号</td><td>自动</td><td>—</td></tr><tr><td><span class="tagn">6</span></td><td>起点X</td><td>矩形左上角的横坐标</td><td>0 mm</td><td>—</td></tr><tr><td><span class="tagn">7</span></td><td>起点Y</td><td>矩形左上角的纵坐标（往下是负数）</td><td>0 mm</td><td>—</td></tr><tr><td><span class="tagn">8</span></td><td>宽</td><td>板子宽度</td><td><b>32</b> mm</td><td>🎨 想要宽一点 / 窄一点</td></tr><tr><td><span class="tagn">9</span></td><td>高</td><td>板子高度</td><td><b>58</b> mm</td><td>🎨</td></tr><tr><td><span class="tagn">10</span></td><td>圆角半径</td><td>四个角的圆角半径，0 就是直角</td><td><b>2</b> mm</td><td>🎨 也可以更圆；SMT 的工艺边要求圆角半径 0.3~2 mm（见 B-4）</td></tr><tr><td><span class="tagn">11</span></td><td>旋转角度</td><td>整个矩形旋转</td><td>0</td><td>—</td></tr></tbody></table>
+
+<aside class="note">
+<p>输入 32 后属性面板显示的是 <b>32.004 mm</b>，这是因为编辑器内部按 mil（千分之一英寸）存储坐标，换算回毫米有一点点取整误差，对生产完全没有影响。</p>
+</aside>
+
+<aside class="diy">
+<p>🎨 板框形状随你改：可以做成更圆的胶囊形（圆角半径加大）、在角上开一个挂绳孔，或者用「放置 → 板框 → 多边形」画异形。只要保证模组天线那一边贴着板边就行。</p>
+</aside>
+
+<h2 id="B3.2-布局与天线禁止区域">B3.2 布局与天线禁止区域<a class="anchor" href="#B3.2-布局与天线禁止区域">#</a></h2>
+
+<p>拖元件的方法和 <a href="a5.html">A-5</a> 一样（也可以选中元件后在属性面板里直接输入坐标）。本例的布局思路是“<b>从上往下按信号流排</b>”：</p>
+
+<table>
+<thead><tr><th>位置（mm，左上角为原点）</th><th>元件</th><th>理由</th></tr></thead>
+<tbody>
+<tr><td>U1 (16, -11)，天线朝上贴上板边</td><td>ESP32-C3 模组</td><td><b>天线必须在板边</b>，下面不能有铜（下面讲）</td></tr>
+<tr><td>模组左边 (4, -6 / -10 / -14)；右边 (27.5, -6 / -10 / -14)</td><td>C4、C5、R4；R5、R6、C6</td><td>去耦电容、上拉电阻、RC 延时都紧挨模组的对应引脚</td></tr>
+<tr><td>SW1 (6, -22)，SW2 (21, -22)</td><td>RST、BOOT 按键</td><td>放在一排，手指好按</td></tr>
+<tr><td>LED1~3 (5 / 13.5 / 22, -30)，电容在各自下方</td><td>彩灯 + C7~C9</td><td>🎨 排成一排，在板子中间最显眼</td></tr>
+<tr><td>D1 (13.5, -39.5)，U2 (13.5, -45)，C1 / C2 / C3 在 U2 两边</td><td>二极管、稳压芯片和电容</td><td>电源路径：USB → U2 → 模组，电容紧贴 U2 的输入输出脚</td></tr>
+<tr><td>USB1 (16, -53.5)，口朝下伸出板边</td><td>Type-C</td><td>接口在板边（<a href="a5.html#A5.2-布局的三个原则">A5.2</a> 原则①）</td></tr>
+<tr><td>LED4 (4, -50.5)，R3 (4, -54)；R1 (23, -52)，R2 (25.5, -52)</td><td>电源指示灯；CC 电阻</td><td>靠近 USB</td></tr>
+<tr><td>J1 (29.5, -30.5)，竖放</td><td>排针</td><td>贴右板边，方便插杜邦线</td></tr>
+</tbody>
+</table>
+
+<h3 id="为什么天线下面不能有铜">为什么天线下面不能有铜<a class="anchor" href="#为什么天线下面不能有铜">#</a></h3>
+
+<p>模组顶部那一段（没有铁壳的部分）是<b>PCB 天线</b>：一段弯弯曲曲的铜线，Wi-Fi 信号从这里发出去。如果天线正下方的底板上有铜（铺铜、导线），铜会把信号挡住、吸收掉一大部分。切换下面的三种情况看看：</p>
+
+<div class="widget"><div class="widget-title">天线净空示意</div>
+<div class="ant-widget"></div>
+<div class="widget-hint">乐鑫在模组规格书的“模组在底板上的位置”一节里，推荐把天线区<b>伸出板边</b>或<b>放在板边</b>，并且天线下方<b>所有层</b>都不要有铜。本例天线朝上、紧贴上板边，下方画禁止区域。</div>
+</div>
+
+<aside class="theory">
+<p>天线靠“电场和磁场在空气里来回振荡”把能量送出去。一大块铜（尤其是接地的铺铜）就像紧贴着喇叭口放了一块铁板：声音（信号）一部分被反射回来，一部分被吸收，天线本身的“音调”（谐振频率）也会被拉偏。结果就是 Wi-Fi 距离变短、连接不稳。</p>
+</aside>
+
+<h3 id="新操作禁止区域">新操作：禁止区域<a class="anchor" href="#新操作禁止区域">#</a></h3>
+
+<p>怎么保证天线下面一定没有铜？画一个<b>禁止区域</b>，告诉软件“这块地方不许铺铜、不许走线”。之后铺铜、自动布线都会自动绕开它，DRC 也会检查。</p>
+
+<ol class="steps">
+  <li>「<b>放置</b>」→「<b>禁止区域</b>」→「<b>矩形</b>」（还有圆形、多边形）</li>
+  <li>在模组天线部分拉一个矩形，盖住整个天线区域（本例 14.5 × 6.5 mm 左右，稍微超出上板边也没关系）</li>
+  <li>松手后弹出属性对话框，按下表修改，点「<b>确认</b>」</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/ch1/b3-keepout-menu.png" alt="①禁止区域 → ②矩形" width="304" loading="lazy"><figcaption><span class="fig-no">图 -5</span>①禁止区域 → ②矩形</figcaption></figure>
+<figure class="shot"><img src="../img/ch1/b3-keepout-drag.png" alt="在天线上方拉出禁止区域，旁边显示宽 14.478 mm、高 6.477 mm" width="384" loading="lazy"><figcaption><span class="fig-no">图 -6</span>在天线上方拉出禁止区域，旁边显示宽 14.478 mm、高 6.477 mm</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/ch1/b3-keepout-props.png" alt="禁止区域属性：红框是“禁止什么”" width="240" loading="lazy"><figcaption><span class="fig-no">图 -7</span>禁止区域属性：红框是“禁止什么”</figcaption></figure>
+
+<div class="table-title">禁止区域属性</div><table class="props"><thead><tr><th>编号</th><th>属性</th><th>含义（大白话）</th><th>本例怎么填</th><th>什么时候需要改</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>类型</td><td>区域的种类，这里是禁止区域</td><td>禁止区域</td><td>—</td></tr><tr><td><span class="tagn">2</span></td><td>图层</td><td>在哪一层禁止：顶层 / 底层 / <b>多层</b>（所有铜层）</td><td><b>多层</b></td><td>只想禁止某一面时选顶层或底层</td></tr><tr><td><span class="tagn">3</span></td><td>锁定</td><td>防止误拖</td><td>否</td><td>—</td></tr><tr><td><span class="tagn">4</span></td><td>元件</td><td>禁止在区域里放元件</td><td><b>不勾</b>（默认是勾上的）</td><td>见下面的注意</td></tr><tr><td><span class="tagn">5</span></td><td>填充区域</td><td>禁止放实心铜块</td><td>☑</td><td>—</td></tr><tr><td><span class="tagn">6</span></td><td>导线</td><td>禁止走线（包括自动布线）</td><td>☑</td><td>—</td></tr><tr><td><span class="tagn">7</span></td><td>铺铜</td><td>铺铜到这里会自动挖空</td><td>☑</td><td>—</td></tr><tr><td><span class="tagn">8</span></td><td>内电层</td><td>多层板的内部电源层，本例是双面板没有</td><td>不勾</td><td>做 4 层以上的板子时勾上</td></tr><tr><td><span class="tagn">9</span></td><td>起点X</td><td>矩形左上角 X</td><td>8.382 mm</td><td>—</td></tr><tr><td><span class="tagn">10</span></td><td>起点Y</td><td>矩形左上角 Y</td><td>0.508 mm</td><td>—</td></tr><tr><td><span class="tagn">11</span></td><td>宽</td><td>区域宽度</td><td>14.478 mm</td><td>盖住天线即可</td></tr><tr><td><span class="tagn">12</span></td><td>高</td><td>区域高度</td><td>6.477 mm</td><td>—</td></tr><tr><td><span class="tagn">13</span></td><td>确认</td><td>保存设置</td><td>点它</td><td>—</td></tr></tbody></table>
+
+<aside class="warn">
+<p><b>为什么不勾「元件」？</b> 默认只勾了「元件」——但模组 U1 本身就压在这块区域上（天线就是模组的一部分），勾上的话 DRC 会报“模组违反禁止区域”。我们要禁止的是<b>铜</b>，不是元件，所以取消「元件」，改勾「填充区域、导线、铺铜」，图层选「多层」让顶层和底层都净空。</p>
+</aside>
+
+<h2 id="B3.3-USB-差分对">B3.3 USB 差分对<a class="anchor" href="#B3.3-USB-差分对">#</a></h2>
+
+<aside class="theory">
+<p><b>差分信号：两根线唱“反调”。</b> USB 的 D+ 和 D- 不是两根各干各的线，而是<b>一对</b>：D+ 变高的时候 D- 就变低，反过来也一样。接收端只看<b>两根线之间的差</b>。</p>
+<p>好处是抗干扰：外面来了一个干扰，会同时、等量地叠加到两根线上（比如都抬高 0.2 V），两根线的<b>差</b>却不变，干扰就被抵消了。就像两个人抬着一块玻璃过马路，路面颠簸让两人一起上下晃，玻璃的倾斜度（差）却不变。</p>
+<p>要做到“干扰一样大”，两根线就得<b>贴着并排走</b>、<b>长度差不多</b>。这就是 PCB 里的“差分对布线”。</p>
+</aside>
+
+<h3 id="第-1-步告诉软件哪两根是一对">第 1 步：告诉软件哪两根是一对<a class="anchor" href="#第-1-步告诉软件哪两根是一对">#</a></h3>
+
+<ol class="steps">
+  <li>「<b>设计</b>」→「<b>差分对管理器…</b>」，打开后列表是空的（0/0）</li>
+  <li>点左下角「<b>自动生成…</b>」</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/b3-dp-mgr.png" alt="差分对管理器：一开始是空的，①点「自动生成…」" width="450" loading="lazy"><figcaption><span class="fig-no">图 -8</span>差分对管理器：一开始是空的，①点「自动生成…」</figcaption></figure>
+
+<ol class="steps" start="3">
+  <li value="3">把「正网络特征」从默认的 <code>P</code> 改成 <code>+</code>，「负网络特征」从 <code>N</code> 改成 <code>-</code>，列表里立刻识别出 <b>USB_D</b>（正 USB_D+ / 负 USB_D-）</li>
+  <li value="4"><b>点「应用」</b>（不是「确认」！），然后点「取消」关掉这个窗口</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/b3-dp-auto.png" alt="自动生成差分对：④⑤改成 + / -，⑥识别出 USB_D，⑦点「应用」才真正生成" width="450" loading="lazy"><figcaption><span class="fig-no">图 -9</span>自动生成差分对：④⑤改成 + / -，⑥识别出 USB_D，⑦点「应用」才真正生成</figcaption></figure>
+
+<div class="table-title">自动生成差分对</div><table class="props"><thead><tr><th>编号</th><th>属性</th><th>含义（大白话）</th><th>本例怎么填</th><th>什么时候需要改</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>来源</td><td>从哪些网络里找：全部网络，或者只找某个网络类</td><td>全部</td><td>网络很多、只想处理一部分时</td></tr><tr><td><span class="tagn">2</span></td><td>差分对命名前缀</td><td>给生成的差分对名字加一个前缀</td><td>空</td><td>有多对差分线、想分类时</td></tr><tr><td><span class="tagn">3</span></td><td>创建到差分对组</td><td>把生成的差分对放进一个组</td><td>空</td><td>高速板上有很多对时</td></tr><tr><td><span class="tagn">4</span></td><td>正网络特征</td><td>网络名里用什么字符表示“正”。默认 P（比如 USB_DP）</td><td>改成 <b>+</b></td><td>按你的命名习惯</td></tr><tr><td><span class="tagn">5</span></td><td>负网络特征</td><td>表示“负”的字符。默认 N</td><td>改成 <b>-</b></td><td>同上</td></tr><tr><td><span class="tagn">6</span></td><td>结果列表</td><td>软件按特征配好的对：差分对名称 / 正网络 / 负网络</td><td>USB_D / USB_D+ / USB_D-</td><td>没出现说明名字没对上，回去检查网络名</td></tr><tr><td><span class="tagn">7</span></td><td>应用</td><td><b>真正把差分对生成到管理器里</b></td><td><b>点它</b></td><td>—</td></tr><tr><td><span class="tagn">8</span></td><td>确认</td><td>本例实测点它<b>没有反应</b>，不会生成</td><td>别只点它</td><td>—</td></tr><tr><td><span class="tagn">9</span></td><td>取消</td><td>关闭这个窗口，回到管理器</td><td>应用后点它</td><td>—</td></tr></tbody></table>
+
+<figure class="shot"><img src="../img/ch1/b3-dp-done.png" alt="差分对管理器里有了①USB_D（正网络 USB_D+，负网络 USB_D-）" width="450" loading="lazy"><figcaption><span class="fig-no">图 -10</span>差分对管理器里有了①USB_D（正网络 USB_D+，负网络 USB_D-）</figcaption></figure>
+
+<aside class="warn">
+<p>实测踩坑：在「自动生成差分对」里点「确认」什么都不会发生，差分对管理器仍然是空的。<b>一定要先点「应用」</b>，看到管理器里出现 USB_D 才算成功。</p>
+</aside>
+
+<h3 id="第-2-步差分对布线-D">第 2 步：差分对布线 <span class="keys"><kbd>⌥</kbd><kbd>D</kbd></span><a class="anchor" href="#第-2-步差分对布线-D">#</a></h3>
+
+<ol class="steps">
+  <li>按 <span class="keys"><kbd>⌥</kbd><kbd>D</kbd></span>（「布线」→「差分对布线」），在 USB 插座的 D+ 或 D- 焊盘上单击</li>
+  <li>移动鼠标，<b>两根线会并排一起走</b>，间距自动保持；单击定拐点，到终点后 <kbd>Esc</kbd> 结束</li>
+  <li>走线时旁边实时显示「<b>差分对长度误差</b>」（两根线长度差了多少）和下面的色条：小于规则 / 符合规则 / 大于规则</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/b3-dp-route.png" alt="①差分对布线时的提示：长度误差 +4.868 mm，规则 ±0.254 mm，色条落在“大于规则”" width="504" loading="lazy"><figcaption><span class="fig-no">图 -11</span>①差分对布线时的提示：长度误差 +4.868 mm，规则 ±0.254 mm，色条落在“大于规则”</figcaption></figure>
+
+<p>不过，本例的 USB 插座让差分布线变得很别扭，原因在下一节。</p>
+
+<h2 id="B3.4-自动布线只布通-85.71为什么">B3.4 自动布线只布通 85.71%，为什么？<a class="anchor" href="#B3.4-自动布线只布通-85.71为什么">#</a></h2>
+
+<p>先试试自动布线（<a href="a6.html#A6.3-自动布线">A6.3</a>）：第一次结果是<b>布通率 85.71%</b>，有几根线没布上。</p>
+
+<figure class="shot"><img src="../img/ch1/b3-auto1.png" alt="第一次自动布线：①布通率 85.71%；②USB 附近的 D+ / D- 没连上" width="651" loading="lazy"><figcaption><span class="fig-no">图 -12</span>第一次自动布线：①布通率 85.71%；②USB 附近的 D+ / D- 没连上</figcaption></figure>
+
+<p>把「迭代数量」从 1 改成 5，让它多试几轮：</p>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/ch1/b3-auto-set.png" alt="①迭代数量改成 5" width="565" loading="lazy"><figcaption><span class="fig-no">图 -13</span>①迭代数量改成 5</figcaption></figure>
+<figure class="shot"><img src="../img/ch1/b3-auto5.png" alt="①5 次迭代全都是 85.71%" width="651" loading="lazy"><figcaption><span class="fig-no">图 -14</span>①5 次迭代全都是 85.71%</figcaption></figure>
+</div>
+
+<p>多试几次也没用，说明不是“运气”问题，而是<b>有的地方根本走不通</b>。仔细看没连上的飞线，有两处：</p>
+
+<ol class="steps blue">
+  <li><b>16P Type-C 的 D+ / D- 焊盘是交错排列的</b>：从左到右是 D-、D+、D-、D+。每个网络的两个焊盘中间都隔着另一个网络的焊盘，焊盘之间的缝又窄得过不了线——在同一层根本没法把两个 D+ 连起来而不碰到 D-。</li>
+  <li><b>模组正中间的 3×3 GND 散热焊盘被一圈引脚包围着</b>，导线从外面钻不进去。</li>
+</ol>
+
+<h3 id="解决关键的线手动布">解决：关键的线手动布<a class="anchor" href="#解决关键的线手动布">#</a></h3>
+
+<p>专业工程师的做法本来就是“<b>关键线手动，其余自动</b>”。本例手动处理 USB 和模组中心的 GND：</p>
+
+<ol class="steps">
+  <li><b>D+</b>：在顶层，从两个 D+ 焊盘各引一小段往板内走，在焊盘上方用一根横线把它们连起来，再打一个<b>过孔</b>（<span class="keys"><kbd>⌥</kbd><kbd>V</kbd></span>）下到底层。</li>
+  <li><b>D-</b>：两个 D- 焊盘各自往另一个方向引出，各打一个过孔到底层，在底层把它们连起来。这样 D+ 的连接线在顶层、D- 的在底层，互不交叉。</li>
+  <li>在<b>底层</b>，D+ 和 D- 两根线<b>并排</b>往上走到模组旁边，再各打一个过孔回到顶层，接到模组的 IO19（D+）和 IO18（D-）。本例一共 5 个过孔（内径 0.3 / 外径 0.61 mm，默认规则）。</li>
+  <li><b>模组中心 GND 焊盘</b>：在顶层把 9 个小焊盘互相连起来，再打 4 个过孔到底层，接到底层的 GND 铺铜。</li>
+  <li>重新运行自动布线，勾选「<b>保留已有导线/过孔</b>」——这次剩下的信号线全部布通；GND 留给铺铜去连。</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/b3-usb-bottom.png" alt="手动布好的 USB 线（临时隐藏了顶层，只看底层）：D+ / D- 从 USB 旁的过孔下到底层，两根线并排往上走向模组" width="420" loading="lazy"><figcaption><span class="fig-no">图 -15</span>手动布好的 USB 线（临时隐藏了顶层，只看底层）：D+ / D- 从 USB 旁的过孔下到底层，两根线并排往上走向模组</figcaption></figure>
+
+<figure class="shot"><img src="../img/ch1/b3-auto-keep.png" alt="保留手动画好的 USB 走线后再自动布线：信号线全部布通" width="651" loading="lazy"><figcaption><span class="fig-no">图 -16</span>保留手动画好的 USB 走线后再自动布线：信号线全部布通</figcaption></figure>
+
+<aside class="tip">
+<p>打过孔换层：用 <span class="keys"><kbd>⌥</kbd><kbd>V</kbd></span>（<a href="a6.html#A6.2-手动布一根线">A6.2</a> 的小提示里讲过）在走线末端放一个过孔，然后在底部图层栏切到另一层，从过孔开始接着布线。一根线在一层走不通时，“换一层走”是最常用的办法——过孔就是上下两层之间的“电梯”。</p>
+</aside>
+
+<h2 id="B3.5-铺铜与-DRC-收尾">B3.5 铺铜与 DRC 收尾<a class="anchor" href="#B3.5-铺铜与-DRC-收尾">#</a></h2>
+
+<p>和 <a href="a7.html">A-7</a> 一样，顶层、底层各铺一块 GND，<span class="keys"><kbd>⇧</kbd><kbd>B</kbd></span> 重建铺铜。天线下方因为有禁止区域，铺铜会自动挖空：</p>
+
+<figure class="shot"><img src="../img/ch1/b3-copper.png" alt="双面铺铜完成：模组天线下方（最上面那一块）没有铜" width="651" loading="lazy"><figcaption><span class="fig-no">图 -17</span>双面铺铜完成：模组天线下方（最上面那一块）没有铜</figcaption></figure>
+
+<aside class="diy">
+<p><b>缝合孔（选做）</b>：在顶层和底层的 GND 铺铜上均匀地打一些过孔，把两层地“缝”在一起，让地更完整、回流路径更短。菜单「放置」里有「缝合孔」可以批量放。本例的板子很小，模组中心那 4 个 GND 过孔加上铺铜已经够用，没有另外放。</p>
+</aside>
+
+<p>然后运行 PCB 的 DRC（<a href="a9.html#A9.1-PCB-的-DRC-检查">A9.1</a>）。本例前后遇到了三个问题：</p>
+
+<h3 id="问题-①差分对长度误差-3.582-mm超出规则-0.254-mm">问题 ①：差分对长度误差 3.582 mm，超出规则 0.254 mm<a class="anchor" href="#问题-①差分对长度误差-3.582-mm超出规则-0.254-mm">#</a></h3>
+
+<p>手动布出来的 D+ 和 D- 长度差了 3.582 mm，而默认的差分对规则只允许 0.254 mm。打开「设计」→「设计规则…」，左边找到「<b>差分对</b>」下的 <code>differentialPair</code>：</p>
+
+<figure class="shot"><img src="../img/ch1/b3-rule-dp.png" alt="设计规则 → ①差分对 differentialPair；②差分对长度误差 最大 0.254 mm（默认）" width="528" loading="lazy"><figcaption><span class="fig-no">图 -18</span>设计规则 → ①差分对 differentialPair；②差分对长度误差 最大 0.254 mm（默认）</figcaption></figure>
+
+<div class="table-title">差分对规则 differentialPair</div><table class="props"><thead><tr><th>编号</th><th>属性</th><th>含义（大白话）</th><th>本例怎么填</th><th>什么时候需要改</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>线宽</td><td>差分对里每根线的宽度：最小 / 默认 / 最大，分所有层、顶层、底层</td><td>0.127 / 0.254 / 2.54 mm（默认）</td><td>要做阻抗控制时按计算值改</td></tr><tr><td><span class="tagn">2</span></td><td>间距</td><td>一对线之间的间距</td><td>最小 0.152 mm（默认）</td><td>同上</td></tr><tr><td><span class="tagn">3</span></td><td>差分对长度误差 · 最大</td><td>两根线允许差多长</td><td>0.254 → <b>改成 5</b> mm</td><td>见下面的解释</td></tr><tr><td></td><td>提示</td><td>当差分对规则与安全间距规则、导线规则冲突时，<b>以差分规则为准</b></td><td>—</td><td>—</td></tr></tbody></table>
+
+<figure class="shot"><img src="../img/ch1/b3-rule-dp5.png" alt="把③差分对长度误差的最大值改成 5 mm，点「确认」" width="380" loading="lazy"><figcaption><span class="fig-no">图 -19</span>把③差分对长度误差的最大值改成 5 mm，点「确认」</figcaption></figure>
+
+<aside class="theory">
+<p><b>为什么这里可以放宽到 5 mm？</b> 等长的目的是让两根线上的信号<b>同时到达</b>。信号在电路板上跑得非常快，大约每纳秒 15~20 厘米，5 mm 的长度差只会造成约 0.03 纳秒的时间差。</p>
+<p>ESP32-C3 的 USB 是 <b>USB 2.0 全速（12 Mbps）</b>，每一位数据持续约 83 纳秒，0.03 纳秒的差别完全可以忽略。只有 USB 2.0 <b>高速（480 Mbps）</b>及更快的接口，每一位只有约 2 纳秒，才需要严格等长和阻抗控制。所以对这块板子，“两根线并排走、长度大致相同”就够了。</p>
+<p>规则不是越严越好：<b>按信号的真实需求定规则</b>，是 PCB 设计里很重要的判断力。</p>
+</aside>
+
+<h3 id="问题-②一段-GND-短线压进了禁止区域">问题 ②：一段 GND 短线压进了禁止区域<a class="anchor" href="#问题-②一段-GND-短线压进了禁止区域">#</a></h3>
+
+<p>DRC 报了一段 GND 导线和天线禁止区域冲突。双击错误定位过去，把这段线缩短、退出禁止区域即可。这正是禁止区域的作用：<b>任何铜进了天线区都会被揪出来</b>。</p>
+
+<h3 id="问题-③LED4-的器件标准化坑">问题 ③：LED4 的“器件标准化”坑<a class="anchor" href="#问题-③LED4-的器件标准化坑">#</a></h3>
+
+<p>就是 <a href="b2.html#B2.9-检查DRC-与器件标准化">B2.9</a> 末尾提到的那个：在原理图里把 LED4 标准化成系统库的 KT-0603R（封装 LED-SMD_L1.6-W0.8-R-RD）后，PCB 的 DRC 报了一堆“同网络间距为 0”的错误，自动布线还把 GND 接到了 LED 的 1 脚。</p>
+
+<p>处理方法：回到原理图把 LED4 换回 C2286 原来的 LED0603-RD 封装，然后「设计」→「更新/转换原理图到PCB」，在确认导入信息里能看到 LED4 的“移除元件 / 增加元件”，点「应用修改」，再把 LED4 摆回原位、重新连线：</p>
+
+<figure class="shot"><img src="../img/ch1/b3-led4-import.png" alt="从原理图导入变更：①LED4 更换器件" width="560" loading="lazy"><figcaption><span class="fig-no">图 -20</span>从原理图导入变更：①LED4 更换器件</figcaption></figure>
+
+<aside class="warn">
+<p><b>每次在原理图里换器件、改封装，都要：更新到 PCB → 检查这个元件的焊盘网络（单击焊盘看属性里的网络名）→ 重新跑 PCB DRC。</b> 原理图 DRC 是 0 不代表 PCB 没问题。</p>
+</aside>
+
+<p>三个问题都处理完，PCB 的 DRC 显示「<b>未发现问题</b>」，飞线 0 条。</p>
+
+<h2 id="B3.6-丝印给排针写上引脚名">B3.6 丝印：给排针写上引脚名<a class="anchor" href="#B3.6-丝印给排针写上引脚名">#</a></h2>
+
+<p>这块板子以后要插杜邦线接东西，排针旁边一定要写清楚每只脚是什么，否则每次都得翻原理图：</p>
+
+<ul>
+<li><b>顶层丝印</b>：排针左边从下到上写 <code>5V、3V3、GND、IO0、IO1、IO3、IO4、IO5</code>；两个按键上方写 <code>RST</code>、<code>BOOT</code>。字高 <b>0.9 mm</b>、线宽 <b>0.15 mm</b>（板子小，字也小；再小就印不清了）。</li>
+<li><b>底层丝印</b>：板子背面写作品名，例如“ESP32-C3 彩灯板 / Quickstart 案例 B”。</li>
+</ul>
+
+<p>放文字的方法和 <a href="a8.html#A8.2-写上作品名">A8.2</a> 一样。写底层文字时：</p>
+
+<ol class="steps">
+  <li>在底部图层快捷栏点「<b>底层丝印层</b>」，把当前层切过去</li>
+  <li>「放置」→「文本」，写好内容，放到板子上</li>
+  <li>选中这段文字，在右侧属性面板确认它在<b>底层丝印层</b>就行，<b>不用</b>手动去改「镜像」</li>
+</ol>
+
+<aside class="theory">
+<p><b>底层的字为什么在编辑器里看起来是反的？</b> 编辑器默认是“从正面往下看”。底层的字印在背面，你把板子翻过来看时左右会反过来，所以从正面看它必须是<b>反字</b>，翻过来才是正的。嘉立创EDA 会<b>自动</b>帮底层文字做这个镜像——你在底层丝印层正常输入文字，它在画布上就显示成反字。</p>
+<p>⚠️ 本教程实测踩过坑：我在属性里又手动把「镜像」设成了“是”，结果镜像了两次，从背面看反而是反字。<b>结论：底层文字保持默认，别手动镜像。</b>放好后用工具栏的「<b>翻转板子</b>」按钮从背面看一眼，字是正的就对了。</p>
+</aside>
+
+<figure class="shot"><img src="../img/ch1/b3-flip.png" alt="点工具栏「翻转板子」从背面看：底层丝印「ESP32-C3 彩灯板」是正着读的（再点一次翻回正面）" width="330" loading="lazy"><figcaption><span class="fig-no">图 -21</span>点工具栏「翻转板子」从背面看：底层丝印「ESP32-C3 彩灯板」是正着读的（再点一次翻回正面）</figcaption></figure>
+
+<aside class="warn">
+<p>文字整个都要落在板框<b>里面</b>，并且离板边留 0.5 mm 以上；超出板框的部分会被切掉。底层文字也不要压在底层的焊盘、过孔上。</p>
+</aside>
+
+<aside class="diy">
+<p>🎨 丝印是最能体现个性的地方：板名、你的名字、日期、版本号（V1.0）、一个小 Logo（<a href="a8.html#A8.3--放一个自己的-Logo">A8.3</a>）。彩灯旁边也可以写上 1、2、3，写程序时一眼就知道哪颗是第几颗。</p>
+</aside>
+
+<h2 id="B3.7-检查与-3D-预览">B3.7 检查与 3D 预览<a class="anchor" href="#B3.7-检查与-3D-预览">#</a></h2>
+
+<p>最后看一眼完整的板子，和 3D 预览（<a href="a9.html#A9.2-3D-预览">A9.2</a>）检查元件方向、排针位置、按键是不是好按：</p>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/ch1/b0-2d.png" alt="完成的 PCB（顶层 + 底层铺铜）" width="250" loading="lazy"><figcaption><span class="fig-no">图 -22</span>完成的 PCB（顶层 + 底层铺铜）</figcaption></figure>
+<figure class="shot"><img src="../img/ch1/b0-3d.png" alt="3D 预览（正面）" width="300" loading="lazy"><figcaption><span class="fig-no">图 -23</span>3D 预览（正面）</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/ch1/b3-drc-final.png" alt="最终 PCB DRC：①DRC检查完成，未发现问题" width="760" loading="lazy"><figcaption><span class="fig-no">图 -24</span>最终 PCB DRC：①DRC检查完成，未发现问题</figcaption></figure>
+
+<ul class="checklist">
+  <li><span>天线贴板边，下方有禁止区域（多层，禁止填充区域 / 导线 / 铺铜），铺铜在这里是挖空的</span></li>
+  <li><span>USB 插座口朝外、和板边对齐</span></li>
+  <li><span>D+ / D- 已设为差分对，并排走线；长度误差规则已按 USB 全速放宽</span></li>
+  <li><span>去耦电容紧挨模组、稳压芯片、每颗彩灯</span></li>
+  <li><span>飞线 0 条，PCB DRC 未发现问题</span></li>
+  <li><span>排针、按键旁边有丝印；底层文字是镜像的、没有超出板框</span></li>
+  <li><span>改过器件之后重新跑过 PCB DRC</span></li>
+</ul>
+
+<aside class="link">
+<p>差分对、等长调节、阻抗控制、自动布线的更多设置：<a href="../ch7/1.html">7.1：PCB 进阶</a>；禁止区域、铺铜管理器、缝合孔：<a href="../ch6/1.html">6.1</a>；天线、地平面这类布局经验：<a href="../ch14/1.html">第 14 章</a>。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch1/b2.html"><small>← 上一页</small>B-2 分模块画原理图</a><a class="next" href="../ch1/b4.html"><small>下一页 →</small>B-4 导出与 SMT 下单</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/widgets/ch1b.js"></script>
+</body>
+</html>

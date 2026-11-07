@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>6.5 实战：可调收纳盒 · Fusion 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch6/5" data-root="../" data-book="fusion">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">Fusion 教程<small>（原 Fusion 360）</small></a></div>
+  <span class="ver">基于 Autodesk Fusion 2705.1.30（个人版）</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-what" href="../ch0/1-what.html">0.1 3D 设计能做什么<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-fusion" href="../ch0/2-fusion.html">0.2 认识 Fusion<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-install" href="../ch0/3-install.html">0.3 安装、账号与许可<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 鼠标、触控板与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与视图操作<span class="chk">✓</span></a></li><li class="nav-sub">常用操作图鉴</li><li><a class="nav-link" data-id="ch1/1-sketch" href="../ch1/1-sketch.html">1.1 草图：在平面上画轮廓<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/2-shape" href="../ch1/2-shape.html">1.2 成形：把草图变成立体<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/3-modify" href="../ch1/3-modify.html">1.3 修改：在已有形状上加工<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/4-aid" href="../ch1/4-aid.html">1.4 辅助与检查<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/5-joint" href="../ch1/5-joint.html">1.5 零部件与联接<span class="chk">✓</span></a></li><li class="nav-sub">案例 · 折叠手机支架</li><li><a class="nav-link" data-id="ch1/p0" href="../ch1/p0.html">P0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p1" href="../ch1/p1.html">P1 新建设计与参数<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p2" href="../ch1/p2.html">P2 底座<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p3" href="../ch1/p3.html">P3 充电线槽（扫掠）<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p4" href="../ch1/p4.html">P4 靠背<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p5" href="../ch1/p5.html">P5 旋钮（旋转）<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p6" href="../ch1/p6.html">P6 螺丝与螺母<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p7" href="../ch1/p7.html">P7 刻字与外观<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p8" href="../ch1/p8.html">P8 联接与运动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p9" href="../ch1/p9.html">P9 检查与修改<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p10" href="../ch1/p10.html">P10 导出<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 三维设计基础知识</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 坐标系、平面与视图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 草图约束与自由度<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 参数化建模与时间轴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 实体、曲面、网格<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 零件、零部件与联接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 尺寸、公差与配合<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 3D 打印入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 其他加工方式<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 文件格式大全<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 读懂工程图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 材料常识<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与数据管理</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 首选项大全<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 界面定制与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 项目、文件与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/4" href="../ch3/4.html">3.4 分享与协作<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/5" href="../ch3/5.html">3.5 许可、离线与性能<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 草图完全手册</summary><ul><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 创建草图与选项板<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 绘图工具<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 修改工具<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 约束全集<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 引用已有几何<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/7" href="../ch4/7.html">4.7 导入 2D 素材<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/8" href="../ch4/8.html">4.8 3D 草图与排错<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 实体建模完全手册</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 拉伸进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 旋转、扫掠、放样进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 加强筋、凸雕、加厚<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/4" href="../ch5/4.html">5.4 基本体与螺旋<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/5" href="../ch5/5.html">5.5 孔与螺纹<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/6" href="../ch5/6.html">5.6 圆角与倒角进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/7" href="../ch5/7.html">5.7 抽壳与拔模<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/8" href="../ch5/8.html">5.8 阵列与镜像<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/9" href="../ch5/9.html">5.9 合并、分割与直接修改<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/10" href="../ch5/10.html">5.10 检验与分析<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/11" href="../ch5/11.html">5.11 插入外部素材<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/12" href="../ch5/12.html">5.12 塑料零件<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 6 章 · 参数化与设计修改</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 参数与表达式<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 时间轴全功能<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 设计意图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 报错与修复<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch6/5" href="../ch6/5.html">6.5 实战：可调收纳盒<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · 曲面建模</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 曲面是什么<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 创建曲面<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/3" href="../ch7/3.html">7.3 修改曲面<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/4" href="../ch7/4.html">7.4 曲面变实体与质量分析<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 造型（自由形态）</summary><ul><li><a class="nav-link" data-id="ch8/1" href="../ch8/1.html">8.1 造型环境<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/2" href="../ch8/2.html">8.2 创建形体<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/3" href="../ch8/3.html">8.3 编辑形状<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/4" href="../ch8/4.html">8.4 修改工具与完成造型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 9 章 · 钣金与激光切割</summary><ul><li><span class="nav-link todo">钣金与激光切割</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 网格与 STL</summary><ul><li><span class="nav-link todo">网格与 STL</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 装配、联接与运动</summary><ul><li><span class="nav-link todo">装配、联接与运动</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 外观与渲染</summary><ul><li><span class="nav-link todo">外观与渲染</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 动画与爆炸图</summary><ul><li><span class="nav-link todo">动画与爆炸图</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 工程图</summary><ul><li><span class="nav-link todo">工程图</span></li></ul></details><details class="nav-group"><summary>第 15 章 · 3D 打印全流程</summary><ul><li><span class="nav-link todo">3D 打印全流程</span></li></ul></details><details class="nav-group"><summary>第 16 章 · CAM 数控加工入门</summary><ul><li><span class="nav-link todo">CAM 数控加工入门</span></li></ul></details><details class="nav-group"><summary>第 17 章 · 仿真与衍生式设计</summary><ul><li><span class="nav-link todo">仿真与衍生式设计</span></li></ul></details><details class="nav-group"><summary>第 18 章 · 给电路板做外壳</summary><ul><li><span class="nav-link todo">给电路板做外壳</span></li></ul></details><details class="nav-group"><summary>第 19 章 · 脚本与插件</summary><ul><li><span class="nav-link todo">脚本与插件</span></li></ul></details><details class="nav-group"><summary>第 20 章 · 设计经验与常见问题</summary><ul><li><span class="nav-link todo">设计经验与常见问题</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表（中英对照）</span></li><li><span class="nav-link todo">常见问题</span></li><li><span class="nav-link todo">资源链接</span></li><li><span class="nav-link todo">文件下载</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">Fusion 教程</a> / 第 6 章 · 参数化与设计修改</div>
+    <article>
+      <h1>6.5 实战：可调收纳盒</h1>
+      <p class="lead">用这一章的方法做一个完全参数化的桌面收纳盒：长、宽、高、壁厚、格子数都是参数，改数字就能得到不同规格。</p>
+      <div class="meta-bar"><span>⏱ 约 40 分钟</span><span>✅ Fusion 2705.1.30 实测</span></div>
+      
+
+<h2 id="目标">目标<a class="anchor" href="#目标">#</a></h2>
+
+<div class="tabs">
+  <div class="tab-btns"><button type="button" class="on">120×80，3×2 格</button><button type="button">120×80，4×3 格</button><button type="button">200×80×25，5×2 格</button></div>
+  <div class="tab-pane on"><figure class="shot"><img src="../img/c6/vp-box-a.png" alt="默认参数" width="560" loading="lazy"><figcaption><span class="fig-no">图 6.5-1</span>默认参数</figcaption></figure></div>
+  <div class="tab-pane"><figure class="shot"><img src="../img/c6/vp-box-b.png" alt="只改 nx = 4、ny = 3" width="560" loading="lazy"><figcaption><span class="fig-no">图 6.5-2</span>只改 nx = 4、ny = 3</figcaption></figure></div>
+  <div class="tab-pane"><figure class="shot"><img src="../img/c6/vp-box-c.png" alt="改 box_l = 200、box_h = 25、nx = 5" width="560" loading="lazy"><figcaption><span class="fig-no">图 6.5-3</span>改 box_l = 200、box_h = 25、nx = 5</figcaption></figure></div>
+</div>
+
+<p>三张图是同一个设计，只改了参数窗口里的数字。</p>
+
+<h2 id="第-1-步参数">第 1 步：参数<a class="anchor" href="#第-1-步参数">#</a></h2>
+
+<figure class="shot"><img src="../img/c6/box-params.png" alt="6 个用户参数" width="900" loading="lazy"><figcaption><span class="fig-no">图 6.5-4</span>6 个用户参数</figcaption></figure>
+
+<table>
+<thead><tr><th>名称</th><th>表达式</th><th>含义</th></tr></thead>
+<tbody>
+<tr><td><code>box_l</code></td><td>120 mm</td><td>长</td></tr>
+<tr><td><code>box_w</code></td><td>80 mm</td><td>宽</td></tr>
+<tr><td><code>box_h</code></td><td>40 mm</td><td>高</td></tr>
+<tr><td><code>wall</code></td><td>2 mm</td><td>壁厚</td></tr>
+<tr><td><code>nx</code></td><td>3（无单位）</td><td>长度方向分几格</td></tr>
+<tr><td><code>ny</code></td><td>2（无单位）</td><td>宽度方向分几格</td></tr>
+</tbody>
+</table>
+
+<h2 id="第-2-步外形和抽壳">第 2 步：外形和抽壳<a class="anchor" href="#第-2-步外形和抽壳">#</a></h2>
+
+<ol class="steps">
+  <li>XY 平面画矩形，一个角和原点重合，长、宽分别标 <code>box_l</code>、<code>box_w</code>。</li>
+  <li>拉伸 <code>box_h</code>。</li>
+  <li>抽壳：选顶面，内侧厚度 <code>wall</code>。</li>
+</ol>
+
+<h2 id="第-3-步一块横向隔板">第 3 步：一块横向隔板<a class="anchor" href="#第-3-步一块横向隔板">#</a></h2>
+
+<ol class="steps">
+  <li>「构造 → 偏移平面」：从 YZ 平面偏移 <code>box_l / nx</code>，这是第一块隔板的位置。</li>
+  <li>在这个平面上「创建草图」。草图里会自动出现一个小点，那是原点“投影”到这个平面上的位置，不用自己投影（看不到的话，在草图选项板里确认勾选了「点」）。</li>
+  <li>「两点矩形」：第一点点在这个原点投影上（鼠标靠近会吸附，自动加“重合”），第二点往盒子里面拉。宽度标 <code>box_w</code>，高度标 <code>box_h</code>。<b>这两个尺寸一定要用参数</b>，否则盒子改大改小时隔板不跟着变（6.3）。</li>
+  <li>拉伸：方向「对称」，距离 <code>wall</code>，操作「合并」。</li>
+</ol>
+
+<h2 id="第-4-步阵列出其余隔板">第 4 步：阵列出其余隔板<a class="anchor" href="#第-4-步阵列出其余隔板">#</a></h2>
+
+<ol class="steps">
+  <li>选中隔板的拉伸特征，「矩形阵列」，方向选 X 轴。</li>
+  <li>数量填 <code>nx - 1</code>，间距填 <code>box_l / nx</code>。</li>
+</ol>
+
+<aside class="theory">
+<p><b>🧠 为什么是 nx − 1？</b>分 3 格只需要 2 块隔板。第一块隔板在 1/3 处，第二块在 2/3 处，间距都是 box_l / nx。</p>
+</aside>
+
+<h2 id="第-5-步纵向隔板">第 5 步：纵向隔板<a class="anchor" href="#第-5-步纵向隔板">#</a></h2>
+
+<p>同样的方法：从 XZ 平面偏移 <code>box_w / ny</code> 建平面，画矩形（长 <code>box_l</code>、高 <code>box_h</code>），对称拉伸 <code>wall</code>，沿 Y 轴阵列 <code>ny - 1</code> 个，间距 <code>box_w / ny</code>。</p>
+
+<aside class="warn">
+<p><b>偏移方向</b>：实测 XZ 平面往正方向偏移才是盒子里面，写成负数隔板会跑到盒子外面。做完转一圈检查一下。</p>
+<p><b>格数至少为 2</b>：nx = 1 时阵列数量 nx − 1 = 0，Fusion 不接受，第一块隔板会留在盒子的另一头。想要“不分格”，在时间轴上把隔板和阵列抑制掉。</p>
+</aside>
+
+<h2 id="第-6-步试一试">第 6 步：试一试<a class="anchor" href="#第-6-步试一试">#</a></h2>
+
+<p>打开参数窗口，改 nx、ny、box_l、box_h，看模型能不能正确更新。都没问题，就是一个真正参数化的模型。</p>
+
+<aside class="diy">
+<p><b>🎨 自由发挥</b>：加一个参数 <code>r</code> 给所有内角倒圆（方便清洁）；加一个盖子作为第二个零部件；把 nx、ny 改成“配置”，一个文件同时保存几种规格（「配置」菜单，需要的话可以自己探索）。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch6/4.html"><small>← 上一页</small>6.4 报错与修复</a><a class="next" href="../ch7/1.html"><small>下一页 →</small>7.1 曲面是什么</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

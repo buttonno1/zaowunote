@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2.9 PCB 基础 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch2/9" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 2 章 · 前置知识补全</div>
+    <article>
+      <h1>2.9 PCB 基础</h1>
+      <p class="lead">一块 PCB 是由铜、基材、阻焊、丝印一层层叠起来的。这一节把每一层是什么、焊盘和过孔是什么、板厚铜厚怎么选、单面 / 双面 / 多层板有什么区别讲清楚。</p>
+      <div class="meta-bar"><span>⏱ 约 20 分钟</span><span>🎯 零基础</span><span>🖱️ 含 PCB 层叠爆炸图（与 A-4 共用）</span></div>
+      
+
+<h2 id="一块双面板的三明治结构">一块双面板的“三明治”结构<a class="anchor" href="#一块双面板的三明治结构">#</a></h2>
+
+<p>先复习一下 <a href="../ch1/a4.html#A4.1-电路板是一层一层叠起来的">A-4.1</a> 的层叠图。点每一层，看看它是什么、对应编辑器里的几号图层、导出成哪个 Gerber 文件：</p>
+
+<div class="widget"><div class="widget-title">PCB 层叠爆炸图（双面板）</div>
+<div class="stack-widget"></div>
+<div class="widget-hint">图中厚度是夸张画的。真实的 1 oz 铜只有约 0.035 mm 厚，基材默认 1.6 mm。</div>
+</div>
+
+<table>
+<thead><tr><th>层</th><th>材料</th><th>作用</th><th>能不能自己画</th></tr></thead>
+<tbody>
+<tr><td><b>丝印</b> Silkscreen</td><td>油墨（通常白色）</td><td>文字、位号、Logo，给人看的</td><td>能，丝印层上随便写（<a href="../ch1/a8.html">A-8</a>）</td></tr>
+<tr><td><b>阻焊</b> Solder Mask</td><td>油墨（绿 / 蓝 / 黑 / 白 / 紫……）</td><td>盖住铜线防氧化、防短路；焊盘处“开窗”</td><td>一般不用画，封装自带开窗</td></tr>
+<tr><td><b>铜层</b> Copper</td><td>铜箔</td><td>导线、焊盘、铺铜——电流走的地方</td><td>能，布线、铺铜都画在这里</td></tr>
+<tr><td><b>基材</b> Substrate</td><td>FR-4（玻璃纤维 + 环氧树脂）</td><td>支撑、绝缘</td><td>不能，下单时选板材和板厚</td></tr>
+</tbody>
+</table>
+
+<h2 id="焊盘-Pad">焊盘 Pad<a class="anchor" href="#焊盘-Pad">#</a></h2>
+
+<p><b>焊盘</b>是铜层上专门用来焊接元件引脚的铜块，阻焊在这里开窗把铜露出来。焊盘的形状、大小、间距由<b>封装</b>决定（<a href="5.html">2.5</a>）：</p>
+
+<ul>
+<li><b>贴片焊盘（SMD Pad）</b>：只在顶层（或底层）一面，是一块平平的铜。0603 电阻的封装就是两个小长方形焊盘。</li>
+<li><b>插件焊盘（THT Pad）</b>：中间有一个穿透整块板子的孔，孔壁镀铜，上下两面都有一圈铜环。排针、直插元件用这种。在嘉立创EDA 里它属于「12 多层」，因为它同时存在于所有铜层。</li>
+</ul>
+
+<h2 id="过孔-Via">过孔 Via<a class="anchor" href="#过孔-Via">#</a></h2>
+
+<p><b>过孔</b>是连接不同铜层的小孔，孔壁镀了铜，导线在顶层走到这里，穿过去在底层接着走——像楼层之间的<b>电梯</b>。它和插件焊盘很像，区别是过孔不用来焊元件，通常很小，表面还盖着阻焊。</p>
+
+<figure class="shot"><img src="../img/ch1/a6-auto-done.png" alt="案例 A 自动布线的结果：红色是顶层导线，蓝色是底层导线，小圆圈就是过孔（共 3 个）" width="420" loading="lazy"><figcaption><span class="fig-no">图 2.9-1</span>案例 A 自动布线的结果：红色是顶层导线，蓝色是底层导线，小圆圈就是过孔（共 3 个）</figcaption></figure>
+
+<ul>
+<li>嘉立创EDA 默认过孔：外直径 0.61 mm、内直径（钻孔）0.305 mm（<a href="../ch1/a6.html#A6.1-先看一眼设计规则">A-6.1 设计规则</a>）。</li>
+<li>普通双面板的过孔都是从顶层打穿到底层的<b>通孔</b>。多层板还有只打穿一部分层的<b>盲孔、埋孔</b>，工艺更复杂、更贵，新手用不到。</li>
+<li>过孔本身有一点电阻和电感，<b>大电流的线、高速信号线尽量少换层</b>；铺铜时常在 GND 铜皮上打一些“缝合过孔”，把上下两层的 GND 连得更牢（案例 B 模组中间的 GND 散热焊盘就用了 4 个过孔连到底层 GND）。</li>
+</ul>
+
+<h2 id="板厚和铜厚">板厚和铜厚<a class="anchor" href="#板厚和铜厚">#</a></h2>
+
+<table>
+<thead><tr><th>参数</th><th>常见选择</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td><b>板厚</b></td><td><b>1.6 mm</b>（默认）、1.2、1.0、0.8 mm……</td><td>1.6 mm 是行业最常用的厚度，结实、便宜。做可穿戴、要塞进薄外壳时可以选薄一点。Type-C 等插座对板厚有要求时看它的规格书</td></tr>
+<tr><td><b>铜厚</b></td><td><b>1 oz</b>（外层默认）、2 oz</td><td>oz（盎司）是指每平方英尺铜箔的重量，<b>1 oz ≈ 35 µm（0.035 mm）厚</b>。铜越厚能过的电流越大（<a href="10.html">2.10</a>），也更贵</td></tr>
+</tbody>
+</table>
+
+<p>这两项都是<b>下单时选</b>的，编辑器里不用设置（<a href="../ch1/a10.html#PCB-工艺">A-10 下单页 PCB 工艺</a>）。</p>
+
+<h2 id="单面板双面板多层板">单面板、双面板、多层板<a class="anchor" href="#单面板双面板多层板">#</a></h2>
+
+<svg viewBox="0 0 760 210" class="ref-svg" style="background:#fff;width:100%;max-width:760px" aria-label="单面板双面板四层板剖面">
+  <g font-family="-apple-system,PingFang SC,sans-serif" font-size="13">
+    <text x="115" y="24" text-anchor="middle" font-weight="700">单面板</text>
+    <rect x="40" y="70" width="150" height="8" fill="#d9822b"/><rect x="40" y="78" width="150" height="50" fill="#e9d8a6"/>
+    <text x="115" y="160" text-anchor="middle" fill="#495057">只有一面有铜</text>
+    <text x="370" y="24" text-anchor="middle" font-weight="700">双面板（本教程）</text>
+    <rect x="295" y="70" width="150" height="8" fill="#d9822b"/><rect x="295" y="78" width="150" height="50" fill="#e9d8a6"/><rect x="295" y="128" width="150" height="8" fill="#d9822b"/>
+    <rect x="364" y="70" width="12" height="66" fill="#fff"/><rect x="362" y="70" width="3" height="66" fill="#b8661c"/><rect x="375" y="70" width="3" height="66" fill="#b8661c"/>
+    <text x="370" y="160" text-anchor="middle" fill="#495057">两面有铜，用过孔连通</text>
+    <text x="575" y="24" text-anchor="middle" font-weight="700">四层板</text>
+    <rect x="500" y="50" width="150" height="7" fill="#d9822b"/><rect x="500" y="57" width="150" height="20" fill="#e9d8a6"/>
+    <rect x="500" y="77" width="150" height="7" fill="#868e96"/><rect x="500" y="84" width="150" height="36" fill="#f1e3bb"/>
+    <rect x="500" y="120" width="150" height="7" fill="#e8590c"/><rect x="500" y="127" width="150" height="20" fill="#e9d8a6"/><rect x="500" y="147" width="150" height="7" fill="#d9822b"/>
+    <g font-size="11" fill="#495057"><text x="656" y="57">L1 顶层：信号</text><text x="656" y="84">L2：GND 平面</text><text x="656" y="127">L3：电源平面</text><text x="656" y="154">L4 底层：信号</text></g>
+    <text x="575" y="180" text-anchor="middle" fill="#495057">中间还夹着两层铜（常见安排之一）</text>
+  </g>
+</svg>
+
+<ul>
+<li><b>单面板</b>：最便宜，但布线全挤在一面，线交叉时只能用跳线。现在打样价格差不多，很少专门做单面板。</li>
+<li><b>双面板</b>：两面走线，过孔换层，适合绝大多数简单项目。<b>本教程的两个案例都是双面板</b>，嘉立创 2 层板打样很便宜（案例 A 5 片约 ¥20）。</li>
+<li><b>多层板</b>（4、6、8 层……）：中间的铜层通常做成完整的 GND 平面和电源平面，信号走在外层。好处是抗干扰能力强、布线空间大，适合高速信号、复杂芯片（BGA）、射频。层数越多越贵。</li>
+</ul>
+
+<aside class="note">
+<p>在嘉立创EDA 里，多层板的层数和每层的用途、厚度在“层叠管理”相关设置里配置，四层板的布线、平面分割等属于 <a href="../ch7/1.html">7.1：PCB 进阶</a> 的内容。做第一块板子时用默认的双面板就好。</p>
+</aside>
+
+<h2 id="编辑器里还有一些不生产的层">编辑器里还有一些“不生产”的层<a class="anchor" href="#编辑器里还有一些不生产的层">#</a></h2>
+
+<p>PCB 编辑器的图层面板里有二三十个图层，但真正被做到板子上的只有铜、阻焊、丝印、板框和钻孔这几类。锡膏层用来做钢网（<a href="12.html">2.12</a>）；文档层、飞线层、元件外形层等只是帮你看清楚设计，不会被生产出来。完整列表见 <a href="../ch1/a4.html#A4.2-编辑器里的图层面板">A-4.2 图层面板</a>。</p>
+
+<div class="quiz">
+  <div class="q">PCB 上什么东西负责把顶层和底层的导线连起来？</div>
+  <button type="button" class="opt">丝印</button>
+  <button type="button" class="opt" data-right>过孔</button>
+  <button type="button" class="opt">阻焊</button>
+  <div class="explain">✅ 过孔是孔壁镀铜的小孔，像层与层之间的电梯。</div>
+</div>
+
+<div class="quiz">
+  <div class="q">“1 oz 铜厚”大约是多厚？</div>
+  <button type="button" class="opt">1 mm</button>
+  <button type="button" class="opt">0.35 mm</button>
+  <button type="button" class="opt" data-right>0.035 mm</button>
+  <div class="explain">✅ 1 oz ≈ 35 µm = 0.035 mm，比一张纸还薄。</div>
+</div>
+
+<h2 id="回到哪里继续">回到哪里继续<a class="anchor" href="#回到哪里继续">#</a></h2>
+
+<ul>
+<li>正在认识图层：回到 <a href="../ch1/a4.html#A4.2-编辑器里的图层面板">A-4.2 编辑器里的图层面板</a>。</li>
+<li>正在布线：回到 <a href="../ch1/a6.html">A-6 布线</a>。</li>
+<li>继续：<a href="10.html">2.10 走线与间距</a>。</li>
+</ul>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch2/8.html"><small>← 上一页</small>2.8 单片机入门</a><a class="next" href="../ch2/10.html"><small>下一页 →</small>2.10 走线与间距</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/widgets/ch1.js"></script><script src="../assets/js/widgets/ch2.js"></script>
+</body>
+</html>

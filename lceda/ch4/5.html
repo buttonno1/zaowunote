@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4.5 检查与 PCB 联动 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch4/5" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 4 章 · 原理图设计</div>
+    <article>
+      <h1>4.5 检查与 PCB 联动</h1>
+      <p class="lead">画完原理图要做两件事：让软件按规则检查一遍，以及把它和 PCB 同步。这一页讲原理图设计规则与 DRC、分配位号、转 PCB / 从 PCB 导入、交叉选择、网络类与差分对，以及更新工程库。</p>
+      <div class="meta-bar"><span>⏱ 约 25 分钟</span><span>📋 含设计规则、分配位号、网络类管理器说明表</span></div>
+      
+
+<h2 id="检查">检查<a class="anchor" href="#检查">#</a></h2>
+
+<h3 id="原理图设计规则设计--设计规则">原理图设计规则（设计 → 设计规则…）<a class="anchor" href="#原理图设计规则设计--设计规则">#</a></h3>
+
+<figure class="shot"><img src="../img/modB/dlg-rules.png" alt="原理图设计规则：①分类标签：网络 / 元件 / 复用模块 / 连接 ②每条规则的消息等级" width="609" loading="lazy"><figcaption><span class="fig-no">图 4.5-1</span>原理图设计规则：①分类标签：网络 / 元件 / 复用模块 / 连接 ②每条规则的消息等级</figcaption></figure>
+
+<p>这里列出 DRC 会检查的每一条规则，以及违反时报什么等级。等级从严到松：<b>致命错误 → 错误 → 警告 → 提醒</b>。致命错误必须改，警告要看情况。实测「网络」分类下的部分规则：</p>
+
+<table>
+<thead><tr><th>规则（原文）</th><th>等级</th><th>大白话</th></tr></thead>
+<tbody>
+<tr><td>网络名需要符合规则：中文、英文、数字与可见的 ASCII 字符</td><td>致命错误</td><td>网络名别用奇怪的符号</td></tr>
+<tr><td>总线名需要符合规则…如 BUS[0:5]</td><td>错误</td><td>总线名要写成 名字[起:止]</td></tr>
+<tr><td>元件相同引脚编号的引脚需要连接到同一个网络</td><td>致命错误</td><td>同一个编号的两个脚（如 USB 的两个 VBUS）必须接同一个网络</td></tr>
+<tr><td>网络标识，网络端口需要有名称</td><td>错误</td><td>不能放没名字的端口</td></tr>
+<tr><td>全局网络不应该短接</td><td>警告</td><td>VCC 和 GND 被一根线连上了 = 短路</td></tr>
+<tr><td>引脚的连接端点不能重叠且未连接</td><td>致命错误</td><td>两个引脚叠在一起却没连线——多半是放歪了</td></tr>
+<tr><td>导线不能是游离导线（未连接任何元件引脚）</td><td>警告</td><td>画了一根两头都没接东西的线</td></tr>
+<tr><td>导线不能是独立网络的导线（仅连接了一个元件引脚）</td><td>警告</td><td>线只接了一只脚，另一头悬空</td></tr>
+<tr><td>网络端口/网络标识/跨页连接标识名称需要与所连接导线的名称一致</td><td>警告</td><td>标签名和导线名对不上</td></tr>
+<tr><td>网络标签、网络标识、网络端口、短接符、差分对标识需要连接导线或总线</td><td>提醒</td><td>标签放在空白处没贴到线上，等于没放</td></tr>
+<tr><td>一组导线上只需要一个网络名称</td><td>警告</td><td>同一根线起了两个名字</td></tr>
+<tr><td>差分对必须成对出现</td><td>错误</td><td>只标了 D+ 没标 D-</td></tr>
+</tbody>
+</table>
+
+<p>每条规则前的勾可以取消（不检查），右边下拉可以改等级。底部有「恢复默认」「立即检查」「确认」。<b>新手保持默认</b>。</p>
+
+<h3 id="检查-DRC-与常见报错">检查 DRC 与常见报错<a class="anchor" href="#检查-DRC-与常见报错">#</a></h3>
+
+<p>「设计」→「检查DRC」，结果在底部 DRC 面板（<a href="../ch1/a2.html">A-2</a>、<a href="../ch1/b2.html">B-2</a> 都实际做过）。两个案例里真实遇到过的：</p>
+
+<table>
+<thead><tr><th>报错</th><th>原因</th><th>修法</th></tr></thead>
+<tbody>
+<tr><td>致命错误：元件 R1 缺少“封装”属性</td><td>用了没有封装的器件（如快捷器件、某些 API 放的元件）</td><td>用器件管理器换成带封装的真实器件（<a href="1.html">4.1</a>）</td></tr>
+<tr><td>警告：发现元件引脚悬空，建议放置非连接标识</td><td>有引脚没接任何东西</td><td>确实不用就打 ×（<a href="2.html">4.2</a>）</td></tr>
+<tr><td>警告：元件的属性与供应商编号不匹配，建议使用器件标准化</td><td>元件属性和立创商城数据对不上</td><td>做器件标准化；案例 B 的 LED4 例外（见 <a href="../ch1/b3.html">B-3</a>）</td></tr>
+<tr><td>信息：元件的引脚与焊盘没有对应</td><td>如 USB 外壳固定脚没有对应的原理图引脚</td><td>一般无害</td></tr>
+</tbody>
+</table>
+
+<h3 id="分配位号设计--分配位号">分配位号（设计 → 分配位号…）<a class="anchor" href="#分配位号设计--分配位号">#</a></h3>
+
+<figure class="shot"><img src="../img/modB/dlg-annotate.png" alt="分配位号" width="571" loading="lazy"><figcaption><span class="fig-no">图 4.5-2</span>分配位号</figcaption></figure>
+
+<div class="table-title">分配位号</div><table class=""><thead><tr><th>选项</th><th>含义</th><th>建议</th></tr></thead><tbody><tr><td>操作</td><td>分配位号（可勾“保留已有位号”）/ 清除位号 / 还原为器件模板位号（R?、C?）</td><td>分配位号 + 不保留 = 全部重排</td></tr><tr><td>范围</td><td>当前原理图 / 当前图页 / 当前图页选中元件</td><td>当前原理图</td></tr><tr><td>层次图</td><td>分配实例位号（层次图里同一模块多次使用时）</td><td>默认</td></tr><tr><td>BOM 中同组元件连续分配</td><td>同型号的元件编号连在一起（10kΩ 都是 R1～R5）</td><td>看习惯</td></tr><tr><td>顺序</td><td>先左后右再从上到下 / 先上后下再从左到右 等 4 种，旁边有图示</td><td>先左右后上下</td></tr><tr><td>位号规则</td><td>添加图页编号前缀（1R1、2R1）、自定义起始编号</td><td>多页时可开</td></tr></tbody></table>
+
+<aside class="warn">
+<p>PCB 画好以后再重新分配位号，原理图和 PCB 的位号会对不上，需要再「更新到 PCB」。<b>建议画完原理图、转 PCB 之前做一次就好</b>。</p>
+</aside>
+
+<h3 id="属性清单">属性清单<a class="anchor" href="#属性清单">#</a></h3>
+
+<p>底部面板的「属性清单」标签：所有元件的属性列成一张大表（位号、值、封装、制造商、供应商编号…），可以像 Excel 一样逐格检查、直接修改。交作业前用来核对 BOM 很方便。</p>
+
+<h2 id="与-PCB-联动">与 PCB 联动<a class="anchor" href="#与-PCB-联动">#</a></h2>
+
+<table>
+<thead><tr><th>功能</th><th>位置</th><th>做什么</th></tr></thead>
+<tbody>
+<tr><td>更新/转换原理图到 PCB</td><td>设计菜单，<span class="keys"><kbd>⌥</kbd><kbd>I</kbd></span></td><td>把原理图的元件和连接送到 PCB（<a href="../ch1/a3.html">A-3</a>）。改了原理图以后再做一次，PCB 只会增减变化的部分</td></tr>
+<tr><td>从 PCB 导入变更</td><td>设计菜单</td><td>反过来：PCB 里改了位号、换了封装，同步回原理图</td></tr>
+<tr><td>交叉选择 <span class="keys"><kbd>⇧</kbd><kbd>X</kbd></span></td><td>设计菜单</td><td>在原理图选中元件，切到 PCB 时它也被选中（反之亦然），快速找到元件在板上的位置</td></tr>
+<tr><td>交叉选择模式</td><td>设计菜单（可勾选）</td><td>打开后两边实时联动选中</td></tr>
+<tr><td>布局传递 <span class="keys"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>X</kbd></span></td><td>设计菜单</td><td>按原理图里元件的相对位置，在 PCB 上把选中的元件摆成同样的布局，省得一个个拖。需要先选中元件</td></tr>
+<tr><td>PCB 设计规则…</td><td>设计菜单</td><td>在原理图里就能打开 PCB 的设计规则（线宽、间距…）</td></tr>
+<tr><td>网络类管理器…</td><td>设计菜单</td><td>见下</td></tr>
+<tr><td>差分对管理器… / 等长网络组管理器…</td><td>设计菜单</td><td>设置差分对（<a href="../ch1/b3.html">案例 B</a> 在 PCB 里做过）、要求等长的一组网络</td></tr>
+<tr><td>更新工程库…</td><td>设计菜单</td><td>见下</td></tr>
+<tr><td>重置元件唯一 ID…</td><td>设计菜单</td><td>复制粘贴导致元件 ID 重复时用（日志里会提示“唯一 ID 重复”）</td></tr>
+</tbody>
+</table>
+
+<h3 id="网络类管理器">网络类管理器<a class="anchor" href="#网络类管理器">#</a></h3>
+
+<figure class="shot"><img src="../img/modB/dlg-netclass.png" alt="" width="636" loading="lazy"><figcaption><span class="fig-no">图 4.5-3</span></figcaption></figure> 移到右边“已选择”">
+
+<p><b>网络类</b>就是给一批网络起个组名，比如把 VBUS、3V3、VLED 放进“电源”类。然后在 PCB 设计规则里对“电源”类统一设置线宽 0.5 mm，就不用一根根改了。</p>
+
+<h3 id="更新工程库">更新工程库<a class="anchor" href="#更新工程库">#</a></h3>
+
+<figure class="shot"><img src="../img/modB/dlg-updlib.png" alt="更新工程库前的警告" width="400" loading="lazy"><figcaption><span class="fig-no">图 4.5-4</span>更新工程库前的警告</figcaption></figure>
+
+<p>把工程库里的器件更新成系统库里的最新版本。⚠️ 会<b>清空历史记录</b>，之前的操作没法撤销了——更新前先保存，最好先建一个版本节点（<a href="../ch3/2.html">3.2</a>）。</p>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch4/4.html"><small>← 上一页</small>4.4 多页、层次图与装配变量</a><a class="next" href="../ch4/6.html"><small>下一页 →</small>4.6 工具、输出与视图</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

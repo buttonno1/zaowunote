@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P6 螺丝与螺母 · Fusion 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch1/p6" data-root="../" data-book="fusion">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">Fusion 教程<small>（原 Fusion 360）</small></a></div>
+  <span class="ver">基于 Autodesk Fusion 2705.1.30（个人版）</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-what" href="../ch0/1-what.html">0.1 3D 设计能做什么<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-fusion" href="../ch0/2-fusion.html">0.2 认识 Fusion<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-install" href="../ch0/3-install.html">0.3 安装、账号与许可<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 鼠标、触控板与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 1 章 · Quickstart</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与视图操作<span class="chk">✓</span></a></li><li class="nav-sub">常用操作图鉴</li><li><a class="nav-link" data-id="ch1/1-sketch" href="../ch1/1-sketch.html">1.1 草图：在平面上画轮廓<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/2-shape" href="../ch1/2-shape.html">1.2 成形：把草图变成立体<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/3-modify" href="../ch1/3-modify.html">1.3 修改：在已有形状上加工<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/4-aid" href="../ch1/4-aid.html">1.4 辅助与检查<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/5-joint" href="../ch1/5-joint.html">1.5 零部件与联接<span class="chk">✓</span></a></li><li class="nav-sub">案例 · 折叠手机支架</li><li><a class="nav-link" data-id="ch1/p0" href="../ch1/p0.html">P0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p1" href="../ch1/p1.html">P1 新建设计与参数<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p2" href="../ch1/p2.html">P2 底座<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p3" href="../ch1/p3.html">P3 充电线槽（扫掠）<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p4" href="../ch1/p4.html">P4 靠背<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p5" href="../ch1/p5.html">P5 旋钮（旋转）<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch1/p6" href="../ch1/p6.html">P6 螺丝与螺母<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p7" href="../ch1/p7.html">P7 刻字与外观<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p8" href="../ch1/p8.html">P8 联接与运动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p9" href="../ch1/p9.html">P9 检查与修改<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p10" href="../ch1/p10.html">P10 导出<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 三维设计基础知识</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 坐标系、平面与视图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 草图约束与自由度<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 参数化建模与时间轴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 实体、曲面、网格<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 零件、零部件与联接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 尺寸、公差与配合<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 3D 打印入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 其他加工方式<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 文件格式大全<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 读懂工程图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 材料常识<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与数据管理</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 首选项大全<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 界面定制与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 项目、文件与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/4" href="../ch3/4.html">3.4 分享与协作<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/5" href="../ch3/5.html">3.5 许可、离线与性能<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 草图完全手册</summary><ul><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 创建草图与选项板<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 绘图工具<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 修改工具<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 约束全集<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 引用已有几何<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/7" href="../ch4/7.html">4.7 导入 2D 素材<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/8" href="../ch4/8.html">4.8 3D 草图与排错<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 实体建模完全手册</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 拉伸进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 旋转、扫掠、放样进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 加强筋、凸雕、加厚<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/4" href="../ch5/4.html">5.4 基本体与螺旋<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/5" href="../ch5/5.html">5.5 孔与螺纹<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/6" href="../ch5/6.html">5.6 圆角与倒角进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/7" href="../ch5/7.html">5.7 抽壳与拔模<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/8" href="../ch5/8.html">5.8 阵列与镜像<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/9" href="../ch5/9.html">5.9 合并、分割与直接修改<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/10" href="../ch5/10.html">5.10 检验与分析<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/11" href="../ch5/11.html">5.11 插入外部素材<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/12" href="../ch5/12.html">5.12 塑料零件<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · 参数化与设计修改</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 参数与表达式<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 时间轴全功能<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 设计意图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 报错与修复<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/5" href="../ch6/5.html">6.5 实战：可调收纳盒<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · 曲面建模</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 曲面是什么<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 创建曲面<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/3" href="../ch7/3.html">7.3 修改曲面<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/4" href="../ch7/4.html">7.4 曲面变实体与质量分析<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 造型（自由形态）</summary><ul><li><a class="nav-link" data-id="ch8/1" href="../ch8/1.html">8.1 造型环境<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/2" href="../ch8/2.html">8.2 创建形体<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/3" href="../ch8/3.html">8.3 编辑形状<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/4" href="../ch8/4.html">8.4 修改工具与完成造型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 9 章 · 钣金与激光切割</summary><ul><li><span class="nav-link todo">钣金与激光切割</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 网格与 STL</summary><ul><li><span class="nav-link todo">网格与 STL</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 装配、联接与运动</summary><ul><li><span class="nav-link todo">装配、联接与运动</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 外观与渲染</summary><ul><li><span class="nav-link todo">外观与渲染</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 动画与爆炸图</summary><ul><li><span class="nav-link todo">动画与爆炸图</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 工程图</summary><ul><li><span class="nav-link todo">工程图</span></li></ul></details><details class="nav-group"><summary>第 15 章 · 3D 打印全流程</summary><ul><li><span class="nav-link todo">3D 打印全流程</span></li></ul></details><details class="nav-group"><summary>第 16 章 · CAM 数控加工入门</summary><ul><li><span class="nav-link todo">CAM 数控加工入门</span></li></ul></details><details class="nav-group"><summary>第 17 章 · 仿真与衍生式设计</summary><ul><li><span class="nav-link todo">仿真与衍生式设计</span></li></ul></details><details class="nav-group"><summary>第 18 章 · 给电路板做外壳</summary><ul><li><span class="nav-link todo">给电路板做外壳</span></li></ul></details><details class="nav-group"><summary>第 19 章 · 脚本与插件</summary><ul><li><span class="nav-link todo">脚本与插件</span></li></ul></details><details class="nav-group"><summary>第 20 章 · 设计经验与常见问题</summary><ul><li><span class="nav-link todo">设计经验与常见问题</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表（中英对照）</span></li><li><span class="nav-link todo">常见问题</span></li><li><span class="nav-link todo">资源链接</span></li><li><span class="nav-link todo">文件下载</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">Fusion 教程</a> / 第 1 章 · Quickstart</div>
+    <article>
+      <h1>P6 螺丝与螺母</h1>
+      <p class="lead">螺丝和螺母是“标准件”，不用自己设计，可以直接从 Fusion 自带的零件目录里拿，也可以自己画一个简化的。最后用镜像把右边的旋钮、螺丝、螺母复制到左边。</p>
+      <div class="meta-bar"><span>⏱ 约 20 分钟</span><span>✅ Fusion 2705.1.30 实测</span></div>
+      
+
+<h2 id="方法-A从-McMaster-Carr-插入">方法 A：从 McMaster-Carr 插入<a class="anchor" href="#方法-A从-McMaster-Carr-插入">#</a></h2>
+
+<p>McMaster-Carr 是一家美国的五金零件商，Fusion 内置了它的在线目录，里面的螺丝、螺母、轴承都有现成的 3D 模型。</p>
+
+<ol class="steps">
+  <li>激活根，「插入 ▾ → <b>插入 McMaster-Carr 零部件</b>」。</li>
+</ol>
+
+<figure class="shot"><img src="../img/gal/menu-插入.png" alt="「插入」菜单：插入紧固件 / 含联接复制 / 插入衍生对象 / 插入 McMaster-Carr 零部件 等" width="320" loading="lazy"><figcaption><span class="fig-no">图 P6-1</span>「插入」菜单：插入紧固件 / 含联接复制 / 插入衍生对象 / 插入 McMaster-Carr 零部件 等</figcaption></figure>
+
+<ol class="steps" start="2">
+  <li value="2">先弹出一个“将转至外部网站”的提示，点「确定」。</li>
+  <li value="3">目录窗口打开后，在搜索框里输入 <code>M4 hex head screw</code>，从下拉建议里选一项。</li>
+  <li value="4">左侧用「Thread Size（螺纹规格）」筛选 M4，「Length（长度）」选 20 mm，点进具体零件，选 3D STEP 格式插入。螺母搜 <code>M4 hex nut</code>。</li>
+</ol>
+
+<figure class="shot"><img src="../img/case/mcm-warn.png" alt="提示：这个功能会打开外部网站" width="400" loading="lazy"><figcaption><span class="fig-no">图 P6-2</span>提示：这个功能会打开外部网站</figcaption></figure>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/case/mcm-1.png" alt="目录首页：按分类浏览（Fastening &amp; Joining 是紧固件）" width="480" loading="lazy"><figcaption><span class="fig-no">图 P6-3</span>目录首页：按分类浏览（Fastening & Joining 是紧固件）</figcaption></figure>
+<figure class="shot"><img src="../img/case/mcm-2.png" alt="搜索结果：左边按螺纹规格、长度筛选" width="480" loading="lazy"><figcaption><span class="fig-no">图 P6-4</span>搜索结果：左边按螺纹规格、长度筛选</figcaption></figure>
+</div>
+
+<aside class="note">
+<p>目录是英文网站，需要联网。插入的零件会作为一个新零部件出现在浏览器里，再用移动或联接把它放到铰链上。「插入 → 插入紧固件」是 Fusion 自己的紧固件库，用法类似。</p>
+</aside>
+
+<h2 id="方法-B自己画一个简化的本教程用这个">方法 B：自己画一个简化的（本教程用这个）<a class="anchor" href="#方法-B自己画一个简化的本教程用这个">#</a></h2>
+
+<p>简化模型不画螺纹，只要大小、长度对，够检查装不装得下。尺寸按 ISO 标准：M4 螺丝头对边 7 mm、厚 2.8 mm，杆直径 4 mm；M4 螺母对边 7 mm、厚 3.2 mm。</p>
+
+<p><b>螺丝 M4×20：</b></p>
+<ol class="steps">
+  <li>激活根，「装配 → 新建零部件」，名称 <code>M4×20 螺丝</code>（保持「激活」勾选）。</li>
+  <li><b>螺丝头</b>：「创建草图」→ 点旋钮的外侧面（就是有六角坑的那一面，坑口所在的平面）。「多边形 → 内接多边形」，圆心点在孔心，6 条边，标对边 <code>7</code>。「完成草图」。</li>
+  <li>按 <span class="keys"><kbd>E</kbd></span>，点六边形（中间的小圆不要选），往旋钮<b>里面</b>拉伸 <code>2.8</code>，「操作」选「新建实体」。螺丝头就嵌在六角坑里了（坑深 3，比头厚 2.8 多一点点）。</li>
+  <li><b>螺杆</b>：「创建草图」→ 点螺丝头朝里的那一面（可以先把旋钮隐藏，方便点）。以孔心为圆心画一个圆，直径 <code>4</code>。</li>
+  <li>按 <span class="keys"><kbd>E</kbd></span>，点这个圆，往里拉伸 <code>20</code>，「操作」选「合并」（和螺丝头粘成一个实体）。</li>
+</ol>
+
+<p><b>螺母 M4：</b></p>
+<ol class="steps">
+  <li>激活根，新建零部件 <code>M4 螺母</code>。</li>
+  <li>隐藏底座（螺母坑在靠背圆筒的端面，被耳朵挡着），「创建草图」→ 点靠背圆筒右端面。</li>
+  <li>画内接六边形（对边 <code>7</code>，圆心在孔心）和一个 Ø<code>4</code> 的圆。「完成草图」。</li>
+  <li>按 <span class="keys"><kbd>E</kbd></span>，点六边形和小圆<b>之间</b>的那一圈区域，往里拉伸 <code>3.2</code>，新建实体。螺母就卡在 3.4 深的六角坑里。最后把底座显示回来。</li>
+</ol>
+
+<figure class="shot"><img src="../img/case2/p6-bolt-nut.png" alt="螺丝（头在右耳外侧，杆穿过耳朵和靠背）和螺母（卡在靠背里）。为了看清楚，旋钮暂时隐藏了" width="560" loading="lazy"><figcaption><span class="fig-no">图 P6-5</span>螺丝（头在右耳外侧，杆穿过耳朵和靠背）和螺母（卡在靠背里）。为了看清楚，旋钮暂时隐藏了</figcaption></figure>
+
+<figure class="shot"><img src="../img/case2/p6-right-done.png" alt="右边一套：旋钮 + 螺丝 + 螺母" width="520" loading="lazy"><figcaption><span class="fig-no">图 P6-6</span>右边一套：旋钮 + 螺丝 + 螺母</figcaption></figure>
+
+<aside class="tip">
+<p>建模螺纹会让文件变大、显示变慢，3D 打印也打不出 M4 这么细的螺纹。只画圆柱就够了；需要在图纸上表示螺纹时，用「创建 → 螺纹」加一个“外观螺纹”（见 <a href="3-modify.html">1.3</a>）。</p>
+</aside>
+
+<h2 id="镜像到左边">镜像到左边<a class="anchor" href="#镜像到左边">#</a></h2>
+
+<ol class="steps">
+  <li>激活根。在浏览器里按住 <kbd>⇧</kbd> 点选 旋钮:1、M4×20 螺丝:1、M4 螺母:1 三个零部件。</li>
+  <li>「创建 → 镜像」，「对象类型」会自动变成「<b>零部件</b>」。</li>
+  <li>「镜像平面」选根的 YZ 平面（左右正中间），点「确定」。</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/case2/p6-mirror.png" alt="选中的三个零部件（蓝色）" width="420" loading="lazy"><figcaption><span class="fig-no">图 P6-7</span>选中的三个零部件（蓝色）</figcaption></figure>
+<figure class="shot"><img src="../img/case2/p6-mirror-d.png" alt="镜像：对象类型 零部件" width="256" loading="lazy"><figcaption><span class="fig-no">图 P6-8</span>镜像：对象类型 零部件</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/case2/p6-done.png" alt="左右两套都有了" width="560" loading="lazy"><figcaption><span class="fig-no">图 P6-9</span>左右两套都有了</figcaption></figure>
+
+<p>浏览器里多了三个新零部件：「旋钮(镜像):1」「M4×20 螺丝(镜像):1」「M4 螺母(镜像):1」。</p>
+
+<aside class="theory">
+<p><b>🧠 镜像零部件 vs 复制粘贴</b>：镜像出来的是<b>新的零部件</b>（左右对称的“反手版”），以后改右边的旋钮，左边的镜像会跟着更新。另一种做法是复制粘贴（<span class="keys"><kbd>⌘</kbd><kbd>C</kbd></span> / <span class="keys"><kbd>⌘</kbd><kbd>V</kbd></span>）再移动到左边，这样得到的是<b>同一个零部件的第 2 份</b>（浏览器里显示“旋钮:2”），两份永远完全一样。旋钮是对称的，两种做法结果一样。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch1/p5.html"><small>← 上一页</small>P5 旋钮（旋转）</a><a class="next" href="../ch1/p7.html"><small>下一页 →</small>P7 刻字与外观</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

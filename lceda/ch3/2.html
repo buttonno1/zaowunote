@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3.2 工程管理与版本 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch3/2" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 3 章 · 软件环境与工程协作</div>
+    <article>
+      <h1>3.2 工程管理与版本</h1>
+      <p class="lead">工程是你所有设计的“文件夹”。这一页讲怎么新建、另存、导入导出、打印工程；以及三种“后悔药”：撤销、历史记录、版本控制（节点和分支）。</p>
+      <div class="meta-bar"><span>⏱ 约 25 分钟</span><span>🖱️ 含版本树互动图</span><span>📋 含工程设置、导出文档、版本管理说明表</span></div>
+      
+
+<h2 id="工程管理文件菜单">工程管理：「文件」菜单<a class="anchor" href="#工程管理文件菜单">#</a></h2>
+
+<figure class="shot"><img src="../img/modA/file-menu.png" alt="「文件」菜单（编号对应下表），右边展开的是「新建」子菜单" width="352" loading="lazy"><figcaption><span class="fig-no">图 3.2-1</span>「文件」菜单（编号对应下表），右边展开的是「新建」子菜单</figcaption></figure>
+
+<div class="table-title">文件菜单</div><table class="props"><thead><tr><th>编号</th><th>菜单项</th><th>作用</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>新建</td><td>新建工程（<span class="keys"><kbd>⇧</kbd><kbd>N</kbd></span>）、板、原理图、图页、PCB、面板、仿真、器件、封装、3D 模型、仿真模型、图纸、网络标识、网络端口、跨页连接标识、无电气标识、复用模块、面板库</td></tr><tr><td><span class="tagn">2</span></td><td>迁移标准版… / 打开工程…</td><td>把嘉立创EDA 标准版的工程迁移过来；打开其他工程（<span class="keys"><kbd>⌘</kbd><kbd>O</kbd></span>）</td></tr><tr><td><span class="tagn">3</span></td><td>保存 / 保存全部</td><td>保存当前文档（<span class="keys"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>S</kbd></span>）/ 保存所有打开的文档（<span class="keys"><kbd>⌘</kbd><kbd>S</kbd></span>）</td></tr><tr><td><span class="tagn">4</span></td><td>另存为</td><td>见下方子菜单</td></tr><tr><td><span class="tagn">5</span></td><td>版本控制</td><td>创建分支、创建节点、版本管理（见 A.5）</td></tr><tr><td><span class="tagn">6</span></td><td>历史记录…</td><td>打开右侧历史记录面板（见 A.5）</td></tr><tr><td><span class="tagn">7</span></td><td>工程备份</td><td>找回自动备份（自动备份在「设置」→「保存」里开）</td></tr><tr><td><span class="tagn">8</span></td><td>回收站…</td><td>打开网页版回收站，找回删掉的工程（见下）</td></tr><tr><td><span class="tagn">9</span></td><td>导入 / 导出</td><td>见下方子菜单</td></tr><tr><td><span class="tagn">10</span></td><td>打印…</td><td>打开「导出文档」对话框（PDF / PNG / SVG）</td></tr><tr><td><span class="tagn">11</span></td><td>关闭全部 / 近期工程</td><td>关闭所有标签；快速打开最近用过的工程</td></tr><tr><td><span class="tagn">12</span></td><td>文件源码…</td><td>查看当前文档的底层数据（高级用途）</td></tr></tbody></table>
+
+<h3 id="另存为导入导出">另存为、导入、导出<a class="anchor" href="#另存为导入导出">#</a></h3>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modA/file-saveas.png" alt="另存为：工程/文档另存为（云端或本地）、另存为复用模块" width="420" loading="lazy"><figcaption><span class="fig-no">图 3.2-2</span>另存为：工程/文档另存为（云端或本地）、另存为复用模块</figcaption></figure>
+<figure class="shot"><img src="../img/modA/file-import.png" alt="导入：DXF、图片，以及嘉立创EDA 标准版/专业版、Allegro/OrCad、EAGLE、KiCad、PADS、Protel、LTspice 等" width="250" loading="lazy"><figcaption><span class="fig-no">图 3.2-3</span>导入：DXF、图片，以及嘉立创EDA 标准版/专业版、Allegro/OrCad、EAGLE、KiCad、PADS、Protel、LTspice 等</figcaption></figure>
+<figure class="shot"><img src="../img/modA/file-export.png" alt="导出：元件下单、SMT 备料、Layout 下单、BOM、DXF、PDF、PNG、SVG、网表、PADS 等" width="260" loading="lazy"><figcaption><span class="fig-no">图 3.2-4</span>导出：元件下单、SMT 备料、Layout 下单、BOM、DXF、PDF、PNG、SVG、网表、PADS 等</figcaption></figure>
+</div>
+
+<ul>
+<li><b>工程另存为(本地)</b>：把整个工程下载成一个文件存到电脑——相当于“打包备份”，交作业、发给同学都用它。</li>
+<li><b>导入其他软件的工程</b>：老师给的 Altium（Protel）、KiCad 文件都能导进来，详见第 12 章。</li>
+<li><b>导出</b>菜单里的制造文件（Gerber、BOM、坐标）在 PCB 编辑器里才全，见 <a href="../ch1/a10.html">A-10</a>。</li>
+</ul>
+
+<h3 id="回收站">回收站<a class="anchor" href="#回收站">#</a></h3>
+
+<figure class="shot"><img src="../img/modA/recycle.png" alt="回收站是一个网页（个人工作区）：①左侧导航 ②回收站 ③分类：个人文件夹 / 工程 / 库 / 模块 ④删除的工程列表（工程名已替换）⑤清空回收站" width="864" loading="lazy"><figcaption><span class="fig-no">图 3.2-5</span>回收站是一个网页（个人工作区）：①左侧导航 ②回收站 ③分类：个人文件夹 / 工程 / 库 / 模块 ④删除的工程列表（工程名已替换）⑤清空回收站</figcaption></figure>
+
+<p>删掉的工程不会马上消失，会先进回收站，可以在这里恢复。<b>「清空个人回收站」之后就真的找不回了</b>。</p>
+
+<h3 id="打印--导出文档">打印 / 导出文档<a class="anchor" href="#打印--导出文档">#</a></h3>
+
+<figure class="shot"><img src="../img/modA/print.png" alt="「文件」→「打印…」打开的是「导出文档」对话框" width="510" loading="lazy"><figcaption><span class="fig-no">图 3.2-6</span>「文件」→「打印…」打开的是「导出文档」对话框</figcaption></figure>
+
+<div class="table-title">导出文档（打印）</div><table class="props"><thead><tr><th>编号</th><th>选项</th><th>含义</th><th>交作业时</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>文件类型</td><td>PDF / PNG / SVG</td><td>PDF</td></tr><tr><td><span class="tagn">2</span></td><td>主题</td><td>默认颜色 / 黑底白图 / 白底黑图</td><td>打印选白底黑图更省墨</td></tr><tr><td><span class="tagn">3</span></td><td>线宽</td><td>默认 / 始终 1px / 跟随缩放</td><td>默认</td></tr><tr><td><span class="tagn">4</span></td><td>网格</td><td>不带网格 / 跟随设置</td><td>无</td></tr><tr><td><span class="tagn">5</span></td><td>导出 BOM、菜单显示属性、仅导出图框内</td><td>是否顺带导出元件清单等</td><td>按需</td></tr><tr><td><span class="tagn">6</span></td><td>尺寸</td><td>原始尺寸或指定纸张</td><td>原始尺寸</td></tr><tr><td><span class="tagn">7</span></td><td>对象</td><td>导出哪个原理图（或 PCB）</td><td>—</td></tr><tr><td><span class="tagn">8</span></td><td>范围</td><td>全部图页 / 自定义选择</td><td>全部</td></tr><tr><td><span class="tagn">9</span></td><td>导出复用模块</td><td>是否一起导出复用模块的内容</td><td>默认</td></tr><tr><td><span class="tagn">10</span></td><td>输出方式</td><td>多页合并成一个文件 / 每页一个文件</td><td>合并</td></tr><tr><td><span class="tagn">11</span></td><td>[12] 设置密码 / 确认密码</td><td>给 PDF 加密码</td><td>一般不用</td></tr><tr><td><span class="tagn">13</span></td><td>打印</td><td>直接调用系统打印</td><td></td></tr><tr><td><span class="tagn">14</span></td><td>导出</td><td>生成文件下载</td><td></td></tr></tbody></table>
+
+<h3 id="工程设置设计--工程设置">工程设置（设计 → 工程设置…）<a class="anchor" href="#工程设置设计--工程设置">#</a></h3>
+
+<figure class="shot"><img src="../img/modA/projset.png" alt="工程设置：只对当前工程生效（编号对应下表）" width="733" loading="lazy"><figcaption><span class="fig-no">图 3.2-7</span>工程设置：只对当前工程生效（编号对应下表）</figcaption></figure>
+
+<p>「设置」菜单里的是<b>个人设置</b>（对你所有工程生效）；「工程设置」是<b>这个工程自己的规则</b>，跟着工程走，同学打开你的工程也是这些规则。</p>
+
+<div class="table-title">工程设置</div><table class="props"><thead><tr><th>编号</th><th>选项</th><th>含义</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>工程库重名</td><td>允许重名 / 自动重命名</td></tr><tr><td><span class="tagn">2</span></td><td>默认网络名</td><td>导线 ID / 位号+引脚编号</td></tr><tr><td><span class="tagn">3</span></td><td>导线多网络</td><td>允许 / 禁止一根导线挂多个网络名</td></tr><tr><td><span class="tagn">4</span></td><td>网络</td><td><b>网络标识跨层连接</b>、<b>网络标签跨页连接</b>、总线生成网络类——决定同名标签在不同页之间是否自动连通（<a href="../ch4/2.html">4.2</a> 详解）</td></tr><tr><td><span class="tagn">5</span></td><td>关联</td><td>网络标签旁“还在哪页出现”的提示怎么显示</td></tr><tr><td><span class="tagn">6</span></td><td>所在图页 / 所在位置</td><td>关联提示的格式，示例 P1[A1]</td></tr><tr><td><span class="tagn">7</span></td><td>多部件跨层</td><td>允许 / 禁止</td></tr><tr><td><span class="tagn">8</span></td><td>无电气标识</td><td>是否允许加入 BOM、更新到 PCB</td></tr><tr><td><span class="tagn">9</span></td><td>左侧分类</td><td>通用 / 原理图/图纸</td></tr></tbody></table>
+
+<h2 id="三种后悔药撤销历史记录版本">三种“后悔药”：撤销、历史记录、版本<a class="anchor" href="#三种后悔药撤销历史记录版本">#</a></h2>
+
+<table>
+<thead><tr><th></th><th>撤销 <span class="keys"><kbd>⌘</kbd><kbd>Z</kbd></span></th><th>历史记录</th><th>版本控制（节点 / 分支）</th></tr></thead>
+<tbody>
+<tr><td>能退回多远</td><td>本次打开以来的几步</td><td>每次保存都会记一条，可以回到很久以前</td><td>你手动打的“存档点”</td></tr>
+<tr><td>关掉网页后</td><td>没了</td><td>还在</td><td>还在</td></tr>
+<tr><td>比喻</td><td>按住退格键</td><td>手机相册里的“最近删除”</td><td>游戏存档</td></tr>
+</tbody>
+</table>
+
+<h3 id="历史记录">历史记录<a class="anchor" href="#历史记录">#</a></h3>
+
+<figure class="shot"><img src="../img/modA/history.png" alt="「文件」→「历史记录…」：①画布上方出现橙色“历史记录”提示条 ②右侧历史记录面板 ③当前文档 / 当前工程 ④某一次保存记录（时间 + 谁保存的）⑤点中后画布显示当时的样子 ⑥还原" width="644" loading="lazy"><figcaption><span class="fig-no">图 3.2-8</span>「文件」→「历史记录…」：①画布上方出现橙色“历史记录”提示条 ②右侧历史记录面板 ③当前文档 / 当前工程 ④某一次保存记录（时间 + 谁保存的）⑤点中后画布显示当时的样子 ⑥还原</figcaption></figure>
+
+<ol class="steps">
+<li>「文件」→「历史记录…」，右侧出现历史记录面板，按时间列出每次保存</li>
+<li>点某一条，画布就显示<b>那个时候</b>的样子（只是预览，不会改你的文件）</li>
+<li>确定要回到那个版本，点面板底部「<b>还原</b>」</li>
+<li>只是看看的话，点画布上方橙色提示条最右边的 <b>⊗</b> 退出历史模式</li>
+</ol>
+
+<aside class="warn">
+<p>本教程实测：退出历史模式要点提示条右端的 ⊗，单纯切到右侧其他面板<b>不会</b>退出。在历史预览状态下改东西前一定先退出。</p>
+</aside>
+
+<h3 id="版本控制节点和分支">版本控制：节点和分支<a class="anchor" href="#版本控制节点和分支">#</a></h3>
+
+<p>想象你在写论文：</p>
+<ul>
+<li><b>节点</b> = 给当前状态<b>拍一张快照</b>，起个名字，比如“V1 能用了”。以后改坏了随时能回来。</li>
+<li><b>分支</b> = 从某个快照<b>复制出一条平行的路</b>，在上面随便试（比如“试试换成 Type-C 16P”），主线 main 完全不受影响。试成了再用，试失败了就扔掉。</li>
+</ul>
+
+<div class="widget"><div class="widget-title">版本树示意（点击节点看说明）</div>
+<div class="vtree-widget"></div>
+</div>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modA/node.png" alt="创建节点：①节点名称 ②描述" width="480" loading="lazy"><figcaption><span class="fig-no">图 3.2-9</span>创建节点：①节点名称 ②描述</figcaption></figure>
+<figure class="shot"><img src="../img/modA/branch.png" alt="创建分支：①提示：要先有节点才能建分支 ②从哪个节点分出 ③分支名称 ④描述" width="480" loading="lazy"><figcaption><span class="fig-no">图 3.2-10</span>创建分支：①提示：要先有节点才能建分支 ②从哪个节点分出 ③分支名称 ④描述</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/modA/vermgr.png" alt="版本管理：①版本树 ②main（当前）③start 节点 ④当前版本 / 默认编辑版本 ⑤操作按钮（打开、新建、编辑、删除）" width="773" loading="lazy"><figcaption><span class="fig-no">图 3.2-11</span>版本管理：①版本树 ②main（当前）③start 节点 ④当前版本 / 默认编辑版本 ⑤操作按钮（打开、新建、编辑、删除）</figcaption></figure>
+
+<ol class="steps">
+<li>做到一个满意的阶段：「文件」→「版本控制」→「<b>创建节点</b>」，起名“原理图完成”</li>
+<li>想做大改动：「版本控制」→「<b>创建分支</b>」，从刚才的节点分出一个分支，起名“试试新方案”</li>
+<li>在「<b>版本管理</b>」里可以看到版本树，选中某个版本点「打开」切换过去</li>
+<li>工程树最上面的 <code>main</code> 小标签就是你当前所在的分支</li>
+</ol>
+
+<aside class="tip">
+<p>每个新工程默认有一个 <code>main</code> 分支和一个 <code>start</code> 节点。截图时本教程的工程都只用了 main。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch3/1.html"><small>← 上一页</small>3.1 软件环境与个人设置</a><a class="next" href="../ch3/3.html"><small>下一页 →</small>3.3 团队协作与开源</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/widgets/modA.js"></script>
+</body>
+</html>

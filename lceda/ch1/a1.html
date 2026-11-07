@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A-1 新建工程 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch1/a1" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 1 章 · Quickstart 实战</div>
+    <article>
+      <h1>A-1 新建工程</h1>
+      <p class="lead">做任何板子的第一步都是新建一个工程。这一步很简单，但顺便要搞清楚工程里的“板子、原理图、图页、PCB”是什么关系——后面每一步都会用到。</p>
+      <div class="meta-bar"><span>⏱ 约 5 分钟</span><span>📋 含新建工程对话框说明表</span></div>
+      
+
+<h2 id="第-1-步打开新建工程">第 1 步：打开「新建工程」<a class="anchor" href="#第-1-步打开新建工程">#</a></h2>
+
+<ol class="steps">
+  <li>在「开始页」的<b>快速开始</b>区域，点「<b>新建工程</b>」</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a1-new.png" alt="开始页 → 新建工程" width="600" loading="lazy"><figcaption><span class="fig-no">图 A1-1</span>开始页 → 新建工程</figcaption></figure>
+
+<aside class="tip">
+<p>也可以用菜单「文件 → 新建 → 工程」，或者快捷键 <span class="keys"><kbd>⇧</kbd><kbd>N</kbd></span>。</p>
+</aside>
+
+<h2 id="第-2-步填写新建工程对话框">第 2 步：填写新建工程对话框<a class="anchor" href="#第-2-步填写新建工程对话框">#</a></h2>
+
+<p>弹出的对话框里，图中的编号对应下面的说明表：</p>
+
+<figure class="shot"><img src="../img/ch1/a1-dialog.png" alt="新建工程对话框（默认状态）" width="625" loading="lazy"><figcaption><span class="fig-no">图 A1-2</span>新建工程对话框（默认状态）</figcaption></figure>
+
+<div class="table-title">新建工程对话框</div><table class="props"><thead><tr><th>编号</th><th>属性</th><th>含义（大白话）</th><th>本例怎么填</th><th>什么时候需要改</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>归属</td><td>这个工程放在谁名下：「个人」放在你自己的账号里；选团队就放进团队空间，团队成员都能看到</td><td>个人 / 我的账号</td><td>和同学合作做项目时选团队</td></tr><tr><td><span class="tagn">2</span></td><td>工程</td><td>工程名称。默认是 “New Project_日期_时间”，一定要改成看得懂的名字</td><td><b>眨眼小徽章</b></td><td>每个新作品都起一个新名字</td></tr><tr><td><span class="tagn">3</span></td><td>模板</td><td>用已有的“工程模板”来新建（模板里可以预先放好图纸、规则等）。点右边的「…」会打开模板列表</td><td>不用模板，保持空</td><td>团队有统一模板时</td></tr><tr><td><span class="tagn">4</span></td><td>简介</td><td>工程的说明文字，只给人看，不影响设计</td><td>嘉立创EDA零基础教程 案例A：NE555 双闪LED徽章</td><td>随意</td></tr><tr><td><span class="tagn">5</span></td><td>创建团队</td><td>还没有团队时，可以从这里新建一个</td><td>不用</td><td>需要多人协作时</td></tr><tr><td><span class="tagn">6</span></td><td>保存</td><td>创建工程</td><td>点它</td><td>—</td></tr><tr><td><span class="tagn">7</span></td><td>取消</td><td>关掉对话框，什么都不创建</td><td>—</td><td>—</td></tr></tbody></table>
+
+<p>点「模板」右边的「…」会弹出“依据模板新建工程”窗口。现在模板库是空的，直接关掉就行：</p>
+
+<figure class="shot"><img src="../img/ch1/a1-tpl.png" alt="模板窗口（本例不用，关掉即可）" width="668" loading="lazy"><figcaption><span class="fig-no">图 A1-3</span>模板窗口（本例不用，关掉即可）</figcaption></figure>
+
+<ol class="steps" start="2">
+  <li value="2">在「工程」里输入 <code>眨眼小徽章</code>（输入中文时记得切回中文输入法，输完再切回英文）</li>
+  <li value="3">「简介」里随便写一句说明</li>
+  <li value="4">点「<b>保存</b>」</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a1-filled.png" alt="填好之后：①工程名 ②简介 ③保存" width="625" loading="lazy"><figcaption><span class="fig-no">图 A1-4</span>填好之后：①工程名 ②简介 ③保存</figcaption></figure>
+
+<p>创建成功后会问你“是否打开新工程？”：</p>
+
+<figure class="shot"><img src="../img/ch1/a1-open.png" alt="点「是」在当前窗口打开；「在新窗口打开」会开一个新的浏览器标签" width="410" loading="lazy"><figcaption><span class="fig-no">图 A1-5</span>点「是」在当前窗口打开；「在新窗口打开」会开一个新的浏览器标签</figcaption></figure>
+
+<ol class="steps" start="5">
+  <li value="5">点「<b>是</b>」</li>
+</ol>
+
+<h2 id="第-3-步认识工程树">第 3 步：认识工程树<a class="anchor" href="#第-3-步认识工程树">#</a></h2>
+
+<p>工程打开后，左侧「工程设计」面板里会出现这个工程的结构，叫<b>工程树</b>：</p>
+
+<figure class="shot"><img src="../img/ch1/a1-tree.png" alt="新工程的工程树" width="260" loading="lazy"><figcaption><span class="fig-no">图 A1-6</span>新工程的工程树</figcaption></figure>
+
+<table>
+<thead><tr><th>编号</th><th>名称</th><th>是什么</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>眨眼小徽章（main）</td><td><b>工程</b>本身，也就是整个“项目文件夹”。main 表示主分支（版本管理用，不用管）</td></tr>
+<tr><td>2</td><td>Board1</td><td><b>板子</b>：把“一张原理图”和“一块 PCB”绑在一起的组合。同一个工程里可以有好几块板子</td></tr>
+<tr><td>3</td><td>Schematic1</td><td><b>原理图</b>：画电路连接关系的文件</td></tr>
+<tr><td>4</td><td>1.P1</td><td><b>图页</b>：原理图的第 1 页。电路复杂时可以分好几页画，本例 1 页就够</td></tr>
+<tr><td>5</td><td>PCB1</td><td><b>PCB</b>：电路板设计文件。它和 Schematic1 同属 Board1，所以原理图能一键“转换”到这块 PCB</td></tr>
+<tr><td>6</td><td>Panel1</td><td><b>面板</b>：用来设计亚克力面板、铭牌等（第 11 章），本例不用</td></tr>
+</tbody>
+</table>
+
+<aside class="theory">
+<p><b>为什么要有“板子”这一层？</b> 原理图和 PCB 是同一个电路的两种表达，软件需要知道“哪张原理图对应哪块 PCB”。Board1 就是这根“绳子”：原理图里加了元件，可以同步到同一个 Board 下的 PCB 里，反过来也行。</p>
+</aside>
+
+<ol class="steps" start="6">
+  <li value="6"><b>双击 1.P1</b>，打开原理图图页，进入下一步</li>
+</ol>
+
+<aside class="link">
+<p>工程的版本管理、团队协作、回收站等更多功能，在 <a href="../ch3/1.html">3.1：软件环境与工程协作</a>。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch1/a0.html"><small>← 上一页</small>A-0 眨眼小徽章：项目介绍与原理</a><a class="next" href="../ch1/a2.html"><small>下一页 →</small>A-2 画原理图</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

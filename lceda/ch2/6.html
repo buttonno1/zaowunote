@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2.6 怎么读原理图 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch2/6" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 2 章 · 前置知识补全</div>
+    <article>
+      <h1>2.6 怎么读原理图</h1>
+      <p class="lead">原理图是电路的“地图”：它不管元件实际多大、放在哪，只回答一个问题——谁和谁连在一起。学会看符号、位号、网络和几个特殊标记，别人的原理图你也能看懂。</p>
+      <div class="meta-bar"><span>⏱ 约 20 分钟</span><span>🎯 零基础</span><span>🖱️ 含“找连接”小练习</span></div>
+      
+
+<h2 id="常用符号速查">常用符号速查<a class="anchor" href="#常用符号速查">#</a></h2>
+
+<table class="sym-tbl">
+<thead><tr><th>符号</th><th>是什么</th><th>位号字母</th><th>详见</th></tr></thead>
+<tbody>
+<tr><td><span class="sym" data-s="res"></span></td><td>电阻（国标长方形；美标画成锯齿）</td><td>R</td><td><a href="4.html#res">2.4</a></td></tr>
+<tr><td><span class="sym" data-s="cap"></span></td><td>电容（无极性）</td><td>C</td><td><a href="4.html#cap">2.4</a></td></tr>
+<tr><td><span class="sym" data-s="ecap"></span></td><td>有极性电容（电解 / 钽），标 + 的一端是正极</td><td>C</td><td><a href="4.html#cap">2.4</a></td></tr>
+<tr><td><span class="sym" data-s="ind"></span></td><td>电感</td><td>L</td><td>2.4</td></tr>
+<tr><td><span class="sym" data-s="diode"></span></td><td>二极管：三角形指向电流方向，竖线一侧是负极</td><td>D</td><td>2.4</td></tr>
+<tr><td><span class="sym" data-s="led"></span></td><td>LED：二极管 + 向外的两个小箭头（发光）</td><td>LED / D</td><td><a href="4.html#led">2.4</a></td></tr>
+<tr><td><span class="sym" data-s="npn"></span></td><td>NPN 三极管</td><td>Q</td><td>2.4</td></tr>
+<tr><td><span class="sym" data-s="xtal"></span></td><td>晶振</td><td>Y / X</td><td>2.4</td></tr>
+<tr><td><span class="sym" data-s="sw"></span></td><td>按键</td><td>SW / K</td><td>2.4</td></tr>
+<tr><td><span class="sym" data-s="ic"></span></td><td>芯片：一个方框加一圈引脚，每只脚标编号和名字</td><td>U</td><td><a href="14.html">2.14</a></td></tr>
+<tr><td><span class="sym" data-s="conn"></span></td><td>连接器 / 排针</td><td>J / P / USB</td><td>2.4</td></tr>
+<tr><td><span class="sym" data-s="vcc"></span></td><td>电源符号（名字可以是 VCC、3V3、VBUS……）</td><td>—</td><td><a href="2.html">2.2</a></td></tr>
+<tr><td><span class="sym" data-s="gnd"></span></td><td>地 GND</td><td>—</td><td><a href="2.html">2.2</a></td></tr>
+<tr><td><span class="sym" data-s="net"></span></td><td>网络标签：给导线起名字，同名即相连</td><td>—</td><td>下文</td></tr>
+<tr><td><span class="sym" data-s="junc"></span></td><td>连接点：实心圆点，表示这几根线<b>真的连在一起</b></td><td>—</td><td>下文</td></tr>
+<tr><td><span class="sym" data-s="cross"></span></td><td>两根线交叉但<b>没有圆点</b>：不相连，只是跨过去</td><td>—</td><td>下文</td></tr>
+<tr><td><span class="sym" data-s="nc"></span></td><td>非连接标识（红叉）：这只脚故意不接</td><td>—</td><td>下文</td></tr>
+</tbody>
+</table>
+
+<h2 id="位号R1C3U1-是什么意思">位号：R1、C3、U1 是什么意思<a class="anchor" href="#位号R1C3U1-是什么意思">#</a></h2>
+
+<p>每个元件都有一个唯一的<b>位号（Designator）</b>：<b>字母表示元件种类，数字区分同类的第几个</b>。R5 就是“第 5 个电阻”。位号会印在 PCB 丝印上，焊接、调试、看 BOM 都靠它找元件。</p>
+
+<table>
+<thead><tr><th>字母</th><th>元件</th><th>案例里的例子</th></tr></thead>
+<tbody>
+<tr><td>R</td><td>电阻</td><td>R1～R8（案例 A）</td></tr>
+<tr><td>C</td><td>电容</td><td>C1～C3（A）、C1～C9（B）</td></tr>
+<tr><td>L</td><td>电感</td><td>—</td></tr>
+<tr><td>D / LED</td><td>二极管 / 发光二极管</td><td>D1（B）、LED1～LED4（A）</td></tr>
+<tr><td>Q</td><td>三极管、MOS 管</td><td>—</td></tr>
+<tr><td>U</td><td>芯片、模组</td><td>U1 NE555（A）；U1 ESP32-C3 模组、U2 AMS1117（B）</td></tr>
+<tr><td>J / P / CN / USB</td><td>连接器、排针、插座</td><td>USB1（A、B）、J1 排针（B）</td></tr>
+<tr><td>SW / K</td><td>开关、按键</td><td>SW1 RESET、SW2 BOOT（B）</td></tr>
+<tr><td>Y / X</td><td>晶振</td><td>—</td></tr>
+<tr><td>F / TP</td><td>保险丝 / 测试点</td><td>—</td></tr>
+</tbody>
+</table>
+
+<p class="small muted">字母习惯不是死规定，不同公司、不同软件略有差别（比如 LED 有人用 D，有人用 LED）。嘉立创EDA 放置元件时会按库里的前缀自动编号，也可以用「分配位号」重新整理（<a href="../ch1/a2.html#A2.12-分配位号">A-2.12</a>）。</p>
+
+<h2 id="引脚编号和名字">引脚：编号和名字<a class="anchor" href="#引脚编号和名字">#</a></h2>
+
+<p>芯片符号的每只引脚有两个标识：</p>
+<ul>
+<li><b>引脚编号</b>（1、2、3……）：对应封装上的<b>焊盘编号</b>，原理图转 PCB 时就是靠编号把“符号的脚”和“封装的焊盘”对上的。</li>
+<li><b>引脚名</b>（VCC、GND、OUT、TRIG……）：告诉你这只脚是干什么的。</li>
+</ul>
+<p>例如 NE555 的 3 脚叫 OUT，8 脚叫 VCC。<b>原理图上引脚的排列位置不代表真实位置</b>——符号是为了画图方便重新排过的，真实位置看规格书的引脚图（<a href="14.html">2.14</a>）。</p>
+
+<h2 id="网络判断谁和谁连在一起">网络：判断“谁和谁连在一起”<a class="anchor" href="#网络判断谁和谁连在一起">#</a></h2>
+
+<p>原理图最核心的信息就是<b>网络（Net）</b>：连在一起的所有引脚组成一个网络，网络里各处电压相同。判断两个引脚是否在同一个网络，看这几种情况：</p>
+
+<ol class="steps blue">
+  <li><b>有导线直接连着</b>（中间可以拐弯）→ 相连。</li>
+  <li><b>导线丁字或十字交汇，交汇处有实心圆点</b>（连接点）→ 相连。</li>
+  <li><b>两根线交叉、交叉处没有圆点</b> → <b>不相连</b>，只是画的时候跨过去。</li>
+  <li><b>名字相同的电源符号</b>（VCC、GND……）→ 相连，哪怕图上离得很远。</li>
+  <li><b>名字相同的网络标签</b>（比如两处都写着 OUT）→ 相连。</li>
+  <li><b>同一个元件的两端</b>（比如电阻的两只脚）→ <b>不是</b>同一个网络，中间隔着元件。</li>
+</ol>
+
+<p>下面是案例 A 原理图的一部分（简化过），动手练一练：</p>
+
+<div class="widget"><div class="widget-title">“找连接”小练习</div>
+<div class="netfind-widget"></div>
+<div class="widget-hint">注意 R7 上方的竖线和 U1 第 5 脚的横线交叉的地方：没有圆点。还有两个写着 OUT 的网络标签。</div>
+</div>
+
+<aside class="theory">
+<p><b>网络标签有什么好处？</b> 一张复杂的原理图，如果所有连接都用导线画，会像一盘意大利面。给导线起个名字（网络标签），在需要的地方再放一个同名标签，就“隔空”连上了，图面清清楚楚。案例 B 就大量使用了 USB_D+、RGB_DIN、EN 这样的网络标签，并且按功能分块（电源、USB、MCU、RGB 灯）来画。</p>
+<p>转到 PCB 后，同一网络的焊盘之间会出现<b>飞线</b>，提示你“这些要连起来”（<a href="../ch1/a3.html">A-3</a>）。</p>
+</aside>
+
+<h2 id="非连接标识这只脚故意不接">非连接标识：这只脚故意不接<a class="anchor" href="#非连接标识这只脚故意不接">#</a></h2>
+
+<p>芯片上不用的引脚，可以放一个<b>非连接标识（红色小叉）</b>，告诉检查工具“这只脚是故意空着的，不是忘了接”。案例 B 的 USB 插座 SBU1、SBU2 和模组上没用的 IO 都打了叉，原理图 DRC 的“引脚悬空”警告就消失了（<a href="../ch1/a2.html#A2.10-不用的引脚非连接标识">A-2.10</a>）。</p>
+
+<aside class="warn">
+<p>不是所有不用的引脚都能空着！有些芯片要求某些脚必须接高或接低（比如 NE555 的 4 脚 RESET 不用时要接 VCC，否则芯片可能被复位而不工作；ESP32-C3 的几个启动相关引脚也有要求）。<b>拿不准就看规格书</b>。</p>
+</aside>
+
+<h2 id="拿到一张陌生原理图怎么读">拿到一张陌生原理图，怎么读<a class="anchor" href="#拿到一张陌生原理图怎么读">#</a></h2>
+
+<ol class="steps">
+  <li><b>先找电源</b>：电从哪里进来（USB、电池），经过什么变成了哪几种电压（5 V → 3.3 V）。</li>
+  <li><b>再找主角</b>：最大的那颗芯片（U1）是什么型号，查一下它是干什么的。</li>
+  <li><b>看输入和输出</b>：按键、传感器是输入；LED、电机、屏幕是输出；它们分别接在主芯片的哪只脚上。</li>
+  <li><b>最后看配角</b>：芯片旁边的小电阻、小电容多半是去耦、上拉、限流这些“标配”，看懂 2.3、2.4、2.7 就能认出来。</li>
+</ol>
+
+<p>用这个方法读一下案例 A 的完整原理图：</p>
+
+<figure class="shot"><img src="../img/ch1/a0-sch.png" alt="案例 A 原理图：左边 Type-C 进电（VCC、GND）；中间是主角 NE555 和定时元件；右边是两组 LED 输出，接在 OUT 网络上" width="895" loading="lazy"><figcaption><span class="fig-no">图 2.6-1</span>案例 A 原理图：左边 Type-C 进电（VCC、GND）；中间是主角 NE555 和定时元件；右边是两组 LED 输出，接在 OUT 网络上</figcaption></figure>
+
+<div class="quiz">
+  <div class="q">原理图里两根导线十字交叉，交叉处没有圆点。它们是什么关系？</div>
+  <button type="button" class="opt">相连</button>
+  <button type="button" class="opt" data-right>不相连</button>
+  <button type="button" class="opt">要看线的颜色</button>
+  <div class="explain">✅ 没有连接点圆点 = 不相连。为了避免误会，好的画图习惯是尽量用“丁字”连接，少画十字交叉的连接。</div>
+</div>
+
+<div class="quiz">
+  <div class="q">一张图里有两处网络标签都写着 <code>RGB_DIN</code>，中间没画线。它们？</div>
+  <button type="button" class="opt" data-right>是同一个网络</button>
+  <button type="button" class="opt">是两个不同的网络</button>
+  <button type="button" class="opt">DRC 会报错</button>
+  <div class="explain">✅ 同名网络标签自动相连。反过来，如果不小心把名字打错（比如 RGB_DlN），它们就<b>不</b>相连了——这是常见的低级错误。</div>
+</div>
+
+<h2 id="回到哪里继续">回到哪里继续<a class="anchor" href="#回到哪里继续">#</a></h2>
+
+<ul>
+<li>正在连线：回到 <a href="../ch1/a2.html#A2.7-用导线连线">A-2.7 用导线连线</a>。</li>
+<li>正在放网络标签：回到 <a href="../ch1/a2.html#A2.9-网络标签同名就相连">A-2.9 网络标签</a>。</li>
+<li>继续：<a href="7.html">2.7 数字电路入门</a>。</li>
+</ul>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch2/5.html"><small>← 上一页</small>2.5 封装与尺寸</a><a class="next" href="../ch2/7.html"><small>下一页 →</small>2.7 数字电路入门</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/widgets/ch2.js"></script>
+</body>
+</html>

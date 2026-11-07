@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2.4 常用元件图鉴 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch2/4" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 2 章 · 前置知识补全</div>
+    <article>
+      <h1>2.4 常用元件图鉴</h1>
+      <p class="lead">电阻、电容、二极管、LED、三极管、晶振、按键、连接器、芯片——画板子时最常见的元件都在这里。每种元件讲清楚三件事：它是干什么的、关键参数看哪几个、在原理图里长什么样。</p>
+      <div class="meta-bar"><span>⏱ 约 30 分钟（可以按需跳着看）</span><span>🎯 需要 2.1 的基础</span><span>🖱️ 含色环 / 贴片电阻读数器、LED 限流电阻计算器</span></div>
+      
+
+<aside class="note">
+<p>每种元件旁边的小图是它在原理图里的<b>符号</b>。嘉立创EDA 默认用的是国标 / IEC 风格（电阻画成长方形），国外资料里常见的锯齿形电阻是美标画法，意思一样。</p>
+</aside>
+
+<h2 id="res">电阻 Resistor（位号 R）<a class="anchor" href="#res">#</a></h2>
+
+<table class="sym-tbl"><tbody><tr><td><span class="sym" data-s="res"></span><br><span class="sym" data-s="resus"></span></td><td>
+<p><b>干什么：</b>限制电流、分压、上拉 / 下拉。是用得最多的元件。没有正负极，怎么焊都行。</p>
+<p><b>关键参数：</b></p>
+<ul>
+<li><b>阻值</b>：如 330 Ω、1 kΩ、47 kΩ。厂家只生产一系列“标准阻值”（E24 系列：10、11、12、13、15、16、18、20、22、24、27、30、33、36、39、43、47、51、56、62、68、75、82、91，再乘以 10 的倍数），所以你在商城里找不到 340 Ω 这种值。</li>
+<li><b>精度</b>：±1%（精密）或 ±5%（普通）。一般电路两种都行，现在 1% 的也很便宜。</li>
+<li><b>额定功率</b>：0603 常见约 1/10 W，1206 约 1/4 W（以规格书为准），见 <a href="1.html#功率为什么电阻会发热">2.1 功率</a>。</li>
+<li><b>封装</b>：0402 / 0603 / 0805 / 1206 或直插，见 <a href="5.html">2.5 封装与尺寸</a>。</li>
+</ul>
+<p><b>案例里：</b>A 的 R1/R2 5.1 kΩ（告诉 USB 充电器“我要用电”）、R3/R4 定时电阻、R5～R8 330 Ω 限流；B 的 R4/R5 10 kΩ 上拉电阻。</p>
+</td></tr></tbody></table>
+
+<h3 id="读懂电阻上的标记">读懂电阻上的标记<a class="anchor" href="#读懂电阻上的标记">#</a></h3>
+
+<p>直插电阻用<b>色环</b>表示阻值；贴片电阻（如果足够大）会印 3～4 位<b>数字编码</b>。0402 及更小的电阻通常什么都不印，0603 有的印有的不印——所以贴片电阻最好别从料带上拆散了。</p>
+
+<div class="widget"><div class="widget-title">色环 / 贴片电阻读数器</div>
+<div class="rcode-widget"></div>
+<div class="widget-hint">默认的 4 色环“黄紫橙金”= 47 kΩ ±5%，就是案例 A 的定时电阻 R4。贴片电阻 473 也是 47 kΩ。</div>
+</div>
+
+<h2 id="cap">电容 Capacitor（位号 C）<a class="anchor" href="#cap">#</a></h2>
+
+<table class="sym-tbl"><tbody><tr><td><span class="sym" data-s="cap"></span><br><span class="sym" data-s="ecap"></span></td><td>
+<p><b>干什么：</b>可以想成一个<b>小水缸</b>：能存一点电，再放出来。常见用途：</p>
+<ul>
+<li><b>去耦 / 旁路</b>：芯片电源脚旁边放一个 100 nF，芯片突然要用电时就近“取水”，同时吸收电源上的毛刺。案例 A 的 C3、案例 B 的 C5、C7～C9 都是这个作用。<b>布局时要贴近芯片的电源脚</b>（<a href="../ch1/a5.html#A5.2-布局的三个原则">A-5 布局原则</a>）。</li>
+<li><b>滤波 / 储能</b>：稳压芯片输入输出的 10 µF、22 µF（案例 B 的 C1、C2）。</li>
+<li><b>定时</b>：和电阻配合决定充放电快慢，案例 A 的 C1 决定闪烁速度。</li>
+</ul>
+<p><b>关键参数：</b></p>
+<ul>
+<li><b>容量</b>：单位法拉 F，实际常用 µF、nF、pF（1 µF = 1000 nF = 1 000 000 pF）。贴片电容上一般不印字；直插瓷片电容常印 3 位码，单位是 pF，如 <code>104</code> = 10 × 10⁴ pF = 100 nF。</li>
+<li><b>耐压</b>：能长期承受的最高电压，选的时候要明显高于实际电压。案例 A 的 C1 是 10 µF <b>25 V</b>，用在 5 V 电路里很宽裕。</li>
+<li><b>极性</b>：贴片<b>陶瓷电容（MLCC）没有极性</b>；<b>电解电容、钽电容有正负极</b>，接反会损坏甚至鼓包、冒烟。电解电容外壳上有一条色带标出负极。</li>
+</ul>
+</td></tr></tbody></table>
+
+<h2 id="电感-Inductor位号-L">电感 Inductor（位号 L）<a class="anchor" href="#电感-Inductor位号-L">#</a></h2>
+
+<table class="sym-tbl"><tbody><tr><td><span class="sym" data-s="ind"></span></td><td>
+<p><b>干什么：</b>一个线圈，特点是<b>“阻碍电流变化”</b>，像一个很重的水车：转起来不容易停，停着也不容易转。主要用在开关电源（DC-DC 降压 / 升压）和滤波里。</p>
+<p><b>关键参数：</b>电感量（µH）、额定电流 / 饱和电流（电流超过它就“失灵”）。本教程两个案例都没有用电感（案例 B 用的是不需要电感的线性稳压芯片 AMS1117）。</p>
+</td></tr></tbody></table>
+
+<h2 id="二极管与-LED位号-D--LED">二极管与 LED（位号 D / LED）<a class="anchor" href="#二极管与-LED位号-D--LED">#</a></h2>
+
+<table class="sym-tbl"><tbody><tr><td><span class="sym" data-s="diode"></span><br><span class="sym" data-s="led"></span></td><td>
+<p><b>二极管</b>是电流的<b>单向阀</b>：只能从正极（A，阳极）流向负极（K，阴极），符号里三角形指的方向就是电流方向，竖线那头是负极。导通时两端会有一个基本固定的<b>正向压降 Vf</b>（普通硅二极管约 0.6～1 V）。</p>
+<p>用途：防反接、整流、降一点电压。案例 B 的 D1（M7，常见的 1 A 整流二极管）串在 5 V 上，利用约 0.8 V 的压降给 RGB 灯一个低一点的电压。</p>
+<p><b>LED（发光二极管）</b>就是会发光的二极管，同样分正负极，正向压降更大：红 / 黄色约 2 V，白 / 蓝 / 绿色约 3 V（<b>以具体型号规格书为准</b>）。小贴片 LED 的工作电流一般几 mA 到 20 mA。</p>
+<p><b>怎么分正负极：</b>直插 LED 长脚是正极；贴片 LED 背面或侧面有极性标记（不同厂家标法不一样，以规格书为准）；PCB 封装的丝印上也会标出负极一侧。<b>焊之前一定要对照</b>。</p>
+</td></tr></tbody></table>
+
+<h3 id="led">LED 限流电阻计算器<a class="anchor" href="#led">#</a></h3>
+
+<p>2.3 节讲过，LED 必须串电阻限流（<a href="3.html#led-why">为什么</a>）。电阻值这样算：</p>
+
+<p style="text-align:center;font-size:18px;font-family:var(--mono)"><b>R = (Vs − Vf) / If</b>　　Vs 电源电压，Vf LED 压降，If 想要的电流</p>
+
+<div class="widget"><div class="widget-title">LED 限流电阻计算器</div>
+<div class="led-widget"></div>
+<div class="widget-hint">压降用的是典型值，同一颜色不同型号会差几百毫伏，所以算出来的电流是估算。指示灯一般 2～10 mA 就够亮了，不必追求 20 mA。</div>
+</div>
+
+<aside class="theory">
+<p><b>验算一下案例 A：</b>红灯组是“OUT → 330 Ω → LED → GND”，OUT 为高电平时约等于电源电压（NE555 的输出高电平会比 VCC 略低一些，这里粗略按 5 V 算）：I ≈ (5 − 2) / 330 ≈ <b>9 mA</b>。白灯组是“VCC → LED → 330 Ω → OUT”，压降约 3 V：I ≈ (5 − 3) / 330 ≈ <b>6 mA</b>。都在安全范围内，亮度足够。想让灯暗一点就把 330 Ω 加大，比如换成 1 kΩ。</p>
+</aside>
+
+<h2 id="三极管与-MOS-管电子开关位号-Q">三极管与 MOS 管：电子开关（位号 Q）<a class="anchor" href="#三极管与-MOS-管电子开关位号-Q">#</a></h2>
+
+<table class="sym-tbl"><tbody><tr><td><span class="sym" data-s="npn"></span><br><span class="sym" data-s="nmos"></span></td><td>
+<p>单片机的引脚只能输出很小的电流（几 mA 到二三十 mA），直接带电机、大功率 LED、继电器是带不动的。这时就需要一个<b>“电子开关”</b>：用小信号去控制大电流，像用一根手指拧开水龙头的总阀。</p>
+<ul>
+<li><b>三极管（BJT）</b>：有三只脚——基极 B、集电极 C、发射极 E。给基极一点小电流，C、E 之间就能流过大得多的电流。常用 NPN 型。</li>
+<li><b>MOS 管（MOSFET）</b>：三只脚——栅极 G、漏极 D、源极 S。<b>用电压控制</b>：栅极加上足够的电压，D、S 之间导通，几乎不消耗控制电流。控制大电流时更常用 N 沟道 MOS 管。</li>
+</ul>
+<p>它们大多是 <b>SOT-23</b> 这种三脚小封装（见 2.5）。本教程的两个案例都没有用到；以后做“单片机控制电机 / 灯带”时会用。</p>
+</td></tr></tbody></table>
+
+<h2 id="晶振-Crystal位号-Y--X">晶振 Crystal（位号 Y / X）<a class="anchor" href="#晶振-Crystal位号-Y--X">#</a></h2>
+
+<table class="sym-tbl"><tbody><tr><td><span class="sym" data-s="xtal"></span></td><td>
+<p>给芯片提供<b>精准、稳定的节拍</b>（时钟），像乐队的节拍器。单片机、USB、无线通信都需要准确的时钟。参数主要看频率（如 40 MHz）和负载电容。</p>
+<p>案例 B 用的 ESP32-C3-MINI-1 是<b>模组</b>，晶振已经做在模组里了，所以原理图里看不到晶振。如果直接用 ESP32-C3 芯片，就得自己在旁边放晶振。</p>
+</td></tr></tbody></table>
+
+<h2 id="按键与开关位号-SW--K">按键与开关（位号 SW / K）<a class="anchor" href="#按键与开关位号-SW--K">#</a></h2>
+
+<table class="sym-tbl"><tbody><tr><td><span class="sym" data-s="sw"></span></td><td>
+<ul>
+<li><b>轻触按键</b>：按下导通、松开断开，手一松就弹回来。案例 B 的 SW1（RESET 复位）、SW2（BOOT 下载模式）就是。常见的四脚轻触按键，四只脚是<b>两两内部相连</b>的，画封装或替换型号时要注意哪两只脚是一组（看规格书）。</li>
+<li><b>拨动开关 / 自锁开关</b>：拨一下保持住，适合做电源总开关（案例 A 的 🎨 自由发挥里提到可以在 VBUS 上串一个）。</li>
+</ul>
+<p>按键几乎总是和<b>上拉电阻</b>一起出现，原因见 <a href="7.html#pullup">2.7 上拉电阻</a>。</p>
+</td></tr></tbody></table>
+
+<h2 id="连接器位号-J--P--USB--CN">连接器（位号 J / P / USB / CN）<a class="anchor" href="#连接器位号-J--P--USB--CN">#</a></h2>
+
+<table class="sym-tbl"><tbody><tr><td><span class="sym" data-s="conn"></span></td><td>
+<p>板子和外界连接用的插座、排针、端子。</p>
+<ul>
+<li><b>USB Type-C 母座</b>：案例 A 用的是 6P 版本（只有电源和 CC 脚，<b>只能供电</b>）；案例 B 用 16P 版本，多了 USB 的数据线 D+ / D−，才能通过 USB 给单片机下载程序。</li>
+<li><b>排针</b>：一排金属针，间距最常见 2.54 mm（0.1 英寸），可以插杜邦线、面包板。案例 B 的 J1 是 1×8 排针，引出了 5V、3V3、GND 和几个 IO 口。</li>
+</ul>
+<p>连接器要放在<b>板子边缘</b>，插拔才方便（<a href="../ch1/a5.html#A5.2-布局的三个原则">A-5 布局原则</a>）。</p>
+</td></tr></tbody></table>
+
+<h2 id="集成电路--芯片-IC位号-U">集成电路 / 芯片 IC（位号 U）<a class="anchor" href="#集成电路--芯片-IC位号-U">#</a></h2>
+
+<table class="sym-tbl"><tbody><tr><td><span class="sym" data-s="ic"></span></td><td>
+<p>把成千上万个晶体管做在一小块硅片上，封装成黑色小方块。它的功能由型号决定，<b>想知道怎么用就看它的规格书</b>（<a href="14.html">2.14 读规格书</a>）。</p>
+<ul>
+<li>案例 A：<b>NE555</b> 定时芯片（SOIC-8 封装）。</li>
+<li>案例 B：<b>AMS1117-3.3</b> 稳压芯片（把 5 V 降到 3.3 V）、<b>ESP32-C3-MINI-1</b> 单片机模组。</li>
+</ul>
+<p><b>1 号脚标记</b>：芯片上有一个小圆点或缺口标出 1 号脚，PCB 丝印上也有对应标记。焊接和 SMT 贴片时<b>方向绝对不能错</b>——反了芯片可能直接烧掉。</p>
+</td></tr></tbody></table>
+
+<div class="quiz">
+  <div class="q">下面哪种元件<b>没有</b>正负极，怎么焊都行？</div>
+  <button type="button" class="opt">LED</button>
+  <button type="button" class="opt">电解电容</button>
+  <button type="button" class="opt" data-right>贴片陶瓷电容（MLCC）和普通电阻</button>
+  <div class="explain">✅ 电阻和陶瓷电容都无极性。LED、二极管、电解电容、钽电容和芯片都分方向。</div>
+</div>
+
+<div class="quiz">
+  <div class="q">用 3.3 V 驱动一颗红色 LED（压降约 2 V），想要约 5 mA 电流，电阻大约选多少？</div>
+  <button type="button" class="opt">66 Ω</button>
+  <button type="button" class="opt" data-right>约 270 Ω</button>
+  <button type="button" class="opt">3.3 kΩ</button>
+  <div class="explain">✅ R = (3.3 − 2) / 0.005 = 260 Ω，取不小于它的标准值 270 Ω。在上面的计算器里把电源改成 3.3 V、电流改成 5 mA 验证一下。</div>
+</div>
+
+<h2 id="回到哪里继续">回到哪里继续<a class="anchor" href="#回到哪里继续">#</a></h2>
+
+<ul>
+<li>正在看案例 A 的元件清单：回到 <a href="../ch1/a0.html#元件清单BOM">A-0 元件清单</a>。</li>
+<li>正在放元件、改属性：回到 <a href="../ch1/a2.html#A2.4-放置其余元件">A-2.4 放置其余元件</a>。</li>
+<li>想知道 0603、SOIC-8 到底多大：<a href="5.html">2.5 封装与尺寸</a>。</li>
+</ul>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch2/3.html"><small>← 上一页</small>2.3 串联与并联</a><a class="next" href="../ch2/5.html"><small>下一页 →</small>2.5 封装与尺寸</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/widgets/ch2.js"></script>
+</body>
+</html>

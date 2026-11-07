@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B-5 写程序与烧录 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch1/b5" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 1 章 · Quickstart 实战</div>
+    <article>
+      <h1>B-5 写程序与烧录</h1>
+      <p class="lead">板子做好了，该让它“活”起来了。这一页用 Arduino IDE 2 给 ESP32-C3 写三个小程序：彩虹渐变、按 BOOT 键切换模式、手机连 Wi-Fi 用网页调颜色。还没拿到板子也没关系，先在网页版模拟器 Wokwi 里玩。</p>
+      <div class="meta-bar"><span>⏱ 约 60 分钟</span><span>🖱️ 含彩灯效果模拟</span><span>💻 完整代码 + 逐行中文注释</span><span>🔧 含排错表</span></div>
+      
+
+<aside class="note">
+<p>本页基于 <b>Arduino IDE 2</b> + <b>esp32 by Espressif Systems 3.x</b> 支持包 + <b>Adafruit NeoPixel</b> 库编写。软件更新后菜单的位置、名字可能略有变化，以你看到的界面为准。本页没有实物板截图，界面用文字描述。</p>
+</aside>
+
+<h2 id="B5.1-拿到板子先做两个检查">B5.1 拿到板子，先做两个检查<a class="anchor" href="#B5.1-拿到板子先做两个检查">#</a></h2>
+
+<ol class="steps">
+  <li><b>看</b>：模组、彩灯、Type-C 有没有歪、有没有明显连锡；排针焊好了没有（不焊也能先用）。</li>
+  <li><b>插电</b>：用 USB-C 线接到电脑。<b>红色电源指示灯 LED4 应该亮</b>。不亮就先别往下走，看本页最后的排错表。</li>
+  <li><b>摸一下</b>稳压芯片 U2：常温或微温是正常的；烫手马上拔线。</li>
+</ol>
+
+<aside class="tip">
+<p>全新的 ESP32-C3 模组里一般还没有程序，插上电只有红灯亮、彩灯不亮，这是正常的。</p>
+</aside>
+
+<h2 id="B5.2-安装-Arduino-IDE-2-和-ESP32-支持包">B5.2 安装 Arduino IDE 2 和 ESP32 支持包<a class="anchor" href="#B5.2-安装-Arduino-IDE-2-和-ESP32-支持包">#</a></h2>
+
+<ol class="steps">
+  <li>打开 Arduino 官网 <a href="https://www.arduino.cc/en/software" target="_blank" rel="noopener">arduino.cc/en/software</a>，下载 <b>Arduino IDE 2.x</b>：<span class="os-mac">选 macOS 版（Apple 芯片的 Mac 选 Apple Silicon，老款 Intel Mac 选 Intel）</span><span class="os-win">选 Windows 版（安装包 .exe 或 .msi）</span>。</li>
+  <li>打开下载的 .dmg，把 Arduino IDE 拖进「应用程序」文件夹。第一次打开时 macOS 会问“是否确定要打开”，点「打开」。</li>
+  <li>界面默认是英文，可以在「Arduino IDE」→「Settings…」（<span class="keys"><kbd>⌘</kbd><kbd>,</kbd></span>）里把 Language 改成中文，重启生效。</li>
+  <li>点左侧边栏的「<b>开发板管理器</b>」图标（或菜单「工具」→「开发板」→「开发板管理器…」），搜索 <code>esp32</code>。</li>
+  <li>找到「<b>esp32 by Espressif Systems</b>」（注意不是“Arduino ESP32 Boards”那一个），点「安装」，选最新的 3.x 版本。文件比较大，要等几分钟。</li>
+</ol>
+
+<aside class="tip">
+<p>如果开发板管理器里搜不到 esp32 by Espressif Systems：打开「设置」（<span class="keys"><kbd>⌘</kbd><kbd>,</kbd></span>），在「<b>其他开发板管理器地址</b>」里填入乐鑫官方的地址 <code>https://espressif.github.io/arduino-esp32/package_esp32_index.json</code>，确认后再搜一次。</p>
+</aside>
+
+<p>再装一个控制彩灯的库：</p>
+
+<ol class="steps" start="6">
+  <li value="6">点左侧边栏的「<b>库管理</b>」图标（或「工具」→「管理库…」），搜索 <code>Adafruit NeoPixel</code>，点「安装」。</li>
+</ol>
+
+<h2 id="B5.3-连接板子选开发板和端口">B5.3 连接板子，选开发板和端口<a class="anchor" href="#B5.3-连接板子选开发板和端口">#</a></h2>
+
+<ol class="steps">
+  <li>用<b>能传数据的</b> USB-C 线把板子接到电脑。</li>
+  <li>「工具」→「开发板」→「esp32」→ 选「<b>ESP32C3 Dev Module</b>」。</li>
+  <li>「工具」→「<b>USB CDC On Boot</b>」→ 选「<b>Enabled</b>」。</li>
+  <li>「工具」→「端口」→ 选名字像 <code>/dev/cu.usbmodem…</code> 的那个。</li>
+</ol>
+
+<div class="table-title">「工具」菜单里要关注的几项</div><table class="props"><thead><tr><th>编号</th><th>选项</th><th>含义（大白话）</th><th>本例</th><th>什么时候改</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>开发板</td><td>告诉 Arduino 你的板子用的是哪种芯片</td><td>ESP32C3 Dev Module</td><td>换别的芯片时</td></tr><tr><td><span class="tagn">2</span></td><td>USB CDC On Boot</td><td>让程序里的 <code>Serial</code>（串口打印）走芯片自带的 USB。我们没有 USB 转串口芯片，<b>必须开</b>，否则串口监视器看不到任何输出</td><td><b>Enabled</b></td><td>一直开着</td></tr><tr><td><span class="tagn">3</span></td><td>Flash Size</td><td>模组里 Flash 的大小。ESP32-C3-MINI-1-<b>N4</b> 的 N4 就是 4 MB</td><td>4MB（默认）</td><td>—</td></tr><tr><td><span class="tagn">4</span></td><td>端口</td><td>板子在电脑上的“门牌号”。ESP32-C3 用自带 USB 时，<span class="os-mac">在 Mac 上一般叫 <code>/dev/cu.usbmodem</code> 加一串数字</span><span class="os-win">在 Windows 上叫 <code>COM3</code>、<code>COM5</code> 这样的名字（可以在“设备管理器 → 端口(COM 和 LPT)”里看到）</span></td><td>选它</td><td>插拔后号码可能变，重新选</td></tr><tr><td><span class="tagn">5</span></td><td>其他（CPU Frequency、Upload Speed……）</td><td>保持默认</td><td>默认</td><td>—</td></tr></tbody></table>
+
+<aside class="warn">
+<p><b>端口列表里没有 usbmodem？</b> 最常见的原因是线：很多随手机附送的线、充电宝线<b>只能充电、不能传数据</b>。换一根确定能传数据的线（比如能给手机传文件的那根）。另一个原因是模组里的程序让 USB 没法正常工作，这时用下面的“下载模式”。</p>
+</aside>
+
+<h2 id="B5.4-程序-1彩虹渐变">B5.4 程序 1：彩虹渐变<a class="anchor" href="#B5.4-程序-1彩虹渐变">#</a></h2>
+
+<p>「文件」→「新建项目」，把里面的内容全部删掉，粘贴下面的代码，点工具栏的「<b>上传</b>」（→ 箭头按钮，快捷键 <span class="keys"><kbd>⌘</kbd><kbd>U</kbd></span>）。第一次编译比较慢，耐心等一下。下方输出窗口出现 “Hard resetting…”/“Done” 之类的字样就说明上传成功了。</p>
+
+<pre><code>// 程序 1：3 颗 RGB 灯彩虹渐变
+#include &lt;Adafruit_NeoPixel.h&gt;        // 引入 Adafruit NeoPixel 库（控制 WS2812B 灯）
+
+#define LED_PIN    8                  // 彩灯的数据线接在 GPIO8（原理图里的 RGB_DIN）
+#define LED_COUNT  3                  // 一共串了 3 颗灯
+
+// 创建一个“灯带”对象：3 颗灯、接 GPIO8、颜色顺序 GRB、800 kHz 通信速度（WS2812B 的标准设置）
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
+
+uint16_t hue = 0;                     // 当前色相：0~65535 转一圈（红→黄→绿→青→蓝→紫→红）
+
+void setup() {                        // setup() 只在上电 / 复位时运行一次
+  Serial.begin(115200);               // 打开串口，速度 115200（串口监视器里要选同样的速度）
+  strip.begin();                      // 初始化灯带
+  strip.setBrightness(40);            // 整体亮度 0~255。40 已经很亮，也更省电、不烫
+  strip.show();                       // 把“全部熄灭”的状态发出去
+  Serial.println("彩虹程序启动");      // 在串口监视器里打印一句话，确认程序在跑
+}
+
+void loop() {                         // loop() 会一遍又一遍地循环运行
+  for (int i = 0; i &lt; LED_COUNT; i++) {                 // 依次处理第 0、1、2 颗灯
+    uint16_t h = hue + i * 65536L / LED_COUNT;          // 每颗灯的色相错开 1/3 圈
+    uint32_t color = strip.ColorHSV(h);                 // 把色相换算成 RGB 颜色（饱和度、亮度默认最大）
+    strip.setPixelColor(i, strip.gamma32(color));       // gamma32 让颜色过渡在人眼看来更均匀
+  }
+  strip.show();                       // 把 3 颗灯的新颜色一次性发出去，灯才会变
+  hue += 256;                         // 色相往前走一小步（加到 65535 后自动回到 0）
+  delay(20);                          // 等 20 毫秒：每秒约 50 帧，转一圈约 5 秒
+}</code></pre>
+
+<p>上传完成后三颗灯会开始彩虹渐变。点右上角的「串口监视器」（放大镜图标），波特率选 115200，能看到“彩虹程序启动”（按一下 RST 会重新打印一次）。</p>
+
+<aside class="theory">
+<p><b>为什么用“色相”（Hue）而不是直接写红绿蓝？</b> 色相就是“颜色在色轮上的位置”：0 是红，往后依次是黄、绿、青、蓝、紫，再回到红。让色相一点点增加，颜色就会顺滑地沿着彩虹变化。<code>ColorHSV()</code> 帮我们把色相换算成灯需要的红绿蓝三个数。三颗灯的色相各差 1/3 圈，所以永远是三种不同的颜色。</p>
+</aside>
+
+<div class="widget"><div class="widget-title">彩灯效果模拟（对应程序 1 和程序 2）</div>
+<div class="rgb-widget"></div>
+<div class="widget-hint">模式 0 就是程序 1 的彩虹效果；程序 2 会按 BOOT 键在 4 个模式之间循环。网页里的颜色只是模拟，实物灯的颜色和亮度会有差别。</div>
+</div>
+
+<h2 id="B5.5-程序-2按-BOOT-键切换模式">B5.5 程序 2：按 BOOT 键切换模式<a class="anchor" href="#B5.5-程序-2按-BOOT-键切换模式">#</a></h2>
+
+<p>BOOT 键接在 GPIO9：<b>松开是 HIGH、按下是 LOW</b>（<a href="b2.html#B2.5-④-复位与-BOOT-按键">B2.5 的上拉电阻</a>）。程序启动后再按它，它就是一个普通的用户按键。</p>
+
+<pre><code>// 程序 2：按 BOOT 键切换 4 种模式（彩虹 / 呼吸 / 单色 / 关灯），带按键消抖
+#include &lt;Adafruit_NeoPixel.h&gt;
+
+#define LED_PIN    8                  // 彩灯数据线：GPIO8
+#define LED_COUNT  3                  // 3 颗灯
+#define BTN_PIN    9                  // BOOT 键接 GPIO9：松开 = HIGH，按下 = LOW
+
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
+
+const int MODE_COUNT = 4;             // 一共 4 种模式
+int mode = 0;                         // 当前模式：0 彩虹、1 呼吸、2 单色、3 关灯
+
+// ---- 消抖用的变量 ----
+// 机械按键按下的一瞬间，触点会“弹”几下，电平在几毫秒内来回跳。
+// 不处理的话按一次可能被当成按了好几次，所以要等电平稳定一段时间再认。
+int lastReading = HIGH;               // 上一次读到的原始电平
+int stableState = HIGH;               // 确认稳定后的电平
+unsigned long lastChange = 0;         // 原始电平最近一次变化的时刻（毫秒）
+const unsigned long DEBOUNCE_MS = 30; // 稳定超过 30 毫秒才算数
+
+uint16_t hue = 0;                     // 彩虹模式用的色相
+
+void setup() {
+  Serial.begin(115200);               // 打开串口
+  pinMode(BTN_PIN, INPUT_PULLUP);     // GPIO9 设为输入，并打开芯片内部的上拉电阻
+  strip.begin();                      // 初始化灯带
+  strip.setBrightness(40);            // 亮度 40/255
+  strip.show();                       // 先全部熄灭
+}
+
+// 每次调用检查一下按键：只有“确认按下”的那一刻返回 true，按住不放也只算一次
+bool buttonPressed() {
+  int reading = digitalRead(BTN_PIN);           // 读引脚当前的电平
+  if (reading != lastReading) {                 // 和上次不一样：可能在抖动，重新计时
+    lastChange = millis();                      // millis() = 开机到现在过了多少毫秒
+    lastReading = reading;
+  }
+  if (millis() - lastChange &gt; DEBOUNCE_MS &amp;&amp; reading != stableState) {
+    stableState = reading;                      // 稳定了 30 毫秒，确认电平真的变了
+    if (stableState == LOW) return true;        // 变成 LOW = 刚刚按下
+  }
+  return false;                                 // 其余情况：没有新的按下动作
+}
+
+void showRainbow() {                            // 模式 0：彩虹（同程序 1）
+  for (int i = 0; i &lt; LED_COUNT; i++) {
+    uint16_t h = hue + i * 65536L / LED_COUNT;
+    strip.setPixelColor(i, strip.gamma32(strip.ColorHSV(h)));
+  }
+  hue += 256;
+}
+
+void showBreath() {                             // 模式 1：呼吸
+  float t = millis() / 1000.0;                  // 当前时间（秒）
+  uint8_t v = (sin(t * 2.0) + 1.0) * 0.5 * 255; // 正弦曲线：亮度在 0~255 之间慢慢起伏
+  uint32_t c = strip.ColorHSV(43690, 230, v);   // 色相 43690 ≈ 蓝色，饱和度 230，亮度 v
+  strip.fill(strip.gamma32(c));                 // 3 颗灯填同一个颜色
+}
+
+void showSolid() {                              // 模式 2：单色常亮
+  strip.fill(strip.Color(255, 80, 0));          // Color(红, 绿, 蓝)，这里是橙色 🎨 换成你喜欢的
+}
+
+void showOff() {                                // 模式 3：关灯
+  strip.clear();                                // 所有灯设为黑色（熄灭）
+}
+
+void loop() {
+  if (buttonPressed()) {                        // 检测到一次按下
+    mode = (mode + 1) % MODE_COUNT;             // 切到下一个模式，3 之后回到 0
+    Serial.printf("切换到模式 %d\n", mode);      // 串口打印当前模式
+  }
+  switch (mode) {                               // 按当前模式计算灯的颜色
+    case 0: showRainbow(); break;
+    case 1: showBreath();  break;
+    case 2: showSolid();   break;
+    default: showOff();    break;
+  }
+  strip.show();                                 // 发出去
+  delay(20);                                    // 20 毫秒一帧（不影响按键：消抖靠 millis 计时）
+}</code></pre>
+
+<aside class="theory">
+<p><b>按键消抖：</b> 机械按键里的金属片按下时会像跳水板一样弹几下，几毫秒内电平会在 HIGH 和 LOW 之间来回跳。单片机跑得飞快，不处理的话按一次会被当成按了好几次，模式一下子跳过去好几个。程序里的办法是：电平变化后<b>等它稳定 30 毫秒</b>才承认。</p>
+<p>注意程序只在“变成 LOW 的那一刻”切换一次模式，按住不放不会一直切。</p>
+</aside>
+
+<aside class="warn">
+<p>BOOT 键只在<b>程序已经在运行</b>时才是“用户按键”。如果你<b>按住 BOOT 再插电 / 再按 RST</b>，芯片会进入下载模式（下面讲），程序不会运行。</p>
+</aside>
+
+<h2 id="B5.6--程序-3选做手机连-Wi-Fi用网页调颜色">B5.6 🎨 程序 3（选做）：手机连 Wi-Fi，用网页调颜色<a class="anchor" href="#B5.6--程序-3选做手机连-Wi-Fi用网页调颜色">#</a></h2>
+
+<p>这个程序让板子自己开一个 Wi-Fi 热点。用手机连上它，打开一个网页，拖动取色器，彩灯就跟着变色：</p>
+
+<pre><code>// 程序 3（选做）：板子开一个 Wi-Fi 热点，手机连上后打开网页调颜色
+#include &lt;WiFi.h&gt;                     // Wi-Fi 库（esp32 支持包自带）
+#include &lt;WebServer.h&gt;                // 简单网页服务器库（esp32 支持包自带）
+#include &lt;Adafruit_NeoPixel.h&gt;
+
+#define LED_PIN    8
+#define LED_COUNT  3
+
+const char* AP_SSID = "ESP32C3-LED";  // 热点名字 🎨 可以改，建议只用英文和数字
+const char* AP_PASS = "12345678";     // 热点密码，至少 8 位
+
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
+WebServer server(80);                 // 在 80 端口（网页默认端口）开一个服务器
+
+// 手机上看到的网页：一个取色器，拖动时把颜色发给板子
+const char PAGE[] = R"rawliteral(
+&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt;
+&lt;title&gt;彩灯板调色&lt;/title&gt;
+&lt;style&gt;body{font-family:sans-serif;text-align:center;padding-top:40px}
+input{width:220px;height:220px;border:none;background:none}&lt;/style&gt;&lt;/head&gt;
+&lt;body&gt;&lt;h2&gt;ESP32-C3 彩灯板&lt;/h2&gt;
+&lt;input type="color" id="c" value="#ff8000"&gt;
+&lt;p id="s"&gt;点上面的色块选颜色&lt;/p&gt;
+&lt;script&gt;
+const c = document.getElementById('c');
+c.addEventListener('input', () =&gt; {
+  fetch('/set?c=' + c.value.substring(1))
+    .then(r =&gt; r.text())
+    .then(t =&gt; document.getElementById('s').textContent = t);
+});
+&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
+)rawliteral";
+
+void handleRoot() {                   // 有人打开 http://192.168.4.1/ 时运行
+  server.send(200, "text/html; charset=utf-8", PAGE);   // 200 = 成功，把网页发回去
+}
+
+void handleSet() {                    // 网页请求 /set?c=ff8000 时运行
+  if (!server.hasArg("c")) {          // 没带颜色参数
+    server.send(400, "text/plain", "missing c");
+    return;
+  }
+  String hex = server.arg("c");                     // 取出 "ff8000" 这样的 6 位十六进制
+  long rgb = strtol(hex.c_str(), NULL, 16);         // 十六进制字符串 → 数字
+  uint8_t r = (rgb &gt;&gt; 16) &amp; 0xFF;                   // 拆出红
+  uint8_t g = (rgb &gt;&gt; 8) &amp; 0xFF;                    // 拆出绿
+  uint8_t b = rgb &amp; 0xFF;                           // 拆出蓝
+  strip.fill(strip.Color(r, g, b));                 // 3 颗灯都设成这个颜色
+  strip.show();
+  server.send(200, "text/plain; charset=utf-8", "已设置 #" + hex);  // 告诉网页“设好了”
+}
+
+void setup() {
+  Serial.begin(115200);
+  strip.begin();
+  strip.setBrightness(60);
+  strip.show();
+
+  WiFi.mode(WIFI_AP);                 // 让板子当“热点”（AP 模式）
+  WiFi.softAP(AP_SSID, AP_PASS);      // 开启热点
+  Serial.print("热点已开启：");
+  Serial.println(AP_SSID);
+  Serial.print("手机连上后，用浏览器打开 http://");
+  Serial.println(WiFi.softAPIP());    // 热点模式下板子的地址，一般是 192.168.4.1
+
+  server.on("/", handleRoot);         // 访问首页 → handleRoot
+  server.on("/set", handleSet);       // 访问 /set → handleSet
+  server.begin();                     // 启动网页服务器
+}
+
+void loop() {
+  server.handleClient();              // 不停地检查有没有手机发来请求
+}</code></pre>
+
+<ol class="steps">
+  <li>上传程序后，打开串口监视器（115200），按一下 RST，能看到热点名和地址。</li>
+  <li>手机打开 Wi-Fi 设置，连接 <code>ESP32C3-LED</code>，密码 <code>12345678</code>。手机可能提示“此网络无法访问互联网”，选择<b>保持连接</b>。</li>
+  <li>手机浏览器打开 <code>http://192.168.4.1</code>（以串口监视器里打印的地址为准），点色块选颜色。</li>
+</ol>
+
+<aside class="diy">
+<ul>
+<li>把热点名和密码改成你自己的；</li>
+<li>在网页上多加几个按钮（比如“彩虹”“关灯”），对应 <code>server.on("/rainbow", …)</code> 这样的新地址；</li>
+<li>想让板子连你家的路由器而不是自己开热点：把 <code>WiFi.mode(WIFI_AP)</code> / <code>softAP()</code> 换成 <code>WiFi.begin("路由器名", "密码")</code>，等连上后用 <code>WiFi.localIP()</code> 打印地址（ESP32-C3 只支持 2.4 GHz Wi-Fi）。</li>
+</ul>
+</aside>
+
+<h2 id="B5.7-下载模式按住-BOOT-再按一下-RST-是在干什么">B5.7 下载模式：按住 BOOT 再按一下 RST 是在干什么<a class="anchor" href="#B5.7-下载模式按住-BOOT-再按一下-RST-是在干什么">#</a></h2>
+
+<p>大多数时候，Arduino 会通过 USB 自动让芯片进入下载状态，你什么都不用按。但如果遇到下面这些情况，就需要<b>手动进入下载模式</b>：</p>
+
+<ul>
+<li>端口列表里找不到板子；</li>
+<li>上传时报错，比如 “Failed to connect” 、“No serial data received”；</li>
+<li>之前烧进去的程序有问题，导致 USB 一直不正常、板子反复重启。</li>
+</ul>
+
+<ol class="steps">
+  <li><b>按住 BOOT 键不放</b></li>
+  <li><b>按一下 RST 键</b>（按下、松开）</li>
+  <li><b>松开 BOOT 键</b></li>
+  <li>重新在「工具」→「端口」里选一下端口（号码可能变了），再点上传</li>
+  <li>上传完成后，<b>按一下 RST</b> 让芯片正常启动、运行新程序</li>
+</ol>
+
+<aside class="theory">
+<p>还记得 <a href="b1.html#B1.4-本案例的每一块电路是从哪来的">B-1 的 strapping 管脚</a>吗？芯片在<b>复位的那一瞬间</b>会看 IO9 的电平：</p>
+<ul>
+<li>IO9 = 高（BOOT 没按）→ 从 Flash 启动，运行你的程序；</li>
+<li>IO9 = 低（BOOT 按着）→ 不运行你的程序，而是运行芯片里出厂固化的一小段“下载程序”，专门等电脑发新程序过来。</li>
+</ul>
+<p>这段下载程序是写死在芯片里的，你的程序再怎么出错也破坏不了它。所以<b>不管之前烧了什么，按住 BOOT 再复位，总能救回来</b>。</p>
+</aside>
+
+<h2 id="B5.8--没拿到板子先在-Wokwi-里玩">B5.8 💡 没拿到板子？先在 Wokwi 里玩<a class="anchor" href="#B5.8--没拿到板子先在-Wokwi-里玩">#</a></h2>
+
+<p><a href="https://wokwi.com" target="_blank" rel="noopener">Wokwi</a> 是一个免费的网页版电子电路模拟器，支持 ESP32-C3 和 WS2812B 灯，打开浏览器就能跑 Arduino 代码，不用装任何东西：</p>
+
+<ol class="steps">
+  <li>打开 <a href="https://wokwi.com" target="_blank" rel="noopener">wokwi.com</a>，新建一个项目，开发板选 <b>ESP32-C3</b>，语言选 Arduino。</li>
+  <li>点「+」添加元件，搜索 NeoPixel（WS2812），加 3 颗（或者一条 3 颗的灯带），把第一颗的 DIN 接到开发板的 GPIO8，电源和 GND 接好，灯与灯之间 DOUT → DIN 串起来。</li>
+  <li>在 Library Manager（库管理）里添加 <code>Adafruit NeoPixel</code>。</li>
+  <li>把程序 1 粘贴进代码区，点绿色的运行按钮。</li>
+  <li>想试程序 2：再加一个按键（pushbutton），一端接 GPIO9，另一端接 GND。</li>
+</ol>
+
+<aside class="note">
+<p>Wokwi 的界面和元件名称可能随版本变化，以网站显示为准。程序 3 用到了真实的 Wi-Fi 热点，在模拟器里不一定能跑，建议拿到板子再试。模拟器里能跑通，说明<b>代码</b>没问题；实物不亮时就可以专心查<b>硬件</b>。</p>
+</aside>
+
+<h2 id="B5.9-排错表">B5.9 排错表<a class="anchor" href="#B5.9-排错表">#</a></h2>
+
+<aside class="debug">
+<table>
+<thead><tr><th>现象</th><th>可能原因</th><th>怎么办</th></tr></thead>
+<tbody>
+<tr><td>插上电，红色指示灯不亮</td><td>线或 USB 口不供电；Type-C 虚焊；稳压芯片 U2 或 LED4 有问题</td><td>换线、换口；看 Type-C 引脚焊接；万用表测 C2 两端有没有 3.3 V</td></tr>
+<tr><td>红灯亮，但「端口」里没有 usbmodem</td><td><b>线只能充电</b>；D+ / D- 接反或虚焊；旧程序让 USB 不工作</td><td>换一根能传数据的线；用<b>下载模式</b>再看端口；检查原理图 D+ → IO19、D- → IO18</td></tr>
+<tr><td>上传失败（Failed to connect / No serial data received）</td><td>芯片没进入下载状态；选错了端口或开发板</td><td>手动下载模式（B5.7）；确认选的是 ESP32C3 Dev Module 和 usbmodem 端口</td></tr>
+<tr><td>上传成功，但灯没反应</td><td>还停在下载模式；没装库；<code>LED_PIN</code> 写错</td><td><b>按一下 RST</b>；确认 <code>LED_PIN 8</code>；把程序 1 原样再传一次</td></tr>
+<tr><td>串口监视器里一片空白</td><td>「USB CDC On Boot」没设成 Enabled；波特率不对</td><td>设成 Enabled 后重新上传；波特率选 115200；按一下 RST</td></tr>
+<tr><td>灯完全不亮（程序确认在跑）</td><td>VLED 没电（D1 方向反了）；第 1 颗灯 DIN 虚焊；灯方向贴反</td><td>测 VLED 是否约 4.2 V；检查 D1 色环方向；对照 SMT 预览检查灯的方向</td></tr>
+<tr><td>只有第 1 颗亮，后面的不亮或乱闪</td><td>LED1 的 DOU → LED2 的 DIN 断了；<code>LED_COUNT</code> 写错</td><td>检查这两颗灯之间的连线和焊点；确认 <code>LED_COUNT 3</code></td></tr>
+<tr><td>颜色不对（想要红色出来是绿色）</td><td>颜色顺序设置和灯不一致</td><td>把 <code>NEO_GRB</code> 改成 <code>NEO_RGB</code> 试试</td></tr>
+<tr><td>按 BOOT 键没反应</td><td>没写 <code>INPUT_PULLUP</code>；按键虚焊</td><td>检查 <code>pinMode(9, INPUT_PULLUP)</code>；串口打印 <code>digitalRead(9)</code> 看按下时是不是 0</td></tr>
+<tr><td>一直重启，串口不停打印启动信息</td><td>供电不够（亮度太高、USB 口供电弱）；程序出错崩溃</td><td>把 <code>setBrightness</code> 调小；换个 USB 口；用下载模式烧一个最简单的程序试试</td></tr>
+<tr><td>手机连不上热点 / 打不开网页</td><td>密码少于 8 位；手机自动切回了移动数据；地址输错</td><td>密码至少 8 位；连上后关掉手机的移动数据再试；以串口打印的地址为准</td></tr>
+<tr><td>Wi-Fi 距离很近就断</td><td>天线附近有金属、手握着天线；天线下方有铜（设计问题）</td><td>别用手捏着模组顶部；回顾 <a href="b3.html#B3.2-布局与天线禁止区域">B3.2 天线净空</a></td></tr>
+</tbody>
+</table>
+</aside>
+
+<aside class="diy">
+<p><b>🎨 接下来可以玩什么：</b> 让灯随时间变颜色（做一个“番茄钟”）；在排针上接一个温湿度传感器，温度越高灯越红；接一个蜂鸣器，按键时“滴”一声；连上家里的 Wi-Fi，用手机远程开关灯。这些在网上搜“ESP32-C3 + 传感器名 + Arduino”都能找到大量例子。</p>
+</aside>
+
+<aside class="link">
+<p>单片机、GPIO、程序是怎么“写进去”的：<a href="../ch2/8.html">2.8 单片机入门</a>；高低电平、上拉电阻：<a href="../ch2/7.html">2.7 数字电路入门</a>。下一页是整个 Quickstart 的<a href="summary.html">小结</a>。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch1/b4.html"><small>← 上一页</small>B-4 导出与 SMT 下单</a><a class="next" href="../ch1/summary.html"><small>下一页 →</small>Quickstart 小结</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/widgets/ch1b.js"></script>
+</body>
+</html>

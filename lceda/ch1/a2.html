@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A-2 画原理图 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch1/a2" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 1 章 · Quickstart 实战</div>
+    <article>
+      <h1>A-2 画原理图</h1>
+      <p class="lead">这一节把小徽章的电路画成原理图：从元件库里找到需要的元件、放到图纸上、改好参数、用导线和网络标签把它们连起来，最后让软件帮你检查一遍。本节会遇到一个真实的错误，正好示范“出错 → 定位 → 修复”的完整过程。</p>
+      <div class="meta-bar"><span>⏱ 约 60~90 分钟</span><span>🖱️ 含器件三联图</span><span>📋 含元件属性、网络标签说明表</span><span>🔧 含一次真实的 DRC 排错</span></div>
+      
+
+<aside class="theory">
+<p><b>原理图是什么？</b> 原理图是电路的“<b>地铁线路图</b>”：只表达<b>哪个元件的哪只脚和谁连在一起</b>，不表达元件的真实大小和位置。所以画原理图时追求的是<b>清楚好读</b>，元件摆在哪、线怎么拐都可以随意，不影响最终的板子。</p>
+</aside>
+
+<p>上一步双击了 <b>1.P1</b>，现在应该已经在原理图编辑器里了。界面各区域如果还不熟，回 <a href="0-ui.html#原理图编辑器的布局">1.0 节的热点图</a>看看。</p>
+
+<h2 id="A2.1-打开元件库搜索-NE555">A2.1 打开元件库，搜索 NE555<a class="anchor" href="#A2.1-打开元件库搜索-NE555">#</a></h2>
+
+<ol class="steps">
+  <li>按 <kbd>\</kbd> 打开底部面板，确认停在「<b>库</b>」标签</li>
+  <li>在搜索框里输入 <code>NE555</code>，按 <kbd>return</kbd></li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a2-lib-eda.png" alt="底部库面板：①类型标签 ②来源 ③搜索框" width="920" loading="lazy"><figcaption><span class="fig-no">图 A2-1</span>底部库面板：①类型标签 ②来源 ③搜索框</figcaption></figure>
+
+<p>库面板最上面一排是<b>类型</b>（器件 / 封装 / 复用模块 / 3D模型 / 面板库 / 仿真模型），我们要找的是“<b>器件</b>”。旁边是<b>来源</b>：</p>
+<ul>
+<li><b>嘉立创EDA</b>：软件自带的公共库，元件很多，但看不到库存和价格。</li>
+<li><b>立创商城</b>：和立创商城（卖元件的网站）同步的库，<b>能直接看到库存、价格，以及嘉立创贴片用的“基础库 / 扩展库”分类</b>。</li>
+</ul>
+
+<ol class="steps" start="3">
+  <li value="3">点来源「<b>立创商城</b>」</li>
+  <li value="4"><b>在搜索框里再按一次 <kbd>return</kbd></b>（切换来源后结果不会自动刷新，要重新搜索）</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a2-lib-lcsc.png" alt="来源切到立创商城后的搜索结果。第 ③ 行就是本例要用的 NE555DR（C7593）" width="870" loading="lazy"><figcaption><span class="fig-no">图 A2-2</span>来源切到立创商城后的搜索结果。第 ③ 行就是本例要用的 NE555DR（C7593）</figcaption></figure>
+
+<div class="table-title">搜索结果列表的各列</div><table class="props"><thead><tr><th>编号</th><th>列</th><th>含义（大白话）</th><th>本例看什么</th></tr></thead><tbody><tr><td><span class="tagn">4</span></td><td>器件</td><td>器件名称（一般就是厂家型号）</td><td>NE555DR</td></tr><tr><td><span class="tagn">5</span></td><td>封装</td><td>芯片的“外形规格”，决定 PCB 上焊盘的形状。SOIC-8 是 8 脚贴片，DIP-8 是 8 脚直插</td><td>SOIC-8（贴片）</td></tr><tr><td><span class="tagn">6</span></td><td>供应商编号</td><td>立创商城的商品编号，也叫 <b>C 编号</b></td><td><b>C7593</b></td></tr><tr><td><span class="tagn">7</span></td><td>制造商</td><td>谁生产的</td><td>TI（德州仪器）</td></tr><tr><td><span class="tagn">8</span></td><td>立创商城库存 / 价格</td><td>在立创商城单独买元件时的库存和单价</td><td>约 1.6 万个，约 ¥0.66</td></tr><tr><td><span class="tagn">9</span></td><td>嘉立创库存 / 价格</td><td>让嘉立创工厂贴片（SMT）时，工厂仓库里的库存和单价</td><td>库存 13 万+</td></tr><tr><td><span class="tagn">10</span></td><td>嘉立创库类别</td><td><b>基础库</b>（工厂常备，贴片便宜）或<b>扩展库</b>（要临时上料）</td><td>扩展库（555 没有基础库型号）</td></tr><tr><td></td><td>描述</td><td>元件的简单介绍</td><td>—</td></tr></tbody></table>
+
+<aside class="theory">
+<p><b>什么是 C 编号？</b> 立创商城给每一种元件起的唯一编号，比如 C7593 就是“TI 生产的 SOIC-8 封装 NE555DR”。同样叫 NE555 的芯片有十几种（不同厂家、不同封装），<b>用 C 编号搜索可以一步找到完全一样的那一个</b>。本案例后面放其他元件时，都直接搜 C 编号。</p>
+</aside>
+
+<aside class="tip">
+<p>选元件的小原则：<b>库存多</b>（不容易断货）、<b>封装合适</b>（本例用贴片）、<b>尽量基础库</b>（贴片更省钱）。左边一栏还有「系统 / 最近 / 个人 / 工程 / 公开 / 收藏」等分类，可以浏览最近用过或收藏的元件。</p>
+</aside>
+
+<h2 id="A2.2-看一眼一个器件--符号--封装--3D">A2.2 看一眼：一个器件 = 符号 + 封装 + 3D<a class="anchor" href="#A2.2-看一眼一个器件--符号--封装--3D">#</a></h2>
+
+<p>在列表里<b>单击</b> NE555DR 那一行，右侧会出现预览：</p>
+
+<figure class="shot"><img src="../img/ch1/a2-place-btn.png" alt="选中一行后的预览区：①放置按钮 ②S / F / P / 3D 切换预览" width="280" loading="lazy"><figcaption><span class="fig-no">图 A2-3</span>选中一行后的预览区：①放置按钮 ②S / F / P / 3D 切换预览</figcaption></figure>
+
+<p>预览区的四格分别是这个器件的四种“样子”，点下面的按钮切换着看：</p>
+
+<div class="widget"><div class="widget-title">器件三联图：同一颗 NE555 的不同样子</div>
+<div class="tri-widget"></div>
+<div class="widget-hint">图片来自编辑器预览区（C7593）。3D 预览需要在那一格里点一下“点击预览3D”才会加载。</div>
+</div>
+
+<aside class="theory">
+<p><b>一个“器件”包含三样东西</b>：<b>符号</b>（画原理图用）、<b>封装</b>（画 PCB 用）、<b>3D 模型</b>（3D 预览用），再加上制造商、C 编号这些采购信息。从立创商城库放进来的器件，这些都已经配好了，所以原理图画完能直接转成 PCB。</p>
+<p>芯片引脚怎么数：从<b>有圆点或缺口的那一端</b>开始，<b>逆时针</b>数 1、2、3……。看封装图：左下角圆点旁边是 1 脚，下排从左到右 1~4，上排从右到左 5~8。</p>
+</aside>
+
+<h2 id="A2.3-放置-NE555">A2.3 放置 NE555<a class="anchor" href="#A2.3-放置-NE555">#</a></h2>
+
+<ol class="steps">
+  <li>确认列表里 NE555DR 那一行是<b>选中（高亮）</b>状态</li>
+  <li>点右上角蓝色的「<b>放置</b>」按钮</li>
+  <li>把鼠标移到画布上，元件会跟着鼠标走；在图纸中间<b>单击</b>放下</li>
+  <li>按 <kbd>Esc</kbd> 结束放置</li>
+</ol>
+
+<aside class="warn">
+<p><b>「放置」按钮是灰的、点不动？</b> 必须先在列表里<b>单击选中一行</b>，「放置」才会变成可用。</p>
+</aside>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/ch1/a2-place-follow.png" alt="点「放置」后，元件跟着鼠标" width="220" loading="lazy"><figcaption><span class="fig-no">图 A2-4</span>点「放置」后，元件跟着鼠标</figcaption></figure>
+<figure class="shot"><img src="../img/ch1/a2-place-cont.png" alt="放下一个后会继续“长”出下一个" width="600" loading="lazy"><figcaption><span class="fig-no">图 A2-5</span>放下一个后会继续“长”出下一个</figcaption></figure>
+</div>
+
+<aside class="warn">
+<p><b>放置是“连续模式”</b>：单击放下 U1 之后，鼠标上会马上又出现一个 U2，等你放第二个。只需要一个时，<b>放完立刻按 <kbd>Esc</kbd></b>。如果不小心多放了，选中多余的那个按 <kbd>delete</kbd> 删掉。</p>
+<p>反过来，这个特性也有用：R5~R8 四个一样的电阻，可以一次连续放 4 个，编号自动递增。</p>
+</aside>
+
+<h2 id="A2.4-放置其余元件">A2.4 放置其余元件<a class="anchor" href="#A2.4-放置其余元件">#</a></h2>
+
+<p>其余元件都用同样的方法：<b>来源选「立创商城」→ 搜索 C 编号 → 单击选中 → 放置 → <kbd>Esc</kbd></b>。按下表逐个放（顺序随意）：</p>
+
+<table>
+<thead><tr><th>搜索</th><th>元件</th><th>放几个</th><th>放好后的位号</th></tr></thead>
+<tbody>
+<tr><td><code>C456012</code></td><td>Type-C 6P 母座</td><td>1</td><td>USB1</td></tr>
+<tr><td><code>C23186</code></td><td>5.1 kΩ 0603</td><td>2</td><td>R1、R2</td></tr>
+<tr><td><code>C21190</code></td><td>1 kΩ 0603</td><td>1</td><td>R3</td></tr>
+<tr><td><code>C25819</code></td><td>47 kΩ 0603</td><td>1</td><td>R4</td></tr>
+<tr><td><code>C15850</code></td><td>10 µF 0805</td><td>1</td><td>C1</td></tr>
+<tr><td><code>C57112</code></td><td>10 nF 0603</td><td>1</td><td>C2</td></tr>
+<tr><td><code>C14663</code></td><td>100 nF 0603</td><td>1</td><td>C3</td></tr>
+<tr><td><code>C2290</code></td><td>白色 LED 0603</td><td>2</td><td>LED1、LED2</td></tr>
+<tr><td><code>C2286</code></td><td>红色 LED 0603</td><td>2</td><td>LED3、LED4</td></tr>
+<tr><td><code>C23138</code></td><td>330 Ω 0603</td><td>4</td><td>R5 ~ R8</td></tr>
+</tbody>
+</table>
+
+<p><b>放置时按 <kbd>空格</kbd> 可以旋转 90°</b>。电阻默认是横着的，竖着放更方便连线时就按一下空格：</p>
+
+<div class="compare" style="max-width:250px"><img src="../img/ch1/a2-rot-before.png" alt="放置中"><div class="after-wrap"><img src="../img/ch1/a2-rot-after.png" alt="按一下空格"></div><div class="handle"></div><span class="lab l">放置中</span><span class="lab r">按一下空格</span></div><div class="compare-cap"><span class="fig-no">图 A2-6</span>放置时按空格旋转（拖动中间的竖线对比）</div>
+
+<aside class="note">
+<p><b>常用库和元件库有什么区别？</b> 左侧竖排标签里的「<b>常用库</b>」放着最常用的电阻、电容、电源符号等，拖出来就能用，很快；但那里的电阻电容是“通用”的，<b>没有绑定具体的 C 编号</b>，之后还得自己补采购信息。所以要下单生产的作品，本教程推荐直接从底部库面板按 C 编号搜。</p>
+</aside>
+
+<figure class="shot"><img src="../img/ch1/a2-common.png" alt="左侧「常用库」：①原理图 / PCB / 面板 / 仿真分类 ②电阻 ③电容" width="200" loading="lazy"><figcaption><span class="fig-no">图 A2-7</span>左侧「常用库」：①原理图 / PCB / 面板 / 仿真分类 ②电阻 ③电容</figcaption></figure>
+
+<h2 id="A2.5-看懂并修改元件属性">A2.5 看懂并修改元件属性<a class="anchor" href="#A2.5-看懂并修改元件属性">#</a></h2>
+
+<p>单击画布上的 R3（1 kΩ 电阻），右侧属性面板就显示它的全部属性。每一项的意思如下（编号对应图中蓝色数字）：</p>
+
+<figure class="shot"><img src="../img/ch1/a2-r3-props.png" alt="选中 R3 后的属性面板" width="250" loading="lazy"><figcaption><span class="fig-no">图 A2-8</span>选中 R3 后的属性面板</figcaption></figure>
+
+<div class="table-title">元件属性面板（以 R3 为例）</div><table class="props"><thead><tr><th>编号</th><th>属性</th><th>含义（大白话）</th><th>本例怎么填</th><th>什么时候需要改</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>名称</td><td>元件在画布上显示的名字。<code>={值}</code> 表示“直接显示‘值’那一栏的内容”</td><td>={值}（显示 1kΩ）</td><td>一般不改</td></tr><tr><td><span class="tagn">2</span></td><td>ID</td><td>软件内部编号</td><td>$1152</td><td>不用管</td></tr><tr><td><span class="tagn">3</span></td><td>位号</td><td>元件在板子上的“名字”：R 电阻、C 电容、U 芯片、LED 发光二极管、USB 插座 + 序号</td><td>R3</td><td>编号乱了时可以手动改，或用「分配位号」</td></tr><tr><td><span class="tagn">4</span></td><td>唯一ID</td><td>原理图和 PCB 靠它认出“是同一个元件”</td><td>gge26</td><td>不要改</td></tr><tr><td><span class="tagn">5</span></td><td>器件</td><td>这个元件对应库里的哪个器件；点右边的「…」可以<b>更换成别的器件</b></td><td>0603WAF1001T5E</td><td>想换型号时</td></tr><tr><td><span class="tagn">6</span></td><td>封装</td><td>PCB 上用哪种焊盘。<b>为空的话就没法转到 PCB</b>（后面 DRC 会报错）</td><td>R0603</td><td>想换大小（如 1206 方便手焊）时</td></tr><tr><td><span class="tagn">7</span></td><td>加入BOM</td><td>导出元件清单时是否包含它</td><td>是</td><td>不需要采购的东西（比如 Logo）选“否”</td></tr><tr><td><span class="tagn">8</span></td><td>转到PCB</td><td>转换到 PCB 时是否带上它</td><td>是</td><td>只画在原理图上做说明的元件选“否”</td></tr><tr><td><span class="tagn">9</span></td><td>PCB层</td><td>放到 PCB 的顶层还是底层</td><td>默认（顶层）</td><td>一般不改</td></tr><tr><td><span class="tagn">10</span></td><td>值</td><td>电阻的阻值、电容的容量</td><td>1kΩ</td><td>想改闪烁速度时（记得同时换器件）</td></tr><tr><td><span class="tagn">11</span></td><td>制造商</td><td>生产厂家</td><td>UNI-ROYAL(厚声)</td><td>—</td></tr><tr><td><span class="tagn">12</span></td><td>制造商编号</td><td>厂家的型号</td><td>0603WAF1001T5E</td><td>—</td></tr><tr><td><span class="tagn">13</span></td><td>供应商</td><td>从哪买：LCSC 就是立创商城</td><td>LCSC</td><td>—</td></tr><tr><td><span class="tagn">14</span></td><td>供应商编号</td><td>C 编号。<b>嘉立创贴片就是按它来备料的</b></td><td>C21190</td><td>换器件时会自动跟着变</td></tr><tr><td><span class="tagn">15</span></td><td>更多属性 / 新增属性</td><td>可以给元件加自定义属性（比如“备注：需要手焊”）</td><td>不用</td><td>有特殊说明时</td></tr><tr><td><span class="tagn">16</span></td><td>组合</td><td>把几个对象组合在一起，一起移动</td><td>不用</td><td>—</td></tr><tr><td><span class="tagn">17</span></td><td>复用模块</td><td>这个元件属于哪个“复用模块”（一段可重复使用的电路）</td><td>不用</td><td>进阶：复用模块</td></tr><tr><td><span class="tagn">18</span></td><td>分组ID</td><td>复用模块里的分组</td><td>不用</td><td>—</td></tr><tr><td><span class="tagn">19</span></td><td>通道ID</td><td>多通道复用时的通道编号</td><td>不用</td><td>—</td></tr></tbody></table>
+
+<aside class="tip">
+<p>每一行值前面的小勾选框表示“<b>这一项要不要显示在画布上</b>”。默认显示“名称（值）”和“位号”，所以画布上 R3 旁边写着 <code>R3</code> 和 <code>1kΩ</code>。</p>
+</aside>
+
+<aside class="warn">
+<p><b>改属性时，先确认光标在输入框里再打字。</b> 单击输入框，看到里面有闪烁的光标再输入；如果焦点还在画布上，你按的字母会被当成快捷键（比如按 K 会缩放画布），<span class="keys"><kbd>⌘</kbd><kbd>A</kbd></span> 会变成“全选画布上的所有东西”。</p>
+</aside>
+
+<h2 id="A2.6-把元件摆整齐">A2.6 把元件摆整齐<a class="anchor" href="#A2.6-把元件摆整齐">#</a></h2>
+
+<p>拖动元件（按住左键拖）把它们大致摆成下面的样子。原理图摆放的习惯是：<b>信号从左往右流，电源在上、地在下</b>，相关的元件放在一起：</p>
+
+<figure class="shot"><img src="../img/ch1/a0-sch.png" alt="参考摆法（最终完成的原理图）" width="895" loading="lazy"><figcaption><span class="fig-no">图 A2-9</span>参考摆法（最终完成的原理图）</figcaption></figure>
+
+<ul>
+<li>最左边：USB1，下面是 R1、R2</li>
+<li>中间：U1，左边是 R3、R4、C1（定时部分），C3 放在电源附近，C2 放在 5 脚旁</li>
+<li>右边：上面两路 LED1+R5、LED2+R6（白灯，接在 VCC 和 OUT 之间），下面两路 R7+LED3、R8+LED4（红灯，接在 OUT 和 GND 之间）</li>
+</ul>
+
+<h2 id="A2.7-用导线连线">A2.7 用导线连线<a class="anchor" href="#A2.7-用导线连线">#</a></h2>
+
+<ol class="steps">
+  <li>按 <span class="keys"><kbd>⌥</kbd><kbd>W</kbd></span> 进入画导线模式（或点工具栏的导线图标），光标变成十字</li>
+  <li>移到起点引脚的<b>端点</b>（引脚末端的小灰点）上，<b>单击</b></li>
+  <li>移动鼠标，导线会跟着走；需要拐弯时在拐点单击一下</li>
+  <li>移到终点引脚的端点上<b>单击</b>，这根线就连好了</li>
+  <li>继续画下一根，或按 <kbd>Esc</kbd> 退出</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/ch1/a2-wire1.png" alt="①对准起点单击" width="400" loading="lazy"><figcaption><span class="fig-no">图 A2-10</span>①对准起点单击</figcaption></figure>
+<figure class="shot"><img src="../img/ch1/a2-wire2.png" alt="移动，导线跟随" width="400" loading="lazy"><figcaption><span class="fig-no">图 A2-11</span>移动，导线跟随</figcaption></figure>
+<figure class="shot"><img src="../img/ch1/a2-wire3.png" alt="②在终点单击" width="400" loading="lazy"><figcaption><span class="fig-no">图 A2-12</span>②在终点单击</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/ch1/a2-wire-done.png" alt="R3 下端与 R4 上端连好，绿框处是自动生成的连接点（再往右连到 U1 的 7 脚 DISCH）" width="310" loading="lazy"><figcaption><span class="fig-no">图 A2-13</span>R3 下端与 R4 上端连好，绿框处是自动生成的连接点（再往右连到 U1 的 7 脚 DISCH）</figcaption></figure>
+
+<aside class="theory">
+<p><b>什么是“网络”？</b> 用导线连在一起的所有引脚，组成一个<b>网络</b>——就像同一根水管里连通的所有地方，水压（电压）处处相同。比如 R3 下端、R4 上端、U1 的 7 脚连在一起，就是一个网络。</p>
+<p><b>红色圆点（连接点）</b>表示“这几根线在这里真的连在一起”。两根线只是交叉而没有圆点，表示<b>没有连接</b>，只是画的时候从上面跨过去。</p>
+</aside>
+
+<p>按下面的连接表把线全部连好（“网络”一列里写的名字，有的是导线连，有的用下面讲的电源符号和网络标签连）：</p>
+
+<table>
+<thead><tr><th>网络</th><th>连在一起的引脚</th></tr></thead>
+<tbody>
+<tr><td>VCC（5 V）</td><td>USB1 的 VBUS、U1 的 8 脚 VCC 和 4 脚 RST、R3 上端、C3 一端、LED1 和 LED2 的正极（A）</td></tr>
+<tr><td>GND（地）</td><td>USB1 的 GND 和外壳 EH、U1 的 1 脚、R1 和 R2 一端、C1、C2、C3 的另一端、LED3 和 LED4 的负极（K）</td></tr>
+<tr><td>OUT</td><td>U1 的 3 脚、R5、R6、R7、R8 各一端</td></tr>
+<tr><td>（放电节点）</td><td>R3 下端、R4 上端、U1 的 7 脚 DISCH</td></tr>
+<tr><td>（定时节点）</td><td>R4 下端、C1 一端、U1 的 6 脚 THRES 和 2 脚 TRIG</td></tr>
+<tr><td>（控制端）</td><td>C2 一端、U1 的 5 脚 CONT</td></tr>
+<tr><td>CC1 / CC2</td><td>R1 另一端接 USB1 的 CC1；R2 另一端接 CC2</td></tr>
+<tr><td>（LED 支路）</td><td>LED1 负极—R5，LED2 负极—R6（白灯：VCC → LED → 330Ω → OUT）；R7—LED3 正极，R8—LED4 正极（红灯：OUT → 330Ω → LED → GND）</td></tr>
+</tbody>
+</table>
+
+<h2 id="A2.8-放置电源VCC和地GND符号">A2.8 放置电源（VCC）和地（GND）符号<a class="anchor" href="#A2.8-放置电源VCC和地GND符号">#</a></h2>
+
+<ol class="steps">
+  <li>点工具栏上的 <b>VCC</b> 图标（鼠标停在上面会显示名字）</li>
+  <li>符号跟着鼠标，对准要接电源的引脚端点（例如 R3 上端）单击</li>
+  <li>继续放下一个，或按 <kbd>Esc</kbd> 结束</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a2-vcc-icon.png" alt="工具栏上的 VCC 电源符号按钮" width="420" loading="lazy"><figcaption><span class="fig-no">图 A2-14</span>工具栏上的 VCC 电源符号按钮</figcaption></figure>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/ch1/a2-vcc-place.png" alt="VCC 跟随鼠标" width="260" loading="lazy"><figcaption><span class="fig-no">图 A2-15</span>VCC 跟随鼠标</figcaption></figure>
+<figure class="shot"><img src="../img/ch1/a2-vcc-done.png" alt="放好" width="260" loading="lazy"><figcaption><span class="fig-no">图 A2-16</span>放好</figcaption></figure>
+</div>
+
+<p>地符号 GND 在 VCC 图标旁边的下拉箭头里，也可以从左侧「常用库 → 电源」里拖出来，用法相同。</p>
+
+<aside class="theory">
+<p><b>为什么到处都是 VCC 和 GND，却不用连线？</b> 名字相同的电源符号，软件会自动认为它们是<b>同一个网络</b>。这样就不用从 USB 插座拉一根长长的线跑遍整张图——在每个需要供电的地方放一个 VCC，需要接地的地方放一个 GND 就行。</p>
+<p><b>GND（地）</b>是电路里电压的“0 刻度”，所有电流最后都流回这里。可以把它想成水循环里的“海平面”。</p>
+</aside>
+
+<h2 id="A2.9-网络标签同名就相连">A2.9 网络标签：同名就相连<a class="anchor" href="#A2.9-网络标签同名就相连">#</a></h2>
+
+<p>U1 的 OUT（3 脚）要连到右边四个电阻。除了拉导线，还可以用<b>网络标签</b>：</p>
+
+<ol class="steps">
+  <li>按 <span class="keys"><kbd>⌥</kbd><kbd>N</kbd></span>，鼠标上出现一个网络标签（默认名字 NET1）</li>
+  <li>对准 OUT 那根导线单击放下</li>
+  <li>在右侧属性面板的「<b>名称</b>」里把 NET1 改成 <code>OUT</code></li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a2-net-follow.png" alt="网络标签跟着鼠标，对准导线单击" width="420" loading="lazy"><figcaption><span class="fig-no">图 A2-17</span>网络标签跟着鼠标，对准导线单击</figcaption></figure>
+
+<figure class="shot"><img src="../img/ch1/a2-net-props.png" alt="刚放下的网络标签和它的属性" width="290" loading="lazy"><figcaption><span class="fig-no">图 A2-18</span>刚放下的网络标签和它的属性</figcaption></figure>
+
+<div class="table-title">网络标签属性</div><table class="props"><thead><tr><th>编号</th><th>属性</th><th>含义（大白话）</th><th>本例怎么填</th><th>什么时候需要改</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>名称</td><td>网络的名字。<b>名字相同的网络标签自动相连</b></td><td>改成 OUT</td><td>每个标签都要起有意义的名字</td></tr><tr><td><span class="tagn">2</span></td><td>父级</td><td>这个标签所属的网络，软件自动填</td><td>NET1 → OUT</td><td>不用改</td></tr><tr><td><span class="tagn">3</span></td><td>关联</td><td>标签所在的图页和图纸分区（P1 的 B4 格）</td><td>自动</td><td>—</td></tr><tr><td><span class="tagn">4</span></td><td>字体颜色</td><td>文字颜色</td><td>默认</td><td>随意</td></tr><tr><td><span class="tagn">5</span></td><td>字体</td><td>文字字体</td><td>Arial（默认）</td><td>—</td></tr><tr><td><span class="tagn">6</span></td><td>字体大小</td><td>文字大小</td><td>0.08inch（默认）</td><td>看不清时调大</td></tr><tr><td><span class="tagn">7</span></td><td>样式</td><td>加粗 B / 斜体 I / 下划线 U</td><td>不选</td><td>—</td></tr><tr><td><span class="tagn">8</span></td><td>原点</td><td>文字以哪个点对齐（九宫格）</td><td>默认</td><td>—</td></tr><tr><td><span class="tagn">9</span></td><td>组合</td><td>和其他对象组合</td><td>不用</td><td>—</td></tr></tbody></table>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/ch1/a2-net-rename.png" alt="①名称改成 OUT" width="290" loading="lazy"><figcaption><span class="fig-no">图 A2-19</span>①名称改成 OUT</figcaption></figure>
+<figure class="shot"><img src="../img/ch1/a2-net-done.png" alt="完成的 OUT 标签" width="420" loading="lazy"><figcaption><span class="fig-no">图 A2-20</span>完成的 OUT 标签</figcaption></figure>
+</div>
+
+<aside class="tip">
+<p>在右边 LED 电阻那边的导线上也放一个名为 <code>OUT</code> 的网络标签，两边就连通了，不用画一根横穿整张图的线。网络标签在电路复杂时非常好用（案例 B 会大量使用）。</p>
+</aside>
+
+<h2 id="A2.10-不用的引脚非连接标识">A2.10 不用的引脚：非连接标识<a class="anchor" href="#A2.10-不用的引脚非连接标识">#</a></h2>
+
+<p>如果芯片有某只脚<b>故意不接</b>，可以在它上面放一个「<b>非连接标识</b>」（工具栏上那个 ✕ 图标），告诉软件“这只脚不连是故意的”，检查时就不会报“引脚悬空”。本例 NE555 的 8 只脚全都用上了，<b>不需要放</b>；以后遇到有空脚的芯片记得用它。</p>
+
+<h2 id="A2.11-检查原理图DRC并修好一个真实的错误">A2.11 检查原理图（DRC），并修好一个真实的错误<a class="anchor" href="#A2.11-检查原理图DRC并修好一个真实的错误">#</a></h2>
+
+<p>画完之后，让软件帮你检查一遍：</p>
+
+<ol class="steps">
+  <li>点菜单「<b>设计</b>」→「<b>检查DRC</b>」</li>
+  <li>底部面板会自动切到「DRC」标签，显示检查结果</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a2-drc-menu.png" alt="设计 → 检查DRC" width="290" loading="lazy"><figcaption><span class="fig-no">图 A2-21</span>设计 → 检查DRC</figcaption></figure>
+
+<p>本教程实操时，第一次检查的结果是这样的（我们没有修改，原样保留下来做示范）：</p>
+
+<figure class="shot"><img src="../img/ch1/a2-drc-err.png" alt="第一次检查：①2 个致命错误 ②1 个警告 ③1 个信息。左边可以按类别筛选" width="892" loading="lazy"><figcaption><span class="fig-no">图 A2-22</span>第一次检查：①2 个致命错误 ②1 个警告 ③1 个信息。左边可以按类别筛选</figcaption></figure>
+
+<table>
+<thead><tr><th>级别</th><th>意思</th><th>要不要管</th></tr></thead>
+<tbody>
+<tr><td>致命错误</td><td>必须修，不修没法正确生成 PCB</td><td>✅ 必须</td></tr>
+<tr><td>错误</td><td>大概率是画错了</td><td>✅ 应该修</td></tr>
+<tr><td>警告</td><td>可能有问题，建议看一下</td><td>看情况</td></tr>
+<tr><td>信息</td><td>提醒，通常无害</td><td>了解即可</td></tr>
+</tbody>
+</table>
+
+<h3 id="出错--定位--修复">出错 → 定位 → 修复<a class="anchor" href="#出错--定位--修复">#</a></h3>
+
+<p><b>① 读懂报错。</b> 两条致命错误写的是：“元件 R1 缺少‘封装’属性”“元件 R2 缺少‘封装’属性”。也就是说 R1、R2 不知道在 PCB 上该用什么焊盘。</p>
+
+<p><b>② 定位。</b> 在画布上单击 R1，看右侧属性面板——「封装」那一栏果然是<b>空的</b>：</p>
+
+<figure class="shot"><img src="../img/ch1/a2-r1-fp.png" alt="R1 的属性：封装为空" width="290" loading="lazy"><figcaption><span class="fig-no">图 A2-23</span>R1 的属性：封装为空</figcaption></figure>
+
+<p>也可以点「器件」右边的「…」打开器件管理器，对比一下：其他电阻的封装都是 R0603，只有 R1、R2 这两行是空的：</p>
+
+<figure class="shot"><img src="../img/ch1/a2-devmgr.png" alt="器件管理器：R1、R2（①）的封装一栏为空" width="633" loading="lazy"><figcaption><span class="fig-no">图 A2-24</span>器件管理器：R1、R2（①）的封装一栏为空</figcaption></figure>
+
+<p>原因：本教程实操时 R1、R2 是用另一种方式（脚本）放进来的，没带上封装信息。你按前面的步骤从立创商城库放置一般不会遇到，但“某个元件缺封装”是新手最常见的错误之一，比如从「常用库」拖出来的通用元件、或者自己画的元件就可能没有封装。</p>
+
+<p><b>③ 修复。</b> 最稳妥的方法是<b>删掉重放</b>：</p>
+<ol class="steps">
+  <li>选中 R1、R2，按 <kbd>delete</kbd> 删除</li>
+  <li>底部库面板（来源：立创商城）搜索 <code>C23186</code>，选中 → 放置两个 → <kbd>Esc</kbd></li>
+  <li>把它们拖回原来的位置，重新连好导线（如果位号变了，在属性里改回 R1、R2）</li>
+  <li>再运行一次「设计 → 检查DRC」</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a2-drc-ok.png" alt="修好后：致命错误 0，错误 0，警告 1，信息 1" width="892" loading="lazy"><figcaption><span class="fig-no">图 A2-25</span>修好后：致命错误 0，错误 0，警告 1，信息 1</figcaption></figure>
+
+<p>剩下的两条可以不管：</p>
+<ul>
+<li><b>警告</b>：“元件的属性与供应商编号不匹配，建议使用器件标准化”。这是软件建议你用「器件标准化」功能统一核对一遍元件信息，<b>不影响生产</b>（A-10 导出 BOM 时还会提醒一次）。</li>
+<li><b>信息</b>：“元件 TYPE-C_6P 的引脚与焊盘未对应（7_0、7_1、7_2）”。这几个是 USB 插座<b>金属外壳的固定脚</b>，在 PCB 上有焊盘（用来焊牢插座），原理图符号里没有对应的引脚，<b>完全无害</b>。</li>
+</ul>
+
+<aside class="debug">
+<p><b>DRC 常见报错速查</b></p>
+<ul>
+<li>“缺少封装属性” → 选中元件，在属性「封装」里选一个，或删掉从立创商城库重新放。</li>
+<li>“引脚悬空 / 未连接” → 那只脚忘了连线；故意不连就放非连接标识。</li>
+<li>“网络只有一个连接点” → 网络标签名字打错了（比如 OUT 写成了 0UT），对不上另一个。</li>
+<li>“位号重复” → 两个元件都叫 R5，改掉一个，或用「设计 → 分配位号…」重新编号。</li>
+</ul>
+</aside>
+
+<h2 id="A2.12-分配位号">A2.12 分配位号<a class="anchor" href="#A2.12-分配位号">#</a></h2>
+
+<p>元件放来放去、删了又加，位号可能会乱（比如有 R1、R2、R9，却没有 R3）。「<b>设计 → 分配位号…</b>」可以让软件自动按顺序重新编号。本例我们是按顺序放的，位号已经是整齐的 R1~R8、C1~C3、LED1~LED4，<b>不需要用</b>。</p>
+
+<table>
+<thead><tr><th>位号前缀</th><th>元件</th></tr></thead>
+<tbody>
+<tr><td>R</td><td>电阻（Resistor）</td></tr>
+<tr><td>C</td><td>电容（Capacitor）</td></tr>
+<tr><td>U</td><td>芯片（IC）</td></tr>
+<tr><td>D / LED</td><td>二极管 / 发光二极管</td></tr>
+<tr><td>SW</td><td>开关（Switch）</td></tr>
+<tr><td>USB / J</td><td>插座、接口</td></tr>
+</tbody>
+</table>
+
+<aside class="diy">
+<p><b>给原理图加上你的名字。</b> 图纸右下角的标题栏（明细表）里已经自动写好了板子名、日期等信息；想加注释可以用「放置 → 文本」在图纸空白处写上作者、版本号、“R4 越大闪得越慢”之类的说明。原理图上的文字不会出现在电路板上。</p>
+</aside>
+
+<h2 id="本节检查清单">本节检查清单<a class="anchor" href="#本节检查清单">#</a></h2>
+
+<ul class="checklist">
+  <li><span>17 个元件都放好了，位号是 USB1、R1~R8、C1~C3、U1、LED1~LED4</span></li>
+  <li><span>按连接表连好了所有导线，VCC / GND 符号和 OUT 网络标签都放了</span></li>
+  <li><span>「设计 → 检查DRC」：致命错误 0、错误 0</span></li>
+  <li><span>按了 <span class="keys"><kbd>⌘</kbd><kbd>S</kbd></span> 保存</span></li>
+</ul>
+
+<aside class="link">
+<p>原理图的完整功能（总线、层次图、多图页、自定义符号……）在 <a href="../ch4/0.html">第 4 章：原理图设计</a>；怎么读别人的原理图见 <a href="../ch2/6.html">2.6 怎么读原理图</a>。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch1/a1.html"><small>← 上一页</small>A-1 新建工程</a><a class="next" href="../ch1/a3.html"><small>下一页 →</small>A-3 原理图转 PCB</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/widgets/ch1.js"></script>
+</body>
+</html>

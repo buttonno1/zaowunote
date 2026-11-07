@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5.10 检验与分析 · Fusion 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch5/10" data-root="../" data-book="fusion">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">Fusion 教程<small>（原 Fusion 360）</small></a></div>
+  <span class="ver">基于 Autodesk Fusion 2705.1.30（个人版）</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-what" href="../ch0/1-what.html">0.1 3D 设计能做什么<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-fusion" href="../ch0/2-fusion.html">0.2 认识 Fusion<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-install" href="../ch0/3-install.html">0.3 安装、账号与许可<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 鼠标、触控板与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与视图操作<span class="chk">✓</span></a></li><li class="nav-sub">常用操作图鉴</li><li><a class="nav-link" data-id="ch1/1-sketch" href="../ch1/1-sketch.html">1.1 草图：在平面上画轮廓<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/2-shape" href="../ch1/2-shape.html">1.2 成形：把草图变成立体<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/3-modify" href="../ch1/3-modify.html">1.3 修改：在已有形状上加工<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/4-aid" href="../ch1/4-aid.html">1.4 辅助与检查<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/5-joint" href="../ch1/5-joint.html">1.5 零部件与联接<span class="chk">✓</span></a></li><li class="nav-sub">案例 · 折叠手机支架</li><li><a class="nav-link" data-id="ch1/p0" href="../ch1/p0.html">P0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p1" href="../ch1/p1.html">P1 新建设计与参数<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p2" href="../ch1/p2.html">P2 底座<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p3" href="../ch1/p3.html">P3 充电线槽（扫掠）<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p4" href="../ch1/p4.html">P4 靠背<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p5" href="../ch1/p5.html">P5 旋钮（旋转）<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p6" href="../ch1/p6.html">P6 螺丝与螺母<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p7" href="../ch1/p7.html">P7 刻字与外观<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p8" href="../ch1/p8.html">P8 联接与运动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p9" href="../ch1/p9.html">P9 检查与修改<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p10" href="../ch1/p10.html">P10 导出<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 三维设计基础知识</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 坐标系、平面与视图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 草图约束与自由度<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 参数化建模与时间轴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 实体、曲面、网格<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 零件、零部件与联接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 尺寸、公差与配合<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 3D 打印入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 其他加工方式<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 文件格式大全<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 读懂工程图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 材料常识<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与数据管理</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 首选项大全<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 界面定制与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 项目、文件与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/4" href="../ch3/4.html">3.4 分享与协作<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/5" href="../ch3/5.html">3.5 许可、离线与性能<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 草图完全手册</summary><ul><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 创建草图与选项板<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 绘图工具<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 修改工具<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 约束全集<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 引用已有几何<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/7" href="../ch4/7.html">4.7 导入 2D 素材<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/8" href="../ch4/8.html">4.8 3D 草图与排错<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 5 章 · 实体建模完全手册</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 拉伸进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 旋转、扫掠、放样进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 加强筋、凸雕、加厚<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/4" href="../ch5/4.html">5.4 基本体与螺旋<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/5" href="../ch5/5.html">5.5 孔与螺纹<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/6" href="../ch5/6.html">5.6 圆角与倒角进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/7" href="../ch5/7.html">5.7 抽壳与拔模<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/8" href="../ch5/8.html">5.8 阵列与镜像<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/9" href="../ch5/9.html">5.9 合并、分割与直接修改<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch5/10" href="../ch5/10.html">5.10 检验与分析<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/11" href="../ch5/11.html">5.11 插入外部素材<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/12" href="../ch5/12.html">5.12 塑料零件<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · 参数化与设计修改</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 参数与表达式<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 时间轴全功能<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 设计意图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 报错与修复<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/5" href="../ch6/5.html">6.5 实战：可调收纳盒<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · 曲面建模</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 曲面是什么<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 创建曲面<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/3" href="../ch7/3.html">7.3 修改曲面<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/4" href="../ch7/4.html">7.4 曲面变实体与质量分析<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 造型（自由形态）</summary><ul><li><a class="nav-link" data-id="ch8/1" href="../ch8/1.html">8.1 造型环境<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/2" href="../ch8/2.html">8.2 创建形体<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/3" href="../ch8/3.html">8.3 编辑形状<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/4" href="../ch8/4.html">8.4 修改工具与完成造型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 9 章 · 钣金与激光切割</summary><ul><li><span class="nav-link todo">钣金与激光切割</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 网格与 STL</summary><ul><li><span class="nav-link todo">网格与 STL</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 装配、联接与运动</summary><ul><li><span class="nav-link todo">装配、联接与运动</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 外观与渲染</summary><ul><li><span class="nav-link todo">外观与渲染</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 动画与爆炸图</summary><ul><li><span class="nav-link todo">动画与爆炸图</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 工程图</summary><ul><li><span class="nav-link todo">工程图</span></li></ul></details><details class="nav-group"><summary>第 15 章 · 3D 打印全流程</summary><ul><li><span class="nav-link todo">3D 打印全流程</span></li></ul></details><details class="nav-group"><summary>第 16 章 · CAM 数控加工入门</summary><ul><li><span class="nav-link todo">CAM 数控加工入门</span></li></ul></details><details class="nav-group"><summary>第 17 章 · 仿真与衍生式设计</summary><ul><li><span class="nav-link todo">仿真与衍生式设计</span></li></ul></details><details class="nav-group"><summary>第 18 章 · 给电路板做外壳</summary><ul><li><span class="nav-link todo">给电路板做外壳</span></li></ul></details><details class="nav-group"><summary>第 19 章 · 脚本与插件</summary><ul><li><span class="nav-link todo">脚本与插件</span></li></ul></details><details class="nav-group"><summary>第 20 章 · 设计经验与常见问题</summary><ul><li><span class="nav-link todo">设计经验与常见问题</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表（中英对照）</span></li><li><span class="nav-link todo">常见问题</span></li><li><span class="nav-link todo">资源链接</span></li><li><span class="nav-link todo">文件下载</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">Fusion 教程</a> / 第 5 章 · 实体建模完全手册</div>
+    <article>
+      <h1>5.10 检验与分析</h1>
+      <p class="lead">「检验」菜单里有一组“分析”工具。它们不改模型，只是给模型“上色”或“画辅助线”，帮你看出肉眼看不出的问题：表面顺不顺、零件能不能从模具里取出来、刀具够不够得着、重心在哪。做 3D 打印的小零件，大部分用不上；做外观件、注塑件、CNC 件时才需要。</p>
+      <div class="meta-bar"><span>⏱ 约 20 分钟</span><span>🖱️ 含曲率梳互动</span><span>✅ Fusion 2705.1.30 实测</span></div>
+      
+
+<figure class="shot"><img src="../img/gal/menu-检验.png" alt="「检验 ▾」菜单：下半部分是这一页讲的分析工具" width="320" loading="lazy"><figcaption><span class="fig-no">图 5.10-1</span>「检验 ▾」菜单：下半部分是这一页讲的分析工具</figcaption></figure>
+
+<table>
+<thead><tr><th>分析</th><th>一句话</th><th>谁会用到</th></tr></thead>
+<tbody>
+<tr><td>曲率梳</td><td>在一条边上画“梳齿”，齿越长说明这里弯得越厉害</td><td>做曲面外观</td></tr>
+<tr><td>斑纹</td><td>把黑白条纹“映”在表面上，条纹断了、折了就说明表面不顺</td><td>做曲面外观</td></tr>
+<tr><td>曲率映射</td><td>用颜色表示表面各处弯得多厉害</td><td>做曲面外观</td></tr>
+<tr><td>等参曲线</td><td>在曲面上画出网格线，看曲面内部的走向</td><td>做曲面外观</td></tr>
+<tr><td>拔模分析</td><td>按“能不能顺利从模具里拔出来”给每个面上色</td><td>注塑件、铸造件</td></tr>
+<tr><td>可访问性</td><td>从某个方向看，哪些面被挡住了</td><td>CNC 加工、注塑件</td></tr>
+<tr><td>质心</td><td>标出重心在哪</td><td>判断会不会倒、平衡</td></tr>
+</tbody>
+</table>
+
+<p>所有分析的用法都一样：<b>点菜单里的分析 → 选要分析的实体（或边）→ 有的还要选一个方向 → 点「确定」</b>。结果会一直显示在模型上，并存进浏览器的「分析」文件夹。点那一行前面的小眼睛就能关掉，截图、渲染前记得关。</p>
+
+<h2 id="先搞懂一个词曲率">先搞懂一个词：曲率<a class="anchor" href="#先搞懂一个词曲率">#</a></h2>
+
+<p><b>曲率</b>就是“弯的程度”。</p>
+<ul>
+  <li>直线不弯，曲率是 <b>0</b>。</li>
+  <li>圆弧处处弯得一样，曲率是一个固定的数：<b>半径越小，弯得越急，曲率越大</b>（曲率 = 1 ÷ 半径）。</li>
+  <li>样条曲线（自由曲线）每一点弯得都不一样。</li>
+</ul>
+
+<p>两个面（或两条线）接在一起时，按“接得有多顺”分三档：</p>
+
+<table>
+<thead><tr><th>档位</th><th>意思</th><th>例子</th><th>看起来</th></tr></thead>
+<tbody>
+<tr><td><b>G0</b>（位置连续）</td><td>只是接上了，有一个尖角</td><td>方块的棱边</td><td>一条明显的折线</td></tr>
+<tr><td><b>G1</b>（相切连续）</td><td>接上了，而且没有尖角，方向一致</td><td>普通圆角：直面接圆弧面</td><td>摸着是圆的，但反光在交界处会“跳”一下</td></tr>
+<tr><td><b>G2</b>（曲率连续）</td><td>连“弯的程度”都是慢慢变的，不会突然变</td><td>手机边框、汽车车身</td><td>反光是一条顺滑的线</td></tr>
+</tbody>
+</table>
+
+<p>G1 和 G2 用肉眼几乎看不出区别，这就是要用曲率梳、斑纹来“看”的原因。</p>
+
+<h2 id="曲率梳Curvature-Comb">曲率梳（Curvature Comb）<a class="anchor" href="#曲率梳Curvature-Comb">#</a></h2>
+
+<p><b>这是什么</b>：在你选的边上，沿着边每隔一段画一根短线（梳齿）。<b>梳齿越长，那一点弯得越厉害；没有梳齿，就是直的</b>。梳齿顶端连起来的那条线叫包络线。</p>
+
+<h3 id="-实验看梳齿怎么变">🧪 实验：看梳齿怎么变<a class="anchor" href="#-实验看梳齿怎么变">#</a></h3>
+
+<div class="widget">
+  <div class="widget-title">点三个按钮对比；选“自由曲线”可以拖动圆点</div>
+  <div class="comb-widget"></div>
+  <div class="widget-hint">“直线 + 圆弧”和“曲率连续过渡”转的角度一样，都是 90°，区别只在“弯的程度”是突然变还是慢慢变。</div>
+</div>
+
+<p><b>在 Fusion 里实际看一下</b>：两个方块，前面那条边分别倒了一个普通圆角（G1）和一个曲率连续圆角（G2，圆角对话框里把「连续性」改成「曲率」），从侧面看它们的轮廓：</p>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/c5/an3-comb-g1.png" alt="G1 普通圆角：梳齿突然出现、一样长、又突然消失" width="360" loading="lazy"><figcaption><span class="fig-no">图 5.10-2</span>G1 普通圆角：梳齿突然出现、一样长、又突然消失</figcaption></figure>
+<figure class="shot"><img src="../img/c5/an3-comb-g2.png" alt="G2 曲率连续圆角：梳齿从 0 慢慢长起来，再慢慢缩回 0" width="360" loading="lazy"><figcaption><span class="fig-no">图 5.10-3</span>G2 曲率连续圆角：梳齿从 0 慢慢长起来，再慢慢缩回 0</figcaption></figure>
+</div>
+
+<ol class="steps">
+  <li>「检验 ▾ → 曲率梳分析」。</li>
+  <li>点要看的边（可以按住 <kbd>⇧</kbd> 选多条）。</li>
+  <li>调「密度」「缩放」直到梳齿看得清，点「确定」。</li>
+</ol>
+
+<figure class="shot"><img src="../img/c5/an2-comb-d.png" alt="曲率梳分析对话框" width="256" loading="lazy"><figcaption><span class="fig-no">图 5.10-4</span>曲率梳分析对话框</figcaption></figure>
+
+<div class="table-title">曲率梳分析</div><table class=""><thead><tr><th>选项</th><th>含义</th></tr></thead><tbody><tr><td>边</td><td>要分析的实体边。草图里的样条曲线也能看曲率：选中曲线后右键，菜单里有「切换曲率显示」（以界面为准）</td></tr><tr><td>密度</td><td>梳齿有多密。太稀会漏掉细节</td></tr><tr><td>缩放</td><td>梳齿画多长。只是显示比例，不影响结果；梳齿太短看不清就调大</td></tr></tbody></table>
+
+<p><b>怎么看</b>：包络线（梳齿顶端连成的线）<b>越平顺，曲线越好看</b>。包络线上有竖直的跳变 → 那里只有 G1；梳齿翻到另一边 → 曲线在那里换了弯的方向。</p>
+
+<h2 id="斑纹分析Zebra">斑纹分析（Zebra）<a class="anchor" href="#斑纹分析Zebra">#</a></h2>
+
+<p><b>这是什么</b>：想象把零件放进一个挂满黑白灯管的房间，表面会映出一道道条纹。汽车厂就是这样检查车身漆面的。</p>
+<p><b>怎么看</b>：盯着<b>两个面的交界处</b>看条纹：</p>
+<ul>
+  <li>条纹在交界处<b>断开、错开</b> → 那里是尖角（G0）。</li>
+  <li>条纹连着，但在交界处<b>突然拐个弯</b> → 相切（G1）。</li>
+  <li>条纹连着，而且<b>顺滑地弯过去</b> → 曲率连续（G2）。</li>
+</ul>
+
+<figure class="shot"><img src="../img/c5/an2-zebra-g1.png" alt="一个前边倒了普通圆角的方块：圆角处条纹接上了；右上角的棱边是尖角，条纹直接断开" width="520" loading="lazy"><figcaption><span class="fig-no">图 5.10-5</span>一个前边倒了普通圆角的方块：圆角处条纹接上了；右上角的棱边是尖角，条纹直接断开</figcaption></figure>
+
+<aside class="note"><p>G1 和 G2 的斑纹差别很细微（只是“拐弯”急不急），需要放大、慢慢转视角才看得出；新手先用斑纹找“断开”的地方，G1 / G2 用上面的曲率梳判断更直观。</p></aside>
+
+<figure class="shot"><img src="../img/c5/an2-zebra-d.png" alt="斑纹分析对话框" width="256" loading="lazy"><figcaption><span class="fig-no">图 5.10-6</span>斑纹分析对话框</figcaption></figure>
+
+<div class="table-title">斑纹分析</div><table class=""><thead><tr><th>选项</th><th>含义</th></tr></thead><tbody><tr><td>实体</td><td>要显示条纹的实体，可以选多个</td></tr><tr><td>方向</td><td>条纹竖着排还是横着排。两个方向都看看，有的问题只在一个方向上明显</td></tr><tr><td>重复</td><td>条纹的数量，越大越密</td></tr><tr><td>不透明度</td><td>条纹的浓淡</td></tr><tr><td>锁定条纹</td><td>勾选后转视角时条纹“贴”在零件上不动；不勾时条纹随视角流动（更像真实反光）</td></tr><tr><td>高质量</td><td>显示更精细，曲面复杂时才需要</td></tr></tbody></table>
+
+<h2 id="曲率映射Curvature-Map">曲率映射（Curvature Map）<a class="anchor" href="#曲率映射Curvature-Map">#</a></h2>
+
+<p><b>这是什么</b>：直接用颜色告诉你每个地方弯得多厉害。<b>怎么看</b>：颜色平缓过渡 = 表面顺；颜色在某条线上突然变 = 那里不顺（和曲率梳的“跳变”是一回事，只是从“线”换成了“面”）。</p>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/c5/an-curvmap.png" alt="“天圆地方”放样体的曲率映射" width="400" loading="lazy"><figcaption><span class="fig-no">图 5.10-7</span>“天圆地方”放样体的曲率映射</figcaption></figure>
+<figure class="shot"><img src="../img/c5/an-curvmap-d.png" alt="曲率映射对话框" width="256" loading="lazy"><figcaption><span class="fig-no">图 5.10-8</span>曲率映射对话框</figcaption></figure>
+</div>
+
+<p>这张图里，平的面（顶面、侧面平的部分）是绿色，弯得多的地方偏紫、偏蓝。</p>
+
+<div class="table-title">曲率映射</div><table class=""><thead><tr><th>选项</th><th>含义</th></tr></thead><tbody><tr><td>实体</td><td>要上色的实体</td></tr><tr><td>类型</td><td>三个图标，是三种不同的曲率算法（鼠标停在图标上会显示名字）。新手用默认的第一个就行</td></tr><tr><td>显示</td><td>两个图标：颜色是连续渐变，还是分成一段一段的色带</td></tr><tr><td>缩放</td><td>颜色范围对应多大的曲率。整个零件全是一种颜色时，调这里</td></tr><tr><td>不透明度 / 高质量</td><td>颜色浓淡 / 显示精度</td></tr></tbody></table>
+
+<h2 id="等参曲线Isocurve">等参曲线（Isocurve）<a class="anchor" href="#等参曲线Isocurve">#</a></h2>
+
+<p><b>这是什么</b>：曲面在 Fusion 内部是一张“弹性网”，等参曲线就是把这张网的网格线画出来。<b>怎么看</b>：网格线排列均匀、走向自然，曲面就好；网格挤成一团或者扭在一起的地方，往往是曲面变形太大、容易出问题的地方。</p>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/c5/an2-iso.png" alt="放样体上的等参曲线" width="360" loading="lazy"><figcaption><span class="fig-no">图 5.10-9</span>放样体上的等参曲线</figcaption></figure>
+<figure class="shot"><img src="../img/c5/an-iso-d.png" alt="等参曲线对话框：类型（U / V 方向）、数量，还可以顺便显示曲率梳" width="256" loading="lazy"><figcaption><span class="fig-no">图 5.10-10</span>等参曲线对话框：类型（U / V 方向）、数量，还可以顺便显示曲率梳</figcaption></figure>
+</div>
+
+<h2 id="拔模分析Draft">拔模分析（Draft）<a class="anchor" href="#拔模分析Draft">#</a></h2>
+
+<aside class="theory">
+<p><b>🧠 先了解“拔模”</b>：注塑件（大部分塑料外壳）是把熔化的塑料打进金属模具，冷却后再<b>把零件从模具里拔出来</b>。拔的那个方向叫<b>开模方向</b>（通常是 Z 轴，向上）。</p>
+<p>如果侧面是完全竖直的（0°），拔的时候侧面会一路贴着模具摩擦，容易拉花、卡住。所以侧壁要做成<b>稍微倾斜一点</b>（一般 1°～3°），像纸杯一样上大下小，一拔就松开。这个倾斜角叫<b>拔模角</b>（在 <a href="7.html">5.7</a> 里用「拔模」命令加）。</p>
+<p>如果侧面反过来斜（上小下大），零件会被模具“勾住”，根本拔不出来，这叫<b>倒扣</b>。</p>
+<p>3D 打印不用考虑这些，所以只做打印件可以跳过这一节。</p>
+</aside>
+
+<p><b>拔模分析做的事</b>：你告诉它开模方向，它按每个面的倾斜角度上色。下面这个演示方块的 4 个侧面，我故意做成了 4 种不同的斜度：</p>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/c5/an2-draft.png" alt="从左前方看：1° 的面和 −5° 的面" width="360" loading="lazy"><figcaption><span class="fig-no">图 5.10-11</span>从左前方看：1° 的面和 −5° 的面</figcaption></figure>
+<figure class="shot"><img src="../img/c5/an2-draft-b.png" alt="从右后方看：+5° 的面和 0° 的面" width="360" loading="lazy"><figcaption><span class="fig-no">图 5.10-12</span>从右后方看：+5° 的面和 0° 的面</figcaption></figure>
+</div>
+
+<table>
+<thead><tr><th>颜色</th><th>意思</th><th>本例</th></tr></thead>
+<tbody>
+<tr><td>🟩 绿</td><td>斜度够了（大于对话框里设的上限，这里是 2°），能顺利拔出来</td><td>+5° 的侧面、顶面</td></tr>
+<tr><td>🟥 红</td><td>斜度不够（在 −2°～2° 之间），基本是竖直的，会刮模具</td><td>0° 和 1° 的侧面</td></tr>
+<tr><td>🟦 蓝</td><td>反向倾斜（小于 −2°），是倒扣，拔不出来</td><td>−5° 的侧面</td></tr>
+</tbody>
+</table>
+
+<ol class="steps">
+  <li>「检验 ▾ → 拔模分析」。</li>
+  <li>「实体」选零件；「方向」点一个平面或一条边，表示开模方向（这里选的是 XY 平面，方向就是垂直于它的 Z 轴）。</li>
+  <li>点「确定」。</li>
+</ol>
+
+<figure class="shot"><img src="../img/c5/an2-draft-d.png" alt="拔模分析对话框" width="256" loading="lazy"><figcaption><span class="fig-no">图 5.10-13</span>拔模分析对话框</figcaption></figure>
+
+<div class="table-title">拔模分析</div><table class=""><thead><tr><th>选项</th><th>含义</th></tr></thead><tbody><tr><td>实体</td><td>要分析的零件</td></tr><tr><td>方向</td><td>开模方向：选一个平面（取它的法线方向）或一条直边</td></tr><tr><td>拔模斜度</td><td>两个数：低于左边的数算“倒扣”，高于右边的数算“够了”，夹在中间的算“不够”。拖下面的滑块也能改</td></tr><tr><td>公差带</td><td>勾选后，在“刚好够 / 刚好不够”附近的一小段角度（下面「公差」设的范围）单独标出来，方便找“差一点点”的面</td></tr><tr><td>不透明度 / 高质量</td><td>颜色浓淡 / 显示精度</td></tr></tbody></table>
+
+<h2 id="可访问性分析Accessibility">可访问性分析（Accessibility）<a class="anchor" href="#可访问性分析Accessibility">#</a></h2>
+
+<p><b>这是什么</b>：选一个方向，Fusion 假装你的眼睛（或者刀具）从这个方向往零件看，<b>看得到的面标绿色，被别的部分挡住的面标红色</b>。</p>
+<p><b>有什么用</b>：</p>
+<ul>
+  <li><b>CNC 加工</b>：刀具是从上往下伸进去的，被挡住的地方刀具够不着，这个方向就加工不出来，要换方向装夹或改设计。</li>
+  <li><b>注塑件</b>：被挡住的地方往往就是倒扣，模具要做复杂的滑块。</li>
+</ul>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/c5/an2-access-before.png" alt="演示零件：上面伸出一块“屋檐”" width="360" loading="lazy"><figcaption><span class="fig-no">图 5.10-14</span>演示零件：上面伸出一块“屋檐”</figcaption></figure>
+<figure class="shot"><img src="../img/c5/an2-access.png" alt="方向选“从上往下”：屋檐底下的面全是红色" width="360" loading="lazy"><figcaption><span class="fig-no">图 5.10-15</span>方向选“从上往下”：屋檐底下的面全是红色</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/c5/an2-access-d.png" alt="可访问性分析对话框" width="256" loading="lazy"><figcaption><span class="fig-no">图 5.10-16</span>可访问性分析对话框</figcaption></figure>
+
+<div class="table-title">可访问性分析</div><table class=""><thead><tr><th>选项</th><th>含义</th></tr></thead><tbody><tr><td>实体</td><td>要分析的零件</td></tr><tr><td>方向</td><td>从哪个方向看：选一个平面或一条边</td></tr><tr><td>更改方向</td><td>三个图标：沿正方向看 / 沿反方向看 / 两个方向都看（零件可以翻过来加工时用）</td></tr><tr><td>不透明度</td><td>颜色浓淡</td></tr></tbody></table>
+
+<h2 id="质心Center-of-Mass">质心（Center of Mass）<a class="anchor" href="#质心Center-of-Mass">#</a></h2>
+
+<p><b>这是什么</b>：零件的重心。Fusion 会在模型上放一个小标记。</p>
+<p><b>有什么用</b>：比如手机支架放上手机后会不会往后倒、一个摆件能不能站稳。重心越低、越靠近底面的中间，越稳。</p>
+
+<figure class="shot"><img src="../img/c5/an2-com.png" alt="放样体的质心：标记在实体内部，靠下的位置（底下大、上面小，重心自然偏下）" width="420" loading="lazy"><figcaption><span class="fig-no">图 5.10-17</span>放样体的质心：标记在实体内部，靠下的位置（底下大、上面小，重心自然偏下）</figcaption></figure>
+
+<ol class="steps">
+  <li>「检验 ▾ → 质心」，选实体或零部件，点「确定」。</li>
+  <li>要算准，先给零件设「物理材料」（<a href="../ch1/3-modify.html">1.3</a>）。所有零件同一种材料时，重心只和形状有关；不同材料混在一起（比如塑料外壳 + 金属配重），设对材料重心才准。</li>
+</ol>
+
+<aside class="tip">
+<p>想知道具体的重量、体积、重心坐标：在浏览器里右键零件 →「特性」。测量、干涉、截面分析见 <a href="../ch1/p9.html">P9</a>、<a href="../ch1/p3.html">P3</a>。</p>
+</aside>
+
+<ul class="checklist">
+  <li><span>我知道曲率 = 弯的程度，直线是 0、半径越小越大</span></li>
+  <li><span>我能用曲率梳分辨普通圆角（G1）和曲率连续圆角（G2）</span></li>
+  <li><span>我知道拔模分析里绿 / 红 / 蓝分别是什么意思</span></li>
+  <li><span>我知道可访问性分析里红色是“从这个方向够不着”</span></li>
+</ul>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch5/9.html"><small>← 上一页</small>5.9 合并、分割与直接修改</a><a class="next" href="../ch5/11.html"><small>下一页 →</small>5.11 插入外部素材</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/widgets/ch5-comb.js"></script>
+</body>
+</html>

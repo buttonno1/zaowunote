@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A-7 铺铜（GND） · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch1/a7" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 1 章 · Quickstart 实战</div>
+    <article>
+      <h1>A-7 铺铜（GND）</h1>
+      <p class="lead">铺铜就是把板子上空着的地方用一大片铜填满，并接到 GND。正反两面各铺一次，板子更稳定，也更好看。</p>
+      <div class="meta-bar"><span>⏱ 约 10 分钟</span><span>📋 含铺铜属性说明表</span><span>⚠️ 要点子菜单「矩形」</span></div>
+      
+
+<h2 id="A7.1-为什么要铺铜">A7.1 为什么要铺铜<a class="anchor" href="#A7.1-为什么要铺铜">#</a></h2>
+
+<aside class="theory">
+<p><b>铺铜（Copper Pour）</b>：在板子空白处铺一整片铜，连到 GND 网络。好处有三个：</p>
+<ul>
+<li><b>省掉很多地线</b>：所有 GND 焊盘都直接“泡”在这片铜里，自动就连上了。</li>
+<li><b>更稳定</b>：一大片地像一个“地基”，电路受到的干扰更小。</li>
+<li><b>工厂更好做</b>：铜分布均匀，板子不容易翘。</li>
+</ul>
+</aside>
+
+<h2 id="A7.2-在顶层铺铜">A7.2 在顶层铺铜<a class="anchor" href="#A7.2-在顶层铺铜">#</a></h2>
+
+<ol class="steps">
+  <li>确认当前层是「<b>顶层</b>」</li>
+  <li>点菜单「<b>放置</b>」，鼠标移到「<b>铺铜区域</b>」上，在子菜单里点「<b>矩形</b>」</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a7-menu.png" alt="放置 → ①铺铜区域 → ②矩形（还有圆形、多边形 &lt;span class=" width="330" loading="lazy"><figcaption><span class="fig-no">图 A7-1</span>放置 → ①铺铜区域 → ②矩形（还有圆形、多边形 <span class=</figcaption></figure><kbd>⌥</kbd><kbd>E</kbd></span>）">
+
+<aside class="warn">
+<p><b>直接点「铺铜区域」这一项本身没有反应</b>，要把鼠标移上去，在右边弹出的子菜单里点「矩形 / 圆形 / 多边形」才会进入铺铜工具。</p>
+</aside>
+
+<ol class="steps" start="3">
+  <li value="3">在板子<b>左上方的外面</b>单击一下</li>
+  <li value="4">移到板子<b>右下方的外面</b>再单击。框比板子大一圈就行</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a7-drag.png" alt="画矩形铺铜区域：两次单击确定对角（旁边会显示宽高，按 Tab 可以切换输入框直接输入数值）" width="540" loading="lazy"><figcaption><span class="fig-no">图 A7-2</span>画矩形铺铜区域：两次单击确定对角（旁边会显示宽高，按 Tab 可以切换输入框直接输入数值）</figcaption></figure>
+
+<p>不用担心矩形比圆形板子大——<b>铺铜会自动按板框裁成圆形</b>，并且自动避开不同网络的导线和焊盘。</p>
+
+<p>放下后会弹出铺铜属性对话框：</p>
+
+<figure class="shot"><img src="../img/ch1/a7-props.png" alt="铺铜属性对话框" width="380" loading="lazy"><figcaption><span class="fig-no">图 A7-3</span>铺铜属性对话框</figcaption></figure>
+
+<div class="table-title">铺铜属性</div><table class="props"><thead><tr><th>编号</th><th>属性</th><th>含义（大白话）</th><th>本例怎么填</th><th>什么时候需要改</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>类型</td><td>铺铜区域</td><td>铺铜区域</td><td>—</td></tr><tr><td><span class="tagn">2</span></td><td>名称</td><td>这片铺铜的名字</td><td>POUR1（自动）</td><td>—</td></tr><tr><td><span class="tagn">3</span></td><td>图层</td><td>铺在哪一层</td><td>顶层</td><td>底层铺铜时是“底层”</td></tr><tr><td><span class="tagn">4</span></td><td>网络</td><td>这片铜接到哪个网络</td><td><b>GND</b>（自动填好，一定要检查）</td><td>极少数情况铺 VCC</td></tr><tr><td><span class="tagn">5</span></td><td>锁定</td><td>锁定后不能被拖动</td><td>否</td><td>—</td></tr><tr><td><span class="tagn">6</span></td><td>填充样式</td><td>全填充（实心）或网格</td><td>全填充</td><td>—</td></tr><tr><td><span class="tagn">7</span></td><td>保留孤岛</td><td>和 GND 连不上的“铜岛”留不留</td><td>否（删掉）</td><td>—</td></tr><tr><td><span class="tagn">8</span></td><td>制造优化</td><td>自动去掉太细、工厂做不出来的铜皮碎片</td><td>是</td><td>—</td></tr><tr><td><span class="tagn">9</span></td><td>最小优化宽度</td><td>比这还窄的铜皮会被去掉</td><td>0.203 mm</td><td>—</td></tr><tr><td><span class="tagn">10</span></td><td>规则设置：按网络 / 自定义</td><td>铺铜和其他网络之间的间距，用设计规则里的还是这里自定义</td><td>按网络</td><td>—</td></tr><tr><td><span class="tagn">11</span></td><td>网络间距规则</td><td>用哪条间距规则</td><td>copperThickness1oz（默认）</td><td>—</td></tr><tr><td><span class="tagn">12</span></td><td>网络间距</td><td>铺铜离其他网络的铜至少多远</td><td>0.254 mm</td><td>—</td></tr><tr><td></td><td>到边框 / 槽孔间距</td><td>铺铜离板边多远（防止切板时露铜）</td><td>默认</td><td>—</td></tr><tr><td></td><td>热焊规则：连接方式</td><td>GND 焊盘和铺铜怎么连：「发散」= 用几根小“辐条”连（好焊）；「直连」= 整片连上</td><td>焊盘：发散（线宽 0.254 mm、90°）；导线：直连</td><td>大电流焊盘可改直连</td></tr><tr><td></td><td>矩形轮廓</td><td>起点 X / Y、宽、高、圆角、旋转角度——可以在这里改精确尺寸</td><td>宽高约 43 mm</td><td>—</td></tr><tr><td></td><td>不再提示</td><td>勾上以后放铺铜就不弹这个框了</td><td>不勾</td><td>—</td></tr><tr><td><span class="tagn">13</span></td><td>确认</td><td>应用</td><td>点它</td><td>—</td></tr></tbody></table>
+
+<aside class="theory">
+<p><b>为什么焊盘用“发散”连接？</b> 如果焊盘四周整片都是铜，焊接时热量会被大片铜迅速吸走，烙铁很难把锡化开（虚焊）。用几根细细的“辐条”连接，导电没问题，散热又慢，好焊很多。</p>
+</aside>
+
+<h2 id="A7.3-底层再铺一次">A7.3 底层再铺一次<a class="anchor" href="#A7.3-底层再铺一次">#</a></h2>
+
+<ol class="steps">
+  <li>在画布下方的图层快捷栏点「<b>底层</b>」，把当前层切到底层</li>
+  <li>重复上面的步骤：放置 → 铺铜区域 → 矩形 → 两次单击 → 确认（网络 GND，图层 底层，名称 POUR2）</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a4-layerbar.png" alt="①点「底层」切换当前层" width="900" loading="lazy"><figcaption><span class="fig-no">图 A7-4</span>①点「底层」切换当前层</figcaption></figure>
+
+<figure class="shot"><img src="../img/ch1/a7-done.png" alt="铺铜完成：顶层和底层都铺满了 GND（紫色是两层铜叠在一起的显示效果）" width="540" loading="lazy"><figcaption><span class="fig-no">图 A7-5</span>铺铜完成：顶层和底层都铺满了 GND（紫色是两层铜叠在一起的显示效果）</figcaption></figure>
+
+<aside class="tip">
+<p>改了布局或导线之后，铺铜不会马上跟着变，需要<b>重建铺铜</b>：快捷键 <span class="keys"><kbd>⇧</kbd><kbd>B</kbd></span>（重建所有铺铜）。<span class="keys"><kbd>⇧</kbd><kbd>M</kbd></span> 可以在“显示 / 隐藏铺铜”之间切换，铺铜挡住视线时很好用。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch1/a6.html"><small>← 上一页</small>A-6 布线：手动布线与自动布线</a><a class="next" href="../ch1/a8.html"><small>下一页 →</small>A-8 丝印与 Logo</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

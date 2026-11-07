@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2.2 电源与“地” · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch2/2" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 2 章 · 前置知识补全</div>
+    <article>
+      <h1>2.2 电源与“地”</h1>
+      <p class="lead">电从哪里来、回到哪里去？这一节讲清楚直流和交流、正负极，以及原理图里到处都是的那个 GND（地）到底是什么、为什么两块板子连起来时一定要“共地”。</p>
+      <div class="meta-bar"><span>⏱ 约 10 分钟</span><span>🎯 零基础</span></div>
+      
+
+<h2 id="直流和交流">直流和交流<a class="anchor" href="#直流和交流">#</a></h2>
+
+<table>
+<thead><tr><th></th><th>直流 DC</th><th>交流 AC</th></tr></thead>
+<tbody>
+<tr><td>是什么</td><td>电压方向不变，一直是“正极高、负极低”</td><td>电压方向来回变化（中国市电每秒 50 次）</td></tr>
+<tr><td>从哪来</td><td>电池、充电宝、USB 口、手机充电头的输出</td><td>墙上的插座（220 V）</td></tr>
+<tr><td>本教程用不用</td><td><b>全部用直流</b>：两个案例都用 USB 的 5 V</td><td>不用。<b>220 V 市电有生命危险，新手不要自己做接市电的板子</b></td></tr>
+</tbody>
+</table>
+
+<p>手机充电头的作用，就是把插座里的 220 V 交流电变成 5 V 直流电。所以我们的小板子插上 USB 线，拿到的已经是安全的低压直流了。</p>
+
+<h2 id="正极负极和各种电源名字">正极、负极，和各种“电源名字”<a class="anchor" href="#正极负极和各种电源名字">#</a></h2>
+
+<p>直流电源有两端：<b>正极（+）</b>电压高，<b>负极（−）</b>电压低。在电路板上，负极几乎总是叫 <b>GND</b>；正极则有各种名字，原理图里看到这些都是“电源”：</p>
+
+<table>
+<thead><tr><th>名字</th><th>常见含义</th><th>案例里的例子</th></tr></thead>
+<tbody>
+<tr><td><code>VCC</code> / <code>VDD</code></td><td>芯片的供电，泛指“正电源”</td><td>案例 A 的 VCC 就是 USB 进来的 5 V</td></tr>
+<tr><td><code>VBUS</code></td><td>USB 线上的 5 V</td><td>Type-C 插座的 VBUS 引脚</td></tr>
+<tr><td><code>3V3</code> / <code>+3.3V</code></td><td>3.3 V 电源（数字芯片最常用）</td><td>案例 B 由稳压芯片 AMS1117-3.3 从 5 V 降出来，给 ESP32-C3 用</td></tr>
+<tr><td><code>VLED</code> 之类</td><td>设计者自己起的名字</td><td>案例 B 中 VBUS 经过二极管 D1 降一点后的电压（约 4.2 V），专门给 RGB 灯用</td></tr>
+</tbody>
+</table>
+
+<aside class="warn">
+<p><b>正负极接反是新手最常见的“烧板”原因之一。</b>电解电容、LED、二极管、芯片都分极性，反接轻则不工作，重则冒烟。用 USB 供电相对安全（插头不会插反），但自己接电池、接外部电源时一定要再三确认。</p>
+</aside>
+
+<h2 id="GND电路里的海平面">GND：电路里的“海平面”<a class="anchor" href="#GND电路里的海平面">#</a></h2>
+
+<p>2.1 节说过，电压总是“两点之间”的。那么说“OUT 是 5 V”的时候，另一点是谁？——就是 <b>GND（Ground，地）</b>。</p>
+
+<ul>
+<li>GND 是电路里大家约定的 <b>0 V 参考点</b>，就像测山高时用的“海平面”。</li>
+<li>所有电流最后都要<b>流回 GND</b>，回到电源负极，形成回路。</li>
+<li>原理图里到处都是 GND 符号，它们<b>名字相同，所以全都是连在一起的</b>（<a href="../ch1/a2.html#A2.8-放置电源VCC和地GND符号">A-2.8</a> 讲过）。</li>
+<li>PCB 上通常把空白处大面积铺成 GND 铜皮（<a href="../ch1/a7.html">A-7 铺铜</a>），给所有电流一条又宽又短的“回家的路”。</li>
+</ul>
+
+<aside class="note">
+<p>这里的“地”和大地（插座的接地线）不是一回事。电路板上的 GND 只是“电源负极 / 0 V 参考点”的意思，不需要真的接到大地上。</p>
+</aside>
+
+<h2 id="为什么要共地">为什么要“共地”<a class="anchor" href="#为什么要共地">#</a></h2>
+
+<p>当两块板子（或一块板子 + 一个模块）之间要传信号时，它们的 <b>GND 必须连在一起</b>。原因很简单：信号的“高电平 3.3 V”是相对于<b>发送方自己的 GND</b> 说的，接收方如果用的是另一个 GND 当参考，那这个 3.3 V 对它来说可能是任意值。</p>
+
+<svg viewBox="0 0 760 230" class="ref-svg" style="background:#fff;width:100%;max-width:760px" aria-label="共地示意">
+  <g font-size="13" font-family="-apple-system,PingFang SC,sans-serif">
+    <rect x="20" y="40" width="200" height="140" rx="10" fill="#e7f5ff" stroke="#1c7ed6" stroke-width="2"/>
+    <text x="120" y="66" text-anchor="middle" font-weight="700" fill="#1864ab">板子 A（发送方）</text>
+    <text x="120" y="90" text-anchor="middle" fill="#495057">单片机 GPIO 输出</text>
+    <text x="120" y="110" text-anchor="middle" fill="#495057">“高电平 = 比我的 GND 高 3.3 V”</text>
+    <rect x="540" y="40" width="200" height="140" rx="10" fill="#fff4e6" stroke="#e8590c" stroke-width="2"/>
+    <text x="640" y="66" text-anchor="middle" font-weight="700" fill="#d9480f">板子 B（接收方）</text>
+    <text x="640" y="90" text-anchor="middle" fill="#495057">例如一条 RGB 灯带</text>
+    <text x="640" y="110" text-anchor="middle" fill="#495057">“我只认比我的 GND 高的电压”</text>
+    <line x1="220" y1="80" x2="540" y2="80" stroke="#2f9e44" stroke-width="3"/>
+    <text x="380" y="72" text-anchor="middle" fill="#2f9e44" font-weight="700">信号线 DATA</text>
+    <line x1="220" y1="150" x2="540" y2="150" stroke="#495057" stroke-width="3"/>
+    <text x="380" y="142" text-anchor="middle" fill="#495057" font-weight="700">GND 线（共地）✓</text>
+    <text x="380" y="200" text-anchor="middle" fill="#c92a2a">如果只连信号线、不连 GND：B 不知道 A 的“3.3 V”是从哪儿算起的，</text>
+    <text x="380" y="218" text-anchor="middle" fill="#c92a2a">信号就会时好时坏，甚至完全不工作。</text>
+  </g>
+</svg>
+
+<aside class="tip">
+<p>记住一句话：<b>两个东西之间要传信号，就要连 GND</b>。哪怕两边用不同的电源（比如单片机用 USB 供电、灯带用另一个 5 V 电源），GND 也要连在一起。案例 B 里所有元件都在同一块板子、同一个 GND 上，所以天然就是共地的。</p>
+</aside>
+
+<h2 id="案例-B-的电源是怎么分配的">案例 B 的电源是怎么分配的<a class="anchor" href="#案例-B-的电源是怎么分配的">#</a></h2>
+
+<p>看一个真实的例子。案例 B（ESP32-C3 彩灯板）从 USB 拿到 5 V 后，分成了两路：</p>
+
+<ol class="steps blue">
+  <li><b>VBUS（5 V）→ AMS1117-3.3 稳压芯片 → 3V3</b>：给 ESP32-C3 模组供电。稳压芯片像一个“减压阀”，不管输入在 5 V 附近怎么波动，输出都稳定在 3.3 V。</li>
+  <li><b>VBUS（5 V）→ 二极管 D1 → VLED（约 4.2 V）</b>：给 RGB 灯 WS2812B 供电。二极管会“吃掉”约 0.8 V，故意让灯的电压低一点，这样 ESP32 输出的 3.3 V 信号对灯来说才算“高电平”（原因见 <a href="7.html">2.7 数字电路入门</a>）。</li>
+</ol>
+
+<p>两路的 GND 是同一个，信号才能正常传递。</p>
+
+<div class="quiz">
+  <div class="q">用 ESP32 板子控制另一个独立供电的 LED 灯带，只连了一根信号线，灯带不听使唤。最可能的原因是？</div>
+  <button type="button" class="opt">信号线太细</button>
+  <button type="button" class="opt" data-right>两边的 GND 没有连在一起</button>
+  <button type="button" class="opt">要用交流电</button>
+  <div class="explain">✅ 没有共地，接收方没有正确的电压参考。把两边的 GND 用一根线连上就好了。</div>
+</div>
+
+<div class="quiz">
+  <div class="q">原理图里画了 5 个 GND 符号，彼此之间没有画线。它们是什么关系？</div>
+  <button type="button" class="opt" data-right>全部是同一个网络，相当于连在一起</button>
+  <button type="button" class="opt">互相独立，没有连接</button>
+  <button type="button" class="opt">要手动连线后才算连上</button>
+  <div class="explain">✅ 名字相同的电源 / 地符号，软件自动认为是同一个网络。转到 PCB 后，它们之间会出现飞线，提示你用导线或铺铜连起来。</div>
+</div>
+
+<h2 id="回到哪里继续">回到哪里继续<a class="anchor" href="#回到哪里继续">#</a></h2>
+
+<ul>
+<li>正在画原理图：回到 <a href="../ch1/a2.html#A2.8-放置电源VCC和地GND符号">A-2.8 放置电源和地符号</a>。</li>
+<li>正在铺铜：回到 <a href="../ch1/a7.html">A-7 铺铜</a>。</li>
+<li>继续补理论：<a href="3.html">2.3 串联与并联</a>。</li>
+</ul>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch2/1.html"><small>← 上一页</small>2.1 电的基本概念</a><a class="next" href="../ch2/3.html"><small>下一页 →</small>2.3 串联与并联</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/widgets/ch2.js"></script>
+</body>
+</html>

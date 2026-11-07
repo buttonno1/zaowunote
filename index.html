@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>造物笔记 · zaowunote</title>
+<meta name="description" content="造物笔记：做手工、做小作品用得上的技能教程。">
+<style>
+:root {
+  --ink: #16181d; --ink-2: #4a4f59; --ink-3: #8a909a; --rule: #e4e2dc; --paper: #f7f6f2; --white: #fdfcf9;
+  --accent: #1f4fd1;
+  --serif: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", "SimSun", serif;
+  --sans: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  --mono: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--paper); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; line-height: 1.7; }
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 40px; }
+.mono { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+
+/* 顶栏 */
+.bar { display: flex; align-items: center; height: 72px; border-bottom: 1px solid var(--rule); }
+.mark { display: flex; align-items: baseline; gap: 12px; }
+.mark b { font-family: var(--serif); font-size: 21px; font-weight: 700; letter-spacing: .12em; }
+.bar nav { margin-left: auto; display: flex; gap: 32px; font-size: 14px; color: var(--ink-2); }
+.bar nav a:hover { color: var(--ink); }
+
+/* 首屏 */
+.intro { position: relative; padding: 120px 0 104px; border-bottom: 1px solid var(--rule); overflow: hidden; }
+.intro .traces { position: absolute; right: -40px; top: 40px; width: 560px; height: 380px; pointer-events: none; }
+.intro h1 { font-family: var(--serif); font-weight: 700; font-size: 76px; line-height: 1.1; letter-spacing: .06em; margin: 22px 0 30px; }
+.intro p { max-width: 520px; font-size: 17px; color: var(--ink-2); margin: 0 0 10px; }
+.intro .facts { display: flex; gap: 48px; margin-top: 56px; }
+.intro .facts div { border-top: 1px solid var(--ink); padding-top: 12px; min-width: 120px; }
+.intro .facts b { display: block; font-family: var(--serif); font-size: 26px; font-weight: 700; }
+.intro .facts span { font-size: 13px; color: var(--ink-3); }
+
+/* 目录 */
+.sec { padding: 72px 0 24px; display: grid; grid-template-columns: 220px 1fr; gap: 40px; }
+.sec h2 { font-family: var(--serif); font-size: 26px; margin: 8px 0 0; font-weight: 700; letter-spacing: .06em; }
+.entry { display: grid; grid-template-columns: 64px 1fr auto; gap: 24px; padding: 30px 0; border-top: 1px solid var(--ink); align-items: start; }
+.entry + .entry { border-top-color: var(--rule); }
+.entry .no { font-family: var(--mono); font-size: 14px; color: var(--ink-3); padding-top: 6px; }
+.entry h3 { font-family: var(--serif); font-size: 30px; font-weight: 700; margin: 0 0 8px; letter-spacing: .02em; line-height: 1.3; }
+.entry .desc { color: var(--ink-2); font-size: 15px; margin: 0 0 18px; max-width: 600px; }
+.entry dl { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; column-gap: 40px; row-gap: 2px; margin: 0; font-size: 14px; }
+.entry dt { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.entry dd { margin: 0 0 6px; }
+.entry .prog { margin-top: 22px; display: flex; align-items: center; gap: 14px; font-size: 13px; color: var(--ink-3); max-width: 420px; }
+.entry .prog .line { flex: 1; height: 1px; background: var(--rule); position: relative; }
+.entry .prog .line i { position: absolute; left: 0; top: -1px; height: 3px; width: 0; background: var(--accent); }
+.entry .open { align-self: center; font-size: 14px; color: var(--accent); white-space: nowrap; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+a.entry:hover h3 { color: var(--accent); }
+a.entry:hover .open { padding-right: 6px; }
+.entry.soon { color: var(--ink-3); }
+.entry.soon h3 { color: var(--ink-3); font-size: 22px; }
+
+/* 方法 */
+.method { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--ink); }
+.method div { padding: 26px 28px 8px 0; }
+.method div + div { padding-left: 28px; border-left: 1px solid var(--rule); }
+.method .mono { display: block; margin-bottom: 14px; }
+.method b { display: block; font-family: var(--serif); font-size: 19px; margin-bottom: 6px; }
+.method p { margin: 0; font-size: 14px; color: var(--ink-2); }
+
+footer { margin-top: 96px; border-top: 1px solid var(--rule); padding: 28px 0 40px; display: flex; justify-content: space-between; font-size: 13px; color: var(--ink-3); }
+
+@media (max-width: 860px) {
+  .wrap { padding: 0 22px; }
+  .intro { padding: 72px 0 64px; } .intro h1 { font-size: 48px; } .intro .traces { opacity: .5; width: 420px; right: -160px; }
+  .intro .facts { gap: 24px; flex-wrap: wrap; }
+  .sec { grid-template-columns: 1fr; gap: 12px; padding-top: 56px; }
+  .entry { grid-template-columns: 40px 1fr; } .entry .open { grid-column: 2; justify-self: start; }
+  .entry dl { grid-template-columns: repeat(2, auto); }
+  .method { grid-template-columns: 1fr; } .method div + div { padding-left: 0; border-left: 0; border-top: 1px solid var(--rule); }
+  .bar nav { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="bar">
+    <a class="mark" href="index.html"><b>造物笔记</b><span class="mono">zaowunote</span></a>
+    <nav><a href="#notes">教程</a><a href="#method">方法</a></nav>
+  </header>
+
+  <section class="intro">
+    <svg class="traces" viewBox="0 0 560 380" fill="none" stroke="#1f4fd1" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity=".22">
+      <path d="M20 60 H210 L250 100 H420 L460 60 H560"/>
+      <path d="M60 140 H180 L220 180 H380 L420 220 H560"/>
+      <path d="M120 260 H300 L340 300 H520"/>
+      <path d="M250 100 V40"/><path d="M380 180 V300 L400 320 H560"/>
+      <circle cx="20" cy="60" r="5"/><circle cx="60" cy="140" r="5"/><circle cx="120" cy="260" r="5"/>
+      <circle cx="250" cy="40" r="7"/><circle cx="250" cy="40" r="2.5" fill="#1f4fd1"/>
+      <circle cx="300" cy="260" r="4"/><rect x="430" y="120" width="70" height="44" rx="2"/>
+      <path d="M440 120 v-10 M452 120 v-10 M464 120 v-10 M476 120 v-10 M488 120 v-10 M440 164 v10 M452 164 v10 M464 164 v10 M476 164 v10 M488 164 v10"/>
+    </svg>
+    <span class="mono">Notes for makers</span>
+    <h1>造物笔记</h1>
+    <p>做手工、做小作品用得上的技能教程。设计软件怎么用、工艺怎么选、东西怎么做出来。</p>
+    <p>每一本都从零讲起，每一步都在真实的工具里做过一遍。</p>
+    <div class="facts">
+      <div><b>59</b><span>节已发布</span></div>
+      <div><b>2</b><span>个可生产的实战项目</span></div>
+      <div><b>Mac / Win</b><span>快捷键按你的电脑显示</span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="notes">
+    <div><span class="mono">Contents</span><h2>教程</h2></div>
+    <div>
+      <a class="entry" href="lceda/index.html" data-book="lceda">
+        <span class="no">01</span>
+        <div>
+          <h3>嘉立创EDA 专业版 · 零基础教程</h3>
+          <p class="desc">从不懂电路，到亲手设计出一块能用、也好看的电路板。两个可以真实下单生产的项目，以及把电路板当成作品来做的方法：任意外形、丝印图案、露铜的金色纹样。</p>
+          <dl>
+            <div><dt>领域</dt><dd>电子 · 电路板</dd></div>
+            <div><dt>进度</dt><dd>第 0～7 章已完成</dd></div>
+            <div><dt>状态</dt><dd>连载中</dd></div>
+          </dl>
+          <div class="prog"><span>我的进度</span><span class="line"><i></i></span><span class="pct">0%</span></div>
+        </div>
+        <span class="open">开始阅读</span>
+      </a>
+      <a class="entry" href="fusion/index.html" data-book="fusion">
+        <span class="no">02</span>
+        <div>
+          <h3>Autodesk Fusion · 零基础教程</h3>
+          <p class="desc">从没碰过 3D 软件，到自己设计出能 3D 打印、能装配、会动的小东西。先认识常用操作，再从零做一个可折叠调角度的手机支架，一直做到导出打印文件。</p>
+          <dl>
+            <div><dt>领域</dt><dd>三维设计 · 3D 打印</dd></div>
+            <div><dt>进度</dt><dd>第 0～8 章已完成</dd></div>
+            <div><dt>状态</dt><dd>连载中</dd></div>
+          </dl>
+          <div class="prog"><span>我的进度</span><span class="line"><i></i></span><span class="pct">0%</span></div>
+        </div>
+        <span class="open">开始阅读</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec" id="method">
+    <div><span class="mono">Method</span><h2>怎么读</h2></div>
+    <div class="method">
+      <div><span class="mono">01</span><b>从第 0 章开始</b><p>先弄清要准备什么，这门技能大概是怎么回事。</p></div>
+      <div><span class="mono">02</span><b>做完一个完整作品</b><p>跟着实战项目从头做到尾，先做出来，再回头补原理。</p></div>
+      <div><span class="mono">03</span><b>需要时再查</b><p>后面的章节按功能分好，遇到问题像查工具书一样翻。</p></div>
+    </div>
+  </section>
+
+  <footer><span>造物笔记 · zaowunote</span><span>一边做，一边记。</span></footer>
+</div>
+
+<script src="lceda/assets/js/search-index.js"></script>
+<script src="fusion/assets/js/page-ids.js"></script>
+<script>
+(function () {
+  var ids = { lceda: window.PAGE_IDS || [], fusion: (window.BOOK_PAGE_IDS || {}).fusion || [] };
+  document.querySelectorAll(".entry[data-book]").forEach(function (e) {
+    try {
+      var b = e.dataset.book, all = ids[b] || [];
+      var done = JSON.parse(localStorage.getItem(b + "-tut-done") || "[]");
+      var n = all.filter(function (id) { return done.indexOf(id) >= 0; }).length;
+      var pct = all.length ? Math.round(n * 100 / all.length) : 0;
+      e.querySelector(".pct").textContent = pct + "%";
+      e.querySelector(".line i").style.width = pct + "%";
+    } catch (x) {}
+  });
+})();
+</script>
+</body>
+</html>

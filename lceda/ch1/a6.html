@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A-6 布线：手动布线与自动布线 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch1/a6" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 1 章 · Quickstart 实战</div>
+    <article>
+      <h1>A-6 布线：手动布线与自动布线</h1>
+      <p class="lead">布线就是把飞线变成真正的铜线。我们先看看工厂能做到多细（设计规则），手动连一根线体验一下，然后把剩下的交给自动布线——几十秒就能全部布通。</p>
+      <div class="meta-bar"><span>⏱ 约 20 分钟</span><span>📋 含设计规则、自动布线设置说明表</span><span>⚠️ 自动布线结果一定要点「确认」</span></div>
+      
+
+<h2 id="A6.1-先看一眼设计规则">A6.1 先看一眼设计规则<a class="anchor" href="#A6.1-先看一眼设计规则">#</a></h2>
+
+<p>工厂的机器有精度极限：线不能太细、线和线不能挨太近、孔不能太小。<b>设计规则</b>就是把这些限制告诉软件，布线时软件会自动遵守，检查（DRC）时也按它来判断。</p>
+
+<ol class="steps">
+  <li>点菜单「<b>设计</b>」→「<b>设计规则…</b>」</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a6-rules.png" alt="设计规则对话框（默认规则）" width="708" loading="lazy"><figcaption><span class="fig-no">图 A6-1</span>设计规则对话框（默认规则）</figcaption></figure>
+
+<div class="table-title">设计规则对话框（整体）</div><table class="props"><thead><tr><th>编号</th><th>区域</th><th>含义</th><th>本例</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>规则管理 / 网络规则 / 网络-网络规则 / 区域规则</td><td>上面四个标签：「规则管理」是全局规则；后三个可以给<b>某个网络</b>、<b>某两个网络之间</b>、<b>板上某块区域</b>单独设规则</td><td>只看「规则管理」</td></tr><tr><td><span class="tagn">2</span></td><td>左侧规则树</td><td>规则的分类：间距（安全间距、其他间距）、导线、网络长度、差分对、盲埋孔、过孔尺寸…… 每类下面是具体的规则名，带「[默认]」的是正在用的</td><td>默认</td></tr><tr><td><span class="tagn">3</span></td><td>名称 / 单位</td><td>当前规则的名字（如 copperThickness1oz = 1 盎司铜厚时的间距）和单位</td><td>mm</td></tr><tr><td><span class="tagn">4</span></td><td>规则内容</td><td>右边的表格或数值。安全间距是一个“谁和谁之间至少隔多远”的矩阵</td><td>不改</td></tr><tr><td><span class="tagn">5</span></td><td>优先级说明</td><td>规则冲突时取优先级高的：<b>区域规则 > 网络-网络规则 > 网络规则</b></td><td>—</td></tr><tr><td><span class="tagn">6</span></td><td>确认 / 应用 / 取消</td><td>下面还有导入/导出配置、恢复默认</td><td>不改就点取消</td></tr></tbody></table>
+
+<p>本例全部用默认值。默认规则来自预设「嘉立创工艺（双面板）」，刚好是嘉立创能稳定生产的参数，几个最重要的数值记一下：</p>
+
+<table>
+<thead><tr><th>规则</th><th>默认值</th><th>大白话</th></tr></thead>
+<tbody>
+<tr><td>安全间距</td><td>大多为 0.152 mm</td><td>不同网络的铜（导线、焊盘、过孔）之间至少隔这么远，否则可能短路</td></tr>
+<tr><td>导线线宽</td><td>最小 0.127 / <b>默认 0.254</b> / 最大 2.54 mm</td><td>画线时默认 0.254 mm（约 10 mil）</td></tr>
+<tr><td>过孔外直径</td><td>最小 0.5 / <b>默认 0.61</b> mm</td><td>过孔外圈铜环的大小</td></tr>
+<tr><td>过孔内直径</td><td>最小 0.3 / <b>默认 0.305</b> mm</td><td>钻孔的大小</td></tr>
+</tbody>
+</table>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/ch1/a6-rules-track.png" alt="导线规则：最小 / 默认（红框）/ 最大线宽，分顶层、底层" width="700" loading="lazy"><figcaption><span class="fig-no">图 A6-2</span>导线规则：最小 / 默认（红框）/ 最大线宽，分顶层、底层</figcaption></figure>
+<figure class="shot"><img src="../img/ch1/a6-rules-via.png" alt="过孔尺寸规则：外直径、内直径的默认值" width="240" loading="lazy"><figcaption><span class="fig-no">图 A6-3</span>过孔尺寸规则：外直径、内直径的默认值</figcaption></figure>
+</div>
+
+<aside class="theory">
+<p><b>线宽和电流：</b> 导线像水管，越宽能过的电流越大。本例 LED 加 NE555 总共只有十几毫安，0.254 mm 绰绰有余。以后做电机、大功率 LED 时，电源线要加粗（第 2 章 <a href="../ch2/10.html">2.10 走线与间距</a> 有线宽-电流的估算方法）。</p>
+<p><b>过孔</b>是连接上下两层铜的“<b>电梯</b>”：一个金属化的小孔，导线从顶层走到这里，穿过去在底层接着走。</p>
+</aside>
+
+<h2 id="A6.2-手动布一根线">A6.2 手动布一根线<a class="anchor" href="#A6.2-手动布一根线">#</a></h2>
+
+<p>先手动连一根，体会一下布线的操作。我们把 C3 的 VCC 焊盘连到 U1 的第 8 脚（VCC）：</p>
+
+<ol class="steps">
+  <li>确认当前层是「<b>顶层</b>」（底部图层快捷栏）</li>
+  <li>按 <span class="keys"><kbd>⌥</kbd><kbd>W</kbd></span>（单路布线），光标对准 C3 的 VCC 焊盘<b>单击</b></li>
+  <li>移向 U1 的 8 脚，导线跟着鼠标走，默认 45° 拐弯；旁边的飞线会指着目标焊盘</li>
+  <li>在 8 脚上<b>单击</b>，再按 <kbd>Esc</kbd> 结束</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/ch1/a6-route1.png" alt="①起点" width="300" loading="lazy"><figcaption><span class="fig-no">图 A6-4</span>①起点</figcaption></figure>
+<figure class="shot"><img src="../img/ch1/a6-route2.png" alt="②导线跟随，显示网络长度" width="300" loading="lazy"><figcaption><span class="fig-no">图 A6-5</span>②导线跟随，显示网络长度</figcaption></figure>
+<figure class="shot"><img src="../img/ch1/a6-route3.png" alt="③完成" width="300" loading="lazy"><figcaption><span class="fig-no">图 A6-6</span>③完成</figcaption></figure>
+</div>
+
+<p>连好之后，这两个焊盘之间的飞线就消失了。导线默认宽度 0.254 mm（跟随规则）。</p>
+
+<aside class="tip">
+<p>布线过程中的常用操作：</p>
+<ul>
+<li>在中途<b>单击</b> = 定下一个拐点；不满意就 <kbd>Esc</kbd> 退出，<span class="keys"><kbd>⌘</kbd><kbd>Z</kbd></span> 撤销重画。</li>
+<li><kbd>L</kbd> 切换拐角方式（45°、90°、圆弧……），工具栏上的「线条45°」下拉也能改。</li>
+<li><span class="keys"><kbd>⇧</kbd><kbd>R</kbd></span> 切换布线模式（遇到障碍物时怎么处理，默认是“环绕”）。</li>
+<li>画错了：单击选中那段导线按 <kbd>delete</kbd>；或者用「布线 → 清除布线」。</li>
+<li><span class="keys"><kbd>⌥</kbd><kbd>V</kbd></span> 放置过孔：在一层走不通时，打个过孔换到另一层。</li>
+</ul>
+</aside>
+
+<figure class="shot"><img src="../img/ch1/a6-menu.png" alt="「布线」菜单：单路布线（蓝框）、①自动布线，以及拉伸导线、等长调节、布线拐角、布线宽度、移除回路、清除布线等" width="260" loading="lazy"><figcaption><span class="fig-no">图 A6-7</span>「布线」菜单：单路布线（蓝框）、①自动布线，以及拉伸导线、等长调节、布线拐角、布线宽度、移除回路、清除布线等</figcaption></figure>
+
+<h2 id="A6.3-自动布线">A6.3 自动布线<a class="anchor" href="#A6.3-自动布线">#</a></h2>
+
+<p>剩下的线交给软件。小板子用自动布线完全没问题：</p>
+
+<ol class="steps">
+  <li>点「<b>布线</b>」→「<b>自动布线…</b>」→「<b>自动布线设置…</b>」，先看一下设置</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a6-auto-set.png" alt="自动布线设置" width="616" loading="lazy"><figcaption><span class="fig-no">图 A6-8</span>自动布线设置</figcaption></figure>
+
+<div class="table-title">自动布线设置</div><table class="props"><thead><tr><th>编号</th><th>属性</th><th>含义（大白话）</th><th>本例怎么填</th><th>什么时候需要改</th></tr></thead><tbody><tr><td><span class="tagn">1</span></td><td>布线引擎</td><td>JRouter：质量好；HRouter：速度快</td><td>JRouter（默认）</td><td>板子大、等不及时试试 HRouter</td></tr><tr><td><span class="tagn">2</span></td><td>迭代数量</td><td>让软件反复优化几轮（1~100）</td><td>1</td><td>想要更好的结果可以加大，但更慢</td></tr><tr><td><span class="tagn">3</span></td><td>单迭代布线时间</td><td>每一轮最多跑多久（5~120 分钟）</td><td>30</td><td>—</td></tr><tr><td><span class="tagn">4</span></td><td>保留已有导线 / 过孔</td><td>不动你已经手动画好的线</td><td>✓ 勾选</td><td>—</td></tr><tr><td><span class="tagn">5</span></td><td>布线完成后展示迭代</td><td>布完后列出每一轮的结果给你挑</td><td>✓ 勾选</td><td>—</td></tr><tr><td><span class="tagn">6</span></td><td>布线优先级</td><td>按网络排先后：优先级高的网络先布</td><td>默认</td><td>某几根线特别重要时调高</td></tr><tr><td></td><td>布线图层</td><td>在哪些层上布线：所有层 / 只顶层 / 只底层</td><td>所有层</td><td>想做单面板时选一层</td></tr><tr><td></td><td>运行 / 应用 / 取消</td><td>「运行」直接开始自动布线</td><td>点「运行」</td><td>—</td></tr></tbody></table>
+
+<ol class="steps" start="2">
+  <li value="2">点「<b>运行</b>」（或者关掉设置，用「布线 → 自动布线… → 所有网络」）</li>
+  <li value="3">等几十秒，右上角会显示结果：本例<b>迭代 1，布通率 100%，过孔 3 个</b></li>
+  <li value="4"><b>点右下角的「确认」</b>应用结果</li>
+</ol>
+
+<figure class="shot"><img src="../img/ch1/a6-auto-preview.png" alt="自动布线结果预览：①迭代 / 布通率 / 过孔数量；②「确认」应用" width="711" loading="lazy"><figcaption><span class="fig-no">图 A6-9</span>自动布线结果预览：①迭代 / 布通率 / 过孔数量；②「确认」应用</figcaption></figure>
+
+<aside class="warn">
+<p><b>自动布线的结果一开始只是“预览”，必须点右下角的「确认」才会真正应用到板子上！</b> 本教程实操时第一次就误点了旁边的「取消」，结果全部消失，只好重新跑一遍。</p>
+</aside>
+
+<p>应用之后，所有飞线都变成了铜线：</p>
+
+<figure class="shot"><img src="../img/ch1/a6-auto-done.png" alt="自动布线完成：红色是顶层导线，蓝色是底层导线，小圆圈是过孔" width="475" loading="lazy"><figcaption><span class="fig-no">图 A6-10</span>自动布线完成：红色是顶层导线，蓝色是底层导线，小圆圈是过孔</figcaption></figure>
+
+<ul>
+<li><b>布通率 100%</b> = 所有该连的都连上了，飞线一条不剩。</li>
+<li>大部分导线在顶层；VCC 有 4 段走到了底层，靠 3 个过孔上下连接。</li>
+<li>布通率不到 100% 时：剩下的飞线手动连，或者调整布局让元件之间更宽松，再跑一次。</li>
+</ul>
+
+<aside class="note">
+<p>自动布线不是“作弊”。专业工程师画复杂的板子通常是关键线手动、其余自动，再手动修整。本例是简单的低速电路，自动布线的结果直接用就行。</p>
+</aside>
+
+<aside class="link">
+<p>线宽规则、差分对、等长、扇出等高级布线：<a href="../ch7/1.html">7.1：PCB 进阶</a>。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch1/a5.html"><small>← 上一页</small>A-5 布局：把元件摆到板子上</a><a class="next" href="../ch1/a7.html"><small>下一页 →</small>A-7 铺铜（GND）</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

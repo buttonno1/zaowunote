@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5.3 封装与 3D 模型 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch5/3" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 5 章 · 元件库：符号、封装与 3D</div>
+    <article>
+      <h1>5.3 封装与 3D 模型</h1>
+      <p class="lead">封装决定了板子上焊盘的位置和大小——画错 0.5 毫米，元件就焊不上去。这一页讲封装编辑器、封装向导、焊盘的每个属性，怎么照着规格书画封装，以及 3D 模型和库的维护。</p>
+      <div class="meta-bar"><span>⏱ 约 30 分钟</span><span>✅ 实测：用封装向导做 1×4 排针封装</span><span>📋 含焊盘属性说明表</span><span>🖱️ 含规格书尺寸图读图练习</span></div>
+      
+
+<h2 id="封装编辑器">封装编辑器<a class="anchor" href="#封装编辑器">#</a></h2>
+
+<p>「文件」→「新建」→「封装…」，填名称和分类后保存，打开封装编辑器。它其实就是一个“只有一个元件的小 PCB 编辑器”，黑色背景、有图层：</p>
+
+<figure class="shot"><img src="../img/modC/fp-editor.png" alt="封装编辑器：左侧标签 属性 / 焊盘 / 向导 / 器件，底部是图层栏" width="792" loading="lazy"><figcaption><span class="fig-no">图 5.3-1</span>封装编辑器：左侧标签 属性 / 焊盘 / 向导 / 器件，底部是图层栏</figcaption></figure>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modC/fpmenu-放置.png" alt="「放置」菜单：焊盘、异形焊盘、过孔、填充/挖槽/禁止区域、线条、文本、图片、尺寸、3D体……" width="190" loading="lazy"><figcaption><span class="fig-no">图 5.3-2</span>「放置」菜单：焊盘、异形焊盘、过孔、填充/挖槽/禁止区域、线条、文本、图片、尺寸、3D体……</figcaption></figure>
+<figure class="shot"><img src="../img/modC/fpmenu-工具.png" alt="「工具」菜单：测量、智能尺寸、检查尺寸、封装规则检查、重新编号焊盘、图层管理器" width="220" loading="lazy"><figcaption><span class="fig-no">图 5.3-3</span>「工具」菜单：测量、智能尺寸、检查尺寸、封装规则检查、重新编号焊盘、图层管理器</figcaption></figure>
+</div>
+
+<h3 id="封装向导">封装向导<a class="anchor" href="#封装向导">#</a></h3>
+
+<p>左侧「<b>向导</b>」标签里列出了常见封装类型，选一个、填几个尺寸就能生成：</p>
+
+<table>
+<thead><tr><th>向导类型</th><th>是什么</th></tr></thead>
+<tbody>
+<tr><td>Chip</td><td>两端贴片元件：0402、0603 电阻电容等</td></tr>
+<tr><td>ChipArray</td><td>排阻、排容</td></tr>
+<tr><td>Axial / Radial</td><td>直插电阻（轴向，两条腿往两边）/ 直插电解电容（径向，两条腿朝下）</td></tr>
+<tr><td>E-Cap</td><td>贴片电解电容</td></tr>
+<tr><td>DIP</td><td>双列直插芯片（如直插 NE555）</td></tr>
+<tr><td>QFP / QFN / DFN</td><td>四边扁平贴片芯片 / 四边无引脚 / 两边无引脚（引脚在芯片底下）</td></tr>
+<tr><td>BGA</td><td>底部是一排排锡球的芯片（新手别碰）</td></tr>
+<tr><td>Header-V / Header-H</td><td>排针：竖直 / 弯针（水平）</td></tr>
+</tbody>
+</table>
+
+<p>本教程选 <b>Header-V</b>，做 1×4 排针：</p>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modC/fp-wizard.png" alt="Header-V 向导：引脚行数改成 1，其他保持默认" width="240" loading="lazy"><figcaption><span class="fig-no">图 5.3-4</span>Header-V 向导：引脚行数改成 1，其他保持默认</figcaption></figure>
+<figure class="shot"><img src="../img/modC/fp-wizard-done.png" alt="生成的排针封装（局部）：通孔焊盘 + 黄色丝印外框" width="400" loading="lazy"><figcaption><span class="fig-no">图 5.3-5</span>生成的排针封装（局部）：通孔焊盘 + 黄色丝印外框</figcaption></figure>
+</div>
+
+<div class="table-title">Header-V 向导（实测默认值）</div><table class=""><thead><tr><th>参数</th><th>含义</th><th>本例</th></tr></thead><tbody><tr><td>引脚行数 / 列数</td><td>几排、每排几根</td><td>1 / 4（默认是 2 × 4）</td></tr><tr><td>焊盘形状</td><td>圆形 / 方形等</td><td>圆形</td></tr><tr><td>本体长度 (BL) / 本体宽度 (BW)</td><td>排针塑料座的大小，用来画丝印外框</td><td>默认</td></tr><tr><td>引脚直径 (PD)</td><td>针脚粗细，决定钻孔大小</td><td>0.64 mm</td></tr><tr><td>引脚间距 (PP) / 纵向间距 (PS)</td><td>相邻针的距离</td><td>2.54 mm</td></tr><tr><td>封装原点</td><td>原点放在第一脚还是中心</td><td>第一引脚</td></tr><tr><td>生成 3D 模型 + 实体高度 / 引脚上端高度 / 引脚下端高度</td><td>顺便生成一个 3D 模型</td><td>勾选</td></tr><tr><td>提示</td><td>“生成的焊盘尺寸将稍微大于填写的尺寸，便于焊接”</td><td>—</td></tr></tbody></table>
+
+<h3 id="焊盘的属性">焊盘的属性<a class="anchor" href="#焊盘的属性">#</a></h3>
+
+<p>单击选中一个焊盘，右侧属性面板列出它的全部参数：</p>
+
+<figure class="shot"><img src="../img/modC/fp-pad-props.png" alt="通孔焊盘的属性（实测：1 号焊盘）" width="280" loading="lazy"><figcaption><span class="fig-no">图 5.3-6</span>通孔焊盘的属性（实测：1 号焊盘）</figcaption></figure>
+
+<div class="table-title">焊盘属性</div><table class=""><thead><tr><th>属性</th><th>含义</th><th>本例</th></tr></thead><tbody><tr><td>图层</td><td>贴片焊盘在「顶层」；通孔焊盘在「<b>多层</b>」（穿透所有铜层）</td><td>多层</td></tr><tr><td>编号</td><td><b>和符号引脚编号对应</b></td><td>1</td></tr><tr><td>大小：通用 / 自定义</td><td>通用 = 每层一样大；自定义 = 顶层、底层可以设不同大小</td><td>通用</td></tr><tr><td>形状 / 宽 / 高 / 圆角</td><td>焊盘的铜皮形状和尺寸</td><td>圆形 1.26 × 1.26 mm</td></tr><tr><td>钻孔属性：形状 / 直径 / 偏移</td><td>孔的形状（圆形或长圆形槽孔）、直径</td><td>圆形 0.84 mm</td></tr><tr><td>金属化</td><td>孔壁镀铜（是）还是光孔（否）。焊接的孔必须金属化</td><td>是</td></tr><tr><td>所在位置：中心 X / Y、旋转角度、锁定</td><td>—</td><td>—</td></tr><tr><td>阻焊/助焊扩展</td><td>焊盘周围的绿油“让开”多少（开窗比焊盘大一圈）；锡膏层扩展</td><td>跟随规则</td></tr><tr><td>热焊</td><td>焊盘和铺铜怎么连：发散（十字形细连接，好焊）或直连</td><td>跟随规则</td></tr></tbody></table>
+
+<aside class="theory">
+<p><b>焊盘、钻孔、阻焊开窗——三个尺寸别混了</b>：钻孔是机器钻出来的洞（比针脚粗一点，好插）；焊盘是孔周围的铜环（给焊锡附着）；阻焊开窗是绿油上留的口子（比焊盘大一点，免得绿油盖到焊盘上）。三者是同心的三个圆，从小到大。</p>
+</aside>
+
+<h3 id="其他封装工具">其他封装工具<a class="anchor" href="#其他封装工具">#</a></h3>
+<ul>
+<li><b>智能尺寸 / 检查尺寸</b>：测量焊盘间距，和规格书对比</li>
+<li><b>封装规则检查</b>：检查焊盘重叠、编号重复、丝印压焊盘等</li>
+<li><b>重新编号焊盘</b>：一次性按顺序重排焊盘编号</li>
+<li><b>异形焊盘</b>：不规则形状的焊盘（如散热焊盘、天线）</li>
+</ul>
+
+<h2 id="照着规格书画封装">照着规格书画封装<a class="anchor" href="#照着规格书画封装">#</a></h2>
+
+<p>向导里没有的封装，就要照着元件规格书（datasheet）里的<b>封装尺寸图</b>画。尺寸图一般有两张：</p>
+<ul>
+<li><b>元件外形图</b>（Package Outline / Mechanical Dimensions）：元件本身多大、引脚多宽多长</li>
+<li><b>推荐焊盘图</b>（Recommended Land Pattern / PCB Layout）：<b>直接告诉你焊盘该画多大、间距多少</b>——有这张图就照它画，最省事</li>
+</ul>
+
+<div class="widget"><div class="widget-title">读尺寸图练习：一个 SOT-23-3 的推荐焊盘图（点每个尺寸看含义）</div>
+<div class="dimread-widget"></div>
+</div>
+
+<ol class="steps">
+<li>新建封装，单位切到 mm（<kbd>Q</kbd>）</li>
+<li>「放置」→「焊盘」，在属性里输入宽、高；按推荐焊盘图的坐标一个个摆好（属性里直接填中心 X / Y 最准）</li>
+<li>按规格书的引脚编号给每个焊盘设编号</li>
+<li>切到「顶层丝印层」画元件外框，标出 1 脚位置（一个小圆点或缺角）</li>
+<li>「工具」→「检查尺寸」量一遍，再跑「封装规则检查」</li>
+<li>能买到实物最好打印 1:1 的 PDF（导出 PDF 选原始尺寸），把元件放在纸上比一比</li>
+</ol>
+
+<aside class="warn">
+<p>规格书里的尺寸常写成 <code>1.30 / 1.50</code>（最小/最大）或 <code>0.95 BSC</code>（BSC = 基本尺寸，精确值）。焊盘取推荐值；没有推荐焊盘图时，焊盘一般比引脚每边再大 0.2～0.5 mm。<b>拿不准时，优先在库里找同封装的现成封装（名字里有尺寸，如 SOT-23-3_L2.9-W1.6-P1.90），比自己画靠谱。</b></p>
+</aside>
+
+<aside class="theory">
+<p><b>封装名字怎么读？</b> 系统库的封装按 IPC-7351 风格命名，例如 <code>SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL</code>：SOIC-8 封装，本体长 4.9 mm、宽 3.9 mm，引脚间距 1.27 mm，跨度 6.0 mm。案例 A 的 NE555 就是这个封装。看名字就能知道尺寸，找封装时很有用。</p>
+</aside>
+
+<h2 id="3D-模型">3D 模型<a class="anchor" href="#3D-模型">#</a></h2>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modC/dlg-new3d.png" alt="文件 → 新建 → 3D 模型：上传 STEP 等 3D 文件（最大 300 MB），设置单位和转换精细度" width="544" loading="lazy"><figcaption><span class="fig-no">图 5.3-7</span>文件 → 新建 → 3D 模型：上传 STEP 等 3D 文件（最大 300 MB），设置单位和转换精细度</figcaption></figure>
+<figure class="shot"><img src="../img/modC/dlg-3dmgr.png" alt="PCB 里的 工具 → 3D 模型管理器：每个元件用的是哪个 3D 模型，可以批量检查和更换" width="710" loading="lazy"><figcaption><span class="fig-no">图 5.3-8</span>PCB 里的 工具 → 3D 模型管理器：每个元件用的是哪个 3D 模型，可以批量检查和更换</figcaption></figure>
+</div>
+
+<ul>
+<li>3D 模型只影响 3D 预览和导出给结构设计用的 STEP 文件，<b>不影响电路、不影响生产</b>。</li>
+<li>三种来源：系统库自带；封装向导勾选“生成 3D 模型”自动生成简单方块；从厂家官网下载 STEP 文件导入。</li>
+<li>在封装里绑定 3D 模型后，可以调整它的位置、旋转、高度，让它和焊盘对齐（3D 预览里看是否“悬空”或“插进板子”）。</li>
+</ul>
+
+<h2 id="库的维护">库的维护<a class="anchor" href="#库的维护">#</a></h2>
+
+<table>
+<thead><tr><th>情况</th><th>用什么</th></tr></thead>
+<tbody>
+<tr><td>改了个人库里的器件，想让工程里的也更新</td><td>「设计」→「更新工程库…」（<a href="../ch4/5.html">4.5</a>，会清空历史记录）</td></tr>
+<tr><td>批量换器件 / 换封装</td><td>器件管理器 / 封装管理器（<a href="../ch4/1.html">4.1</a>）</td></tr>
+<tr><td>检查器件属性和立创商城是否一致</td><td>器件标准化（<a href="../ch4/1.html">4.1</a>）</td></tr>
+<tr><td>库里元件太乱</td><td>「设置」→「系统」→「分类」建分类文件夹（<a href="../ch3/1.html">3.1</a>）</td></tr>
+</tbody>
+</table>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch5/2.html"><small>← 上一页</small>5.2 符号编辑器</a><a class="next" href="../ch6/1.html"><small>下一页 →</small>6.1 环境、板框与外形</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/widgets/modC.js"></script>
+</body>
+</html>

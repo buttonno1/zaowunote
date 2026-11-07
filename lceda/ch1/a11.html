@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A-11 拿到板子之后 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch1/a11" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 1 章 · Quickstart 实战</div>
+    <article>
+      <h1>A-11 拿到板子之后</h1>
+      <p class="lead">板子到手！这一节讲怎么安全地第一次通电、自己焊接的话按什么顺序焊、不亮或者闪得不对时怎么排查，以及接下来可以怎样改进你的小徽章。</p>
+      <div class="meta-bar"><span>⏱ 阅读约 10 分钟</span><span>🔧 含排错表</span><span>🎨 含改进方向</span></div>
+      
+
+<h2 id="A11.1-路线-①SMT-贴好的板子上电测试">A11.1 路线 ①：SMT 贴好的板子，上电测试<a class="anchor" href="#A11.1-路线-①SMT-贴好的板子上电测试">#</a></h2>
+
+<ol class="steps">
+  <li><b>先看一眼</b>：元件有没有缺、有没有歪、有没有锡把相邻的脚连在一起（特别是 NE555 的 8 只脚）。</li>
+  <li><b>用手机充电头或电脑 USB 口</b>，插上 USB-C 线。第一次建议用电脑或充电宝，出问题也不会冒大烟。</li>
+  <li><b>观察</b>：白灯和红灯应该交替闪，每秒约 1.5 次。</li>
+  <li><b>摸一下</b> NE555：正常是常温或微温。如果烫手，马上拔线，看下面的排错表。</li>
+</ol>
+
+<aside class="tip">
+<p>如果用 C-to-C 线（两头都是 Type-C）插在快充头上不亮，换一根 A-to-C 线（一头是普通 USB）试试。R1、R2 就是为了让 C-to-C 也能供电，如果不亮，正好检查它们是不是焊好了。</p>
+</aside>
+
+<h2 id="A11.2-路线-②自己手工焊接">A11.2 路线 ②：自己手工焊接<a class="anchor" href="#A11.2-路线-②自己手工焊接">#</a></h2>
+
+<p><b>工具清单：</b>恒温电烙铁（尖头或刀头）、焊锡丝（0.5~0.8 mm，有铅的更好焊）、助焊剂、尖头镊子、吸锡带、放大镜或手机微距、万用表（选购）。</p>
+
+<p><b>焊接顺序：先矮后高，先小后大，先难后易：</b></p>
+<ol class="steps blue">
+  <li>NE555（U1）：最难的先焊。先给一个角的焊盘上点锡，用镊子把芯片对准（注意 1 脚圆点方向），焊住一只脚固定，再焊其余的脚。</li>
+  <li>电阻、电容：先给一个焊盘上锡，镊子夹住元件推过去焊一端，再焊另一端。</li>
+  <li>LED：<b>注意正负极</b>，焊之前对照丝印和元件上的极性标记。</li>
+  <li>USB 插座最后焊：先焊外壳的固定脚，再焊信号脚（VBUS、GND、CC1、CC2），检查相邻的脚没有连锡。</li>
+</ol>
+
+<aside class="warn">
+<p>0603 元件非常小（1.6 × 0.8 mm），第一次焊接会比较吃力。想练手的话，建议在画原理图时就换成 1206 封装（见 <a href="a0.html#两条制作路线">A-0 两条制作路线</a>）。焊接入门详见 <a href="../ch2/13.html">2.13 SMT 与手工焊接</a>。</p>
+</aside>
+
+<h2 id="A11.3-排错表">A11.3 排错表<a class="anchor" href="#A11.3-排错表">#</a></h2>
+
+<aside class="debug">
+<table>
+<thead><tr><th>现象</th><th>可能原因</th><th>怎么检查</th></tr></thead>
+<tbody>
+<tr><td>完全不亮</td><td>没电：USB 线 / 充电头不供电；R1、R2 没焊好导致 C-to-C 充电器不给电；USB 插座虚焊</td><td>换 A-to-C 线和电脑 USB 口试；万用表测 C3 两端有没有约 5 V</td></tr>
+<tr><td>完全不亮，但 C3 两端有 5 V</td><td>NE555 没工作：焊反（1 脚方向错）、某只脚虚焊或连锡</td><td>对照 1 脚圆点检查方向；放大镜看 8 只脚</td></tr>
+<tr><td>只亮一组，不闪</td><td>NE555 没振荡：R3、R4、C1 有虚焊；或者 OUT 一直是高 / 低</td><td>检查 R3、R4、C1 的焊点；测 3 脚电压是否在变</td></tr>
+<tr><td>只有一组能亮，但在闪</td><td>不亮那一组的 LED 焊反了，或它的 330 Ω 电阻虚焊</td><td>检查那组 LED 的方向；两组是对称的，可以对照着看</td></tr>
+<tr><td>某一颗 LED 不亮</td><td>这颗 LED 焊反或虚焊，或者它的限流电阻虚焊</td><td>对照同组另一颗；补焊</td></tr>
+<tr><td>闪得太快或太慢</td><td>R3、R4、C1 放错了值（比如 47 kΩ 和 1 kΩ 互换、10 µF 换成了 10 nF）</td><td>对照 BOM 检查；在 <a href="a0.html#电路原理一个会打拍子的芯片">A-0 模拟器</a>里算算</td></tr>
+<tr><td>灯一直亮，看不出闪</td><td>频率太高（超过约 25 Hz 肉眼就看不出了），一般是 C1 值放错</td><td>同上</td></tr>
+<tr><td>一插电就烫</td><td><b>短路</b>：VCC 和 GND 之间连锡，或者某个元件焊反</td><td><b>马上拔线！</b>不通电时用万用表测 VCC 和 GND 之间是否接近 0 Ω；仔细看 USB 插座和 NE555 的引脚</td></tr>
+</tbody>
+</table>
+</aside>
+
+<h2 id="A11.4--改进方向">A11.4 🎨 改进方向<a class="anchor" href="#A11.4--改进方向">#</a></h2>
+
+<aside class="diy">
+<ul>
+<li><b>改闪烁速度</b>：换 R4 或 C1 的值（先在 <a href="a0.html">A-0 模拟器</a>里试），回到原理图改「器件」，重新转 PCB、导出下单。</li>
+<li><b>加更多 LED</b>：每组再并一路“LED + 330 Ω 电阻”，接法照抄同组。</li>
+<li><b>加一个开关</b>：在 VBUS 和电路之间串一个贴片拨动开关（本案例为了少用扩展库元件去掉了）。</li>
+<li><b>做成钥匙扣 / 挂件</b>：在板子边上加一个挂绳孔。可以用「放置 → 焊盘」放一个大的插件焊盘当孔，或者用「挖槽区域」挖一个圆孔，离板边留 1~2 mm，避开铜线。</li>
+<li><b>换形状、换颜色</b>：回到 <a href="a4.html#A4.5--其他形状的板子">A-4</a> 改板框，下单时换阻焊颜色。</li>
+<li><b>电池供电</b>：把 USB 换成 CR2032 纽扣电池座（注意：NE555 至少要 4.5 V 左右，3 V 的纽扣电池带不动，要换成低电压的 CMOS 版 555，比如 TLC555）。</li>
+</ul>
+</aside>
+
+<h2 id="案例-A-总结">案例 A 总结<a class="anchor" href="#案例-A-总结">#</a></h2>
+
+<p>恭喜你走完了一块电路板从零到下单的全流程 🎉。回顾一下学到的东西：</p>
+
+<ul class="checklist">
+  <li><span>新建工程，知道工程 / 板子 / 原理图 / PCB 的关系</span></li>
+  <li><span>按 C 编号从立创商城库搜索并放置元件，知道基础库和扩展库</span></li>
+  <li><span>导线、电源符号、网络标签；原理图 DRC，能看懂并修复“缺少封装”这样的错误</span></li>
+  <li><span>原理图转 PCB，知道飞线是什么</span></li>
+  <li><span>认识图层，画圆形板框</span></li>
+  <li><span>布局原则：接口在板边、相关元件就近、去耦电容贴近电源脚</span></li>
+  <li><span>手动布线 + 自动布线（别忘了点「确认」）</span></li>
+  <li><span>双面铺 GND 铜；放丝印文字</span></li>
+  <li><span>PCB DRC、3D / 2D 预览</span></li>
+  <li><span>导出 Gerber / BOM / 坐标文件，看懂下单页面的每个参数</span></li>
+</ul>
+
+<p>下一个案例 B 会在这个基础上做一块能用 USB 线写程序的 ESP32-C3 彩灯板（制作中）。想先补补理论，可以去 <a href="../ch2/1.html">第 2 章 前置知识补全</a>。</p>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch1/a10.html"><small>← 上一页</small>A-10 导出制造文件与下单</a><a class="next" href="../ch1/b0.html"><small>下一页 →</small>B-0 项目介绍</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

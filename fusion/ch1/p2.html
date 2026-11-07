@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P2 底座 · Fusion 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch1/p2" data-root="../" data-book="fusion">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">Fusion 教程<small>（原 Fusion 360）</small></a></div>
+  <span class="ver">基于 Autodesk Fusion 2705.1.30（个人版）</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-what" href="../ch0/1-what.html">0.1 3D 设计能做什么<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-fusion" href="../ch0/2-fusion.html">0.2 认识 Fusion<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-install" href="../ch0/3-install.html">0.3 安装、账号与许可<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 鼠标、触控板与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 1 章 · Quickstart</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与视图操作<span class="chk">✓</span></a></li><li class="nav-sub">常用操作图鉴</li><li><a class="nav-link" data-id="ch1/1-sketch" href="../ch1/1-sketch.html">1.1 草图：在平面上画轮廓<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/2-shape" href="../ch1/2-shape.html">1.2 成形：把草图变成立体<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/3-modify" href="../ch1/3-modify.html">1.3 修改：在已有形状上加工<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/4-aid" href="../ch1/4-aid.html">1.4 辅助与检查<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/5-joint" href="../ch1/5-joint.html">1.5 零部件与联接<span class="chk">✓</span></a></li><li class="nav-sub">案例 · 折叠手机支架</li><li><a class="nav-link" data-id="ch1/p0" href="../ch1/p0.html">P0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p1" href="../ch1/p1.html">P1 新建设计与参数<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch1/p2" href="../ch1/p2.html">P2 底座<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p3" href="../ch1/p3.html">P3 充电线槽（扫掠）<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p4" href="../ch1/p4.html">P4 靠背<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p5" href="../ch1/p5.html">P5 旋钮（旋转）<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p6" href="../ch1/p6.html">P6 螺丝与螺母<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p7" href="../ch1/p7.html">P7 刻字与外观<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p8" href="../ch1/p8.html">P8 联接与运动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p9" href="../ch1/p9.html">P9 检查与修改<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p10" href="../ch1/p10.html">P10 导出<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 三维设计基础知识</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 坐标系、平面与视图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 草图约束与自由度<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 参数化建模与时间轴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 实体、曲面、网格<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 零件、零部件与联接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 尺寸、公差与配合<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 3D 打印入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 其他加工方式<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 文件格式大全<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 读懂工程图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 材料常识<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与数据管理</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 首选项大全<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 界面定制与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 项目、文件与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/4" href="../ch3/4.html">3.4 分享与协作<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/5" href="../ch3/5.html">3.5 许可、离线与性能<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 草图完全手册</summary><ul><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 创建草图与选项板<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 绘图工具<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 修改工具<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 约束全集<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 引用已有几何<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/7" href="../ch4/7.html">4.7 导入 2D 素材<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/8" href="../ch4/8.html">4.8 3D 草图与排错<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 实体建模完全手册</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 拉伸进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 旋转、扫掠、放样进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 加强筋、凸雕、加厚<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/4" href="../ch5/4.html">5.4 基本体与螺旋<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/5" href="../ch5/5.html">5.5 孔与螺纹<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/6" href="../ch5/6.html">5.6 圆角与倒角进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/7" href="../ch5/7.html">5.7 抽壳与拔模<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/8" href="../ch5/8.html">5.8 阵列与镜像<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/9" href="../ch5/9.html">5.9 合并、分割与直接修改<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/10" href="../ch5/10.html">5.10 检验与分析<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/11" href="../ch5/11.html">5.11 插入外部素材<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/12" href="../ch5/12.html">5.12 塑料零件<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · 参数化与设计修改</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 参数与表达式<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 时间轴全功能<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 设计意图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 报错与修复<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/5" href="../ch6/5.html">6.5 实战：可调收纳盒<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · 曲面建模</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 曲面是什么<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 创建曲面<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/3" href="../ch7/3.html">7.3 修改曲面<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/4" href="../ch7/4.html">7.4 曲面变实体与质量分析<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 造型（自由形态）</summary><ul><li><a class="nav-link" data-id="ch8/1" href="../ch8/1.html">8.1 造型环境<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/2" href="../ch8/2.html">8.2 创建形体<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/3" href="../ch8/3.html">8.3 编辑形状<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/4" href="../ch8/4.html">8.4 修改工具与完成造型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 9 章 · 钣金与激光切割</summary><ul><li><span class="nav-link todo">钣金与激光切割</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 网格与 STL</summary><ul><li><span class="nav-link todo">网格与 STL</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 装配、联接与运动</summary><ul><li><span class="nav-link todo">装配、联接与运动</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 外观与渲染</summary><ul><li><span class="nav-link todo">外观与渲染</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 动画与爆炸图</summary><ul><li><span class="nav-link todo">动画与爆炸图</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 工程图</summary><ul><li><span class="nav-link todo">工程图</span></li></ul></details><details class="nav-group"><summary>第 15 章 · 3D 打印全流程</summary><ul><li><span class="nav-link todo">3D 打印全流程</span></li></ul></details><details class="nav-group"><summary>第 16 章 · CAM 数控加工入门</summary><ul><li><span class="nav-link todo">CAM 数控加工入门</span></li></ul></details><details class="nav-group"><summary>第 17 章 · 仿真与衍生式设计</summary><ul><li><span class="nav-link todo">仿真与衍生式设计</span></li></ul></details><details class="nav-group"><summary>第 18 章 · 给电路板做外壳</summary><ul><li><span class="nav-link todo">给电路板做外壳</span></li></ul></details><details class="nav-group"><summary>第 19 章 · 脚本与插件</summary><ul><li><span class="nav-link todo">脚本与插件</span></li></ul></details><details class="nav-group"><summary>第 20 章 · 设计经验与常见问题</summary><ul><li><span class="nav-link todo">设计经验与常见问题</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表（中英对照）</span></li><li><span class="nav-link todo">常见问题</span></li><li><span class="nav-link todo">资源链接</span></li><li><span class="nav-link todo">文件下载</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">Fusion 教程</a> / 第 1 章 · Quickstart</div>
+    <article>
+      <h1>P2 底座</h1>
+      <p class="lead">做第一个零件：底座。先建一个叫“底座”的零部件，然后画底板、加挡边、做铰链的两个耳朵并打孔，最后把锋利的角倒圆。每一步都配了三张图：要点哪里、对话框怎么填、做完长什么样。</p>
+      <div class="meta-bar"><span>⏱ 约 40 分钟</span><span>✅ Fusion 2705.1.30 实测（按本页步骤从零做的过程截图）</span></div>
+      
+
+<p>做完这一页，底座是这样的：</p>
+<figure class="shot"><img src="../img/case2/p2-fillet-done.png" alt="P2 完成：底板 + 前挡边 + 两个带孔的铰链耳，四角是圆的" width="620" loading="lazy"><figcaption><span class="fig-no">图 P2-1</span>P2 完成：底板 + 前挡边 + 两个带孔的铰链耳，四角是圆的</figcaption></figure>
+
+<h2 id="第-1-步新建零部件底座">第 1 步：新建零部件“底座”<a class="anchor" href="#第-1-步新建零部件底座">#</a></h2>
+
+<ol class="steps">
+  <li>「装配 ▾ → <b>新建零部件</b>」。</li>
+</ol>
+
+<figure class="shot"><img src="../img/case2/p2-menu-asm.png" alt="「装配」菜单，第二项就是「新建零部件」" width="300" loading="lazy"><figcaption><span class="fig-no">图 P2-2</span>「装配」菜单，第二项就是「新建零部件」</figcaption></figure>
+
+<ol class="steps" start="2">
+  <li value="2">「零部件名称」改成 <code>底座</code>，其他保持默认，点「确定」。</li>
+</ol>
+
+<figure class="shot"><img src="../img/case2/p2-newcomp-d.png" alt="新建零部件对话框（默认名字是“零部件1”，改成“底座”）" width="330" loading="lazy"><figcaption><span class="fig-no">图 P2-3</span>新建零部件对话框（默认名字是“零部件1”，改成“底座”）</figcaption></figure>
+
+<div class="table-title">新建零部件</div><table class=""><thead><tr><th>选项</th><th>含义</th><th>本例</th></tr></thead><tbody><tr><td>父对象</td><td>新零部件放在谁的下面。默认是整个设计（根）</td><td>保持默认</td></tr><tr><td>外部</td><td>勾选后零部件存成一个独立的文件，可以在别的设计里引用（第 11 章）</td><td>不勾</td></tr><tr><td>设计类型 / 零部件类型</td><td>外部零部件用的设置；零部件类型可以选普通或钣金</td><td>默认</td></tr><tr><td>零部件名称</td><td>名字，会显示在浏览器里</td><td>底座</td></tr><tr><td>从实体</td><td>把已经画好的实体直接变成一个零部件</td><td>不用</td></tr><tr><td>激活</td><td>建好之后马上“激活”它，接下来画的东西都归它</td><td><b>保持勾选</b></td></tr></tbody></table>
+
+<figure class="shot"><img src="../img/case2/p2-comp.png" alt="浏览器里多了“底座:1”，后面的圆点表示它是当前激活的零部件" width="240" loading="lazy"><figcaption><span class="fig-no">图 P2-4</span>浏览器里多了“底座:1”，后面的圆点表示它是当前激活的零部件</figcaption></figure>
+
+<aside class="theory">
+<p><b>🧠 为什么先建零部件再画？</b>一个零部件就是一个零件，有自己的名字、位置，也能单独动。支架的靠背要绕铰链转，所以底座和靠背必须是两个零部件。<b>先建零部件并激活，再画</b>，画的东西就自动归它。浏览器里，当前激活的零部件后面有一个小圆点；想切换，鼠标移到那一行，点右边的圆点（或右键 → 激活）。</p>
+</aside>
+
+<h2 id="第-2-步底板">第 2 步：底板<a class="anchor" href="#第-2-步底板">#</a></h2>
+
+<ol class="steps">
+  <li>「创建草图」→ 点 XY 平面（水平的那个，见 <a href="1-sketch.html">1.1</a>）。</li>
+  <li>「矩形 → 中心矩形」，从原点往外拉一个矩形。</li>
+  <li>按 <span class="keys"><kbd>D</kbd></span> 标尺寸：点上边，往上放尺寸，输入框里输入 <code>w</code>（会弹出参数列表，选 w）；点右边，输入 <code>100</code>。</li>
+  <li>「完成草图」。</li>
+</ol>
+
+<figure class="shot"><img src="../img/case2/p2-sk-base.png" alt="底板草图：宽度显示 fx: 80.00（fx 表示它由参数驱动），深度 100；线是黑色的，表示完全约束" width="520" loading="lazy"><figcaption><span class="fig-no">图 P2-5</span>底板草图：宽度显示 fx: 80.00（fx 表示它由参数驱动），深度 100；线是黑色的，表示完全约束</figcaption></figure>
+
+<ol class="steps" start="5">
+  <li value="5">按 <span class="keys"><kbd>E</kbd></span> 拉伸，点矩形区域；距离框里输入 <code>t</code>，从弹出的列表里选 t。「操作」保持「新建实体」，点「确定」。</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/case2/p2-ext-base.png" alt="输入 t 时弹出参数列表（t = 6 mm）" width="420" loading="lazy"><figcaption><span class="fig-no">图 P2-6</span>输入 t 时弹出参数列表（t = 6 mm）</figcaption></figure>
+<figure class="shot"><img src="../img/case2/p2-ext-base-d.png" alt="拉伸：距离 t，新建实体" width="256" loading="lazy"><figcaption><span class="fig-no">图 P2-7</span>拉伸：距离 t，新建实体</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/case2/p2-base-done.png" alt="底板完成：80 × 100 × 6 的板" width="560" loading="lazy"><figcaption><span class="fig-no">图 P2-8</span>底板完成：80 × 100 × 6 的板</figcaption></figure>
+
+<h2 id="第-3-步前挡边在面上画草图">第 3 步：前挡边（在面上画草图）<a class="anchor" href="#第-3-步前挡边在面上画草图">#</a></h2>
+
+<p>挡边长在底板上表面的前沿。这次不在原点平面上画，而是<b>直接点底板的上表面</b>建草图：</p>
+
+<ol class="steps">
+  <li>「创建草图」→ 点底板的<b>上表面</b>。</li>
+</ol>
+
+<figure class="shot"><img src="../img/case2/p2-pick-top.png" alt="创建草图时，除了原点平面，零件上平整的面也可以点" width="560" loading="lazy"><figcaption><span class="fig-no">图 P2-9</span>创建草图时，除了原点平面，零件上平整的面也可以点</figcaption></figure>
+
+<ol class="steps" start="2">
+  <li value="2">「两点矩形」：沿着底板前边画一个长条——第一点点在前边左角，第二点往右上拉到前边右端附近（两端会自动吸附到底板的角上）；标上宽度尺寸 <code>4</code>。</li>
+  <li value="3">「完成草图」。</li>
+</ol>
+
+<figure class="shot"><img src="../img/case2/p2-sk-lip.png" alt="挡边草图（俯视）：底板最前面那条 4 mm 宽的长条，两端和底板的角重合" width="520" loading="lazy"><figcaption><span class="fig-no">图 P2-10</span>挡边草图（俯视）：底板最前面那条 4 mm 宽的长条，两端和底板的角重合</figcaption></figure>
+
+<ol class="steps" start="4">
+  <li value="4">按 <span class="keys"><kbd>E</kbd></span>，点这个长条，距离输入 <code>lip_h</code>。「操作」会自动变成「<b>合并</b>」：新长出来的挡边和底板粘成一块。点「确定」。</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/case2/p2-ext-lip.png" alt="挡边的预览（往上长）" width="420" loading="lazy"><figcaption><span class="fig-no">图 P2-11</span>挡边的预览（往上长）</figcaption></figure>
+<figure class="shot"><img src="../img/case2/p2-ext-lip-d.png" alt="距离 lip_h，操作 合并" width="256" loading="lazy"><figcaption><span class="fig-no">图 P2-12</span>距离 lip_h，操作 合并</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/case2/p2-lip-done.png" alt="挡边完成" width="560" loading="lazy"><figcaption><span class="fig-no">图 P2-13</span>挡边完成</figcaption></figure>
+
+<aside class="tip">
+<p>在已有实体的面上画草图后拉伸，Fusion 默认选「合并」；往实体里面拉，就自动变成「剪切」（预览变红）。看一眼「操作」，确认是你想要的。</p>
+</aside>
+
+<h2 id="第-4-步左边的铰链耳">第 4 步：左边的铰链耳<a class="anchor" href="#第-4-步左边的铰链耳">#</a></h2>
+
+<p>耳朵是一个“墓碑形”（下面方、上面半圆），画在底座的<b>左侧面</b>上：</p>
+
+<ol class="steps">
+  <li>转一下视角，让左侧面朝向你。「创建草图」→ 点<b>左侧面</b>。</li>
+</ol>
+
+<figure class="shot"><img src="../img/case2/p2-pick-left.png" alt="点底座左侧那个窄长的面" width="560" loading="lazy"><figcaption><span class="fig-no">图 P2-14</span>点底座左侧那个窄长的面</figcaption></figure>
+
+<ol class="steps" start="2">
+  <li value="2">用「直线」画墓碑形：从底板上表面往上画一条竖线，<b>按住鼠标拖</b>接出一段半圆弧，再画一条竖线回到底板上表面，最后用直线封口。</li>
+  <li value="3">标三个尺寸：半圆半径 <code>8</code>；竖线高 <code>8.4</code>；半圆圆心到底座前边 <code>35</code>（水平距离）。</li>
+  <li value="4">「完成草图」。</li>
+</ol>
+
+<figure class="shot"><img src="../img/case2/p2-sk-ear.png" alt="耳朵草图（从左侧看）：R8 的半圆、竖边 8.4、圆心离前边 35。轴心离桌面 = 6 + 8.4 = 14.4 mm" width="560" loading="lazy"><figcaption><span class="fig-no">图 P2-15</span>耳朵草图（从左侧看）：R8 的半圆、竖边 8.4、圆心离前边 35。轴心离桌面 = 6 + 8.4 = 14.4 mm</figcaption></figure>
+
+<ol class="steps" start="5">
+  <li value="5">按 <span class="keys"><kbd>E</kbd></span>，点墓碑形区域，距离输入 <code>-8</code>（负号表示<b>往底座里面</b>长），操作「合并」，点「确定」。</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/case2/p2-ext-ear.png" alt="往里拉 8 mm 的预览" width="420" loading="lazy"><figcaption><span class="fig-no">图 P2-16</span>往里拉 8 mm 的预览</figcaption></figure>
+<figure class="shot"><img src="../img/case2/p2-ext-ear-d.png" alt="距离 −8 mm，合并" width="256" loading="lazy"><figcaption><span class="fig-no">图 P2-17</span>距离 −8 mm，合并</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/case2/p2-ear-done.png" alt="左耳完成" width="560" loading="lazy"><figcaption><span class="fig-no">图 P2-18</span>左耳完成</figcaption></figure>
+
+<aside class="warn">
+<p>草图画在最外侧的面上，往外拉耳朵就会伸出底座。看预览：耳朵应该长在底座<b>里面</b>。方向反了就把距离改成正数或负数。</p>
+</aside>
+
+<h2 id="第-5-步镜像出右边的耳朵">第 5 步：镜像出右边的耳朵<a class="anchor" href="#第-5-步镜像出右边的耳朵">#</a></h2>
+
+<ol class="steps">
+  <li>在底部时间轴上点刚才的拉伸（或者点画布上的左耳），选中它。</li>
+  <li>「创建 → <b>镜像</b>」。「对象类型」是「特征」，「对象」显示 1 已选定。</li>
+  <li>点「镜像平面」的选择按钮，再点 YZ 平面（左右正中间的竖直平面；画布上看不到的话，在浏览器展开 底座:1 → 原点，点 YZ）。</li>
+  <li>点「确定」。</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/case2/p2-mirror.png" alt="左耳特征被选中（蓝色）" width="420" loading="lazy"><figcaption><span class="fig-no">图 P2-19</span>左耳特征被选中（蓝色）</figcaption></figure>
+<figure class="shot"><img src="../img/case/mirror-dlg.png" alt="镜像对话框" width="256" loading="lazy"><figcaption><span class="fig-no">图 P2-20</span>镜像对话框</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/case2/p2-mirror-done.png" alt="右边出现了一模一样的耳朵" width="560" loading="lazy"><figcaption><span class="fig-no">图 P2-21</span>右边出现了一模一样的耳朵</figcaption></figure>
+
+<div class="table-title">镜像</div><table class=""><thead><tr><th>选项</th><th>含义</th></tr></thead><tbody><tr><td>对象类型</td><td>镜像什么：<b>面</b> / <b>实体</b>（整块复制一份）/ <b>特征</b>（复制某一步操作，比如一次拉伸）/ <b>零部件</b>（P6 会用到）</td></tr><tr><td>对象</td><td>要镜像的东西</td></tr><tr><td>镜像平面</td><td>“镜子”放在哪。可以选原点平面、构造平面或者零件的平面</td></tr><tr><td>计算类型</td><td>相同 / 调整 / 优化：复制出来的特征怎么重新计算。一般用「相同」，失败时试试「调整」</td></tr></tbody></table>
+
+<aside class="theory">
+<p><b>🧠 为什么镜像“特征”而不是再画一遍？</b>以后改了左耳的尺寸，右耳会自动跟着变，永远对称。</p>
+</aside>
+
+<h2 id="第-6-步铰链孔">第 6 步：铰链孔<a class="anchor" href="#第-6-步铰链孔">#</a></h2>
+
+<ol class="steps">
+  <li>「创建草图」→ 点左耳的<b>外侧面</b>（就是第 4 步那个面，现在上面多了耳朵）。</li>
+  <li>「圆 → 中心直径圆」：鼠标移到半圆弧附近，弧的<b>圆心</b>会显示一个小点，点它作为圆心，画一个圆；按 <span class="keys"><kbd>D</kbd></span> 标直径，输入 <code>bolt_d</code>。</li>
+  <li>「完成草图」。</li>
+</ol>
+
+<figure class="shot"><img src="../img/case2/p2-sk-hole.png" alt="孔草图（从左侧看）：Ø4.40 的圆，和耳朵的半圆同心" width="520" loading="lazy"><figcaption><span class="fig-no">图 P2-22</span>孔草图（从左侧看）：Ø4.40 的圆，和耳朵的半圆同心</figcaption></figure>
+
+<ol class="steps" start="4">
+  <li value="4">按 <span class="keys"><kbd>E</kbd></span>，点小圆。「范围类型」下拉选「<b>全部</b>」（一直穿过两只耳朵），操作自动是「剪切」。点「确定」。</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/case2/p2-cut-hole.png" alt="穿过两只耳朵的剪切预览" width="420" loading="lazy"><figcaption><span class="fig-no">图 P2-23</span>穿过两只耳朵的剪切预览</figcaption></figure>
+<figure class="shot"><img src="../img/case2/p2-cut-hole-d.png" alt="范围类型 全部：没有距离框，多了「反向」" width="256" loading="lazy"><figcaption><span class="fig-no">图 P2-24</span>范围类型 全部：没有距离框，多了「反向」</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/case2/p2-hole-done.png" alt="两只耳朵都打穿了" width="560" loading="lazy"><figcaption><span class="fig-no">图 P2-25</span>两只耳朵都打穿了</figcaption></figure>
+
+<aside class="note">
+<p><b>另一种做法：「孔」命令</b>（<span class="keys"><kbd>H</kbd></span>）。点耳朵外侧面放孔，「范围」选「全部」、直径填 <code>bolt_d</code>。孔命令还能做沉头孔、螺纹孔，选项见 <a href="3-modify.html">1.3 孔</a>。新手用“画圆 + 剪切”更直观，定位也更容易对准。</p>
+</aside>
+
+<h2 id="第-7-步圆角">第 7 步：圆角<a class="anchor" href="#第-7-步圆角">#</a></h2>
+
+<ol class="steps">
+  <li>「修改 → <b>圆角</b>」（快捷键 <span class="keys"><kbd>F</kbd></span>）。</li>
+  <li>依次点底座四个<b>竖直</b>的角边（按住 <kbd>⇧</kbd> 多选）。</li>
+  <li>半径填 <code>3</code>，点「确定」。</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/case2/p2-fillet.png" alt="选中四个竖直的角边（蓝色高亮）" width="420" loading="lazy"><figcaption><span class="fig-no">图 P2-26</span>选中四个竖直的角边（蓝色高亮）</figcaption></figure>
+<figure class="shot"><img src="../img/case2/p2-fillet-d.png" alt="圆角对话框：4 条边，3 mm" width="390" loading="lazy"><figcaption><span class="fig-no">图 P2-27</span>圆角对话框：4 条边，3 mm</figcaption></figure>
+</div>
+
+<div class="table-title">圆角</div><table class=""><thead><tr><th>选项</th><th>含义</th></tr></thead><tbody><tr><td>类型</td><td>圆角 / 规则圆角（自动给所有凸边或凹边倒圆）/ 全圆角（把一个面整个变成半圆）</td></tr><tr><td>边列表</td><td>每一组边一行，每组可以设不同的半径；+ 添加一组</td></tr><tr><td>半径类型</td><td>恒定 / 弦长 / 可变（一条边上半径逐渐变化）</td></tr><tr><td>相切链</td><td>勾选后，点一条边会自动把和它光滑相连的边都选上</td></tr><tr><td>相切权值</td><td>圆角形状的“饱满程度”，保持 1</td></tr><tr><td>拐角类型</td><td>几条圆角边交汇处的处理方式</td></tr></tbody></table>
+
+<figure class="shot"><img src="../img/case2/p2-fillet-done.png" alt="四角变圆，底座完成" width="560" loading="lazy"><figcaption><span class="fig-no">图 P2-28</span>四角变圆，底座完成</figcaption></figure>
+
+<aside class="warn">
+<p><b>底面的边别倒圆角</b>：3D 打印时底面贴着打印平台，圆角会让底边悬空、容易翘边。要处理底边，用「倒角」做 0.5 mm 的小斜边。</p>
+</aside>
+
+<p>保存一次（<span class="keys"><kbd>⌘</kbd><kbd>S</kbd></span>）。</p>
+
+<ul class="checklist">
+  <li><span>浏览器里有一个“底座:1”零部件</span></li>
+  <li><span>两个耳朵一样，孔贯穿两只耳朵</span></li>
+  <li><span>四个竖直的角是圆的</span></li>
+</ul>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch1/p1.html"><small>← 上一页</small>P1 新建设计与参数</a><a class="next" href="../ch1/p3.html"><small>下一页 →</small>P3 充电线槽（扫掠）</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7.2 创建曲面 · Fusion 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch7/2" data-root="../" data-book="fusion">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">Fusion 教程<small>（原 Fusion 360）</small></a></div>
+  <span class="ver">基于 Autodesk Fusion 2705.1.30（个人版）</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-what" href="../ch0/1-what.html">0.1 3D 设计能做什么<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-fusion" href="../ch0/2-fusion.html">0.2 认识 Fusion<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-install" href="../ch0/3-install.html">0.3 安装、账号与许可<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 鼠标、触控板与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与视图操作<span class="chk">✓</span></a></li><li class="nav-sub">常用操作图鉴</li><li><a class="nav-link" data-id="ch1/1-sketch" href="../ch1/1-sketch.html">1.1 草图：在平面上画轮廓<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/2-shape" href="../ch1/2-shape.html">1.2 成形：把草图变成立体<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/3-modify" href="../ch1/3-modify.html">1.3 修改：在已有形状上加工<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/4-aid" href="../ch1/4-aid.html">1.4 辅助与检查<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/5-joint" href="../ch1/5-joint.html">1.5 零部件与联接<span class="chk">✓</span></a></li><li class="nav-sub">案例 · 折叠手机支架</li><li><a class="nav-link" data-id="ch1/p0" href="../ch1/p0.html">P0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p1" href="../ch1/p1.html">P1 新建设计与参数<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p2" href="../ch1/p2.html">P2 底座<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p3" href="../ch1/p3.html">P3 充电线槽（扫掠）<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p4" href="../ch1/p4.html">P4 靠背<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p5" href="../ch1/p5.html">P5 旋钮（旋转）<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p6" href="../ch1/p6.html">P6 螺丝与螺母<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p7" href="../ch1/p7.html">P7 刻字与外观<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p8" href="../ch1/p8.html">P8 联接与运动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p9" href="../ch1/p9.html">P9 检查与修改<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p10" href="../ch1/p10.html">P10 导出<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 三维设计基础知识</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 坐标系、平面与视图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 草图约束与自由度<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 参数化建模与时间轴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 实体、曲面、网格<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 零件、零部件与联接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 尺寸、公差与配合<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 3D 打印入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 其他加工方式<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 文件格式大全<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 读懂工程图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 材料常识<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与数据管理</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 首选项大全<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 界面定制与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 项目、文件与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/4" href="../ch3/4.html">3.4 分享与协作<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/5" href="../ch3/5.html">3.5 许可、离线与性能<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 草图完全手册</summary><ul><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 创建草图与选项板<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 绘图工具<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 修改工具<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 约束全集<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 引用已有几何<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/7" href="../ch4/7.html">4.7 导入 2D 素材<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/8" href="../ch4/8.html">4.8 3D 草图与排错<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 实体建模完全手册</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 拉伸进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 旋转、扫掠、放样进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 加强筋、凸雕、加厚<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/4" href="../ch5/4.html">5.4 基本体与螺旋<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/5" href="../ch5/5.html">5.5 孔与螺纹<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/6" href="../ch5/6.html">5.6 圆角与倒角进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/7" href="../ch5/7.html">5.7 抽壳与拔模<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/8" href="../ch5/8.html">5.8 阵列与镜像<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/9" href="../ch5/9.html">5.9 合并、分割与直接修改<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/10" href="../ch5/10.html">5.10 检验与分析<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/11" href="../ch5/11.html">5.11 插入外部素材<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/12" href="../ch5/12.html">5.12 塑料零件<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · 参数化与设计修改</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 参数与表达式<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 时间轴全功能<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 设计意图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 报错与修复<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/5" href="../ch6/5.html">6.5 实战：可调收纳盒<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 7 章 · 曲面建模</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 曲面是什么<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch7/2" href="../ch7/2.html">7.2 创建曲面<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/3" href="../ch7/3.html">7.3 修改曲面<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/4" href="../ch7/4.html">7.4 曲面变实体与质量分析<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 造型（自由形态）</summary><ul><li><a class="nav-link" data-id="ch8/1" href="../ch8/1.html">8.1 造型环境<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/2" href="../ch8/2.html">8.2 创建形体<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/3" href="../ch8/3.html">8.3 编辑形状<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/4" href="../ch8/4.html">8.4 修改工具与完成造型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 9 章 · 钣金与激光切割</summary><ul><li><span class="nav-link todo">钣金与激光切割</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 网格与 STL</summary><ul><li><span class="nav-link todo">网格与 STL</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 装配、联接与运动</summary><ul><li><span class="nav-link todo">装配、联接与运动</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 外观与渲染</summary><ul><li><span class="nav-link todo">外观与渲染</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 动画与爆炸图</summary><ul><li><span class="nav-link todo">动画与爆炸图</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 工程图</summary><ul><li><span class="nav-link todo">工程图</span></li></ul></details><details class="nav-group"><summary>第 15 章 · 3D 打印全流程</summary><ul><li><span class="nav-link todo">3D 打印全流程</span></li></ul></details><details class="nav-group"><summary>第 16 章 · CAM 数控加工入门</summary><ul><li><span class="nav-link todo">CAM 数控加工入门</span></li></ul></details><details class="nav-group"><summary>第 17 章 · 仿真与衍生式设计</summary><ul><li><span class="nav-link todo">仿真与衍生式设计</span></li></ul></details><details class="nav-group"><summary>第 18 章 · 给电路板做外壳</summary><ul><li><span class="nav-link todo">给电路板做外壳</span></li></ul></details><details class="nav-group"><summary>第 19 章 · 脚本与插件</summary><ul><li><span class="nav-link todo">脚本与插件</span></li></ul></details><details class="nav-group"><summary>第 20 章 · 设计经验与常见问题</summary><ul><li><span class="nav-link todo">设计经验与常见问题</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表（中英对照）</span></li><li><span class="nav-link todo">常见问题</span></li><li><span class="nav-link todo">资源链接</span></li><li><span class="nav-link todo">文件下载</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">Fusion 教程</a> / 第 7 章 · 曲面建模</div>
+    <article>
+      <h1>7.2 创建曲面</h1>
+      <p class="lead">曲面选项卡的「创建」菜单和实体的很像：拉伸、旋转、扫掠、放样，区别是轮廓可以是开放的线，结果是没有厚度的面。另外还有面片、直纹、偏移这几个曲面专用命令。</p>
+      <div class="meta-bar"><span>⏱ 约 15 分钟</span><span>✅ Fusion 2705.1.30 实测</span></div>
+      
+
+<aside class="note"><p>曲面做出来以后，从某些角度看是<b>金黄色</b>的，那是曲面的“背面”，不是出错了。曲面有正反两面，详见 <a href="3.html">7.3 翻转法向</a>。</p></aside>
+
+<h2 id="曲面拉伸">曲面拉伸<a class="anchor" href="#曲面拉伸">#</a></h2>
+
+<p>和实体拉伸用法一样（「曲面 → 创建 → 拉伸」），唯一的区别是可以选<b>不封闭的线</b>：一条线拉伸出来就是一张面，像把一根铁丝往上拉成一面墙。</p>
+
+<div class="compare" style="max-width:600px"><img src="../img/c5/vp-s-extrude-before.png" alt="之前"><div class="after-wrap"><img src="../img/c5/vp-s-extrude-after.png" alt="之后"></div><div class="handle"></div><span class="lab l">之前</span><span class="lab r">之后</span></div><div class="compare-cap"><span class="fig-no">图 7.2-1</span>一条开放的样条曲线，拉伸 20 mm 得到一张波浪面（拖动中间的竖线对比）</div>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/c5/s-extrude.png" alt="点选样条曲线（开放的线也能选）" width="420" loading="lazy"><figcaption><span class="fig-no">图 7.2-2</span>点选样条曲线（开放的线也能选）</figcaption></figure>
+<figure class="shot"><img src="../img/c5/s-extrude-d.png" alt="曲面拉伸：轮廓、链选、开始、范围类型、距离、扫掠斜角、操作" width="256" loading="lazy"><figcaption><span class="fig-no">图 7.2-3</span>曲面拉伸：轮廓、链选、开始、范围类型、距离、扫掠斜角、操作</figcaption></figure>
+</div>
+
+<h2 id="曲面旋转">曲面旋转<a class="anchor" href="#曲面旋转">#</a></h2>
+
+<div class="compare" style="max-width:600px"><img src="../img/c5/vp-s-revolve-before.png" alt="之前"><div class="after-wrap"><img src="../img/c5/vp-s-revolve-after.png" alt="之后"></div><div class="handle"></div><span class="lab l">之前</span><span class="lab r">之后</span></div><div class="compare-cap"><span class="fig-no">图 7.2-4</span>一条样条 + 一根中心线，旋转一圈得到花瓶外壁（没有底、没有厚度）（拖动中间的竖线对比）</div>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/c5/s-revolve.png" alt="选了样条，再选轴" width="420" loading="lazy"><figcaption><span class="fig-no">图 7.2-5</span>选了样条，再选轴</figcaption></figure>
+<figure class="shot"><img src="../img/c5/s-revolve-d.png" alt="曲面旋转" width="256" loading="lazy"><figcaption><span class="fig-no">图 7.2-6</span>曲面旋转</figcaption></figure>
+</div>
+
+<h2 id="曲面放样和扫掠">曲面放样和扫掠<a class="anchor" href="#曲面放样和扫掠">#</a></h2>
+
+<div class="compare" style="max-width:540px"><img src="../img/c5/vp-s-loft-before.png" alt="之前"><div class="after-wrap"><img src="../img/c5/vp-s-loft-after.png" alt="之后"></div><div class="handle"></div><span class="lab l">之前</span><span class="lab r">之后</span></div><div class="compare-cap"><span class="fig-no">图 7.2-7</span>下面一条圆弧、上面一条 S 形样条，放样成一张扭曲的面（拖动中间的竖线对比）</div>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/c5/s-loft-d.png" alt="曲面放样：截面可以是开放的线" width="300" loading="lazy"><figcaption><span class="fig-no">图 7.2-8</span>曲面放样：截面可以是开放的线</figcaption></figure>
+<figure class="shot"><img src="../img/c5/s-sweep-d.png" alt="曲面扫掠：一条直线沿着弯曲路径扫出一条“带子”" width="300" loading="lazy"><figcaption><span class="fig-no">图 7.2-9</span>曲面扫掠：一条直线沿着弯曲路径扫出一条“带子”</figcaption></figure>
+</div>
+
+<h2 id="面片">面片<a class="anchor" href="#面片">#</a></h2>
+
+<p>给一圈封闭的边“蒙上一层膜”：</p>
+
+<div class="compare" style="max-width:480px"><img src="../img/c5/vp-s-patch-before.png" alt="之前"><div class="after-wrap"><img src="../img/c5/vp-s-patch-after.png" alt="之后"></div><div class="handle"></div><span class="lab l">之前</span><span class="lab r">之后</span></div><div class="compare-cap"><span class="fig-no">图 7.2-10</span>一圈高低起伏的封闭样条（不在一个平面上）→ 面片自动生成一张弯曲的面，像薯片（拖动中间的竖线对比）</div>
+
+<figure class="shot"><img src="../img/c5/s-patch-d.png" alt="面片：选边界（可以是草图线，也可以是曲面的边）、连续性" width="300" loading="lazy"><figcaption><span class="fig-no">图 7.2-11</span>面片：选边界（可以是草图线，也可以是曲面的边）、连续性</figcaption></figure>
+
+<p>常用来封住曲面模型的开口（比如花瓶的底、壳体上的一个洞）。边界在一个平面上时，得到的就是一张平面；边界高低起伏时，面片会自动“撑”出一张弯曲的面。</p>
+
+<h2 id="直纹">直纹<a class="anchor" href="#直纹">#</a></h2>
+
+<p>选一条已有的边，沿某个方向“刷”出一条等宽的带子。「类型」决定往哪个方向刷：<b>法向</b>（垂直于原来的面往外）/ <b>相切</b>（顺着原来的面继续往外）/ <b>方向</b>（沿你指定的一个方向）。</p>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/c5/s-ruled.png" alt="选了方块顶面的边" width="420" loading="lazy"><figcaption><span class="fig-no">图 7.2-12</span>选了方块顶面的边</figcaption></figure>
+<figure class="shot"><img src="../img/c5/s-ruled-d.png" alt="直纹：类型（法向 / 相切 / 方向）、距离、角度、斜接拐角" width="300" loading="lazy"><figcaption><span class="fig-no">图 7.2-13</span>直纹：类型（法向 / 相切 / 方向）、距离、角度、斜接拐角</figcaption></figure>
+</div>
+
+<p>常用于做裙边、翻边、给曲面边缘加一圈延伸。</p>
+
+<h2 id="偏移">偏移<a class="anchor" href="#偏移">#</a></h2>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/c5/s-offset.png" alt="把一张曲面往外复制一份" width="420" loading="lazy"><figcaption><span class="fig-no">图 7.2-14</span>把一张曲面往外复制一份</figcaption></figure>
+<figure class="shot"><img src="../img/c5/s-offset-d.png" alt="曲面偏移：面、链选、距离 5 mm" width="256" loading="lazy"><figcaption><span class="fig-no">图 7.2-15</span>曲面偏移：面、链选、距离 5 mm</figcaption></figure>
+</div>
+
+<p>「曲面 → 创建 → 偏移」，选面、填距离。新的面和原来的面处处保持同样的距离，像给面“套”了一层。常用于做外壳的内表面：外表面往里偏移一个壁厚，两张面之间就是壳体。距离是负数就往另一边偏。</p>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch7/1.html"><small>← 上一页</small>7.1 曲面是什么</a><a class="next" href="../ch7/3.html"><small>下一页 →</small>7.3 修改曲面</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

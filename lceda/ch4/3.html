@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4.3 编辑技巧与绘图 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch4/3" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 4 章 · 原理图设计</div>
+    <article>
+      <h1>4.3 编辑技巧与绘图</h1>
+      <p class="lead">画图快不快，一半靠编辑技巧：怎么一次选中一批东西、怎么批量改属性、怎么对齐排整齐。再加上折线、矩形、文本、表格这些“绘图注释”工具，就能画出又快又好看的原理图。</p>
+      <div class="meta-bar"><span>⏱ 约 25 分钟</span><span>📋 含查找替换、查找相似对象说明表</span></div>
+      
+
+<h2 id="编辑技巧">编辑技巧<a class="anchor" href="#编辑技巧">#</a></h2>
+
+<figure class="shot"><img src="../img/modB/menu-edit.png" alt="「编辑」菜单" width="300" loading="lazy"><figcaption><span class="fig-no">图 4.3-1</span>「编辑」菜单</figcaption></figure>
+
+<h3 id="选择">选择<a class="anchor" href="#选择">#</a></h3>
+
+<table>
+<thead><tr><th>操作</th><th>效果</th></tr></thead>
+<tbody>
+<tr><td>单击</td><td>选中一个对象</td></tr>
+<tr><td><kbd>⇧</kbd> + 单击</td><td>加选 / 减选</td></tr>
+<tr><td>左键从<b>左往右</b>拖框</td><td>只选中<b>完全在框内</b>的对象</td></tr>
+<tr><td>左键从<b>右往左</b>拖框</td><td>选中<b>碰到框</b>的所有对象（方便选一串导线）</td></tr>
+<tr><td><span class="keys"><kbd>⌘</kbd><kbd>A</kbd></span></td><td>全选（⚠️ 光标在输入框里时是全选文字；见 <a href="../ch1/a4.html">A-4</a> 的坑）</td></tr>
+<tr><td>「编辑」→「选择对象」</td><td>按类型选（全部元件 / 全部导线 / 全部文字…）</td></tr>
+<tr><td>鼠标下有好几个东西叠在一起时按 <kbd>G</kbd></td><td>在它们之间轮流切换选择</td></tr>
+</tbody>
+</table>
+
+<h3 id="复制粘贴移动">复制、粘贴、移动<a class="anchor" href="#复制粘贴移动">#</a></h3>
+
+<ul>
+<li><span class="keys"><kbd>⌘</kbd><kbd>C</kbd></span> / <span class="keys"><kbd>⌘</kbd><kbd>V</kbd></span> / <span class="keys"><kbd>⌘</kbd><kbd>X</kbd></span>：复制 / 粘贴 / 剪切。可以跨图页、甚至跨工程粘贴。</li>
+<li>「复制为图片」：把选中的部分复制成图片，直接粘贴进 Word、PPT 写报告。</li>
+<li>按住 <kbd>⌃</kbd> 拖动 = 拖出一份副本（「设置」里的“Ctrl 拖动复制”）。</li>
+<li>「移动」（<kbd>M</kbd>）：以中心为基准移动选中的东西；方向键微调。</li>
+<li>粘贴外部图片：从网页或截图工具复制一张图，直接在画布上 <span class="keys"><kbd>⌘</kbd><kbd>V</kbd></span>。</li>
+</ul>
+
+<h3 id="阵列对象">阵列对象<a class="anchor" href="#阵列对象">#</a></h3>
+
+<p>「编辑」→「阵列对象…」：选中一个对象，按行列数和间距一次复制出一排或一个矩阵。比如 8 个一模一样的 LED+电阻。<b>要先选中对象</b>菜单项才有效（本教程实测没选中时点击没有弹出对话框）。</p>
+
+<h3 id="查找替换-F">查找替换 <span class="keys"><kbd>⌘</kbd><kbd>F</kbd></span><a class="anchor" href="#查找替换-F">#</a></h3>
+
+<figure class="shot"><img src="../img/modB/dlg-find.png" alt="查找和替换" width="560" loading="lazy"><figcaption><span class="fig-no">图 4.3-2</span>查找和替换</figcaption></figure>
+
+<div class="table-title">查找和替换</div><table class=""><thead><tr><th>选项</th><th>含义</th></tr></thead><tbody><tr><td>查找 / 替换（顶部标签）</td><td>只找，还是找到后替换成别的文字</td></tr><tr><td>查找内容</td><td>前面两个下拉：在哪个字段找（全部 / 位号 / 名称…）、匹配方式（模糊 / 精确）</td></tr><tr><td>查找范围</td><td>当前原理图 / 当前图页等</td></tr><tr><td>查找对象</td><td>元件 / 网络 / 引脚 / 文本，勾哪些找哪些</td></tr><tr><td>输入格式</td><td>使用通配符（* 代表任意多个字，? 代表一个字）/ 区分大小写 / 使用表达式</td></tr><tr><td>筛选对象</td><td>在上次的查找结果里继续找</td></tr><tr><td>查找全部 / 上一个 / 下一个</td><td>找到后底部「查找结果」面板列出全部，点一条就跳过去</td></tr></tbody></table>
+
+<p>例：找 <code>R*</code> 能列出所有电阻；替换功能可以把所有网络名 <code>LED_A</code> 改成 <code>LED1</code>。</p>
+
+<h3 id="查找相似对象-F批量修改神器">查找相似对象 <span class="keys"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>F</kbd></span>（批量修改神器）<a class="anchor" href="#查找相似对象-F批量修改神器">#</a></h3>
+
+<figure class="shot"><img src="../img/modB/dlg-similar.png" alt="查找相似对象：每个属性后面选“相同 / 不限 / 不同”" width="430" loading="lazy"><figcaption><span class="fig-no">图 4.3-3</span>查找相似对象：每个属性后面选“相同 / 不限 / 不同”</figcaption></figure>
+
+<p>先选中一个对象（比如一个 10kΩ 电阻），打开它，然后把“值”设为<b>相同</b>、其他设为<b>不限</b>，点「查找全部」——所有 10kΩ 电阻都被选中了。接着在右侧属性面板改一次，就全部改好。用来批量换型号、批量改字体、批量隐藏某个属性特别快。</p>
+
+<h3 id="跳转">跳转<a class="anchor" href="#跳转">#</a></h3>
+
+<p>「编辑」→「跳转」：跳到某个坐标、某个位号的元件、某个网络。元件多的时候比用眼睛找快得多。</p>
+
+<h3 id="对齐分布旋转翻转层级布局菜单">对齐、分布、旋转、翻转、层级（布局菜单）<a class="anchor" href="#对齐分布旋转翻转层级布局菜单">#</a></h3>
+
+<figure class="shot"><img src="../img/modB/layout-align.png" alt="「布局」→「对齐」：左 / 右 / 顶部 / 底部对齐、左右 / 上下居中、选择参考对象、对齐网格" width="560" loading="lazy"><figcaption><span class="fig-no">图 4.3-4</span>「布局」→「对齐」：左 / 右 / 顶部 / 底部对齐、左右 / 上下居中、选择参考对象、对齐网格</figcaption></figure>
+
+<table>
+<thead><tr><th>子菜单</th><th>内容</th><th>快捷键</th></tr></thead>
+<tbody>
+<tr><td>对齐</td><td>左对齐、右对齐、顶部对齐、底部对齐、左右居中、上下居中、对齐网格；“选择参考对象”= 以你点的那个为准对齐</td><td>左对齐 <span class="keys"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>L</kbd></span>、右对齐 <span class="keys"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>R</kbd></span>、顶部 <span class="keys"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>O</kbd></span>、底部 <span class="keys"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>B</kbd></span>、左右居中 <span class="keys"><kbd>⇧</kbd><kbd>⌥</kbd><kbd>E</kbd></span>、上下居中 <span class="keys"><kbd>⇧</kbd><kbd>⌥</kbd><kbd>H</kbd></span></td></tr>
+<tr><td>分布</td><td>水平等距分布、垂直等距分布（让一排元件间距相等）</td><td>—</td></tr>
+<tr><td>旋转</td><td>左向旋转、右向旋转</td><td>空格</td></tr>
+<tr><td>翻转</td><td>左右翻转、上下翻转</td><td><kbd>X</kbd> / <kbd>Y</kbd></td></tr>
+<tr><td>层级</td><td>移到顶层 / 移到底层（重叠时谁盖住谁）</td><td>—</td></tr>
+<tr><td>组合</td><td>把几个对象组合成一个整体，一起移动（<span class="keys"><kbd>⌘</kbd><kbd>G</kbd></span>）</td><td>—</td></tr>
+<tr><td>属性位置…</td><td>统一设置选中元件的位号、值等文字放在元件的哪一侧</td><td>—</td></tr>
+<tr><td>互换位置</td><td>选中两个元件，交换它们的位置</td><td>—</td></tr>
+</tbody>
+</table>
+
+<figure class="shot"><img src="../img/modB/dlg-attrpos.png" alt="属性位置：一次性把选中元件的位号、值文字摆到统一的位置" width="460" loading="lazy"><figcaption><span class="fig-no">图 4.3-5</span>属性位置：一次性把选中元件的位号、值文字摆到统一的位置</figcaption></figure>
+
+<aside class="tip">
+<p>选中多个对象时，右键菜单和画布上方的浮动工具栏里也有对齐、分布按钮，比菜单更快。</p>
+</aside>
+
+<h2 id="绘图与注释">绘图与注释<a class="anchor" href="#绘图与注释">#</a></h2>
+
+<p>「放置」菜单下半部分是绘图工具。它们<b>不影响电路连接</b>，只用来让图更好读：</p>
+
+<table>
+<thead><tr><th>工具</th><th>快捷键</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td>折线</td><td><span class="keys"><kbd>⌥</kbd><kbd>L</kbd></span></td><td>画箭头、分隔线</td></tr>
+<tr><td>圆弧 / 贝塞尔曲线</td><td><span class="keys"><kbd>⌥</kbd><kbd>A</kbd></span> / <span class="keys"><kbd>⌥</kbd><kbd>Z</kbd></span></td><td>画示意图形</td></tr>
+<tr><td>圆形 / 椭圆</td><td><span class="keys"><kbd>⌥</kbd><kbd>C</kbd></span> / <span class="keys"><kbd>⌥</kbd><kbd>E</kbd></span></td><td>圈出重点</td></tr>
+<tr><td>矩形</td><td><span class="keys"><kbd>⌥</kbd><kbd>R</kbd></span></td><td><b>给模块画分区框</b>（案例 B 的 6 个虚线框）</td></tr>
+<tr><td>文本</td><td><span class="keys"><kbd>⌥</kbd><kbd>T</kbd></span></td><td>模块标题、注意事项、版本说明</td></tr>
+<tr><td>图片…</td><td>—</td><td>放 Logo、实物照片、波形截图</td></tr>
+<tr><td>表格…</td><td>—</td><td>放引脚分配表、修改记录表</td></tr>
+</tbody>
+</table>
+
+<figure class="shot"><img src="../img/modB/dlg-table.png" alt="放置 → 表格…：设置行列数，「更多设置」里调样式" width="440" loading="lazy"><figcaption><span class="fig-no">图 4.3-6</span>放置 → 表格…：设置行列数，「更多设置」里调样式</figcaption></figure>
+
+<aside class="diy">
+<p>🎨 好看的原理图 = 分区框 + 模块标题 + 少交叉的连线。可以参考案例 B 的原理图全貌（<a href="../ch1/b2.html">B-2</a>）。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch4/2.html"><small>← 上一页</small>4.2 连接关系</a><a class="next" href="../ch4/4.html"><small>下一页 →</small>4.4 多页、层次图与装配变量</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

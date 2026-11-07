@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3.3 团队协作与开源 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch3/3" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 3 章 · 软件环境与工程协作</div>
+    <article>
+      <h1>3.3 团队协作与开源</h1>
+      <p class="lead">一个人做板子用个人工作区就够了；和同学组队做比赛、课程设计时，用团队工作区共享工程。做好了还可以发布到立创开源硬件平台，也能从那里“抄作业”。</p>
+      <div class="meta-bar"><span>⏱ 约 15 分钟</span><span>⚠️ 团队部分以文字说明为主（本教程账号未加入团队）</span></div>
+      
+
+<h2 id="工作区与团队">工作区与团队<a class="anchor" href="#工作区与团队">#</a></h2>
+
+<h3 id="个人工作区和团队工作区">个人工作区和团队工作区<a class="anchor" href="#个人工作区和团队工作区">#</a></h3>
+
+<p>嘉立创EDA 里的工程分两种“地盘”：</p>
+<ul>
+<li><b>个人工作区</b>：只有你自己能看到和编辑。本教程所有工程都在这里。</li>
+<li><b>团队工作区</b>：属于某个团队，团队成员按权限都能看到、编辑。</li>
+</ul>
+
+<figure class="shot"><img src="../img/modA/workspace.png" alt="编辑器右上角的工作区切换：①当前是「个人」②下拉里列出你加入的团队（本账号没有团队，所以只有“个人”）" width="420" loading="lazy"><figcaption><span class="fig-no">图 3.3-1</span>编辑器右上角的工作区切换：①当前是「个人」②下拉里列出你加入的团队（本账号没有团队，所以只有“个人”）</figcaption></figure>
+
+<h3 id="建团队邀请成员">建团队、邀请成员<a class="anchor" href="#建团队邀请成员">#</a></h3>
+
+<p>团队在<b>网页版个人中心</b>里管理（编辑器右上角头像 → 个人中心，或直接打开 u.lceda.cn）：</p>
+
+<figure class="shot"><img src="../img/modA/team-web.png" alt="个人工作区网页：①左侧「团队」②全部团队 / 我的团队 / 我加入的 ③新建团队" width="750" loading="lazy"><figcaption><span class="fig-no">图 3.3-2</span>个人工作区网页：①左侧「团队」②全部团队 / 我的团队 / 我加入的 ③新建团队</figcaption></figure>
+
+<figure class="shot"><img src="../img/modA/team-new.png" alt="点「新建团队」后填写团队信息（本教程只截到这一步，没有真的创建）" width="520" loading="lazy"><figcaption><span class="fig-no">图 3.3-3</span>点「新建团队」后填写团队信息（本教程只截到这一步，没有真的创建）</figcaption></figure>
+
+<ol class="steps">
+<li>新建团队，起个名字（比如“电子设计大赛-3 组”）</li>
+<li>在团队管理页邀请成员（通过账号 / 链接，以页面为准），给每个人设置权限</li>
+<li>回到编辑器，右上角切换到这个团队的工作区，在里面新建工程，大家就都能打开了</li>
+<li>个人工程也可以<b>移动</b>到团队里（工程的右键菜单 / 网页工程列表里操作）</li>
+</ol>
+
+<aside class="note">
+<p><b>多人同时编辑</b>：专业版支持团队成员协作编辑同一个工程。具体是“同时编辑同一张图”还是“一人编辑时别人只读”，取决于工程的协作模式设置，以官方文档和界面为准。本教程账号没有团队，所以这部分没有实测截图。</p>
+</aside>
+
+<aside class="tip">
+<p><b>没建团队也能合作</b>：最简单的办法是「文件」→「另存为」→「工程另存为(本地)」把工程打包成文件发给同学，他「文件」→「导入」→「嘉立创EDA(专业版)」导进去。缺点是两个人各改各的，最后要手动合并。</p>
+</aside>
+
+<h3 id="和版本控制配合">和版本控制配合<a class="anchor" href="#和版本控制配合">#</a></h3>
+
+<p>团队协作时，<a href="2.html#三种“后悔药”：撤销、历史记录、版本">版本控制</a>更有用：每个人在自己的<b>分支</b>上改，改好了再决定合到 main。改之前先<b>创建节点</b>，出问题随时回退。</p>
+
+<h2 id="开源与分享立创开源硬件平台">开源与分享：立创开源硬件平台<a class="anchor" href="#开源与分享立创开源硬件平台">#</a></h2>
+
+<figure class="shot"><img src="../img/modA/oshwhub.png" alt="立创开源硬件平台 oshwhub.com：①开源广场 ②站内搜索 ③发作品 ④推荐工程（官方推荐 / 最多点赞 / 最新工程）" width="792" loading="lazy"><figcaption><span class="fig-no">图 3.3-4</span>立创开源硬件平台 oshwhub.com：①开源广场 ②站内搜索 ③发作品 ④推荐工程（官方推荐 / 最多点赞 / 最新工程）</figcaption></figure>
+
+<p><b>oshwhub.com</b> 是嘉立创的开源硬件社区，上面有大量别人公开的完整工程：开发板、小车、键盘、无人机……每个工程一般都有原理图、PCB、BOM、照片和说明。对新手来说，这是最好的“参考答案库”。</p>
+
+<h3 id="从开源平台学习抄作业">从开源平台学习（“抄作业”）<a class="anchor" href="#从开源平台学习抄作业">#</a></h3>
+
+<ol class="steps">
+<li>在开源广场搜你感兴趣的东西，比如 “ESP32-C3”“555”“Type-C 供电”</li>
+<li>打开工程页，可以在线预览原理图、PCB、3D</li>
+<li>工程页上一般有在编辑器中打开 / 复制工程到自己工作区的按钮（以页面实际按钮为准），复制后就能随便改</li>
+<li>重点学：别人的电源部分怎么画、元件怎么摆、线怎么走、丝印怎么写</li>
+</ol>
+
+<aside class="warn">
+<p>尊重开源协议：每个工程页会写明开源协议（如 GPL、CC BY-NC-SA 等）。学习、改着玩没问题；要拿去卖或者比赛提交，先看清协议要求（比如要署名、不能商用）。</p>
+</aside>
+
+<h3 id="发布自己的作品">发布自己的作品<a class="anchor" href="#发布自己的作品">#</a></h3>
+
+<ol class="steps">
+<li>先把工程整理好：原理图清楚、DRC 通过、丝印写上名字和版本</li>
+<li>在开源平台点「发作品」（或从编辑器的工程菜单发布，以界面为准），选择要发布的工程</li>
+<li>写好介绍：做了什么、怎么用、实物照片、注意事项；选择开源协议</li>
+<li>提交后平台会审核，通过后公开（平台首页有《工程发布流程》和《工程审核标准》说明）</li>
+</ol>
+
+<aside class="diy">
+<p>🎨 做完本教程的眨眼小徽章或 ESP32-C3 彩灯板、拿到实物后，拍几张照片发布出去，就是你的第一个开源硬件作品！</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch3/2.html"><small>← 上一页</small>3.2 工程管理与版本</a><a class="next" href="../ch4/0.html"><small>下一页 →</small>4.0 本章导览与菜单地图</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

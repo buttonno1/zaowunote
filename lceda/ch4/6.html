@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4.6 工具、输出与视图 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch4/6" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 4 章 · 原理图设计</div>
+    <article>
+      <h1>4.6 工具、输出与视图</h1>
+      <p class="lead">最后是一堆实用工具：电路计算器、原理图/网表对比、引脚交换，各种导出格式（BOM、PDF、图片、DXF、网表），以及让大图更好看的视图功能。</p>
+      <div class="meta-bar"><span>⏱ 约 20 分钟</span><span>📋 含导出文档、网表、电路计算器说明表</span></div>
+      
+
+<h2 id="工具">工具<a class="anchor" href="#工具">#</a></h2>
+
+<figure class="shot"><img src="../img/modB/menu-tool.png" alt="「工具」菜单" width="280" loading="lazy"><figcaption><span class="fig-no">图 4.6-1</span>「工具」菜单</figcaption></figure>
+
+<h3 id="电路计算器">电路计算器<a class="anchor" href="#电路计算器">#</a></h3>
+
+<figure class="shot"><img src="../img/modB/dlg-calc.png" alt="电路计算器：左边选计算类型，中间输入参数，右边显示参考电路图和公式" width="835" loading="lazy"><figcaption><span class="fig-no">图 4.6-2</span>电路计算器：左边选计算类型，中间输入参数，右边显示参考电路图和公式</figcaption></figure>
+
+<p>内置一组常用计算，不用再去网上找：</p>
+<ul>
+<li><b>滤波截止频率</b>：RC / RL / LC 滤波器，输入 R、C 算截止频率 fc = 1/(2πRC)，或反过来</li>
+<li><b>分压计算</b>：两个电阻分压得多少伏（原理见 <a href="../ch2/3.html">2.3</a>）</li>
+<li><b>电容充电</b>：RC 充电到某个电压要多久</li>
+<li><b>电阻比例</b>、<b>线圈电感</b>、<b>电抗/谐振</b>、<b>运算放大器</b>增益</li>
+</ul>
+<p>每种计算都是三个量里填两个、点另一个旁边的「应用」算出第三个。</p>
+
+<h3 id="原理图对比网表对比">原理图对比、网表对比<a class="anchor" href="#原理图对比网表对比">#</a></h3>
+
+<figure class="shot"><img src="../img/modB/dlg-schcmp.png" alt="原理图对比：选两个原理图，点「开始对比」" width="440" loading="lazy"><figcaption><span class="fig-no">图 4.6-3</span>原理图对比：选两个原理图，点「开始对比」</figcaption></figure>
+
+<p>比较两个原理图（比如分支和 main，或者 V1 和 V2）有哪些不同：多了 / 少了哪些元件、哪些连接变了。<b>网表对比</b>是比较两份网表文件（比如和别的软件导出的网表核对）。</p>
+
+<h3 id="引脚交换">引脚交换<a class="anchor" href="#引脚交换">#</a></h3>
+
+<figure class="shot"><img src="../img/modB/dlg-pinswap.png" alt="引脚交换配置：左边选元件，右边设置哪些引脚可以互换" width="718" loading="lazy"><figcaption><span class="fig-no">图 4.6-4</span>引脚交换配置：左边选元件，右边设置哪些引脚可以互换</figcaption></figure>
+
+<p>有些引脚功能一样、可以互换（比如单片机的两个普通 IO、电阻的两端）。在这里配置好可交换的引脚组，布 PCB 时如果发现某两根线交叉了，就可以用「工具」→「交换」→「引脚交换」把它们换一下，线就顺了，原理图会同步更新。</p>
+
+<h3 id="其他工具">其他工具<a class="anchor" href="#其他工具">#</a></h3>
+<ul>
+<li><b>日志</b>：底部日志面板，所有操作的提示、警告都在这里（比如“唯一 ID 重复”）</li>
+<li><b>封装管理器 / 器件管理器 / 器件标准化</b>：见 <a href="1.html">4.1</a></li>
+<li><b>装配变量</b>：见 <a href="4.html">4.4</a></li>
+<li><b>IPC/DAC-2552 属性</b>：按行业标准给元件加属性，一般用不到</li>
+</ul>
+
+<h2 id="输出">输出<a class="anchor" href="#输出">#</a></h2>
+
+<figure class="shot"><img src="../img/modB/menu-export.png" alt="原理图里的「导出」菜单" width="260" loading="lazy"><figcaption><span class="fig-no">图 4.6-5</span>原理图里的「导出」菜单</figcaption></figure>
+
+<table>
+<thead><tr><th>导出项</th><th>得到什么</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td>立创商城元件下单…</td><td>跳转立创商城，按 BOM 一键加购</td><td>买元件自己焊</td></tr>
+<tr><td>嘉立创 SMT 备料下单…</td><td>给 SMT 贴片准备物料</td><td>见 <a href="../ch1/b4.html">B-4</a></td></tr>
+<tr><td>嘉立创 Layout 下单…</td><td>付费请工程师帮你画 PCB</td><td>—</td></tr>
+<tr><td>物料清单(BOM)…</td><td>Excel / CSV 元件清单</td><td>见 <a href="../ch1/a10.html">A-10</a>；导出前会先提示做器件标准化</td></tr>
+<tr><td>DXF…</td><td>CAD 格式的原理图图形</td><td>给机械/CAD 软件用</td></tr>
+<tr><td>PDF / PNG / SVG…</td><td>文档或图片</td><td>交作业、写报告（对话框和「打印」相同，见 <a href="../ch3/2.html">3.2</a>）</td></tr>
+<tr><td>网表文件…</td><td>连接关系文件</td><td>导给别的 PCB 软件</td></tr>
+<tr><td>PADS / T/DISA 4001…</td><td>别的软件 / 标准格式</td><td>跨软件协作（第 12 章）</td></tr>
+</tbody>
+</table>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modB/dlg-png.png" alt="导出 PNG：分辨率可选 2x 等，范围可以只导出一部分" width="550" loading="lazy"><figcaption><span class="fig-no">图 4.6-6</span>导出 PNG：分辨率可选 2x 等，范围可以只导出一部分</figcaption></figure>
+<figure class="shot"><img src="../img/modB/dlg-dxf.png" alt="导出 DXF：选范围，是否包含图纸边框" width="576" loading="lazy"><figcaption><span class="fig-no">图 4.6-7</span>导出 DXF：选范围，是否包含图纸边框</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/modB/dlg-netlist.png" alt="导出网表" width="480" loading="lazy"><figcaption><span class="fig-no">图 4.6-8</span>导出网表</figcaption></figure>
+
+<div class="table-title">导出网表</div><table class=""><thead><tr><th>选项</th><th>含义</th></tr></thead><tbody><tr><td>网表类型</td><td>目标软件格式，如 Allegro(.tel) 等（下拉选择）</td></tr><tr><td>范围 / 文件名称</td><td>导出哪个原理图、文件名</td></tr><tr><td>器件 / 封装</td><td>网表里器件名、封装名取哪个属性</td></tr><tr><td>附加属性</td><td>额外带上 Value、Tolerance 等字段</td></tr><tr><td>特殊字符</td><td>封装名里的空格和 ; ! . 等符号替换成什么（别的软件不认这些字符）</td></tr></tbody></table>
+
+<h2 id="视图">视图<a class="anchor" href="#视图">#</a></h2>
+
+<figure class="shot"><img src="../img/modB/menu-view.png" alt="「视图」菜单" width="280" loading="lazy"><figcaption><span class="fig-no">图 4.6-9</span>「视图」菜单</figcaption></figure>
+
+<table>
+<thead><tr><th>功能</th><th>快捷键</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>放大 / 缩小 / 适应全部</td><td><kbd>K</kbd> 适应全部</td><td>迷路了就按 K</td></tr>
+<tr><td>适应选中 / 适应框选</td><td>—</td><td>把选中的东西放大到满屏 / 拉框放大</td></tr>
+<tr><td>全屏</td><td><span class="os-win">F11</span><span class="os-mac">F11 在 Mac 上会冲突，用 <kbd>⌃</kbd> <kbd>⌘</kbd> <kbd>F</kbd></span></td><td>见 <a href="../ch0/4-input.html">0.4</a></td></tr>
+<tr><td>单位</td><td><kbd>Q</kbd></td><td>inch / mm 切换</td></tr>
+<tr><td>网格尺寸 / 网格类型</td><td>—</td><td>0.1 / 0.05 / 0.02 / 0.01 inch</td></tr>
+<tr><td>高亮网络</td><td><span class="keys"><kbd>⇧</kbd><kbd>H</kbd></span></td><td>高亮选中导线所在的整个网络；“悬浮导线高亮网络”= 鼠标停在线上就高亮</td></tr>
+<tr><td>左侧 / 右侧 / 底部面板</td><td><kbd>[</kbd> <kbd>]</kbd> <kbd>\</kbd></td><td>开关面板</td></tr>
+<tr><td>窗口排列</td><td>—</td><td>水平平铺 / 垂直平铺 / 平铺所有 / 合并所有：同时看原理图和 PCB</td></tr>
+<tr><td>浮动工具</td><td>—</td><td>选中对象时出现的小工具栏</td></tr>
+<tr><td>装配变量视图模式</td><td><span class="keys"><kbd>⇧</kbd><kbd>M</kbd></span></td><td>见 <a href="4.html">4.4</a></td></tr>
+</tbody>
+</table>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modB/view-hl.png" alt="高亮网络子菜单" width="476" loading="lazy"><figcaption><span class="fig-no">图 4.6-10</span>高亮网络子菜单</figcaption></figure>
+<figure class="shot"><img src="../img/modB/view-win.png" alt="窗口排列：左右并排看原理图和 PCB，配合交叉选择特别好用" width="476" loading="lazy"><figcaption><span class="fig-no">图 4.6-11</span>窗口排列：左右并排看原理图和 PCB，配合交叉选择特别好用</figcaption></figure>
+</div>
+
+<h2 id="本章小结">本章小结<a class="anchor" href="#本章小结">#</a></h2>
+
+<ul class="checklist">
+<li><span>会用多张图页，并用网络端口跨页连接</span></li>
+<li><span>分得清导线、网络标签、网络标识、网络端口、总线、非连接标识</span></li>
+<li><span>会用查找相似对象批量修改，用对齐/分布把图排整齐</span></li>
+<li><span>知道设计规则里每个等级的意思，会看懂常见 DRC 报错</span></li>
+<li><span>会分配位号、更新到 PCB、交叉选择</span></li>
+<li><span>会导出 PDF 交作业、导出 BOM 买元件</span></li>
+</ul>
+
+<p>下一步：第 5 章（元件库：自己画符号和封装）、D（PCB 设计完整基础）。</p>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch4/5.html"><small>← 上一页</small>4.5 检查与 PCB 联动</a><a class="next" href="../ch5/1.html"><small>下一页 →</small>5.1 库的组成与创建器件</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

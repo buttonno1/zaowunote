@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7.1 设计规则与网络管理 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch7/1" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link current" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 7 章 · PCB 进阶：规则与高速</div>
+    <article>
+      <h1>7.1 设计规则与网络管理</h1>
+      <p class="lead">板子一复杂，靠“默认规则 + 手动注意”就不够了：电源线要粗、USB 线要成对、某些线要一样长、某块区域要更细。这一页讲设计规则的完整体系和网络管理工具——让软件替你盯住这些要求。</p>
+      <div class="meta-bar"><span>🎯 适合：做更复杂板子的人（多层、USB、高速信号）</span><span>⏱ 约 30 分钟</span><span>📋 含全部设计规则的实测默认值</span></div>
+      
+
+<h2 id="先建立一个概念规则--给软件的检查清单">先建立一个概念：规则 = 给软件的“检查清单”<a class="anchor" href="#先建立一个概念规则--给软件的检查清单">#</a></h2>
+
+<p>你在 Quickstart 里见过设计规则（<a href="../ch1/a6.html">A-6</a>）：最小线宽 0.127 mm、安全间距 0.152 mm……这些数字就是给软件的检查清单。布线时软件按它约束你，DRC 时按它挑错。默认规则（「嘉立创工艺(双面板)(默认)」）是按嘉立创的生产能力定的，<b>普通板子不用改</b>。需要改的情况是：</p>
+<ul>
+<li>某些线要特殊对待（电源线更粗、高压线间距更大）→ <b>网络规则</b></li>
+<li>两个特定网络之间要离远一点（比如 220V 和 5V）→ <b>网络-网络规则</b></li>
+<li>某块区域要特殊（芯片引脚很密的地方允许更细的线）→ <b>区域规则</b></li>
+</ul>
+
+<h2 id="设计规则体系">设计规则体系<a class="anchor" href="#设计规则体系">#</a></h2>
+
+<p>「设计」→「设计规则…」。左边的规则树分四大类，每类下面可以有多套规则（如 copperThickness1oz、copperThickness2oz），带 <code>[默认]</code> 的是当前默认用的那套：</p>
+
+<figure class="shot"><img src="../img/modE/ruletab-规则管理.png" alt="设计规则 → 规则管理：间距 / 物理 / 平面 / 扩展四大类" width="792" loading="lazy"><figcaption><span class="fig-no">图 7.1-1</span>设计规则 → 规则管理：间距 / 物理 / 平面 / 扩展四大类</figcaption></figure>
+
+<div class="table-title">规则一览（V4.1.93 实测默认值，单位 mm）</div><table class=""><thead><tr><th>规则</th><th>管什么</th><th>默认值</th></tr></thead><tbody><tr><td>间距 → 安全间距 copperThickness1oz</td><td>不同网络的铜之间最少隔多远。表格里是“导线、贴片焊盘、插件焊盘、过孔、铺铜、板框……”两两之间的间距</td><td>大多 0.152；（另有一套 copperThickness2oz 给 2 盎司厚铜用）</td></tr><tr><td>间距 → 其他间距 otherClearance</td><td>元件到元件、插件焊点到 SMD 元件、钻孔到钻孔</td><td>0 / 0 / 0.3</td></tr><tr><td>物理 → 导线</td><td>线宽最小 / 默认 / 最大，可分层设置</td><td>0.127 / 0.254 / 2.54</td></tr><tr><td>物理 → 网络长度范围 netLength</td><td>某网络的总长度必须在什么范围内（可按长度或延迟）</td><td>0 / 0（不限制）</td></tr><tr><td>物理 → 网络长度公差 netLengthTolerance</td><td>等长组里各线长度允许差多少</td><td>±25.4</td></tr><tr><td>物理 → 差分对 differentialPair</td><td>差分线的线宽、两线间距、长度误差</td><td>线宽 0.127/0.254/2.54，间距 0.152，长度误差 0.254（案例 B 改成了 5）</td></tr><tr><td>物理 → 盲埋孔 blindVia</td><td>盲孔/埋孔的起始层、结束层、尺寸（多层板才用）</td><td>空</td></tr><tr><td>物理 → 过孔尺寸 viaSize</td><td>过孔外径 / 内径的最小、默认、最大</td><td>外径 0.5/0.61/10，内径 0.3/0.305/6.3</td></tr><tr><td>物理 → 高 height</td><td>元件最大高度（防止撞外壳）</td><td>0（不限制）</td></tr><tr><td>平面 → 内电层 innerPlane</td><td>多层焊盘接内电层的方式：发散 / 直连，发散线宽、间距、角度</td><td>发散，0.254，90°</td></tr><tr><td>平面 → 铺铜 copperRegion</td><td>单层焊盘、多层焊盘、导线接铺铜的方式</td><td>焊盘发散 0.254 / 90°，导线直连</td></tr><tr><td>扩展 → 助焊扩展 pasteMaskExpansion</td><td>钢网开口比焊盘大/小多少</td><td>焊盘 0，测试点 −25.4（不开钢网）</td></tr><tr><td>扩展 → 阻焊扩展 solderMaskExpansion</td><td>阻焊开窗比焊盘大多少</td><td>焊盘 0.051，过孔 −25.4（盖油），测试点 0.051</td></tr></tbody></table>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modE/rule-copperThickness1oz.png" alt="安全间距：一张“谁和谁之间隔多远”的表，点表头可以批量修改" width="792" loading="lazy"><figcaption><span class="fig-no">图 7.1-2</span>安全间距：一张“谁和谁之间隔多远”的表，点表头可以批量修改</figcaption></figure>
+<figure class="shot"><img src="../img/modE/rule-copperThickness1oz-track.png" alt="导线：线宽的最小/默认/最大，可以按层分别设" width="792" loading="lazy"><figcaption><span class="fig-no">图 7.1-3</span>导线：线宽的最小/默认/最大，可以按层分别设</figcaption></figure>
+</div>
+
+<aside class="theory">
+<p><b>“1oz、2oz”是什么？</b> oz（盎司）是铜箔厚度的单位：1 oz ≈ 0.035 mm（在 1 平方英尺上铺 1 盎司铜的厚度）。铜越厚能过的电流越大，但最小线宽和间距也要放大，所以有两套规则。下单页「外层铜厚」选的就是这个（<a href="../ch1/a10.html">A-10</a>）。</p>
+</aside>
+
+<aside class="theory">
+<p><b>过孔为什么默认“盖油”？</b> 阻焊扩展里过孔是 −25.4（一个很大的负数），意思是“阻焊不给过孔开窗”，过孔被绿油盖住。这样过孔不会意外沾锡、短路。测试点同理不开钢网（助焊扩展 −25.4），因为测试点不需要上锡膏。</p>
+</aside>
+
+<h3 id="三种规则的优先级">三种规则的优先级<a class="anchor" href="#三种规则的优先级">#</a></h3>
+
+<p>对话框底部写着：“<b>规则分配优先级为：区域规则 &gt; 网络-网络规则 &gt; 网络规则</b>，不同图元设计规则冲突时，将依据优先级取优先级高的值”。也就是：越具体的规则越优先。</p>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modE/ruletab-网络规则.png" alt="网络规则：每个网络用哪套规则（默认都是 copperThickness1oz）" width="792" loading="lazy"><figcaption><span class="fig-no">图 7.1-4</span>网络规则：每个网络用哪套规则（默认都是 copperThickness1oz）</figcaption></figure>
+<figure class="shot"><img src="../img/modE/ruletab-区域规则.png" alt="区域规则：给某个约束区域指定规则" width="792" loading="lazy"><figcaption><span class="fig-no">图 7.1-5</span>区域规则：给某个约束区域指定规则</figcaption></figure>
+</div>
+
+<h3 id="例子让所有电源线自动变粗">例子：让所有电源线自动变粗<a class="anchor" href="#例子让所有电源线自动变粗">#</a></h3>
+
+<ol class="steps">
+<li>「设计规则」→ 物理 → 导线，右键新建一套规则，起名“power”，默认线宽 0.5 mm</li>
+<li>「设计」→「网络类管理器…」新建网络类“电源”，把 VBUS、3V3、GND 加进去（见下）</li>
+<li>回到设计规则 →「网络规则」标签，把“电源”这个网络类的导线规则改成 power</li>
+<li>以后画这些网络的线，起始线宽自动就是 0.5 mm；DRC 会检查有没有画细了</li>
+</ol>
+
+<h3 id="约束区域">约束区域<a class="anchor" href="#约束区域">#</a></h3>
+
+<p>「放置」→「约束区域」画一个框，然后在「区域规则」里给它指定规则。典型用途：BGA、QFN 芯片下面引脚很密，那一小块允许更细的线和更小的间距，其他地方保持宽松。</p>
+
+<h3 id="导入导出配置">导入导出配置<a class="anchor" href="#导入导出配置">#</a></h3>
+
+<p>底部的「导入配置 / 导出配置」可以把整套规则存成文件，换工厂或者团队统一规则时用；「恢复默认」一键回到嘉立创默认工艺。</p>
+
+<h2 id="网络管理">网络管理<a class="anchor" href="#网络管理">#</a></h2>
+
+<table>
+<thead><tr><th>管理器</th><th>位置</th><th>作用</th></tr></thead>
+<tbody>
+<tr><td>网络类管理器</td><td>设计菜单</td><td>把一批网络编成组（如“电源”“USB”），规则按组设置</td></tr>
+<tr><td>差分对管理器</td><td>设计菜单</td><td>指定哪两根线是一对差分信号（<a href="../ch1/b3.html">B-3</a> 实测，含“自动生成”要点「应用」的坑）</td></tr>
+<tr><td>等长网络组管理器</td><td>设计菜单</td><td>指定一组要求长度相等的网络（如 DDR 数据线）</td></tr>
+<tr><td>xNet</td><td>设计 → xNet → 创建 xNet / 根据元件创建 / 根据选择的焊盘创建</td><td>一根信号中间串了电阻时，把“电阻两边”当成同一条信号来算长度</td></tr>
+<tr><td>焊盘对组管理器</td><td>设计菜单</td><td>指定两个焊盘之间这一段（而不是整条网络）的长度约束</td></tr>
+<tr><td>引脚延迟管理器</td><td>工具菜单</td><td>芯片内部引线也有长度，在这里填进去，等长计算更准</td></tr>
+</tbody>
+</table>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modE/dlg-netclass.png" alt="网络类管理器：左边新建类，中间“未选择”的网络用 &gt; 移到右边" width="742" loading="lazy"><figcaption><span class="fig-no">图 7.1-6</span>网络类管理器：左边新建类，中间“未选择”的网络用 > 移到右边</figcaption></figure>
+<figure class="shot"><img src="../img/modE/dlg-eqlen.png" alt="等长网络组管理器：同样的穿梭框形式" width="742" loading="lazy"><figcaption><span class="fig-no">图 7.1-7</span>等长网络组管理器：同样的穿梭框形式</figcaption></figure>
+</div>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modE/sub-xnet.png" alt="设计 → xNet 子菜单" width="468" loading="lazy"><figcaption><span class="fig-no">图 7.1-8</span>设计 → xNet 子菜单</figcaption></figure>
+<figure class="shot"><img src="../img/modE/dlg-padpair.png" alt="焊盘对组管理器：选两个焊盘组成一对" width="725" loading="lazy"><figcaption><span class="fig-no">图 7.1-9</span>焊盘对组管理器：选两个焊盘组成一对</figcaption></figure>
+</div>
+
+<aside class="theory">
+<p><b>为什么有的线要“一样长”？</b> 电信号在铜线里跑得很快（大约光速的一半，每纳秒十几厘米），但不是瞬间到达。一组同时出发的高速信号（比如内存的 8 根数据线），如果线长差太多，到达时间就差太多，接收端就会读错。频率越高，要求越严。USB 全速（12 Mbps）对几毫米的长度差不敏感，所以案例 B 可以放宽；USB 高速（480 Mbps）、DDR 内存就要严格等长。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch6/4.html"><small>← 上一页</small>6.4 检查、同步与输出</a><a class="next" href="../ch7/2.html"><small>下一页 →</small>7.2 多层板与高速布线</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

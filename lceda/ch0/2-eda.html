@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>0.2 什么是 EDA，什么是嘉立创EDA · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch0/2-eda" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group" open><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 0 章 · 开始之前</div>
+    <article>
+      <h1>0.2 什么是 EDA，什么是嘉立创EDA</h1>
+      <p class="lead">这一节搞清楚三件事：EDA 是什么；嘉立创EDA 有哪些版本、我们用哪个；它和立创商城、嘉立创工厂是什么关系。</p>
+      <div class="meta-bar"><span>⏱ 约 10 分钟</span><span>🎯 不需要任何基础</span><span>🖱️ 含 1 个互动组件</span></div>
+      
+
+<h2 id="EDA-是什么">EDA 是什么<a class="anchor" href="#EDA-是什么">#</a></h2>
+
+<p><b>EDA</b> 是 Electronic Design Automation 的缩写，直译“电子设计自动化”。说白了，就是<span class="hl">专门用来设计电路和电路板的软件</span>。</p>
+
+<p>可以这样类比：写文章用 Word，修照片用 Photoshop，<b>设计电路板就用 EDA</b>。常见的 EDA 软件有 Altium Designer、KiCad、Cadence 等，嘉立创EDA 也是其中之一。</p>
+
+<h2 id="为什么选嘉立创EDA">为什么选嘉立创EDA<a class="anchor" href="#为什么选嘉立创EDA">#</a></h2>
+
+<table>
+<thead><tr><th>特点</th><th>对新手意味着什么</th></tr></thead>
+<tbody>
+<tr><td>🆓 免费</td><td>注册登录就能用，不用买软件，也不用找来路不明的“破解版”</td></tr>
+<tr><td>🌐 打开网页就能用</td><td>不用安装，Mac、Windows 都能用；工程自动保存在云端，换台电脑登录就能接着做</td></tr>
+<tr><td>🇨🇳 全中文界面和教程</td><td>菜单、提示、官方文档都是中文</td></tr>
+<tr><td>📦 元件库和商城打通</td><td>搜元件时直接看到库存和价格，画完能一键生成采购清单</td></tr>
+<tr><td>🏭 一键下单</td><td>画完的板子可以直接跳转到嘉立创工厂下单，不用自己整理一堆文件</td></tr>
+</tbody>
+</table>
+
+<aside class="note">
+<p><b>名字有点乱？</b> “立创EDA” 现在已经更名为 “<b>嘉立创EDA</b>”，是同一个软件；它的海外版叫 EasyEDA。网上的老教程里看到“立创EDA”，说的就是它。本教程统一叫“嘉立创EDA”。</p>
+</aside>
+
+<h2 id="专业版和标准版我们用专业版">专业版和标准版：我们用专业版<a class="anchor" href="#专业版和标准版我们用专业版">#</a></h2>
+
+<p>嘉立创EDA 有两个版本，名字很像，但<b>是两个不同的软件</b>：</p>
+
+<table>
+<thead><tr><th></th><th>嘉立创EDA 专业版 ✅ 本教程使用</th><th>嘉立创EDA 标准版</th></tr></thead>
+<tbody>
+<tr><td>推出时间</td><td>2019 年末，持续更新中</td><td>2017 年（国内版），现在以维护为主，基本不再加大功能</td></tr>
+<tr><td>网址</td><td><code>pro.lceda.cn</code></td><td><code>lceda.cn/editor</code></td></tr>
+<tr><td>性能</td><td>基于 WebGL，大板子、上万焊盘也流畅</td><td>基于 SVG，板子大了会卡</td></tr>
+<tr><td>功能</td><td>更强：规则管理、自动布线、层次图、仿真、3D 外壳、面板设计……</td><td>较基础</td></tr>
+<tr><td>数据</td><td colspan="2">两个版本的工程<b>不互通</b>；但专业版开始页有「迁移标准版」「导入标准版」入口，可以把标准版的工程搬过来</td></tr>
+</tbody>
+</table>
+
+<aside class="warn">
+<p>网上搜教程时注意分辨：<b>标准版的界面和操作和专业版不一样</b>，照着标准版教程在专业版里操作经常会找不到按钮。官方也建议新用户直接使用专业版。</p>
+</aside>
+
+<h2 id="嘉立创EDA-和立创商城嘉立创是什么关系">嘉立创EDA 和“立创商城”“嘉立创”是什么关系<a class="anchor" href="#嘉立创EDA-和立创商城嘉立创是什么关系">#</a></h2>
+
+<p>做一块电路板，除了软件还需要买元件、找工厂。嘉立创EDA 属于一个“全家桶”，几个平台之间是打通的：</p>
+
+<div class="widget eco-widget">
+  <div class="widget-title">嘉立创生态关系图（点击方块查看说明）</div>
+  <div class="eco">
+    <div class="node" data-info="<b>立创商城</b>（szlcsc.com）：卖电子元器件的网上商城。商城里每一种元件都有一个以 <b>C</b> 开头的编号，比如 <code>C7593</code>（后面会经常见到，叫“<b>C 编号</b>”或“供应商编号”）。在嘉立创EDA 里搜元件时，看到的库存、价格就来自这里。"><b>🛒 立创商城</b><small>买元件；每个元件有一个 C 编号</small></div>
+    <div class="node center" data-info="<b>嘉立创EDA</b>：你画原理图、画 PCB 的地方，也就是本教程的主角。它的元件库直接关联立创商城，画完可以一键跳转嘉立创下单。"><b>嘉立创EDA</b><br><small>画原理图和 PCB 的软件<br>（本教程主角）</small></div>
+    <div class="node" data-info="<b>嘉立创</b>（jlc.com）：工厂。做 PCB 电路板、SMT 贴片（帮你把元件焊好）、钢网、3D 打印、面板等。嘉立创EDA 里画完的板子，可以点顶部的「PCB/FPC下单」直接下单。"><b>🏭 嘉立创</b><small>工厂：做板子、贴片焊接</small></div>
+    <div class="node" data-info="<b>立创开源硬件平台</b>（oshwhub.com）：大家分享开源硬件项目的社区。可以看到别人做好的各种项目，很多项目能直接“克隆”到自己的嘉立创EDA 里学习或修改；你做好的作品也可以发上去。"><b>🌍 立创开源硬件平台</b><small>看别人的项目、分享自己的作品</small></div>
+    <div class="node" data-info="<b>官方文档与社区</b>：官方使用文档（prodocs.lceda.cn）、编辑器里「帮助 → 教程」（快捷键 F1）、嘉立创EDA 用户论坛。本教程讲不到的细节，可以去官方文档查。"><b>📖 官方文档与论坛</b><small>遇到问题去哪查</small></div>
+  </div>
+  <div class="eco-detail"></div>
+</div>
+
+<aside class="theory">
+<p><b>为什么“打通”对新手很重要？</b> 设计电路板时最容易踩的坑是：画的时候选了一个元件，结果买不到，或者工厂不能贴。嘉立创EDA 搜元件时会直接显示这个元件在商城有没有货、能不能让工厂贴片，从一开始就帮你避开这些坑。案例 A 会教你怎么看这些信息。</p>
+</aside>
+
+<h2 id="在线版还是客户端">在线版还是客户端？<a class="anchor" href="#在线版还是客户端">#</a></h2>
+
+<p>嘉立创EDA 专业版有两种用法，功能基本一样：</p>
+
+<table>
+<thead><tr><th></th><th>在线版（浏览器）✅ 本教程使用</th><th>客户端（安装到电脑）</th></tr></thead>
+<tbody>
+<tr><td>怎么用</td><td>浏览器打开 <code>https://pro.lceda.cn/editor</code></td><td>从官网下载安装包安装</td></tr>
+<tr><td>工程存在哪</td><td>云端（登录账号就能看到）</td><td>可选：全在线（和网页版一样）、半离线、全离线（保存在本机）</td></tr>
+<tr><td>适合谁</td><td>新手、经常换电脑的人</td><td>网络不好、需要离线工作、或者想要独立窗口的人</td></tr>
+</tbody>
+</table>
+
+<p>本教程全程使用<b>在线版 + Chrome 浏览器</b>截图。如果你想装客户端，到官网下载页（lceda.cn/page/download）选自己的系统。<span class="os-win">Windows 用户直接下载 Windows 版安装即可；下面的截图是 Mac 部分。</span><span class="os-mac">Mac 要选对芯片版本：</span></p>
+
+<figure class="shot"><img src="../img/ch0/download-mac.png" alt="客户端下载页（lceda.cn/page/download）的 Mac 部分：注意按自己 Mac 的芯片选版本" width="720" loading="lazy"><figcaption><span class="fig-no">图 0.2-1</span>客户端下载页（lceda.cn/page/download）的 Mac 部分：注意按自己 Mac 的芯片选版本</figcaption></figure>
+
+<aside class="tip">
+<p class="os-mac"><b>怎么知道我的 Mac 是什么芯片？</b> 点屏幕左上角的苹果图标  → 「关于本机」，看“芯片”一栏：写着 <b>Apple M1 / M2 / M3 / M4…</b> 的选 <b>arm64</b>；写着 <b>Intel</b> 的选 <b>x64</b>。另外客户端要求 macOS 11 及以上。如果安装时提示“已损坏”“无法验证开发者”，点下载页上的「无法安装？」链接查看官方解决办法。</p>
+</aside>
+
+<h2 id="看看你用的是哪个版本">看看你用的是哪个版本<a class="anchor" href="#看看你用的是哪个版本">#</a></h2>
+
+<p>嘉立创EDA 更新很勤快，界面会慢慢变化。本教程基于 <b>V4.1.93（编译日期 2026-10-29）</b>制作。打开编辑器后，你可以这样查看自己的版本：</p>
+
+<ol class="steps">
+  <li>点顶部菜单栏的「<b>帮助</b>」</li>
+  <li>点「<b>关于...</b>」</li>
+  <li>弹出的窗口里就能看到版本号和编译日期（右上角菜单栏旁边也一直显示着版本号）</li>
+</ol>
+
+<div class="fig-row">
+  <figure class="shot"><img src="../img/ch0/help-about-menu.png" alt="①② 帮助 → 关于..." width="230" loading="lazy"><figcaption><span class="fig-no">图 0.2-2</span>①② 帮助 → 关于...</figcaption></figure>
+  <figure class="shot"><img src="../img/ch0/help-about-dialog.png" alt="③ 版本号与编译日期" width="470" loading="lazy"><figcaption><span class="fig-no">图 0.2-3</span>③ 版本号与编译日期</figcaption></figure>
+</div>
+
+<aside class="note">
+<p>如果你的版本比 V4.1.93 新，某些按钮的位置、名字可能略有不同，但整体流程不会变。找不到某个按钮时，可以试试右上角的 🔍 搜索，或在菜单里找同名功能。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch0/1-flow.html"><small>← 上一页</small>0.1 电路板是怎么从想法变成实物的</a><a class="next" href="../ch0/3-account.html"><small>下一页 →</small>0.3 注册账号与打开编辑器</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/widgets/ch0.js"></script>
+</body>
+</html>

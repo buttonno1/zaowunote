@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>6.1 环境、板框与外形 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch6/1" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link current" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 6 章 · PCB 设计</div>
+    <article>
+      <h1>6.1 环境、板框与外形</h1>
+      <p class="lead">Quickstart 两个案例已经带你画过两块 PCB。这一章把 PCB 编辑器系统地讲一遍。第一页：PCB 编辑器的环境（菜单、图层、显示），以及板框和机械结构——包括怎么把板子做成任何你想要的形状。</p>
+      <div class="meta-bar"><span>🎯 适合：要自己画 PCB 的人</span><span>⏱ 约 30 分钟</span><span>✅ 含实测：用 DXF 导入做猫头形板子、开挂绳孔</span></div>
+      
+
+<h2 id="这一章讲什么">这一章讲什么<a class="anchor" href="#这一章讲什么">#</a></h2>
+
+<div class="cards">
+<a class="card" href="1.html"><b>6.1 环境、板框与外形</b><span>菜单地图、图层与显示；矩形/圆形/多边形板框；导入 DXF 做任意形状；挖槽开孔；尺寸标注</span></a>
+<a class="card" href="2.html"><b>6.2 布局、布线与铜皮</b><span>布局工具、布线模式与拐角、线宽、过孔；铺铜、填充、禁止区域、铺铜管理器、布尔运算</span></a>
+<a class="card" href="3.html"><b>6.3 丝印、图案与编辑技巧</b><span>文字和图片丝印、用铜和阻焊做出金色图案、板子颜色、彩色丝印；转换、布尔运算、阵列等编辑技巧</span></a>
+<a class="card" href="4.html"><b>6.4 检查、同步与输出</b><span>DRC 与自定义 DRC、DFM、泪滴、测量；与原理图同步；拼板、焊接辅助、SMT 选型的坑；各种导出</span></a>
+</div>
+
+<h2 id="PCB-编辑器的环境">PCB 编辑器的环境<a class="anchor" href="#PCB-编辑器的环境">#</a></h2>
+
+<h3 id="菜单地图">菜单地图<a class="anchor" href="#菜单地图">#</a></h3>
+
+<p>PCB 编辑器比原理图多了「布线」菜单（V4.1.93 实测）：</p>
+
+<table>
+<thead><tr><th>菜单</th><th>主要内容</th><th>在哪讲</th></tr></thead>
+<tbody>
+<tr><td>编辑</td><td>复制、特殊复制、合并为闭合线条、分散为独立线条、编辑轮廓、裁剪、挖空、<b>转为</b>、布尔运算、阵列、添加圆角/斜角、查找</td><td><a href="3.html">6.3</a></td></tr>
+<tr><td>视图</td><td>2D/3D 模式、2D/3D 预览、适应板框、轮廓视图、显示颜色、切换亮度、<b>翻转板子</b>、单位、网格、飞线、高亮</td><td>本页</td></tr>
+<tr><td>放置</td><td>器件、过孔、缝合孔、包地孔、焊盘、板框、铺铜/填充/挖槽/禁止/约束区域、线条、测试点、文本、图片、尺寸、堆叠表、钻孔表、画布原点、3D 外壳</td><td>本页、D-2、D-3</td></tr>
+<tr><td>布线</td><td>单路/差分对/多路布线、拉伸导线、等长调节、扇出、自动布线、布线模式、布线拐角、布线宽度、移除回路、清除布线</td><td><a href="2.html">6.2</a>、<a href="../ch7/2.html">7.2</a></td></tr>
+<tr><td>布局</td><td>自动元件布局、自动位号布局、组合、属性位置、互换位置、翻面、偏移、对齐、分布、旋转、翻转</td><td><a href="2.html">6.2</a></td></tr>
+<tr><td>设计</td><td>导入变更、设计规则、DRC、DFM、板子形状、分配位号、交叉选择、各种管理器</td><td><a href="4.html">6.4</a>、<a href="../ch7/1.html">7.1</a></td></tr>
+<tr><td>工具</td><td>测量、泪滴、拼板、合板、移除未使用焊盘、图层管理器、铺铜管理器、3D 模型管理器、焊接辅助、SMT 选型、PCB 对比</td><td><a href="4.html">6.4</a></td></tr>
+<tr><td>导出</td><td>Gerber、坐标、BOM、ODB++、3D 文件、DXF、PDF、交互式 BOM、PCB 信息……</td><td><a href="4.html">6.4</a></td></tr>
+</tbody>
+</table>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modD/menu-放置.png" alt="PCB「放置」菜单" width="251" loading="lazy"><figcaption><span class="fig-no">图 6.1-1</span>PCB「放置」菜单</figcaption></figure>
+<figure class="shot"><img src="../img/modD/menu-视图.png" alt="PCB「视图」菜单" width="213" loading="lazy"><figcaption><span class="fig-no">图 6.1-2</span>PCB「视图」菜单</figcaption></figure>
+<figure class="shot"><img src="../img/modD/menu-编辑.png" alt="PCB「编辑」菜单" width="199" loading="lazy"><figcaption><span class="fig-no">图 6.1-3</span>PCB「编辑」菜单</figcaption></figure>
+</div>
+
+<h3 id="图层显示与看清楚">图层、显示与“看清楚”<a class="anchor" href="#图层显示与看清楚">#</a></h3>
+
+<p>图层的意义在 <a href="../ch1/a4.html">A-4</a>（层叠爆炸图）和 <a href="../ch2/9.html">2.9 PCB 基础</a>讲过。画复杂的板子时，这些“看清楚”的功能很常用：</p>
+
+<table>
+<thead><tr><th>功能</th><th>位置</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td>切换当前层</td><td>底部图层栏单击</td><td>画线、放文字、铺铜都在“当前层”上</td></tr>
+<tr><td>显示 / 隐藏某层</td><td>右侧「图层」面板的眼睛图标</td><td>比如只看底层走线（案例 B 就是这样截出 USB 走线图的）</td></tr>
+<tr><td>显示颜色…</td><td>视图菜单</td><td>每类图元（导线、焊盘、铺铜、丝印…）单独开关显示</td></tr>
+<tr><td>切换亮度</td><td>视图菜单 / 工具栏</td><td>非当前层变暗，只突出当前层</td></tr>
+<tr><td>翻转板子</td><td>视图菜单 / 工具栏</td><td>从背面看（检查底层丝印是不是正的，<a href="../ch1/b3.html">B-3</a>）</td></tr>
+<tr><td>轮廓视图</td><td>视图菜单</td><td>只显示轮廓线，看重叠的东西</td></tr>
+<tr><td>飞线</td><td>视图 → 飞线</td><td>隐藏 / 显示全部或所选元件的飞线</td></tr>
+<tr><td>高亮</td><td>视图 → 高亮</td><td>高亮网络 / 器件 / 选中，取消高亮，提高/降低亮度</td></tr>
+<tr><td>网格尺寸</td><td>视图 → 网格尺寸</td><td>1.27 / 0.025 / 0.1 / 0.25 / 0.5 / 1.0 mm 等，每项同时显示 mil 值</td></tr>
+</tbody>
+</table>
+
+<figure class="shot"><img src="../img/modD/dlg-colors.png" alt="视图 → 显示颜色：按图元类型开关显示（导线、焊盘、过孔、铺铜、丝印、DRC 标记……）" width="611" loading="lazy"><figcaption><span class="fig-no">图 6.1-4</span>视图 → 显示颜色：按图元类型开关显示（导线、焊盘、过孔、铺铜、丝印、DRC 标记……）</figcaption></figure>
+
+<h2 id="板框与机械结构">板框与机械结构<a class="anchor" href="#板框与机械结构">#</a></h2>
+
+<h3 id="三种基本板框">三种基本板框<a class="anchor" href="#三种基本板框">#</a></h3>
+
+<figure class="shot"><img src="../img/modD/sub-放置-板框.png" alt="放置 → 板框：矩形 / 圆形 / 多边形" width="420" loading="lazy"><figcaption><span class="fig-no">图 6.1-5</span>放置 → 板框：矩形 / 圆形 / 多边形</figcaption></figure>
+
+<ul>
+<li><b>矩形</b>：单击两个对角（<a href="../ch1/b3.html">案例 B</a>）；属性里能填宽、高、<b>圆角半径</b>。</li>
+<li><b>圆形</b>：单击圆心、拉出半径（<a href="../ch1/a4.html">案例 A</a>）；属性里能填中心和半径。</li>
+<li><b>多边形</b>：一个个单击顶点，回到起点闭合。之后可以用「编辑」→「添加圆角」把尖角磨圆。</li>
+</ul>
+
+<aside class="warn">
+<p>板子的尖角和太窄的地方工厂铣不出来：内凹的角最小只能做到铣刀的半径（常见 1 mm 左右的圆角），太细的“脖子”容易折断。设计异形板时，内角都加一点圆角最保险，具体能力以嘉立创的工艺说明为准。</p>
+</aside>
+
+<h3 id="板子可以是任何形状">板子可以是任何形状<a class="anchor" href="#板子可以是任何形状">#</a></h3>
+
+<p>板框不一定是方的、圆的。动物、字母、地图轮廓、吉他拨片……只要是一条<b>闭合的线</b>，都能变成板子的外形。你可以在这里尽情做一些定制的创作。本教程实际做了一块<b>猫头形状</b>的小板子，流程是：</p>
+
+<ol class="steps">
+<li>在绘图软件里画好外形，导出成 <b>DXF</b> 文件（Adobe Illustrator、Inkscape（免费）、AutoCAD、Fusion 360 都能导出 DXF；只要外轮廓一条线，单位用 mm）</li>
+<li>PCB 编辑器：「文件」→「导入」→「DXF…」，选文件</li>
+<li>在导入对话框里把 DXF 图层的<b>导入层改成「板框层」</b>，点「导入」，在画布上单击放下</li>
+<li>导入后外形是很多段小线段：<span class="keys"><kbd>⌘</kbd><kbd>A</kbd></span> 全选它们 →「编辑」→「<b>合并为闭合线条</b>」</li>
+<li>单击这条闭合线，右侧属性显示「类型：板框、图层：板框层」，外形就生效了</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modD/import-menu.png" alt="文件 → 导入 → DXF…" width="432" loading="lazy"><figcaption><span class="fig-no">图 6.1-6</span>文件 → 导入 → DXF…</figcaption></figure>
+<figure class="shot"><img src="../img/modD/dlg-dxf-import2.png" alt="导入 DXF：最下面的表格里把「导入层」从默认的顶层改成「板框层」" width="741" loading="lazy"><figcaption><span class="fig-no">图 6.1-7</span>导入 DXF：最下面的表格里把「导入层」从默认的顶层改成「板框层」</figcaption></figure>
+</div>
+
+<div class="table-title">导入 DXF 对话框（实测）</div><table class=""><thead><tr><th>选项</th><th>含义</th><th>本例</th></tr></thead><tbody><tr><td>文件名</td><td>选择的 DXF 文件</td><td>cat_outline.dxf</td></tr><tr><td>DXF 单位 / DXF 尺寸</td><td>文件里的单位和图形大小（自动读出）</td><td>mm，36 × 45 mm</td></tr><tr><td>应用单位 / 导入尺寸</td><td>导进来按什么单位、多大</td><td>跟随 DXF</td></tr><tr><td>参考点</td><td>以 DXF 原点还是图形中心对准鼠标</td><td>DXF 原点</td></tr><tr><td>缩放比例</td><td>整体放大缩小（尺寸不对时改这里）</td><td>1</td></tr><tr><td>线宽</td><td>导入的线画多粗</td><td>0.1 mm</td></tr><tr><td>DXF 层 → 导入层</td><td>DXF 里每一层放到 PCB 的哪一层。<b>外形要放到板框层</b>；也可以把别的层导到丝印层当图案</td><td>0 → 板框层</td></tr></tbody></table>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modD/merge-menu.png" alt="全选导入的 96 段线 → 编辑 → 合并为闭合线条" width="180" loading="lazy"><figcaption><span class="fig-no">图 6.1-8</span>全选导入的 96 段线 → 编辑 → 合并为闭合线条</figcaption></figure>
+<figure class="shot"><img src="../img/modD/dxf-outline.png" alt="合并后的猫头形板框" width="467" loading="lazy"><figcaption><span class="fig-no">图 6.1-9</span>合并后的猫头形板框</figcaption></figure>
+</div>
+
+<aside class="note">
+<p>实测：直接放一张图片是<b>不能</b>转成板框的（「转为」菜单全是灰的，「板子形状 → 根据选中生成板子形状」对图片也没反应）。要做异形板，用 DXF 或者用多边形板框自己描。</p>
+</aside>
+
+<aside class="diy">
+<p>🎨 <b>外形的点子</b>：你喜欢的动物、学校徽章、名字首字母、一片叶子、游戏手柄、星座……先在纸上画，再用 Inkscape 的“描摹位图”功能把图片变成轮廓线导出 DXF。外形越简洁越好做；元件和走线要离板边留至少 0.3～0.5 mm。</p>
+</aside>
+
+<h3 id="挖槽区域在板子中间开孔">挖槽区域：在板子中间开孔<a class="anchor" href="#挖槽区域在板子中间开孔">#</a></h3>
+
+<p>板子中间的洞（挂绳孔、镂空图案、给螺丝或按键让位的缺口）用「<b>挖槽区域</b>」。本教程在猫的左耳上开了一个 3 mm 的挂绳孔：</p>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/modD/slot-menu.png" alt="放置 → 挖槽区域 → 圆形（还有矩形、多边形）" width="320" loading="lazy"><figcaption><span class="fig-no">图 6.1-10</span>放置 → 挖槽区域 → 圆形（还有矩形、多边形）</figcaption></figure>
+<figure class="shot"><img src="../img/modD/slot-props.png" alt="挖槽区域属性：图层多层，中心 X/Y，半径改成 1.5 mm = 直径 3 mm" width="260" loading="lazy"><figcaption><span class="fig-no">图 6.1-11</span>挖槽区域属性：图层多层，中心 X/Y，半径改成 1.5 mm = 直径 3 mm</figcaption></figure>
+</div>
+
+<ul>
+<li>挖槽区域是“整块板子穿透挖掉”，所以图层是「多层」。</li>
+<li>和「钻孔」不同：钻孔是圆的、尺寸有限；挖槽可以是任何形状（多边形挖槽能做出镂空图案）。</li>
+<li>挖槽离板边、离走线都要留距离，否则 DRC 会报错。</li>
+</ul>
+
+<aside class="diy">
+<p>🎨 挖槽也是创作手段：镂空的眼睛、星星形状的透光孔（后面放一颗 LED，光从洞里透出来）、做成钥匙扣的挂孔。</p>
+</aside>
+
+<h3 id="其他机械结构">其他机械结构<a class="anchor" href="#其他机械结构">#</a></h3>
+
+<table>
+<thead><tr><th>功能</th><th>位置</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td>尺寸标注</td><td>放置 → 尺寸 → 长度 / 角度 / 半径</td><td>在板上标出尺寸，给装外壳的人看（放在文档层或机械层）</td></tr>
+<tr><td>安装孔</td><td>放置 → 焊盘，钻孔设为“非金属化”，或用库里的螺丝孔封装（如“M2.5螺丝”）</td><td>固定板子用的螺丝孔</td></tr>
+<tr><td>画布原点</td><td>放置 → 画布原点</td><td>把坐标原点设在板子左下角，方便算位置</td></tr>
+<tr><td>板子形状</td><td>设计 → 板子形状 → 根据选中生成板子形状 / 根据板子形状生成线条</td><td>把选中的闭合线条变成板框，或反过来</td></tr>
+<tr><td>3D 外壳</td><td>放置 → 3D外壳 - 边框 / 螺丝柱 / …</td><td>直接设计外壳并下单（第 10 章）</td></tr>
+</tbody>
+</table>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch5/3.html"><small>← 上一页</small>5.3 封装与 3D 模型</a><a class="next" href="../ch6/2.html"><small>下一页 →</small>6.2 布局、布线与铜皮</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

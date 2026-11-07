@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2.3 串联与并联 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch2/3" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 2 章 · 前置知识补全</div>
+    <article>
+      <h1>2.3 串联与并联</h1>
+      <p class="lead">元件连在一起只有两种基本方式：排成一串（串联），或者并排接（并联）。搞懂它们，你就能明白分压电路、LED 为什么要串电阻，以及为什么每颗 LED 最好各配一个电阻。</p>
+      <div class="meta-bar"><span>⏱ 约 15 分钟</span><span>🎯 需要 2.1 的基础</span><span>🖱️ 含分压器演示</span></div>
+      
+
+<h2 id="串联排成一串">串联：排成一串<a class="anchor" href="#串联排成一串">#</a></h2>
+
+<p>元件首尾相接、电流只有一条路可走，就是<b>串联</b>。想象几段细水管接成一根长管子：</p>
+
+<ul>
+<li><b>电流处处相同</b>：水只有一条路，流过每段管子的水量都一样。</li>
+<li><b>电压被分掉</b>：总电压 = 每个元件两端电压之和。</li>
+<li><b>电阻相加</b>：<code>R总 = R1 + R2 + …</code>（管子越接越长，阻碍越大）。</li>
+</ul>
+
+<h2 id="并联并排接">并联：并排接<a class="anchor" href="#并联并排接">#</a></h2>
+
+<p>元件两端分别接在一起、电流可以分几条路走，就是<b>并联</b>。想象一根水管分成几根并排的支管：</p>
+
+<ul>
+<li><b>电压处处相同</b>：每条支路两端都接在同样的两个点上。</li>
+<li><b>电流被分掉</b>：总电流 = 每条支路电流之和。</li>
+<li><b>总电阻变小</b>：<code>1/R总 = 1/R1 + 1/R2 + …</code>。两个相同的电阻并联，总电阻是一个的一半（多了一条路，水更好流）。</li>
+</ul>
+
+<svg viewBox="0 0 760 170" class="ref-svg" style="background:#fff;width:100%;max-width:760px" aria-label="串联与并联示意">
+  <g font-family="-apple-system,PingFang SC,sans-serif" font-size="13">
+    <text x="190" y="22" text-anchor="middle" font-weight="700">串联：电流相同，电压分掉</text>
+    <line x1="30" y1="80" x2="80" y2="80" stroke="#2f9e44" stroke-width="2.5"/>
+    <rect x="80" y="68" width="70" height="24" fill="#fff" stroke="#1c3f94" stroke-width="2"/><text x="115" y="60" text-anchor="middle" fill="#1c3f94">R1</text>
+    <line x1="150" y1="80" x2="230" y2="80" stroke="#2f9e44" stroke-width="2.5"/>
+    <rect x="230" y="68" width="70" height="24" fill="#fff" stroke="#1c3f94" stroke-width="2"/><text x="265" y="60" text-anchor="middle" fill="#1c3f94">R2</text>
+    <line x1="300" y1="80" x2="350" y2="80" stroke="#2f9e44" stroke-width="2.5"/>
+    <text x="115" y="118" text-anchor="middle" fill="#d9480f">V1</text><text x="265" y="118" text-anchor="middle" fill="#d9480f">V2</text>
+    <text x="190" y="146" text-anchor="middle" fill="#495057">V总 = V1 + V2　R总 = R1 + R2</text>
+    <text x="560" y="22" text-anchor="middle" font-weight="700">并联：电压相同，电流分掉</text>
+    <line x1="420" y1="85" x2="470" y2="85" stroke="#2f9e44" stroke-width="2.5"/><line x1="470" y1="50" x2="470" y2="120" stroke="#2f9e44" stroke-width="2.5"/>
+    <line x1="470" y1="50" x2="525" y2="50" stroke="#2f9e44" stroke-width="2.5"/><rect x="525" y="38" width="70" height="24" fill="#fff" stroke="#1c3f94" stroke-width="2"/><text x="560" y="34" text-anchor="middle" fill="#1c3f94">R1</text><line x1="595" y1="50" x2="650" y2="50" stroke="#2f9e44" stroke-width="2.5"/>
+    <line x1="470" y1="120" x2="525" y2="120" stroke="#2f9e44" stroke-width="2.5"/><rect x="525" y="108" width="70" height="24" fill="#fff" stroke="#1c3f94" stroke-width="2"/><text x="560" y="104" text-anchor="middle" fill="#1c3f94">R2</text><line x1="595" y1="120" x2="650" y2="120" stroke="#2f9e44" stroke-width="2.5"/>
+    <line x1="650" y1="50" x2="650" y2="120" stroke="#2f9e44" stroke-width="2.5"/><line x1="650" y1="85" x2="700" y2="85" stroke="#2f9e44" stroke-width="2.5"/>
+    <circle cx="470" cy="85" r="4" fill="#f03e3e"/><circle cx="650" cy="85" r="4" fill="#f03e3e"/>
+    <text x="560" y="160" text-anchor="middle" fill="#495057">I总 = I1 + I2　1/R总 = 1/R1 + 1/R2</text>
+  </g>
+</svg>
+
+<h2 id="分压两个电阻串联中间取电压">分压：两个电阻串联，中间取电压<a class="anchor" href="#分压两个电阻串联中间取电压">#</a></h2>
+
+<p>两个电阻串联在电源和 GND 之间，中间那个点的电压就是按电阻比例“分”出来的：</p>
+
+<p style="text-align:center;font-size:20px;font-family:var(--mono)"><b>Vout = Vin × R2 / (R1 + R2)</b></p>
+
+<p>可以想成爬楼梯：从 Vin 走到 0 V，R1 和 R2 各占一段“高度”，电阻越大的那段越高。动手试试：</p>
+
+<div class="widget"><div class="widget-title">分压器演示</div>
+<div class="divider-widget"></div>
+<div class="widget-hint">右边的柱子表示 Vout 占 Vin 的比例。阻值单位是 kΩ，可以直接输入任意数值。</div>
+</div>
+
+<aside class="theory">
+<p><b>分压电路在哪里用？</b></p>
+<ul>
+<li><b>NE555 芯片内部</b>：有三个相等的电阻串在 VCC 和 GND 之间，分出 1/3 VCC 和 2/3 VCC 两个电压，作为“水位线”——案例 A 里电容充到 2/3、放到 1/3 就翻转，就是跟它们比较的（<a href="../ch1/a0.html#电路原理一个会打拍子的芯片">A-0 的原理卡片</a>）。</li>
+<li><b>测电池电压</b>：单片机的引脚只能测 0～3.3 V，想测更高的电压，就先用分压电路按比例缩小再测。</li>
+<li><b>降低信号电平</b>：把 5 V 的信号降到 3.3 V 左右给单片机读。</li>
+</ul>
+<p>但分压电路<b>不能拿来给别的东西供电</b>：接上负载后电压会掉下来（在上面选“接 1 kΩ 负载”试试）。降压供电要用稳压芯片，比如案例 B 的 AMS1117-3.3。</p>
+</aside>
+
+<h2 id="led-why">LED 为什么一定要串电阻<a class="anchor" href="#led-why">#</a></h2>
+
+<p>电阻有个好性格：电压加倍，电流也只是加倍，很“好商量”。但 LED（以及所有二极管）不是这样：</p>
+
+<ul>
+<li>电压低于它的“门槛”（正向压降，红色约 2 V、白色约 3 V）时，几乎没有电流，不亮。</li>
+<li>电压一过门槛，电流会<b>猛增</b>——稍微多一点点电压，电流就可能翻好几倍，LED 很快就烧了。</li>
+</ul>
+
+<p>所以 LED 不能直接接在 5 V 上，必须<b>串联一个电阻</b>来“限流”。串联之后：电源电压 = LED 压降 + 电阻压降，多出来的电压由电阻“扛”下来，电流就被电阻限制住了：</p>
+
+<p style="text-align:center;font-size:18px;font-family:var(--mono)"><b>R = (电源电压 − LED 压降) / 想要的电流</b></p>
+
+<p>具体怎么选阻值，2.4 节有一个 <a href="4.html#led">LED 限流电阻计算器</a>。</p>
+
+<aside class="warn">
+<p><b>为什么案例 A 每颗 LED 各配一个 330 Ω，而不是几颗 LED 并联后共用一个电阻？</b> 因为每颗 LED 的压降都有一点点差别，并联时压降最低的那颗会“抢走”大部分电流，越来越亮、越来越热，最后可能先烧掉；它一坏，电流又全涌向剩下的几颗……所以<b>并联的 LED 要各自串电阻</b>。这也是案例 A 原理图里有 R5～R8 四个电阻的原因。</p>
+</aside>
+
+<div class="quiz">
+  <div class="q">Vin = 5 V，R1 = 10 kΩ，R2 = 10 kΩ，中间点的电压是多少？</div>
+  <button type="button" class="opt">5 V</button>
+  <button type="button" class="opt" data-right>2.5 V</button>
+  <button type="button" class="opt">0 V</button>
+  <div class="explain">✅ 两个电阻一样大，各分一半：5 × 10 / (10 + 10) = 2.5 V。</div>
+</div>
+
+<div class="quiz">
+  <div class="q">两个 1 kΩ 电阻<b>并联</b>，总电阻是多少？</div>
+  <button type="button" class="opt">2 kΩ</button>
+  <button type="button" class="opt">1 kΩ</button>
+  <button type="button" class="opt" data-right>500 Ω</button>
+  <div class="explain">✅ 并联多了一条路，总电阻变小：1/R = 1/1000 + 1/1000，R = 500 Ω。串联才是相加（2 kΩ）。</div>
+</div>
+
+<h2 id="回到哪里继续">回到哪里继续<a class="anchor" href="#回到哪里继续">#</a></h2>
+
+<ul>
+<li>案例 A 的 LED 电路：回到 <a href="../ch1/a0.html#电路原理一个会打拍子的芯片">A-0 电路原理</a> 或 <a href="../ch1/a2.html#A2.7-用导线连线">A-2.7 连线表</a>（LED 支路那一行）。</li>
+<li>继续：<a href="4.html">2.4 常用元件图鉴</a>，里面有 LED 限流电阻计算器。</li>
+</ul>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch2/2.html"><small>← 上一页</small>2.2 电源与“地”</a><a class="next" href="../ch2/4.html"><small>下一页 →</small>2.4 常用元件图鉴</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/widgets/ch2.js"></script>
+</body>
+</html>

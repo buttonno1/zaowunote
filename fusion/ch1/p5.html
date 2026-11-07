@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P5 旋钮（旋转） · Fusion 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch1/p5" data-root="../" data-book="fusion">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">Fusion 教程<small>（原 Fusion 360）</small></a></div>
+  <span class="ver">基于 Autodesk Fusion 2705.1.30（个人版）</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-what" href="../ch0/1-what.html">0.1 3D 设计能做什么<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-fusion" href="../ch0/2-fusion.html">0.2 认识 Fusion<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-install" href="../ch0/3-install.html">0.3 安装、账号与许可<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 鼠标、触控板与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 1 章 · Quickstart</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与视图操作<span class="chk">✓</span></a></li><li class="nav-sub">常用操作图鉴</li><li><a class="nav-link" data-id="ch1/1-sketch" href="../ch1/1-sketch.html">1.1 草图：在平面上画轮廓<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/2-shape" href="../ch1/2-shape.html">1.2 成形：把草图变成立体<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/3-modify" href="../ch1/3-modify.html">1.3 修改：在已有形状上加工<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/4-aid" href="../ch1/4-aid.html">1.4 辅助与检查<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/5-joint" href="../ch1/5-joint.html">1.5 零部件与联接<span class="chk">✓</span></a></li><li class="nav-sub">案例 · 折叠手机支架</li><li><a class="nav-link" data-id="ch1/p0" href="../ch1/p0.html">P0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p1" href="../ch1/p1.html">P1 新建设计与参数<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p2" href="../ch1/p2.html">P2 底座<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p3" href="../ch1/p3.html">P3 充电线槽（扫掠）<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p4" href="../ch1/p4.html">P4 靠背<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch1/p5" href="../ch1/p5.html">P5 旋钮（旋转）<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p6" href="../ch1/p6.html">P6 螺丝与螺母<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p7" href="../ch1/p7.html">P7 刻字与外观<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p8" href="../ch1/p8.html">P8 联接与运动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p9" href="../ch1/p9.html">P9 检查与修改<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/p10" href="../ch1/p10.html">P10 导出<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 三维设计基础知识</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 坐标系、平面与视图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 草图约束与自由度<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 参数化建模与时间轴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 实体、曲面、网格<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 零件、零部件与联接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 尺寸、公差与配合<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 3D 打印入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 其他加工方式<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 文件格式大全<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 读懂工程图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 材料常识<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与数据管理</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 首选项大全<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 界面定制与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 项目、文件与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/4" href="../ch3/4.html">3.4 分享与协作<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/5" href="../ch3/5.html">3.5 许可、离线与性能<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 草图完全手册</summary><ul><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 创建草图与选项板<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 绘图工具<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 修改工具<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 约束全集<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 引用已有几何<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/7" href="../ch4/7.html">4.7 导入 2D 素材<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/8" href="../ch4/8.html">4.8 3D 草图与排错<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 实体建模完全手册</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 拉伸进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 旋转、扫掠、放样进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 加强筋、凸雕、加厚<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/4" href="../ch5/4.html">5.4 基本体与螺旋<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/5" href="../ch5/5.html">5.5 孔与螺纹<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/6" href="../ch5/6.html">5.6 圆角与倒角进阶<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/7" href="../ch5/7.html">5.7 抽壳与拔模<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/8" href="../ch5/8.html">5.8 阵列与镜像<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/9" href="../ch5/9.html">5.9 合并、分割与直接修改<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/10" href="../ch5/10.html">5.10 检验与分析<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/11" href="../ch5/11.html">5.11 插入外部素材<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/12" href="../ch5/12.html">5.12 塑料零件<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · 参数化与设计修改</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 参数与表达式<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 时间轴全功能<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 设计意图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 报错与修复<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/5" href="../ch6/5.html">6.5 实战：可调收纳盒<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · 曲面建模</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 曲面是什么<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 创建曲面<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/3" href="../ch7/3.html">7.3 修改曲面<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/4" href="../ch7/4.html">7.4 曲面变实体与质量分析<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 造型（自由形态）</summary><ul><li><a class="nav-link" data-id="ch8/1" href="../ch8/1.html">8.1 造型环境<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/2" href="../ch8/2.html">8.2 创建形体<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/3" href="../ch8/3.html">8.3 编辑形状<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch8/4" href="../ch8/4.html">8.4 修改工具与完成造型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 9 章 · 钣金与激光切割</summary><ul><li><span class="nav-link todo">钣金与激光切割</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 网格与 STL</summary><ul><li><span class="nav-link todo">网格与 STL</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 装配、联接与运动</summary><ul><li><span class="nav-link todo">装配、联接与运动</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 外观与渲染</summary><ul><li><span class="nav-link todo">外观与渲染</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 动画与爆炸图</summary><ul><li><span class="nav-link todo">动画与爆炸图</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 工程图</summary><ul><li><span class="nav-link todo">工程图</span></li></ul></details><details class="nav-group"><summary>第 15 章 · 3D 打印全流程</summary><ul><li><span class="nav-link todo">3D 打印全流程</span></li></ul></details><details class="nav-group"><summary>第 16 章 · CAM 数控加工入门</summary><ul><li><span class="nav-link todo">CAM 数控加工入门</span></li></ul></details><details class="nav-group"><summary>第 17 章 · 仿真与衍生式设计</summary><ul><li><span class="nav-link todo">仿真与衍生式设计</span></li></ul></details><details class="nav-group"><summary>第 18 章 · 给电路板做外壳</summary><ul><li><span class="nav-link todo">给电路板做外壳</span></li></ul></details><details class="nav-group"><summary>第 19 章 · 脚本与插件</summary><ul><li><span class="nav-link todo">脚本与插件</span></li></ul></details><details class="nav-group"><summary>第 20 章 · 设计经验与常见问题</summary><ul><li><span class="nav-link todo">设计经验与常见问题</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表（中英对照）</span></li><li><span class="nav-link todo">常见问题</span></li><li><span class="nav-link todo">资源链接</span></li><li><span class="nav-link todo">文件下载</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">Fusion 教程</a> / 第 1 章 · Quickstart</div>
+    <article>
+      <h1>P5 旋钮（旋转）</h1>
+      <p class="lead">第三个零件：旋钮。旋钮是圆的、绕轴对称，最适合用“旋转”来做：画半个截面，转一圈。再用环形阵列做一圈防滑槽，最后挖一个六角坑卡住螺丝头。</p>
+      <div class="meta-bar"><span>⏱ 约 30 分钟</span><span>✅ Fusion 2705.1.30 实测</span></div>
+      
+
+<p>做完这一页：</p>
+<figure class="shot"><img src="../img/case2/p5-done.png" alt="右边耳朵外侧的旋钮：12 道防滑槽、中间六角坑、外圈倒角（旋钮被激活时，其他零件显示成半透明）" width="560" loading="lazy"><figcaption><span class="fig-no">图 P5-1</span>右边耳朵外侧的旋钮：12 道防滑槽、中间六角坑、外圈倒角（旋钮被激活时，其他零件显示成半透明）</figcaption></figure>
+
+<h2 id="第-1-步一个过铰链轴的平面">第 1 步：一个过铰链轴的平面<a class="anchor" href="#第-1-步一个过铰链轴的平面">#</a></h2>
+
+<p>旋钮的轴就是铰链轴（离桌面 14.4 mm、沿左右方向）。截面要画在一个<b>通过这根轴的平面</b>上，现成的平面里没有，用构造平面建一个水平的：</p>
+
+<ol class="steps">
+  <li>激活根，「装配 → 新建零部件」，名称 <code>旋钮</code>。</li>
+  <li>「构造 → 偏移平面」：点 XY 平面，距离 <code>14.4</code>，点「确定」。</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/case2/p5-plane.png" alt="从地面往上偏移 14.4 mm，正好穿过铰链轴" width="420" loading="lazy"><figcaption><span class="fig-no">图 P5-2</span>从地面往上偏移 14.4 mm，正好穿过铰链轴</figcaption></figure>
+<figure class="shot"><img src="../img/case2/p5-plane-d.png" alt="偏移平面：距离 14.4 mm" width="256" loading="lazy"><figcaption><span class="fig-no">图 P5-3</span>偏移平面：距离 14.4 mm</figcaption></figure>
+</div>
+
+<h2 id="第-2-步截面">第 2 步：截面<a class="anchor" href="#第-2-步截面">#</a></h2>
+
+<p>旋转需要两样东西：一根<b>轴</b>，和轴旁边的<b>半个截面</b>。旋钮就是一个中间有孔的圆饼，它的半个截面是一个矩形：</p>
+
+<ol class="steps">
+  <li>在这个新平面上「创建草图」，点 ViewCube 的「上」，变成俯视。</li>
+  <li><b>先画轴</b>：「直线」画一条左右方向的水平线，从右耳附近一直画到右耳外面一点；选中它，在草图选项板点「线型」里的构造线图标，它变成虚线。按 <span class="keys"><kbd>D</kbd></span>，点这条线和原点，标距离 <code>15</code>，它就正好落在铰链轴上（铰链孔离底座前边 35，底座前边离原点 50，50 − 35 = 15）。</li>
+  <li><b>再画矩形</b>：「两点矩形」在轴的后面（远离你的一侧）、右耳外侧画一个小矩形。</li>
+  <li>按 <span class="keys"><kbd>D</kbd></span> 标 4 个尺寸：
+    <ul>
+      <li>矩形左右宽 <code>9</code>（旋钮的厚度）；</li>
+      <li>矩形左边到原点 <code>40</code>（右耳外侧面的位置，正好是底座宽 80 的一半，旋钮贴着耳朵）；</li>
+      <li>轴到矩形远边 <code>11</code>（旋钮半径）；</li>
+      <li>轴到矩形近边 <code>2.2</code>（螺丝孔的半径）。</li>
+    </ul>
+  </li>
+  <li>「完成草图」。</li>
+</ol>
+
+<aside class="note"><p>这里的 40 是直接输入的数字，没有和参数 <code>w</code> 关联。这是故意留的一个“坑”：到 <a href="p9.html">P9</a> 把 w 改大时，你会看到旋钮不跟着走，那里再讲怎么做才对。</p></aside>
+
+<figure class="shot"><img src="../img/case2/p5-sk.png" alt="旋钮截面（俯视，其他零件已隐藏）：9 宽的矩形，离轴 2.2～11 mm；下面那条虚线是轴" width="520" loading="lazy"><figcaption><span class="fig-no">图 P5-4</span>旋钮截面（俯视，其他零件已隐藏）：9 宽的矩形，离轴 2.2～11 mm；下面那条虚线是轴</figcaption></figure>
+
+<aside class="theory">
+<p><b>🧠 为什么矩形不贴着轴？</b>矩形和轴之间空出 2.2 mm，转一圈之后中间就是一个直径 4.4 的孔，螺丝从这里穿过。这样孔和旋钮是一次做出来的，不用再打孔。</p>
+</aside>
+
+<h2 id="第-3-步旋转">第 3 步：旋转<a class="anchor" href="#第-3-步旋转">#</a></h2>
+
+<ol class="steps">
+  <li>「创建 → <b>旋转</b>」。「轮廓」点矩形，「轴」点那条构造线。</li>
+  <li>「范围类型」选「<b>完全</b>」，点「确定」。</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/case2/p5-revolve.png" alt="截面绕轴转一整圈的预览" width="420" loading="lazy"><figcaption><span class="fig-no">图 P5-5</span>截面绕轴转一整圈的预览</figcaption></figure>
+<figure class="shot"><img src="../img/case2/p5-revolve-d.png" alt="旋转：范围类型 完全" width="256" loading="lazy"><figcaption><span class="fig-no">图 P5-6</span>旋转：范围类型 完全</figcaption></figure>
+</div>
+
+<figure class="shot"><img src="../img/case2/p5-rev-done.png" alt="旋钮的主体：中间带孔的圆饼" width="520" loading="lazy"><figcaption><span class="fig-no">图 P5-7</span>旋钮的主体：中间带孔的圆饼</figcaption></figure>
+
+<p>旋转对话框每一项的含义见 <a href="2-shape.html#旋转Revolve">1.2 旋转</a>。</p>
+
+<h2 id="第-4-步防滑槽--环形阵列">第 4 步：防滑槽 + 环形阵列<a class="anchor" href="#第-4-步防滑槽--环形阵列">#</a></h2>
+
+<ol class="steps">
+  <li>在旋钮的<b>外侧面</b>（离耳朵远的那一面）建草图。「圆」：圆心点在外圆的最上面（鼠标移到外圆上会吸附，出现重合图标），画一个小圆，按 <span class="keys"><kbd>D</kbd></span> 标直径 <code>3.2</code>。小圆一半在旋钮里、一半在外面。</li>
+</ol>
+
+<figure class="shot"><img src="../img/case2/p5-sk-groove.png" alt="从右侧看：旋钮外圈顶上一个 Ø3.2 的小圆，一半在旋钮外面" width="480" loading="lazy"><figcaption><span class="fig-no">图 P5-8</span>从右侧看：旋钮外圈顶上一个 Ø3.2 的小圆，一半在旋钮外面</figcaption></figure>
+
+<ol class="steps" start="2">
+  <li value="2">按 <span class="keys"><kbd>E</kbd></span>，点小圆里落在旋钮上的那半块，「操作」选「剪切」，「范围类型」选「全部」，方向朝旋钮里面。<b>注意</b>：“全部”会一直往里挖，连后面的耳朵、靠背也会被挖到。看对话框里的「要剪切的对象」，只留下「旋钮」，其他的点掉。点「确定」，旋钮边上被挖出一道半圆槽。</li>
+</ol>
+
+<figure class="shot"><img src="../img/case2/p5-groove-done.png" alt="第一道防滑槽" width="480" loading="lazy"><figcaption><span class="fig-no">图 P5-9</span>第一道防滑槽</figcaption></figure>
+
+<ol class="steps" start="3">
+  <li value="3">选中这道槽的剪切特征，「创建 → 阵列 → <b>环形阵列</b>」。</li>
+  <li value="4">点「轴」的选择按钮，再点旋钮的圆柱外表面（用它的中心线作轴）；「数量」改成 <code>12</code>。点「确定」。</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/case2/p5-cpattern.png" alt="12 道槽的预览" width="420" loading="lazy"><figcaption><span class="fig-no">图 P5-10</span>12 道槽的预览</figcaption></figure>
+<figure class="shot"><img src="../img/case2/p5-cpattern-d.png" alt="环形阵列：对象 1、轴 1、分发 完全、数量 12" width="258" loading="lazy"><figcaption><span class="fig-no">图 P5-11</span>环形阵列：对象 1、轴 1、分发 完全、数量 12</figcaption></figure>
+</div>
+
+<div class="table-title">环形阵列</div><table class=""><thead><tr><th>选项</th><th>含义</th></tr></thead><tbody><tr><td>对象类型 / 对象</td><td>和矩形阵列一样</td></tr><tr><td>轴</td><td>绕哪根轴转。可以选构造轴、坐标轴、草图线，或者直接点一个圆柱面（用它的中心线）</td></tr><tr><td>分发</td><td>完全（一整圈均匀分布）/ 角度（只在一段角度里分布）/ 对称</td></tr><tr><td>抑制</td><td>勾选后可以去掉个别复制品</td></tr><tr><td>数量</td><td>一圈复制几个（包括原来那个）</td></tr><tr><td>计算类型</td><td>相同 / 调整 / 优化</td></tr></tbody></table>
+
+<figure class="shot"><img src="../img/case2/p5-cp-done.png" alt="一圈 12 道防滑槽" width="480" loading="lazy"><figcaption><span class="fig-no">图 P5-12</span>一圈 12 道防滑槽</figcaption></figure>
+
+<h2 id="第-5-步六角坑和倒角">第 5 步：六角坑和倒角<a class="anchor" href="#第-5-步六角坑和倒角">#</a></h2>
+
+<ol class="steps">
+  <li>在旋钮外侧面建草图，「多边形 → 内接多边形」，圆心在孔心，6 条边，对边 <code>7.3</code>。</li>
+</ol>
+
+<figure class="shot"><img src="../img/case2/p5-sk-hex.png" alt="外侧面上的六边形（对边 7.3），周围是 12 道防滑槽" width="480" loading="lazy"><figcaption><span class="fig-no">图 P5-13</span>外侧面上的六边形（对边 7.3），周围是 12 道防滑槽</figcaption></figure>
+
+<ol class="steps" start="2">
+  <li value="2">拉伸六边形「剪切」，往里 <code>3</code> mm。</li>
+  <li value="3">「修改 → <b>倒角</b>」：选外圈的两条圆边，距离 <code>0.8</code>，点「确定」。手感更好，也不扎手。</li>
+</ol>
+
+<div class="fig-row">
+<figure class="shot"><img src="../img/case2/p5-hex-done.png" alt="六角坑挖好了" width="420" loading="lazy"><figcaption><span class="fig-no">图 P5-14</span>六角坑挖好了</figcaption></figure>
+<figure class="shot"><img src="../img/case2/p5-chamfer-d.png" alt="倒角：等距离 0.8 mm（选了 24 段边：外圈被防滑槽切成了很多段）" width="390" loading="lazy"><figcaption><span class="fig-no">图 P5-15</span>倒角：等距离 0.8 mm（选了 24 段边：外圈被防滑槽切成了很多段）</figcaption></figure>
+</div>
+
+<aside class="theory">
+<p><b>🧠 为什么要六角坑？</b>螺丝头是六角形的，嵌进旋钮的六角坑里就转不了，拧旋钮就等于拧螺丝。同样的道理，螺母卡在靠背的六角坑里（P4）。3D 打印件和标准螺丝配合时，这是最常用的办法。</p>
+</aside>
+
+<aside class="diy">
+<p><b>🎨 自由发挥</b>：防滑槽可以改成 8 个、16 个，或者把小圆换成三角形做成齿轮样子；旋钮外面还可以凸雕一个箭头，指示松紧方向。</p>
+</aside>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch1/p4.html"><small>← 上一页</small>P4 靠背</a><a class="next" href="../ch1/p6.html"><small>下一页 →</small>P6 螺丝与螺母</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

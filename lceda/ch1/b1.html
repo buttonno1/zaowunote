@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B-1 读规格书 · 嘉立创EDA 教程 · 造物笔记</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="ch1/b1" data-root="../" data-book="lceda">
+<header class="topbar">
+  <button class="menu-btn" aria-label="目录">☰</button>
+  <div class="brand"><a class="home-link" href="../../index.html"><span class="logo zw">造</span>造物笔记</a><span class="sep">/</span><a href="../index.html">嘉立创EDA 教程<small>（原立创EDA）</small></a></div>
+  <span class="ver">基于 嘉立创EDA专业版 V4.1.93</span>
+  <div class="os-switch" title="切换快捷键显示"><button type="button" data-os="mac">🍎 Mac</button><button type="button" data-os="win">⊞ Windows</button></div>
+  <div class="search"><input type="search" placeholder="搜索教程…" aria-label="搜索"><div class="search-results"></div></div>
+</header>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="progress">学习进度 <b class="pct">0%</b><div class="bar"><i></i></div></div>
+    <a class="nav-link" data-id="index" href="../index.html" style="font-weight:600;color:var(--c-text)">🏠 教程首页<span class="chk">✓</span></a><details class="nav-group"><summary>第 0 章 · 开始之前</summary><ul><li><a class="nav-link" data-id="ch0/1-flow" href="../ch0/1-flow.html">0.1 电路板是怎么做出来的<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/2-eda" href="../ch0/2-eda.html">0.2 认识嘉立创EDA<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/3-account" href="../ch0/3-account.html">0.3 注册登录与打开编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/4-input" href="../ch0/4-input.html">0.4 键盘、鼠标与快捷键<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch0/5-howto" href="../ch0/5-howto.html">0.5 本教程怎么读<span class="chk">✓</span></a></li></ul></details><details class="nav-group" open><summary>第 1 章 · Quickstart 实战</summary><ul><li><a class="nav-link" data-id="ch1/0-ui" href="../ch1/0-ui.html">1.0 认识界面与基本操作<span class="chk">✓</span></a></li><li class="nav-sub">案例 A · 眨眼小徽章（不编程）</li><li><a class="nav-link" data-id="ch1/a0" href="../ch1/a0.html">A-0 项目介绍与原理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a1" href="../ch1/a1.html">A-1 新建工程<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a2" href="../ch1/a2.html">A-2 画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a3" href="../ch1/a3.html">A-3 原理图转 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a4" href="../ch1/a4.html">A-4 板框与图层<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a5" href="../ch1/a5.html">A-5 布局<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a6" href="../ch1/a6.html">A-6 布线<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a7" href="../ch1/a7.html">A-7 铺铜<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a8" href="../ch1/a8.html">A-8 丝印与 Logo<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a9" href="../ch1/a9.html">A-9 检查与 3D 预览<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a10" href="../ch1/a10.html">A-10 导出与下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/a11" href="../ch1/a11.html">A-11 拿到板子之后<span class="chk">✓</span></a></li><li class="nav-sub">案例 B · ESP32-C3 彩灯板（编程）</li><li><a class="nav-link" data-id="ch1/b0" href="../ch1/b0.html">B-0 项目介绍<span class="chk">✓</span></a></li><li><a class="nav-link current" data-id="ch1/b1" href="../ch1/b1.html">B-1 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b2" href="../ch1/b2.html">B-2 分模块画原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b3" href="../ch1/b3.html">B-3 PCB 设计<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b4" href="../ch1/b4.html">B-4 导出与 SMT 下单<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/b5" href="../ch1/b5.html">B-5 写程序与烧录<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch1/summary" href="../ch1/summary.html">Quickstart 小结<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 2 章 · 前置知识补全</summary><ul><li><a class="nav-link" data-id="ch2/1" href="../ch2/1.html">2.1 电的基本概念<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/2" href="../ch2/2.html">2.2 电源与“地”<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/3" href="../ch2/3.html">2.3 串联与并联<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/4" href="../ch2/4.html">2.4 常用元件图鉴<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/5" href="../ch2/5.html">2.5 封装与尺寸<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/6" href="../ch2/6.html">2.6 怎么读原理图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/7" href="../ch2/7.html">2.7 数字电路入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/8" href="../ch2/8.html">2.8 单片机入门<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/9" href="../ch2/9.html">2.9 PCB 基础<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/10" href="../ch2/10.html">2.10 走线与间距<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/11" href="../ch2/11.html">2.11 工厂怎么做 PCB<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/12" href="../ch2/12.html">2.12 制造文件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/13" href="../ch2/13.html">2.13 SMT 与手工焊接<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/14" href="../ch2/14.html">2.14 读规格书<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch2/15" href="../ch2/15.html">2.15 术语表<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 3 章 · 软件环境与工程协作</summary><ul><li><a class="nav-link" data-id="ch3/1" href="../ch3/1.html">3.1 软件环境与个人设置<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/2" href="../ch3/2.html">3.2 工程管理与版本<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch3/3" href="../ch3/3.html">3.3 团队协作与开源<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 4 章 · 原理图设计</summary><ul><li><a class="nav-link" data-id="ch4/0" href="../ch4/0.html">4.0 本章导览与菜单地图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/1" href="../ch4/1.html">4.1 图纸与放置器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/2" href="../ch4/2.html">4.2 连接关系<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/3" href="../ch4/3.html">4.3 编辑技巧与绘图<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/4" href="../ch4/4.html">4.4 多页、层次图与装配变量<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/5" href="../ch4/5.html">4.5 检查与 PCB 联动<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch4/6" href="../ch4/6.html">4.6 工具、输出与视图<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 5 章 · 元件库：符号、封装与 3D</summary><ul><li><a class="nav-link" data-id="ch5/1" href="../ch5/1.html">5.1 库的组成与创建器件<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/2" href="../ch5/2.html">5.2 符号编辑器<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch5/3" href="../ch5/3.html">5.3 封装与 3D 模型<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 6 章 · PCB 设计</summary><ul><li><a class="nav-link" data-id="ch6/1" href="../ch6/1.html">6.1 环境、板框与外形<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/2" href="../ch6/2.html">6.2 布局、布线与铜皮<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/3" href="../ch6/3.html">6.3 丝印、图案与编辑技巧<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch6/4" href="../ch6/4.html">6.4 检查、同步与输出<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 7 章 · PCB 进阶：规则与高速</summary><ul><li><a class="nav-link" data-id="ch7/1" href="../ch7/1.html">7.1 设计规则与网络管理<span class="chk">✓</span></a></li><li><a class="nav-link" data-id="ch7/2" href="../ch7/2.html">7.2 多层板与高速布线<span class="chk">✓</span></a></li></ul></details><details class="nav-group"><summary>第 8 章 · 生产制造与下单</summary><ul><li><span class="nav-link todo">8.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 9 章 · 电路仿真</summary><ul><li><span class="nav-link todo">9.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 10 章 · 3D 预览与外壳</summary><ul><li><span class="nav-link todo">10.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 11 章 · 面板设计</summary><ul><li><span class="nav-link todo">11.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 12 章 · 格式转换与跨软件</summary><ul><li><span class="nav-link todo">12.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 13 章 · 扩展、脚本与 API</summary><ul><li><span class="nav-link todo">13.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>第 14 章 · 设计经验与规范</summary><ul><li><span class="nav-link todo">14.1 （制作中）</span></li></ul></details><details class="nav-group"><summary>附录</summary><ul><li><span class="nav-link todo">快捷键速查</span></li><li><span class="nav-link todo">术语表</span></li><li><span class="nav-link todo">常见问题 FAQ</span></li><li><span class="nav-link todo">资源链接</span></li></ul></details>
+  </nav>
+  <main class="content">
+    <div class="crumbs"><a href="../../index.html">造物笔记</a> / <a href="../index.html">嘉立创EDA 教程</a> / 第 1 章 · Quickstart 实战</div>
+    <article>
+      <h1>B-1 读规格书</h1>
+      <p class="lead">画一块带单片机的板子，最重要的一个习惯是：不要自己瞎设计，先找到官方规格书（datasheet），照着里面的“参考电路”画。这一页教你在哪里找到规格书、几十页的英文 PDF 里要看哪几章，以及本案例的每一块电路分别是从哪里“抄”来的。</p>
+      <div class="meta-bar"><span>⏱ 约 20 分钟</span><span>🎯 不需要会英文，看图和表就够</span><span>📄 本页没有软件操作</span></div>
+      
+
+<h2 id="B1.1-为什么要抄参考电路">B1.1 为什么要“抄”参考电路<a class="anchor" href="#B1.1-为什么要抄参考电路">#</a></h2>
+
+<p>ESP32-C3 这样的芯片，厂家（乐鑫）在设计它的时候就已经做了大量测试，知道“外面接什么电容、什么电阻它才能稳定工作”。这些结论写在<b>规格书</b>（datasheet，也叫数据手册）里，通常有一章叫“<b>外围设计原理图</b>”或“<b>典型应用电路</b>”。</p>
+
+<p>所以硬件工程师的日常是：<span class="hl">先读规格书 → 照着参考电路画 → 只改自己需要改的地方</span>。这不是偷懒，而是最可靠的做法——你自己想出来的电路，很可能漏掉一个厂家早就知道的坑。</p>
+
+<aside class="theory">
+<p>就像照着菜谱做菜：第一次做红烧肉，最稳妥的办法是按菜谱放料、按菜谱控制火候。等你熟了，再按自己口味少放点糖。规格书就是芯片的“官方菜谱”。</p>
+</aside>
+
+<h2 id="B1.2-在哪里找到规格书">B1.2 在哪里找到规格书<a class="anchor" href="#B1.2-在哪里找到规格书">#</a></h2>
+
+<p>本案例要读的规格书有三份：模组 ESP32-C3-MINI-1、稳压芯片 AMS1117-3.3、RGB 灯 XL-5050RGBC-WS2812B。找法都一样：</p>
+
+<ol class="steps">
+  <li><b>先在嘉立创EDA 的元件库里确认 C 编号</b>：和 <a href="a2.html#A2.1-打开元件库搜索-NE555">A2.1</a> 一样，底部「元件库」选「立创商城」来源，搜 <code>C2838502</code>，确认就是 ESP32-C3-MINI-1-N4，顺便在右边预览里看一眼它的符号和封装（<a href="a2.html#A2.2-看一眼一个器件--符号--封装--3D">A2.2</a>）。</li>
+  <li><b>打开立创商城网站</b>（<a href="https://www.szlcsc.com" target="_blank" rel="noopener">www.szlcsc.com</a>），在搜索框里输入同一个 C 编号。</li>
+  <li>进入商品详情页，找到「<b>数据手册</b>」（有的页面写“规格书”或显示一个 PDF 图标），点开或下载 PDF。</li>
+  <li><b>对于模组这种大芯片，再去厂家官网下一份最新版</b>：乐鑫官网的文档中心搜索“ESP32-C3-MINI-1 技术规格书”（有中文版），同时下载《ESP32-C3 系列芯片硬件设计指南》。商城里的 PDF 有时不是最新版本。</li>
+</ol>
+
+<aside class="tip">
+<p>规格书动辄几十页，不用从头看到尾。打开 PDF 后用 <span class="keys"><kbd>⌘</kbd><kbd>F</kbd></span> 搜关键词最快：<code>外围</code> / <code>Peripheral</code>、<code>Strapping</code>、<code>EN</code>、<code>天线</code> / <code>Antenna</code>、<code>Typical Application</code>。乐鑫的规格书有中文版，看起来轻松很多。</p>
+</aside>
+
+<aside class="warn">
+<p>规格书会更新，<b>不同版本的页码、章节编号会变</b>，所以下面只写“看哪一章”，不写第几页。每份规格书封面或末尾都有“修订历史”，确认自己看的是最新版。</p>
+</aside>
+
+<h2 id="B1.3-模组规格书要看这-5-章">B1.3 模组规格书：要看这 5 章<a class="anchor" href="#B1.3-模组规格书要看这-5-章">#</a></h2>
+
+<table>
+<thead><tr><th>章节（中文版的叫法，英文版对应）</th><th>里面有什么</th><th>我们用它做什么</th></tr></thead>
+<tbody>
+<tr><td><b>管脚定义</b> / Pin Definitions</td><td>一张模组引脚图 + 一张表：每个编号的引脚叫什么（3V3、GND、EN、IO0 ~ IO21……）、能干什么</td><td>知道哪只脚接电源、哪两只是 USB（<b>IO18 = D-，IO19 = D+</b>）、哪些可以随便当 GPIO 用</td></tr>
+<tr><td><b>外围设计原理图</b> / Peripheral Schematics</td><td>官方推荐的最小外围电路：电源脚旁边放哪些电容、EN 脚的 RC 延时电路</td><td><b>直接照抄</b>：3V3 旁的 10 µF + 100 nF（C4、C5），EN 的 10 kΩ + 1 µF（R6、C6）</td></tr>
+<tr><td><b>Strapping 管脚</b>（启动配置管脚）</td><td>芯片上电那一瞬间会“看”几个特定引脚的电平，决定从哪里启动</td><td>知道 IO2、IO8 要上拉（R4、R5），IO9 接 BOOT 键</td></tr>
+<tr><td><b>模组在底板上的位置</b> / 天线净空</td><td>天线部分应该放在底板的什么位置、下面能不能有铜</td><td>B-3 布局：天线朝外贴板边，下方画禁止区域</td></tr>
+<tr><td><b>电气特性</b></td><td>供电电压范围、工作电流（尤其是 Wi-Fi 发射时的峰值电流）</td><td>确认 3.3 V 供电、稳压芯片能提供足够电流</td></tr>
+</tbody>
+</table>
+
+<p>另外两份小规格书各看一张图就够了：</p>
+
+<ul>
+<li><b>AMS1117-3.3</b>：看“典型应用电路”（输入输出各接一个电容）和“压差”（dropout）——输入电压至少要比 3.3 V 高 1 V 多一点，USB 的 5 V 足够。</li>
+<li><b>WS2812B 类 RGB 灯</b>：看“典型应用电路”（一颗接一颗串起来，每颗旁边一个 100 nF 电容）、供电电压范围，以及“输入高电平”门限（下面会用到）。</li>
+</ul>
+
+<aside class="tip">
+<p>还有一个很好的参考：乐鑫官方开发板 <b>ESP32-C3-DevKitM-1</b> 的原理图（在乐鑫官网的开发板文档里能下载）。官方开发板上的 RGB 灯也接在 <b>GPIO8</b>，所以网上很多例程默认用 GPIO8，我们照着来，以后用别人的代码最省事。</p>
+</aside>
+
+<h2 id="B1.4-本案例的每一块电路是从哪来的">B1.4 本案例的每一块电路是从哪来的<a class="anchor" href="#B1.4-本案例的每一块电路是从哪来的">#</a></h2>
+
+<table>
+<thead><tr><th>原理图模块（B-2）</th><th>参考来源</th><th>我们做了什么调整</th></tr></thead>
+<tbody>
+<tr><td>① USB 接口</td><td>USB Type-C 的通用接法：CC1 / CC2 各接 5.1 kΩ 到地；D+ / D- 接芯片 USB 脚</td><td>和案例 A 的 CC 电阻一样；这次 D+ / D- 也要接，所以换成 16P 插座</td></tr>
+<tr><td>② 电源 5 V → 3.3 V</td><td>AMS1117 规格书的典型应用电路</td><td>输入 10 µF，输出 22 µF + 100 nF；加了一颗红色电源指示灯</td></tr>
+<tr><td>③ ESP32-C3 模组</td><td>模组规格书“外围设计原理图”</td><td>3V3 去耦电容、EN 的 RC 延时；没用到的引脚打“非连接标识”</td></tr>
+<tr><td>④ 按键</td><td>规格书 Strapping 章节 + 官方开发板</td><td>RST 键把 EN 拉到地；BOOT 键把 IO9 拉到地</td></tr>
+<tr><td>⑤ RGB 彩灯</td><td>WS2812B 规格书典型电路 + 官方开发板（GPIO8）</td><td>3 颗串联；电源经过二极管降压（下面解释）</td></tr>
+<tr><td>⑥ 排针</td><td>🎨 自己决定</td><td>引出 5V、3V3、GND、IO0、IO1、IO3、IO4、IO5</td></tr>
+</tbody>
+</table>
+
+<figure class="shot"><img src="../img/ch1/b2-module.png" alt="模组 U1 在原理图里的局部：引脚名就是规格书“管脚定义”里的名字（3V3、EN、IO0、IO1……），没用到的脚打了绿色 ×" width="560" loading="lazy"><figcaption><span class="fig-no">图 -1</span>模组 U1 在原理图里的局部：引脚名就是规格书“管脚定义”里的名字（3V3、EN、IO0、IO1……），没用到的脚打了绿色 ×</figcaption></figure>
+
+<aside class="theory">
+<p><b>Strapping 管脚：芯片开机时先“看一眼”的几只脚</b></p>
+<p>ESP32-C3 上电（或复位）的那一瞬间，会读几只特定引脚（主要是 <b>IO2、IO8、IO9</b>）的电平，像看门口挂的牌子一样决定这次怎么启动：</p>
+<ul>
+<li><b>IO9 是高电平</b>（平时）→ 正常从 Flash 启动，运行你写的程序；</li>
+<li><b>IO9 是低电平</b>（按住 BOOT 键）→ 进入<b>下载模式</b>，等电脑把新程序写进来。</li>
+</ul>
+<p>规格书要求这时 IO2、IO8 也处于规定的电平（高电平），所以我们给它们各加了一个 10 kΩ 上拉电阻（R4、R5）。IO9 芯片内部默认有上拉，所以只接一个到地的 BOOT 键。<b>具体的电平组合请以规格书“Strapping 管脚”一节的表格为准。</b></p>
+<p>这也是为什么排针没有引出 IO2、IO8、IO9：它们开机时的电平很关键，外面乱接东西可能导致板子启动不了。</p>
+</aside>
+
+<aside class="theory">
+<p><b>为什么彩灯的电源要经过一个二极管？</b></p>
+<p>WS2812B 类彩灯用 5 V 供电，但它判断“数据线上是高电平”的门限大约是 <b>0.7 × 供电电压</b>（以你所用灯的规格书为准）：</p>
+<ul>
+<li>直接用 5 V：门限 ≈ 0.7 × 5 = <b>3.5 V</b>，而 ESP32-C3 输出的高电平只有 3.3 V——比门限还低，灯可能认不出数据，时好时坏。</li>
+<li>串一个二极管 D1（M7），压降约 0.8 V：灯的电源 VLED ≈ 4.2 V，门限 ≈ 0.7 × 4.2 ≈ <b>2.9 V</b>，3.3 V 的信号就稳稳够了。</li>
+</ul>
+<p>灯在 4.2 V 下照样能亮，只是最大亮度略低一点点。这是一个很常见的“省掉电平转换芯片”的小技巧。</p>
+</aside>
+
+<aside class="link">
+<p>规格书的完整读法（结构、引脚图、封装尺寸图）：<a href="../ch2/14.html">2.14 读规格书</a>；上拉 / 下拉、高低电平：<a href="../ch2/7.html">2.7 数字电路入门</a>。</p>
+</aside>
+
+<div class="quiz">
+  <div class="q">ESP32-C3 模组的哪两只引脚是 USB 的 D- 和 D+？</div>
+  <button type="button" class="opt">IO8 和 IO9</button>
+  <button type="button" class="opt" data-right>IO18 和 IO19</button>
+  <button type="button" class="opt">IO0 和 IO1</button>
+  <div class="explain">✅ IO18 = D-，IO19 = D+，在规格书的“管脚定义”表里能查到。IO8 本例接彩灯、IO9 接 BOOT 键，它们都是 strapping 管脚。</div>
+</div>
+
+    </article>
+    <div class="done-box"><button class="done-btn" type="button">✓ 我学完这一页了</button></div>
+    <div class="pager"><a class="prev" href="../ch1/b0.html"><small>← 上一页</small>B-0 项目介绍</a><a class="next" href="../ch1/b2.html"><small>下一页 →</small>B-2 分模块画原理图</a></div>
+  </main>
+  <aside class="toc"><div class="toc-title">本页目录</div><ul></ul></aside>
+</div>
+<div class="lightbox"><span class="lb-close">×</span><img alt=""><div class="lb-cap"></div></div>
+<script src="../assets/js/search-index.js"></script>
+<script src="../assets/js/os.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
